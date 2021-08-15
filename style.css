@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "aero_matics_displayregular";
+  src: url("fonts/aero_matics_display_regular-webfont.woff2") format("woff2"),
+    url("fonts/aero_matics_display_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "outlierregular";
+  src: url("fonts/outlier-webfont.woff2") format("woff2"),
+    url("fonts/outlier-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  color: #424042;
+  background-color: #e6e4e1;
+}
+
+h4 {
+  font-family: aero_matics_displayregular;
+  font-size: 2em;
+  border-bottom: 10px solid #26416d;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  padding-bottom: 0.25em;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.page-title {
+  text-align: center;
+  margin: 0.5em;
+  font-family: "aero_matics_displayregular";
+  letter-spacing: 0.15em;
+  border-bottom: 10px solid #26416d;
+  padding-bottom: 0.5em;
+  font-size: 3em;
+}
+
+.btn-letter {
+  border-radius: 15px;
+  text-align: center;
+  font-family: aero_matics_displayregular;
+  cursor: pointer;
+  margin-top: 1em;
+  font-size: 2em;
+  padding: 0.5em;
+  border-bottom: 5px solid #26416d;
+  box-shadow: 5px 5px 1px rgb(0 0 0 / 30%);
+  color: #26416d;
+  background-image: linear-gradient(to right, #26416d, #e6e4e1, #26416d);
+}
+
+.btn-letter:hover {
+  background-image: linear-gradient(to right, #e6e4e1, #26416d, #e6e4e1);
+  color: white;
+}
+
+.entries button {
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.5em;
+  padding: 0.25em;
+  box-shadow: 5px 5px 1px rgb(0 0 0 / 30%);
+  font-size: 1.5em;
+  border-bottom: 5px solid #26416d;
+  color: #26416d;
+  background-color: #fff;
+  font-family: aero_matics_displayregular;
+}
+
+.entries button:hover {
+  background-color: #26416d;
+  color: #fff;
+}
+
+.entries button:active {
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 30%);
+}
+
+.unit-keyword {
+  font-weight: bold;
+}
+
+.weapon-keyword {
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+.entry li {
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+li ul li {
+  margin-left: 2em;
+  list-style-type: disclosure-closed;
+  margin-top: 0.5em;
+}
+
+li ul li ul li {
+  list-style-type: circle;
+}
+
+ol li ol {
+  list-style-type: lower-alpha;
+}
+
+.entries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.aside {
+  float: right;
+  text-align: center;
+  margin: 0px 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+  max-width: 100px;
+}
+
+.entry:target {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.entry .entry-dialog {
+  position: relative;
+  z-index: 12;
+  background: #e6e4e1;
+  border-radius: 25px;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 0 3em;
+  max-width: 750px;
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-bottom: 5px solid #26416d;
+  box-shadow: 20px 20px 1px rgb(0 0 0 / 30%);
+}
+
+.entry .entry-close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  background-image: url(img/legion-deplete.png);
+  background-position: top right;
+  background-size: 2.5em 2.5em;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 0.5em;
+}
+
+a:link {
+  color: #26416d;
+}
+
+.related-topics {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+
+  flex-wrap: wrap;
+}
+
+.related-topics a:link {
+  display: block;
+  margin-left: 0.25em;
+  margin-bottom: 0.25em;
+  padding: 0.25em;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #26416d;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 1px rgb(0 0 0 / 30%);
+  color: #26416d;
+  background-color: #e6e4e1;
+  font-family: aero_matics_displayregular;
+}
+
+.related-topics a:visited {
+  color: #26416d;
+  background-color: #e6e4e1;
+}
+
+.related-topics a:hover {
+  color: #e6e4e1;
+  background-color: #26416d;
+}
+
+.related-topics a:active {
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 30%);
+}
+
+.hidden {
+  display: none;
+}
+
+.keyword-reference {
+  text-transform: uppercase;
+  /* font-size: .9em; */
+  font-family: aero_matics_displayregular;
+}
+
+.game-icon {
+  display: inline;
+  height: 1em;
+}
+
+.clipped-corners {
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 98%, 10% 100%, 0 90%);
+  width: 50%;
+  float: left;
+  margin-right: 1.5em;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
