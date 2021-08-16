@@ -144,6 +144,12 @@ ol li ol {
   max-width: 100px;
 }
 
+.aside p {
+  text-transform: uppercase;
+
+  font-family: aero_matics_displayregular;
+}
+
 .entry:target {
   position: fixed !important;
   top: 0;
