@@ -4131,6 +4131,572 @@
           </div>
           <!-- End Courage -->
 
+          <!-- Cover -->
+          <a href="#cover"><button>Cover</button></a>
+          <div id="cover" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Cover</h4>
+              <p>
+                During a ranged attack, terrain that lies between two units can
+                grant protection to the defender in the form of cover.
+              </p>
+              <ul>
+                <li>
+                  There are two only types of cover: light cover and heavy
+                  cover. Cover is usually granted by terrain.
+                  <ul>
+                    <li>
+                      Barricades provide heavy cover to non-creature trooper
+                      units that they obscure.
+                    </li>
+                    <li>
+                      Emplacement troopers provide light cover to units that
+                      they obscure.
+                    </li>
+                    <li>
+                      Creature troopers provide light cover to units that they
+                      obscure.
+                    </li>
+                    <li>
+                      Ground vehicles provide light or heavy cover to units that
+                      they obscure. Walking or legged vehicles provide light
+                      cover; wheeled or treaded vehicles provide heavy cover.
+                    </li>
+                    <li>
+                      Minis in the same unit cannot obscure or provide cover to
+                      one another.
+                    </li>
+                    <li>
+                      Custom terrain can provide units with light or heavy
+                      cover. Players should determine the cover type of all
+                      custom terrain before the game begins.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  During the “Apply Dodge and Cover” step of a ranged attack, a
+                  unit that has light cover can cancel one hit (<img
+                    class="game-icon"
+                    src="/img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) result, and a unit that has heavy cover can cancel up to
+                  two hit (<img
+                    class="game-icon"
+                    src="/img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) results.
+                  <ul>
+                    <li>
+                      Critical (<img
+                        class="game-icon"
+                        src="/img/legion-crit.png"
+                        alt="Crit Symbol"
+                      />) results cannot be canceled by cover.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Various game effects, such as suppression tokens and the
+                  <strong class="keyword-reference">cover</strong> keyword, can
+                  improve a unit’s cover by one or more.
+                  <ul>
+                    <li>
+                      When a unit that does not have cover improves its cover by
+                      one, it is treated as having light cover.
+                    </li>
+                    <li>
+                      When a unit that does not have cover improves its cover by
+                      two or more, it is treated as having heavy cover.
+                    </li>
+                    <li>
+                      When a unit that has light cover improves its cover by one
+                      or more, it is treated as having heavy cover.
+                    </li>
+                    <li>
+                      If a unit has heavy cover, that unit does not gain any
+                      benefit from improving its cover.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  To determine if a unit has cover during an attack, a player
+                  performs the following steps:
+                </li>
+              </ul>
+              <ol>
+                <li>
+                  <strong class="keyword-reference"
+                    >Determine Number of Obscured Miniatures:</strong
+                  >
+                  The player checks line of sight from the attacker’s unit
+                  leader to each mini in the defending unit. If any part of a
+                  defending mini, including its base, is blocked by a piece of
+                  terrain, the player then traces an imaginary line from the
+                  center of the base of the attacker’s unit leader to the center
+                  of the base of the defending mini. If the imaginary line
+                  crosses the piece of terrain that blocked line of sight, the
+                  defending mini is obscured. The player repeats this process
+                  for each mini in the defender to determine how many of those
+                  minis are obscured.
+                  <ul>
+                    <li>
+                      If the attacking unit leader’s base is touching a piece of
+                      terrain, that piece of terrain cannot cause a mini in the
+                      defender to be obscured, unless line of sight from the
+                      unit leader to that mini is completely blocked.
+                    </li>
+                    <li>
+                      Ground vehicles, creature troopers, and emplacement
+                      troopers can provide cover. When determining whether a
+                      defending mini is obscured, treat any ground vehicle,
+                      creature trooper, or emplacement trooper minis as if they
+                      are pieces of area terrain.
+                    </li>
+                    <li>
+                      If the attacking unit leader’s base is touching another
+                      mini's base, that mini cannot cause a mini in the defender
+                      to be obscured, unless line of sight from the unit leader
+                      to the defending mini is completely blocked.
+                    </li>
+                    <li>
+                      When determining whether a piece of terrain blocks line of
+                      sight to a defending mini with a notched base, if there is
+                      a clear peg separating the defending mini and its base,
+                      the clear peg and the base are not treated as a part of
+                      the mini.
+                    </li>
+                    <li>
+                      When determining whether an imaginary line traced between
+                      the centers of two minis' bases crosses a piece of
+                      terrain, the line is always treated as horizontal to the
+                      battlefield, on a two-dimensional plain. A player should
+                      look down from above the battlefield to determine whether
+                      the imaginary line crosses a piece of terrain.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong class="keyword-reference">Determine Cover:</strong> If
+                  at least half of all of the defender’s minis are obscured,
+                  that unit has cover. The type of cover that unit has is
+                  determined by the object that is obscuring the minis, as
+                  follows:
+                  <ul>
+                    <li>
+                      If the obscured minis are obscured by a ground vehicle,
+                      that unit has either light or heavy cover, depending on
+                      the vehicle.
+                    </li>
+                    <li>
+                      If the obscured minis are obscured by a creature trooper
+                      or emplacement trooper, that unit has light cover.
+                    </li>
+                    <li>
+                      If the obscured minis are obscured by a barricade, and the
+                      defender is a non-creature trooper unit, that unit has
+                      heavy cover.
+                    </li>
+                    <li>
+                      If the obscured minis are obscured by custom terrain, that
+                      unit has the cover that the custom terrain provides.
+                    </li>
+                    <li>
+                      In the case that some of the obscured minis are obscured
+                      by an object that provides light cover and some are
+                      obscured by an object that provides heavy cover, that unit
+                      has heavy cover, unless there are more minis that are
+                      obscured by an object that provides light cover, in which
+                      case the unit has light cover.
+                    </li>
+                    <li>
+                      If an individual mini is obscured by both an object that
+                      provides light cover and an object that provides heavy
+                      cover, treat that mini as obscured by heavy cover.
+                    </li>
+                    <li>
+                      A defending unit on a piece of terrain with a higher
+                      elevation than the attacking unit will usually have cover.
+                      This is because when checking line of sight from the
+                      attacking unit leader, a part of each defending minis'
+                      base will most likely be obscured by the terrain that the
+                      mini is on top of.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+                <!-- See Additional Terrain Rules ADD THIS LATER -->
+              </p>
+            </div>
+          </div>
+          <!-- End Cover -->
+
+          <!-- Cover X -->
+          <a href="#cover-x"><button class="unit-keyword">Cover X</button></a>
+          <div id="cover-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Cover X (Unit Keyword)</h4>
+              <p>
+                During the “Apply Dodge and Cover” step of a ranged attack, if
+                the defender has the
+                <strong class="keyword-reference">cover x</strong> keyword, it
+                improves its cover by a number equal to x.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover">Cover</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Cover X -->
+
+          <!-- Covert Ops -->
+          <a href="#covert-ops"
+            ><button class="unit-keyword">Covert Ops</button></a
+          >
+          <div id="covert-ops" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Covert Ops</h4>
+              <p>
+                A unit with the
+                <strong class="keyword-reference">covert ops</strong> keyword is
+                able to forgo their command position to infiltrate onto the
+                battlefield as an independent operative. When a unit with the
+                <strong class="keyword-reference">covert ops</strong> keyword
+                deploys, it may treat its rank as operative instead of commander
+                to gain the
+                <strong class="keyword-reference">infiltrate</strong> keyword.
+              </p>
+              <ul>
+                <li>
+                  When a unit uses
+                  <strong class="keyword-reference">covert ops</strong> to
+                  change its rank to operative, if there is not another unit
+                  with the commander rank in that player’s army, that player
+                  must immediately promote a unit with the rank of corps or
+                  special forces to the rank of commander. Place a commander
+                  token near that unit, and remove their order token from the
+                  game, replacing it with a commander order token.
+                  <ul>
+                    <li>
+                      The promoted unit can be one that has already deployed or
+                      that has not deployed yet.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  When a unit uses
+                  <strong class="keyword-reference">covert ops</strong> to
+                  change its rank to operative, its rank is treated as operative
+                  for that entire game. Add an operative order token to the
+                  order pool for that unit (instead of a commander order token).
+                  Place an operative marker token near the unit on the
+                  battlefield to remind players of that unit’s operative rank.
+                  <ul>
+                    <li>
+                      That unit is issued orders and activated with an operative
+                      order token for that game.
+                    </li>
+                    <li>
+                      A unit with the rank of operative cannot be nominated to
+                      issue orders when a non-operative specific command card is
+                      played and friendly units cannot use an operative’s
+                      courage value when checking whether they panic.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  For the rules regarding the
+                  <strong class="keyword-reference">infiltrate</strong> keyword.
+                  See:
+                  <strong class="keyword-reference"
+                    ><a href="#infiltrate">Infiltrate (Unit Keyword)</a></strong
+                  >
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#commander">Commander</a>
+                <a href="#infiltrate" class="link-to-i">Infiltrate</a>
+                <a href="#operative" class="link-to-o">Operative</a>
+                <a href="#rank" class="link-to-r">Rank</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Covert Ops -->
+
+          <!-- Creature Trooper -->
+          <a href="#creature-trooper"><button>Creature Trooper</button></a>
+          <div id="creature-trooper" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Creature Trooper</h4>
+              <p>
+                A creature trooper is a type of unit. It is a subtype of the
+                trooper unit type.
+              </p>
+              <ul>
+                <li>
+                  Game effects that target or apply to troopers can target or
+                  apply to creature troopers.
+                </li>
+                <li>
+                  Creature trooper units follow the same rules as trooper units
+                  with the following exceptions:
+                  <ul>
+                    <li>
+                      Creature troopers are affixed to either a medium, large,
+                      or huge base.
+                    </li>
+                    <li>
+                      When a creature trooper performs a standard move, the
+                      player inserts the movement tool into the front notch of
+                      the mini’s base.
+                    </li>
+                    <li>
+                      Creature troopers do not improve their cover while they
+                      have one or more suppression tokens.
+                    </li>
+                    <li>
+                      Barricades do not provide cover to creature troopers.
+                    </li>
+                    <li>
+                      Creature troopers can obscure other minis, and provide
+                      light cover when doing so.
+                    </li>
+                    <li>Creature troopers cannot climb or clamber.</li>
+                    <li>Creature troopers can pivot and reverse.</li>
+                    <li>Creature troopers cannot embark or disembark.</li>
+                    <li>
+                      Creature troopers cannot use the “Claim” or “Sabotage/
+                      Repair” abilities.
+                    </li>
+                    <li>Creature troopers cannot be displaced.</li>
+                    <li>
+                      Troopers and ground vehicles cannot move through creature
+                      troopers.
+                    </li>
+                    <li>
+                      A unit cannot end a compulsory move overlapping a creature
+                      trooper.
+                    </li>
+                    <li>
+                      Creature troopers displace troopers when moving through
+                      them, and cannot move through troopers that cannot be
+                      displaced.
+                    </li>
+                    <li>
+                      When a creature trooper withdraws, it can perform free
+                      actions and use abilities. It must still spend all
+                      available actions and performs a speed-1 move.
+                    </li>
+                    <li>
+                      While withdrawing, creature trooper minis can displace
+                      non-creature, non-emplacement trooper minis with which
+                      they are engaged.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#cover">Cover</a>
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#embark-and-disembark" class="link-to-e"
+                  >Embark and Disembark</a
+                >
+                <a href="#engaged" class="link-to-e">Engaged</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Creature Trooper -->
+
+          <!-- Critical X -->
+          <a href="#critical-x"
+            ><button class="weapon-keyword">Critical X</button></a
+          >
+          <div id="critical-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Critical X (Weapon Keyword)</h4>
+              <p>
+                While a unit with the
+                <strong class="keyword-reference">critical x</strong> keyword
+                converts attack surges, it may convert up to x attack surge
+                (<img
+                  class="game-icon"
+                  src="/img/legion-attack-surge.png"
+                  alt="Attack Surge Symbol"
+                />) results to critical (<img
+                  class="game-icon"
+                  src="/img/legion-crit.png"
+                  alt="Crit Symbol"
+                />) results.
+              </p>
+              <ul>
+                <li>
+                  While using the
+                  <strong class="keyword-reference">critical x</strong> keyword,
+                  a unit still converts any attack surge (<img
+                    class="game-icon"
+                    src="/img/legion-attack-surge.png"
+                    alt="Attack Surge Symbol"
+                  />) results not converted with the
+                  <strong class="keyword-reference">critical x</strong> keyword
+                  according to the surge conversion chart on its unit card.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#surges" class="link-to-s">Surges</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Critical X -->
+
+          <!-- Cumbersome -->
+          <a href="#cumbersome"
+            ><button class="weapon-keyword">Cumbersome</button></a
+          >
+          <div id="cumbersome" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Cumbersome (Weapon Keyword)</h4>
+              <p>
+                A unit that has a weapon with the
+                <strong class="keyword-reference">cumbersome</strong> keyword
+                cannot both move and attack using that weapon during the same
+                activation, unless the move is a pivot.
+              </p>
+              <ul>
+                <li>
+                  If a unit performs an attack with a weapon that has the
+                  <strong class="keyword-reference">cumbersome</strong> keyword
+                  during its activation, it cannot perform any moves during that
+                  activation, except for pivots.
+                </li>
+                <li>
+                  If a unit performs a move, except for a pivot, during its
+                  activation, it cannot perform an attack with a weapon that has
+                  the
+                  <strong class="keyword-reference">cumbersome</strong> keyword
+                  during that activation.
+                </li>
+                <li>
+                  A unit can use a weapon with the
+                  <strong class="keyword-reference">cumbersome</strong> keyword
+                  during an attack triggered by spending a standby token, even
+                  if that unit moved during its activation earlier in the same
+                  round.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Cumbersome -->
+
+          <!-- cunning -->
+
+          <a href="#cunning"><button class="unit-keyword">Cunning</button></a>
+          <div id="cunning" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Cunning (Unit Keyword)</h4>
+              <p>
+                Units with the
+                <strong class="keyword-reference">cunning</strong> keyword are
+                adept at enacting their own plans. During the Command Phase, if
+                a player reveals a commander-specific or operative-specific
+                command card that belongs to a friendly commander or operative
+                with the cunning keyword, and there would be a tie for priority,
+                treat that command card as though it had one fewer pip.
+              </p>
+              <ul>
+                <li>
+                  If both players reveal a commander-specific or
+                  operativespecific command card that belongs to a commander or
+                  operative with the
+                  <strong class="keyword-reference">cunning</strong> keyword,
+                  there will still be a tie for priority.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#command-cards">Command Cards</a>
+                <a href="#commander">Commander</a>
+                <a href="#priority" class="link-to-p">Priority</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- End Cunning -->
+
+          <!-- Cycle -->
+          <a href="#cycle"><button class="weapon-keyword">Cycle</button></a>
+          <div id="cycle" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Cycle (Upgrade Keyword)</h4>
+              <p>
+                At the end of a unit’s activation, ready each of its exhausted
+                upgrade cards with the
+                <strong class="keyword-reference">cycle</strong> keyword that
+                was not used during that activation.
+              </p>
+              <ul>
+                <li>
+                  Only using the weapon, keywords, or other card text on an
+                  upgrade card counts as using that upgrade card. A mini added
+                  by an upgrade card is free to attack using a weapon printed on
+                  its unit card and still benefit from the
+                  <strong class="keyword-reference">cycle</strong>
+                  keyword.<br /><br />
+                  <em
+                    >For example, during the activation of a B2 Super Battle
+                    Droids unit, a B2-HA Trooper mini may use a weapon on the B2
+                    Super Battle Droids unit card during an attack and still
+                    ready the B2-HA Trooper upgrade card with the cycle keyword
+                    at the end of that activation.</em
+                  >
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#exhaust" class="link-to-e">Exhaust</a>
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Cycle -->
+
           <!-- PASTE THIS FOR NEW ENTRY
 
             <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
@@ -4141,8 +4707,15 @@
               <p>RRG TEXT CONTENT GOES HERE</p>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#actions">Actions</a>
-                <a href="#courage">Courage</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
               </p>
             </div>
           </div>
@@ -4158,31 +4731,354 @@
       <div class="d-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
-          <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
+          <!-- Damaged -->
+          <a href="#damaged"><button>Damaged</button></a>
+          <div id="damaged" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
+              <h4>Damaged</h4>
+              <div class="aside">
+                <img src="/img/legion-damaged.png" alt="Damaged Token" />
+                <p>Damaged Token</p>
+              </div>
+              <p>
+                A vehicle unit can become damaged when it has wound tokens equal
+                to or exceeding its resilience value (see
+                <strong class="keyword-reference"
+                  ><a href="#resilience">Resilience</a></strong
+                >
+              </p>
+              <ul>
+                <li>
+                  When a vehicle unit is damaged, it gains a damaged token. The
+                  token is placed on the battlefield near the unit leader and
+                  remains with the unit as it moves around the battlefield.
+                </li>
+                <li>
+                  When a player activates a damaged unit, before it performs any
+                  actions, it rolls a white defense die. If the result is a
+                  blank, that vehicle performs one fewer action during its
+                  activation.
+                  <ul>
+                    <li>
+                      A unit that loses an action in this way can still perform
+                      any number of free actions.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  A damaged token is one of three different types of vehicle
+                  damage tokens.
+                </li>
+              </ul>
               <p class="related-topics">
-                <strong class="keyword-reference"> Related Topics:</strong>
-                <a href="#actions">Actions</a>
-                <a href="#courage">Courage</a>
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#activating-units" class="link-to-A"
+                  >Activating Units</a
+                >
+                <a href="#dice">Dice</a>
+                <a href="#resilience" class="link-to-r">Resilience</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#wounds" class="link-to-w">Wounds</a>
               </p>
             </div>
           </div>
+          <!-- End Damaged -->
+
+          <!-- Danger Sense -->
+          <a href="#danger-sense-x"
+            ><button class="unit-keyword">Danger Sense X</button></a
+          >
+          <div id="danger-sense-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Danger Sense X (Unit Keyword)</h4>
+              <p>
+                Units with the
+                <strong class="keyword-reference">danger sense x</strong>
+                keyword are more aware of the battle raging around them and are
+                adept at staying alive in the midst of combat. When a unit with
+                the with the
+                <strong class="keyword-reference">danger sense x</strong>
+                keyword would remove any number of its suppression tokens, it
+                may choose any amount of tokens up to that number to remove,
+                including none.
+              </p>
+              <p>
+                While defending against an attack, a unit with the
+                <strong class="keyword-reference">danger sense x</strong>
+                keyword rolls 1 additional defense die for each suppression
+                token that it has, adding a total of up to x additional dice.
+              </p>
+              <ul>
+                <li>
+                  Any defense dice added by the
+                  <strong class="keyword-reference">danger sense x</strong>
+                  keyword are in addition to the normal number of dice that a
+                  unit rolls while defending.
+                </li>
+                <li>
+                  Any defense dice added by the
+                  <strong class="keyword-reference">danger sense x</strong>
+                  keyword are of the same color as the defense dice icon on the
+                  defender's unit card.
+                </li>
+                <li>
+                  A unit that has the
+                  <strong class="keyword-reference">danger sense x</strong>
+                  keyword may choose how many of its suppression tokens to
+                  remove both during its “Rally” step and during the End Phase,
+                  as well as when another game effect or ability would remove
+                  its suppression tokens.
+                </li>
+                <li>
+                  Units can use the
+                  <strong class="keyword-reference">danger sense x</strong>
+                  keyword while defending against both ranged and melee attacks.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#courage" class="link-to-c">Courage</a>
+                <a href="#dice">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Danger Sense -->
+
+          <!-- Dauntless -->
+          <a href="#dauntless"
+            ><button class="unit-keyword">Dauntless</button></a
+          >
+          <div id="dauntless" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Dauntless (Unit Keyword)</h4>
+              <p>
+                A unit with the
+                <strong class="keyword-reference">dauntless</strong> keyword can
+                keep moving while under fire, even when it would normally be
+                hindered by suppression. After a unit with the dauntless keyword
+                performs its “Rally” step, if it is suppressed but is not
+                panicked, it may gain 1 suppression token to perform a free move
+                action.
+              </p>
+              <ul>
+                <li>
+                  Since it has already performed its Rally step, a unit gaining
+                  a suppression token from the
+                  <strong class="keyword-reference">dauntless</strong> ability
+                  will not become panicked if gaining that suppression token
+                  causes it to have suppression tokens equal to or exceeding
+                  double its courage value.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#courage" class="link-to-c">Courage</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#panic" class="link-to-p">Panic</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Dauntless -->
+
+          <!-- Delcaring Terrain -->
+          <a href="#declaring-terrain"><button>Declaring Terrain</button></a>
+          <div id="declaring-terrain" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Declaring Terrain</h4>
+              <p>
+                During setup, it is imperative to determine which effects each
+                piece of terrain will have before the game begins. Players
+                should briefly discuss each piece of terrain that will be on the
+                battlefield and come to a consensus on its cover type and other
+                characteristics.
+              </p>
+              <ul>
+                <li>
+                  Whether or not a piece of terrain will provide cover to a unit
+                  usually depends on the size of that piece of terrain relative
+                  to the minis in that unit. As a general rule, terrain that
+                  blocks line of sight to half or more of a mini will provide
+                  cover, while terrain that blocks less than half of a mini will
+                  not. This means that trooper minis will frequently enjoy the
+                  benefits of cover, while vehicles often will not.
+                  <ul>
+                    <li>
+                      Whether or not a piece of terrain will provide cover, and
+                      if so to what units, should be determined
+                      <strong>during</strong> setup.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Terrain either provides no cover, light cover, or heavy cover,
+                  depending on its characteristics. Terrain that completely
+                  blocks line of sight always provides heavy cover.
+                  <ul>
+                    <li>
+                      The level of cover that a piece of terrain will provide,
+                      and to what types of units, should be determined
+                      <strong>during</strong> setup.
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li>Players should use the "Terrain Types" on page 8, as a
+guide when determining terrain effects during setup. ADD THIS LATER</li> -->
+                <li>
+                  Once the level of cover that a piece of terrain will provide
+                  has been determined during setup, that piece of terrain
+                  provides that cover to the relevant units regardless of the
+                  degree to which minis in those units are blocked by that
+                  terrain.
+                  <ul>
+                    <li>
+                      Checking whether a piece of terrain is blocking half or
+                      more, or less than half, of a mini is only used during
+                      setup to determine whether or not that piece of terrain
+                      will provide cover during the game.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#cover" class="link-to-c">Cover</a>
+                <a href="#line-of-sight" class="link-to-l">Line of Sight</a>
+                <a href="#setup" class="link-to-s">Setup</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Declaring Terrain -->
+
+          <!-- Defeated -->
+          <a href="#defeated"><button>Defeated</button></a>
+          <div id="defeated" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Defeated</h4>
+              <p>
+                When a miniature is defeated, it is removed from the battlefield
+                and cannot be used for the remainder of the game.
+              </p>
+              <ul>
+                <li>
+                  If a mini has a number of wounds equal to the unit’s wound
+                  threshold, that mini is defeated.
+                </li>
+                <li>
+                  If a unit performs a move that causes any part of its unit
+                  leader's base to be outside of the battlefield, including
+                  while moving along a movement tool, that unit is defeated.
+                </li>
+                <li>
+                  In the rare situation in which a unit leader is defeated and
+                  there are still minis in that unit, the player who controls
+                  that unit must immediately choose another mini in that unit to
+                  become the unit leader—the player replaces the chosen mini
+                  with the unit leader mini.
+                  <ul>
+                    <li>
+                      If a player’s unit leader with a claimed objective token
+                      is defeated, before they remove or move the unit leader,
+                      that player flips the objective token to its unclaimed
+                      side and places it back onto the battlefield in the same
+                      position and in base contact with the unit leader. The
+                      objective token remains on the battlefield where it was
+                      placed and can be claimed again as normal.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  If a player’s commander or operative is defeated, any command
+                  cards in that player's command hand that are specific to that
+                  unit can no longer be played.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#commander" class="link-to-c">Commander</a>
+                <a href="#leaving-the-battlefield" class="link-to-l"
+                  >Leaving the Battlefield</a
+                >
+                <a href="#objective-tokens" class="link-to-o"
+                  >Objective Tokens</a
+                >
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+                <a href="#wounds" class="link-to-w">Wounds</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Defeated -->
+
+          <!-- Defend X -->
+          <a href="#defend-x"><button class="unit-keyword">Defend X</button></a>
+          <div id="defend-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Defend X (Unit Keyword)</h4>
+              <p>
+                When a unit with the
+                <strong class="keyword-reference">defend x</strong> keyword is
+                issued an order, it gains x dodge tokens.
+              </p>
+              <ul>
+                <li>
+                  If a unit with the
+                  <strong class="keyword-reference">defend x</strong> keyword
+                  would be issued an order but a game effect causes that order
+                  not to be issued or to be issued to another unit instead, that
+                  unit cannot use the
+                  <strong class="keyword-reference">defend x</strong> keyword.
+                </li>
+                <li>
+                  This effect is different than performing a dodge action, and
+                  therefore does not trigger abilities that occur after dodge
+                  actions are performed.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#dodge">Dodge</a>
+                <a href="#issuing-orders" class="link-to-i">Issuing Orders</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Defend X -->
+
+          <!-- Defning the Battlefield -->
+
+          <!-- End Defining the Battlefield -->
+
           <!-- PASTE THIS FOR NEW ENTRY
 
-            <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+             <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
           <div id="rrg-entry-name" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>RRG Entry Name</h4>
               <p>RRG TEXT CONTENT GOES HERE</p>
               <p class="related-topics">
-                <strong class="keyword-reference"> Related Topics:</strong>
-                <a href="#actions">Actions</a>
-                <a href="#courage">Courage</a>
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
               </p>
             </div>
           </div>
@@ -4205,9 +5101,16 @@
               <h4>RRG Entry Name</h4>
               <p>RRG TEXT CONTENT GOES HERE</p>
               <p class="related-topics">
-                <strong class="keyword-reference"> Related Topics:</strong>
-                <a href="#actions">Actions</a>
-                <a href="#courage">Courage</a>
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
               </p>
             </div>
           </div>
