@@ -17,6 +17,7 @@
       <div class="a-entries hidden collapse">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
+          <!-- Abilities -->
           <a href="#abilities"><button>Abilities</button></a>
           <div id="abilities" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -130,7 +131,9 @@
               </p>
             </div>
           </div>
+          <!-- End Abilities -->
 
+          <!-- Actions -->
           <a href="#actions"><button>Actions</button></a>
           <div id="actions" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -279,7 +282,9 @@
               </p>
             </div>
           </div>
+          <!-- End Actions -->
 
+          <!-- Activating Units -->
           <a href="#activating-units"><button>Activating Units</button></a>
           <div id="activating-units" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -299,9 +304,7 @@
                   The steps of unit activation are as follows:
                   <ol>
                     <li>
-                      <strong class="keyword-reference"
-                        >Start of Unit Activation:</strong
-                      >
+                      <strong>Start of Unit Activation:</strong>
                       If there is an effect that triggers “when” a unit
                       activates or “at the start” of its activation, that effect
                       triggers during this step.
@@ -320,10 +323,9 @@
                       </ul>
                     </li>
                     <li>
-                      <strong class="keyword-reference">Rally:</strong> If the
-                      unit has one or more suppression tokens, it rolls one
-                      white defense die for each suppression token it has. For
-                      each block (<img
+                      <strong>Rally:</strong> If the unit has one or more
+                      suppression tokens, it rolls one white defense die for
+                      each suppression token it has. For each block (<img
                         class="game-icon"
                         src="img/legion-block.png"
                         alt="Block Symbol"
@@ -335,9 +337,7 @@
                       suppression tokens
                     </li>
                     <li>
-                      <strong class="keyword-reference"
-                        >Perform Actions:</strong
-                      >
+                      <strong>Perform Actions:</strong>
                       A unit that is not suppressed can perform up to two
                       actions and any number of free actions. A unit that is
                       suppressed or that has lost an action due to being damaged
@@ -356,9 +356,7 @@
                       </ul>
                     </li>
                     <li>
-                      <strong class="keyword-reference"
-                        >End of Unit Activation:</strong
-                      >
+                      <strong>End of Unit Activation:</strong>
                       If there is an effect that triggers “at the end” of a
                       unit's activation, that effect triggers during this step.
                       <ul>
@@ -387,6 +385,7 @@
               </p>
             </div>
           </div>
+          <!-- End Activating Units -->
           <!-- Activation Phase -->
           <a href="#activation-phase"><button>Activation Phase</button></a>
           <div id="activation-phase" class="entry hidden">
@@ -1046,7 +1045,7 @@
               </ul>
               <ol>
                 <li>
-                  <strong class="keyword-reference">Declare Defender:</strong>
+                  <strong>Declare Defender:</strong>
                   The attacking player chooses one enemy unit to attack; this
                   enemy unit is now the defender. Then, the attacking player
                   measures the range from the attacker’s unit leader to the
@@ -1054,40 +1053,36 @@
                   range.
                 </li>
                 <li>
-                  <strong class="keyword-reference">Form Attack Pool:</strong>
+                  <strong>Form Attack Pool:</strong>
                   The attack pool consists of all the dice the attacker will
                   roll against this defender. When forming the attack pool,
                   players follow these substeps in order:
                   <ul>
                     <li>
-                      <em class="keyword-reference"
-                        >Determine Eligible Minis:</em
-                      >
+                      <em>Determine Eligible Minis:</em>
                       Each mini in the attacker is eligible to contribute to the
                       attack pool if that mini has line of sight to any mini in
                       the defender.
                     </li>
                     <li>
-                      <em class="keyword-reference">Choose Weapons:</em> The
-                      attacker can choose one weapon from each eligible mini to
-                      contribute to the attack pool. To choose a weapon, the
-                      attacker must meet all requirements indicated by that
-                      weapon’s keywords, and that weapon’s range must include
-                      the range of the attack, as determined from the attacker’s
-                      unit leader to the closest mini of the defender.
+                      <em>Choose Weapons:</em> The attacker can choose one
+                      weapon from each eligible mini to contribute to the attack
+                      pool. To choose a weapon, the attacker must meet all
+                      requirements indicated by that weapon’s keywords, and that
+                      weapon’s range must include the range of the attack, as
+                      determined from the attacker’s unit leader to the closest
+                      mini of the defender.
                     </li>
                     <li>
-                      <em class="keyword-reference">Gather Dice:</em> For each
-                      eligible mini that chose a weapon, the attacker gathers
-                      the number and type of dice depicted on that weapon and
-                      places them on the battlefield near the defender.
+                      <em>Gather Dice:</em> For each eligible mini that chose a
+                      weapon, the attacker gathers the number and type of dice
+                      depicted on that weapon and places them on the battlefield
+                      near the defender.
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference"
-                    >Declare Additional Defender:</strong
-                  >
+                  <strong>Declare Additional Defender:</strong>
                   If there are any weapons remaining that have not been added to
                   the attack pool, the player may repeat steps 1–2, forming a
                   separate attack pool with the new weapons.
@@ -1110,21 +1105,20 @@
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference">Roll Attack Dice:</strong>
+                  <strong>Roll Attack Dice:</strong>
                   The attacker chooses an attack pool and resolves the following
                   substeps in order:
                   <ol>
                     <li>
-                      <em class="keyword-reference">Roll Dice:</em> The attacker
-                      rolls the dice in the attack pool.
+                      <em>Roll Dice:</em> The attacker rolls the dice in the
+                      attack pool.
                     </li>
                     <li>
-                      <em class="keyword-reference">Reroll Dice:</em> The
-                      attacker can resolve any abilities that allow the attacker
-                      to reroll attack dice.
+                      <em>Reroll Dice:</em> The attacker can resolve any
+                      abilities that allow the attacker to reroll attack dice.
                     </li>
                     <li>
-                      <em class="keyword-reference">Convert Attack Surges:</em>
+                      <em>Convert Attack Surges:</em>
                       The attacker changes its attack surge (<img
                         class="game-icon"
                         src="img/legion-attack-surge.png"
@@ -1136,9 +1130,7 @@
                   </ol>
                 </li>
                 <li>
-                  <strong class="keyword-reference"
-                    >Apply Dodge and Cover:</strong
-                  >
+                  <strong>Apply Dodge and Cover:</strong>
                   If the defender has a dodge token or is in cover, the defender
                   may spend dodge tokens and apply cover to cancel hit (<img
                     class="game-icon"
@@ -1155,19 +1147,18 @@
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference">Modify Attack Dice:</strong>
+                  <strong>Modify Attack Dice:</strong>
                   The <strong>attacker</strong> can resolve any card abilities
                   that modify the attack dice. Then, the
                   <strong>defender</strong> can resolve any card abilities that
                   modify the attack dice.
                 </li>
                 <li>
-                  <strong class="keyword-reference">Roll Defense Dice:</strong>
+                  <strong>Roll Defense Dice:</strong>
                   Resolve the following substeps in order:
                   <ol>
                     <li>
-                      <em class="keyword-reference">Roll Dice:</em> For each hit
-                      (<img
+                      <em>Roll Dice:</em> For each hit (<img
                         class="game-icon"
                         src="img/legion-hit.png"
                         alt="Hit Symbol"
@@ -1180,12 +1171,11 @@
                       which is presented on the defender’s unit card.
                     </li>
                     <li>
-                      <em class="keyword-reference">Reroll Dice:</em> The
-                      defender can resolve any abilities that allow the defender
-                      to reroll defense dice.
+                      <em>Reroll Dice:</em> The defender can resolve any
+                      abilities that allow the defender to reroll defense dice.
                     </li>
                     <li>
-                      <em class="keyword-reference">Convert Defense Surges:</em>
+                      <em>Convert Defense Surges:</em>
                       The defender changes its defense surge (<img
                         class="game-icon"
                         src="img/legion-defense-surge.png"
@@ -1197,15 +1187,13 @@
                   </ol>
                 </li>
                 <li>
-                  <strong class="keyword-reference"
-                    >Modify Defense Dice:</strong
-                  >
+                  <strong>Modify Defense Dice:</strong>
                   The defender can resolve any card abilities that modify the
                   defense dice. Then, the attacker can resolve any card
                   abilities that modify the defense dice.
                 </li>
                 <li>
-                  <strong class="keyword-reference">Compare Results:</strong>
+                  <strong>Compare Results:</strong>
                   The attacker counts the number of hit (<img
                     class="game-icon"
                     src="img/legion-hit.png"
@@ -1232,9 +1220,7 @@
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference"
-                    >Choose Additional Attack Pool:</strong
-                  >
+                  <strong>Choose Additional Attack Pool:</strong>
                   If the attacker has an attack pool that he has not rolled, the
                   attacker repeats steps 4–9, choosing a new attack pool and
                   rolling it against the defender it has been assigned to.
@@ -3265,9 +3251,7 @@
               </p>
               <ol>
                 <li>
-                  <strong class="keyword-reference"
-                    >Select Command Card:</strong
-                  >
+                  <strong>Select Command Card:</strong>
                   Each player secretly selects a command card from their hand
                   and places it facedown on the table. Then, both players
                   simultaneously reveal their cards.
@@ -3281,7 +3265,7 @@
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference">Determine Priority:</strong>
+                  <strong>Determine Priority:</strong>
                   The player whose card has the fewest number of pips has
                   priority.
                   <ul>
@@ -3302,7 +3286,7 @@
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference">Issue Orders:</strong>
+                  <strong>Issue Orders:</strong>
                   Starting with the player who has priority, each player
                   nominates a friendly eligible commander or operative and
                   issues orders with that unit. The number of orders to be
@@ -3342,7 +3326,7 @@
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference">Create Order Pool:</strong>
+                  <strong>Create Order Pool:</strong>
                   Each player creates an order pool that consists of all of
                   their order tokens that they did not place on the battlefield
                   while resolving their command card.
@@ -4226,9 +4210,7 @@
               </ul>
               <ol>
                 <li>
-                  <strong class="keyword-reference"
-                    >Determine Number of Obscured Miniatures:</strong
-                  >
+                  <strong>Determine Number of Obscured Miniatures:</strong>
                   The player checks line of sight from the attacker’s unit
                   leader to each mini in the defending unit. If any part of a
                   defending mini, including its base, is blocked by a piece of
@@ -4277,11 +4259,10 @@
                   </ul>
                 </li>
                 <li>
-                  <strong class="keyword-reference">Determine Cover:</strong> If
-                  at least half of all of the defender’s minis are obscured,
-                  that unit has cover. The type of cover that unit has is
-                  determined by the object that is obscuring the minis, as
-                  follows:
+                  <strong>Determine Cover:</strong> If at least half of all of
+                  the defender’s minis are obscured, that unit has cover. The
+                  type of cover that unit has is determined by the object that
+                  is obscuring the minis, as follows:
                   <ul>
                     <li>
                       If the obscured minis are obscured by a ground vehicle,
@@ -5990,6 +5971,602 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Disengage -->
 
+          <!-- Displacement -->
+          <a href="#displacement"><button>Displacement</button></a>
+          <div id="displacement" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Displacement</h4>
+              <p>
+                When a ground vehicle or creature trooper moves through trooper
+                miniatures, it displaces them.
+              </p>
+              <ul>
+                <li>
+                  When a ground vehicle or creature trooper mini moves along the
+                  path created by a movement tool, if its base would overlap any
+                  trooper minis, those minis are displaced.
+                </li>
+                <li>
+                  When a repulsor vehicle mini’s final position would overlap
+                  one or more trooper minis during a
+                  <strong>compulsory</strong> move, those minis are displaced.
+                </li>
+                <li>
+                  Trooper units that are engaged cannot be displaced, and thus
+                  cannot be moved through by ground vehicles or creature
+                  troopers. Repulsor vehicles and other trooper units can move
+                  through engaged troopers.
+                  <ul>
+                    <li>
+                      Creature and emplacement troopers cannot be displaced, and
+                      thus cannot be moved through by ground vehicles and other
+                      creature troopers.
+                    </li>
+                    <li>
+                      While withdrawing, creature trooper minis
+                      <strong>can</strong> displace non-creature,
+                      non-emplacement trooper minis with which they are engaged.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  To displace a unit, players perform the following steps:
+                </li>
+              </ul>
+              <ol>
+                <li>
+                  <strong>Set Aside Minis:</strong> Any displaced minis are
+                  placed to the side of the battlefield without disrupting other
+                  minis or objects on the battlefield. If a unit leader is
+                  displaced, a player should mark its original position using a
+                  spare token.
+                </li>
+                <li>
+                  <strong>Move:</strong> The mini that displaced the trooper
+                  minis continues its move as normal, unimpeded by the minis it
+                  displaced.
+                </li>
+                <li>
+                  <strong>Place Units:</strong> The player who did not move that
+                  unit takes all of the displaced minis (both friendly and
+                  enemy) and places them back on the battlefield.
+                  <ul>
+                    <li>
+                      Each mini must be placed in cohesion with its unit leader.
+                    </li>
+                    <li>
+                      If a unit leader was displaced, it must be placed at
+                      speed-1 of its original position. After the leader is
+                      placed, any minis of that unit that are not in cohesion
+                      are placed in cohesion; this could cause a mini that was
+                      not displaced to be moved.
+                    </li>
+                    <li>
+                      When placing a displaced mini, it cannot be placed in base
+                      contact with an enemy mini.
+                    </li>
+                    <li>
+                      When placing a displaced mini, it must remain on its
+                      original elevation, if possible.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Gain Suppression:</strong> Each unit that had one or
+                  more minis displaced gains one suppression token.
+                  <ul>
+                    <li>
+                      A unit cannot gain more than one suppression token due to
+                      being displaced in a single activation, even if it is
+                      displaced multiple times that activation.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#cohesion" class="link-to-c">Cohesion</a>
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#engaged" class="link-to-e">Engaged</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Displacement -->
+
+          <!-- Distract -->
+          <a href="#distract"><button class="unit-keyword">Distract</button></a>
+          <div id="distract" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Distract (Unit Keyword)</h4>
+              <p>
+                A unit with the
+                <strong class="keyword-reference">distract</strong> keyword can
+                keep enemies occupied or provide valuable misdirection. As a
+                free card action, a unit with the
+                <strong class="keyword-reference">distract</strong> keyword can
+                choose an enemy trooper unit at range 1-2 and in line of sight;
+                until the end of that round, when the chosen enemy unit performs
+                an attack, it must attack the unit that used the
+                <strong class="keyword-reference">distract</strong> ability, if
+                able.
+              </p>
+              <ul>
+                <li>
+                  When a unit uses the
+                  <strong class="keyword-reference">distract</strong> ability,
+                  it loses the
+                  <strong class="keyword-reference">inconspicuous</strong>
+                  keyword until the end of the round, if able.
+                </li>
+                <li>
+                  While attacking, each mini in the enemy unit must add an
+                  eligible weapon to the attack pool that is targeting the unit
+                  that used the
+                  <strong class="keyword-reference">distract</strong> ability,
+                  if able.
+                  <ul>
+                    <li>
+                      A unit, or mini, cannot “choose” a weapon that is not
+                      eligible to be added to that dice pool if it can add a
+                      different weapon that is eligible.
+                    </li>
+                    <li>
+                      The attacking unit can only form a second dice pool if,
+                      after first forming a dice pool with all eligible weapons,
+                      there are still weapons usable by any minis in the unit
+                      that were not eligible to be added to the first attack
+                      pool targeting the unit that used the
+                      <strong class="keyword-reference">distract</strong>
+                      ability.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#inconspicuous" class="link-to-i">Inconspicuous</a>
+                <a href="#line-of-sight" class="link-to-l">Line of Sight</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Distract -->
+
+          <!-- Divulge -->
+          <a href="#divulge"><button>Divulge</button></a>
+          <div id="divulge" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Divulge (Command Keyword)</h4>
+              <p>
+                Some command cards have the
+                <strong class="keyword-reference">divulge</strong> keyword.
+                These cards can be revealed at the start of the Phase or step
+                stated after the
+                <strong class="keyword-reference">divulge</strong> keyword on
+                the command card.
+              </p>
+              <p>
+                If a card is divulged in this manner, resolve the text that
+                follows the
+                <strong class="keyword-reference">divulge</strong> keyword.
+              </p>
+              <ul>
+                <li>
+                  A card that is revealed in this way is not played, and is
+                  returned to that player’s command had at the end of the step
+                  in which it was divulged.
+                </li>
+                <li>
+                  If both players have command cards with the same
+                  <strong class="keyword-reference">divulge</strong> keyword
+                  timing, the blue player has the opportunity to reveal their
+                  command card first. If this opportunity is declined, the card
+                  can no longer be divulged.
+                </li>
+                <li>
+                  Command cards that contain the
+                  <strong class="keyword-reference">divulge</strong> keyword are
+                  divided by a horizontal line. This line serves to visually
+                  separate the
+                  <strong class="keyword-reference">divulge</strong> keyword
+                  effect from the normal command card effect.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#command-cards" class="link-to-c">Command Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- Divulge -->
+
+          <!-- Djem So Mastery -->
+          <a href="#djem-so-mastery"
+            ><button class="unit-keyword">Djem So Mastery</button></a
+          >
+          <div id="djem-so-mastery" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Djem So Mastery (Unit Keyword)</h4>
+              <p>
+                The lightsaber form of djem so, while seemingly a defensive
+                form, is often favored by more aggressively minded Jedi. For a
+                djem so master, each strike by an opponent is an opportunity for
+                a parry and a devastating counter blow. While a unit with the
+                <strong class="keyword-reference">djem so mastery</strong>
+                keyword is defending, if it spends a dodge token, its surge
+                conversion chart gains “<img
+                  class="game-icon"
+                  src="img/legion-defense-surge.png"
+                  alt="Defense Surge Symbol"
+                />
+                :
+                <img
+                  class="game-icon"
+                  src="img/legion-block.png"
+                  alt="Block Symbol"
+                />,” and if at least one hit (<img
+                  class="game-icon"
+                  src="img/legion-hit.png"
+                  alt="Hit Symbol"
+                />) or critical (<img
+                  class="game-icon"
+                  src="img/legion-crit.png"
+                  alt="Crit Symbol"
+                />) result is canceled, the attacker suffers one wound during
+                the “Apply Dodge and Cover” step.
+              </p>
+              <ul>
+                <li>
+                  The defender must spend at least one dodge token and at least
+                  one hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="Crit Symbol"
+                  />) result must be canceled during the “Apply Dodge and Cover”
+                  step of the attack in order for the attacker to suffer one
+                  wound.
+                  <ul>
+                    <li>
+                      If all hit (<img
+                        class="game-icon"
+                        src="img/legion-hit.png"
+                        alt="Hit Symbol"
+                      />) results would be canceled by cover, the defender can
+                      still spend a dodge token in order to gain the benefits of
+                      <strong class="keyword-reference">djem so mastery</strong
+                      >, including causing the attacker to suffer one wound.
+                    </li>
+                    <li>
+                      If the attack pool contains only critical (<img
+                        class="game-icon"
+                        src="img/legion-crit.png"
+                        alt="Crit Symbol"
+                      />) results at the start of the “Apply Dodge and Cover”
+                      step, and the defender is unable to cancel critical (<img
+                        class="game-icon"
+                        src="img/legion-crit.png"
+                        alt="Crit Symbol"
+                      />) results, the defender can still spend a dodge token to
+                      gain “<img
+                        class="game-icon"
+                        src="img/legion-defense-surge.png"
+                        alt="Defense Surge Symbol"
+                      />
+                      :
+                      <img
+                        class="game-icon"
+                        src="img/legion-block.png"
+                        alt="Block Symbol"
+                      />.” The attacker does not suffer a wound, since no hit
+                      (<img
+                        class="game-icon"
+                        src="img/legion-hit.png"
+                        alt="Hit Symbol"
+                      />) or critical (<img
+                        class="game-icon"
+                        src="img/legion-crit.png"
+                        alt="Crit Symbol"
+                      />) results were canceled.
+                    </li>
+                    <li>
+                      If a unit has the outmaneuver keyword, it can spend dodge
+                      tokens to cancel critical (<img
+                        class="game-icon"
+                        src="img/legion-crit.png"
+                        alt="Crit Symbol"
+                      />) results.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  The
+                  <strong class="keyword-reference">djem so mastery</strong>
+                  keyword can be used during any type of attack, including both
+                  ranged and melee.
+                </li>
+                <li>
+                  If
+                  <strong class="keyword-reference">djem so mastery</strong> is
+                  used against an attack that includes the immune: deflect
+                  keyword, it cannot cause wounds to the attacker.
+                </li>
+                <li>
+                  A unit must spend a dodge token to gain the benefits of the
+                  <strong class="keyword-reference">djem so mastery</strong>
+                  keyword. Spending this dodge token cancels one hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) result as normal. The unit may spend additional dodge
+                  tokens to cancel additional hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) results; however, doing so does not improve or add to the
+                  benefits of the
+                  <strong class="keyword-reference">djem so mastery</strong>
+                  keyword and does not cause additional wounds to the attacker.
+                </li>
+                <li>
+                  If a unit uses the
+                  <strong class="keyword-reference">djem so mastery</strong>
+                  keyword during an attack, it is possible for the attacker to
+                  be defeated during the “Apply Dodge and Cover” step. If the
+                  <strong class="keyword-reference">djem so mastery</strong>
+                  keyword inflicts a wound that causes the attacker to be
+                  defeated, the attack still continues and the defender can
+                  still suffer wounds.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#cancel" class="link-to-c">Cancel</a>
+                <a href="#dodge">Dodge</a>
+                <a href="#immune-deflect" class="link-to-i">Immune Deflect</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Djem So Mastery -->
+
+          <!-- dodge -->
+          <a href="#dodge"><button>Dodge</button></a>
+          <div id="dodge" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Dodge</h4>
+              <div class="aside">
+                <img src="img/legion-dodge.png" alt="Dodge Token" />
+                <p>Dodge Token</p>
+              </div>
+              <p>
+                Units can gain dodge tokens that allow them to cancel hit
+                results during an attack.
+              </p>
+              <ul>
+                <li>
+                  When a unit performs a dodge action, that unit gains a dodge
+                  token. The token is placed on the battlefield near the unit
+                  leader and will remain with the unit as it moves around the
+                  battlefield.
+                </li>
+                <li>
+                  During the “Apply Dodge and Cover” step of an attack, a unit
+                  can spend one or more dodge tokens to cancel one hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) result for each dodge token spent.
+                </li>
+                <li>
+                  Dodge tokens cannot be spent to cancel critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="Crit Symbol"
+                  />) results.
+                </li>
+                <li>
+                  To spend a unit’s dodge token, a player removes it from the
+                  battlefield and places it in the supply.
+                </li>
+                <li>
+                  During the End Phase, all of a unit’s unspent dodge tokens are
+                  removed from the battlefield.
+                </li>
+                <li>
+                  When a unit spends a dodge token to trigger the
+                  <strong class="keyword-reference">deflect</strong> keyword,
+                  that unit also receives the benefit of that dodge token in
+                  addition to the effects of
+                  <strong class="keyword-reference">deflect</strong>.
+                </li>
+                <li>
+                  Unit abilities and other effects can allow units to gain dodge
+                  tokens. If an effect specifically instructs a unit to gain a
+                  dodge token, that effect is different than performing a dodge
+                  action and therefore does not trigger abilities that occur
+                  after dodge actions are performed.
+                </li>
+                <li>
+                  During a unit’s activation, it is possible for a unit to gain
+                  more than one dodge token; however, that unit can only gain
+                  one dodge token from performing a dodge action during a single
+                  activation.
+                </li>
+                <li>
+                  A unit may spend a dodge token even if there are no hits to
+                  cancel.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#cancel" class="link-to-c">Cancel</a>
+
+                <a href="#dice">Dice</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Dodge -->
+
+          <!-- Droid Trooper -->
+          <a href="#droid-trooper"><button>Droid Trooper</button></a>
+          <div id="droid-trooper" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Droid Trooper</h4>
+              <p>
+                A droid trooper is a type of unit. It is a subtype of the
+                trooper unit type.
+              </p>
+              <ul>
+                <li>
+                  Any game effect that targets or applies to troopers can target
+                  or apply to droid troopers.
+                </li>
+                <li>
+                  Droid trooper units follow the same rules as trooper units
+                  with the following exceptions:
+                  <ul>
+                    <li>
+                      A droid trooper unit does not improve its cover while it
+                      has one or more suppression tokens.
+                    </li>
+                    <li>
+                      A droid trooper unit cannot be suppressed, though it gains
+                      suppression tokens as normal and can still panic.
+                    </li>
+                    <li>
+                      A droid trooper unit cannot gain or resolve poison tokens.
+                    </li>
+                    <li>
+                      A droid trooper unit is treated as a vehicle when gaining
+                      and resolving ion tokens, and when it is the target of an
+                      attack that includes the
+                      <strong class="keyword-reference">ion x</strong> keyword.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#ion-tokens" class="link-to-i">Ion Tokens</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- End Droid Trooper -->
+
+          <!-- Dual Sided Cards -->
+          <a href="#dual-sided-cards"><button>Dual Sided Cards</button></a>
+          <div id="dual-sided-cards" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Dual Sided Cards</h4>
+              <p>
+                Some upgrade cards are dual sided; these cards represent a
+                weapon, piece of gear, or special training that has two
+                different modes or states.
+              </p>
+              <ul>
+                <li>
+                  When building an army, if a player includes a dual sided
+                  upgrade card, only the points cost on one side of the card
+                  count toward the points in their army (both sides always have
+                  the same printed points cost).
+                </li>
+                <li>
+                  When deploying a unit equipped with a dual sided upgrade card,
+                  the player that controls that unit decides what side of the
+                  card is faceup.
+                </li>
+                <li>
+                  During a game, only the faceup side of a dual sided card is
+                  active and allowed to be used.
+                </li>
+                <li>
+                  Some dual sided cards have abilities, such as the
+                  <strong class="keyword-reference">reconfigure</strong>
+                  keyword, that allow the card to be flipped to a different
+                  side.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#reconfigure" class="link-to-r">Reconfigure</a>
+
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Dual Sided Cards -->
+
+          <!-- Duelist -->
+          <a href="#duelist"><button class="unit-keyword">Duelist</button></a>
+          <div id="duelist" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Duelist (Unit Keyword)</h4>
+              <p>
+                Skilled practitioners of the fighting arts, units with the
+                <strong class="keyword-reference">duelist</strong> keyword are
+                able to improve their capabilities in melee combat.
+              </p>
+              <ul>
+                <li>
+                  While a unit with the
+                  <strong class="keyword-reference">duelist</strong> keyword
+                  performs a melee attack, if it spends 1 or more aim tokens
+                  during the Roll Attack Dice step, the attack pool gains the
+                  <strong class="keyword-reference">pierce 1</strong> keyword.
+                </li>
+                <li>
+                  While a unit with the
+                  <strong class="keyword-reference">duelist</strong> keyword
+                  defends against a melee attack, if it spends at least 1 dodge
+                  token during the Apply Dodge and Cover step, it gains the
+                  <strong class="keyword-reference">immune: pierce</strong>
+                  keyword.
+                </li>
+                <li>
+                  The unit with the
+                  <strong class="keyword-reference">duelist</strong> keyword
+                  gains these effects in addition to the normal effects of
+                  spending aim and dodge tokens.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim" class="link-to-A">Aim</a>
+
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#dodge">Dodge</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Duelist -->
+
           <!-- PASTE THIS FOR NEW ENTRY
 
              <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
@@ -6024,7 +6601,628 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
       <div class="e-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
-          <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <!-- Embark and Disembark -->
+          <a href="#embark-and-disembark"
+            ><button>Embark and Disembark</button></a
+          >
+          <div id="embark-and-disembark" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Embark and Disembark (Unit Keyword)</h4>
+              <p>
+                Embarking and disembarking are types of moves that allow a unit
+                to enter or exit a vehicle with the
+                <strong class="keyword-reference">transport x</strong> or
+                <strong class="keyword-reference">light transport x</strong>
+                keyword.
+              </p>
+              <p>
+                To embark into a transport with the
+                <strong class="keyword-reference">transport x: open</strong>
+                keyword, a unit uses 1 action to perform a speed-1 move that
+                puts its unit leader into base contact with a friendly vehicle
+                that can transport that type of unit.
+              </p>
+              <p>
+                To embark into a transport with the
+                <strong class="keyword-reference">transport x: closed</strong>
+                keyword, a unit spends its entire activation to perform a
+                speed-1 move that puts its unit leader into base contact with a
+                friendly vehicle that can transport that type of unit.
+              </p>
+              <p>
+                Then, the unit is removed from the battlefield and a pair of ID
+                tokens are placed, one near the base of the vehicle and one next
+                to the unit, to indicate that the unit is being transported by
+                that vehicle, and its activation ends.
+              </p>
+              <p>
+                To disembark, a unit that is being transported uses 1 action to
+                place its unit leader in base contact with the vehicle and then
+                performs a speed–1 move with the unit.
+              </p>
+              <ul>
+                <li>
+                  When a unit embarks, any tokens that unit has are moved off
+                  the battlefield with the unit. That unit still has those
+                  tokens.
+                </li>
+                <li>
+                  When a unit disembarks, any tokens that were moved off the
+                  battlefield with the unit are placed back on the battlefield
+                  next to the unit. That unit still has those tokens.
+                </li>
+                <li>
+                  When a unit disembarks, if the vehicle that is transporting
+                  that unit has performed more than one standard move or reverse
+                  during the current round, disembarking uses that unit’s entire
+                  activation and it cannot perform additional actions or any
+                  free actions.
+                </li>
+                <li>
+                  A unit that is disembarking cannot be placed into base contact
+                  with any enemy units.
+                  <ul>
+                    <li>
+                      A unit leader cannot be placed into base contact with an
+                      enemy unit when beginning a disembark move.
+                    </li>
+                    <li>
+                      While performing the speed–1 move, a unit cannot move into
+                      base contact with an enemy unit.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Any abilities that trigger after a unit performs a move
+                  trigger after a unit embarks or disembarks, if able.
+                </li>
+                <li>
+                  Any abilities that trigger after a unit performs a move action
+                  trigger after a unit performs a move action to embark or
+                  disembark, if able.
+                </li>
+                <li>
+                  A unit cannot both embark and disembark during the same
+                  activation.
+                </li>
+                <li>
+                  Units that have a maximum speed of 0 cannot embark or
+                  disembark.
+                </li>
+                <li>
+                  Units that have the
+                  <strong class="keyword-reference">stationary</strong> keyword
+                  cannot embark or disembark.
+                </li>
+                <li>
+                  A unit with a claimed objective token cannot embark or
+                  disembark.
+                </li>
+                <li>Embarking and disembarking are not standard moves.</li>
+                <li>
+                  If a game effect allows or forces a unit to perform a speed–x
+                  move, it cannot use that move to embark or disembark.
+                </li>
+                <li>
+                  A unit that is being transported can use its standby token to
+                  disembark.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#light-transport-x-open-closed" class="link-to-l"
+                  >Light Transport: X Open/Closed</a
+                >
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#transport-x-open-closed" class="link-to-t"
+                  >Transport X: Open/Closed</a
+                >
+                <a href="#transported" class="link-to-t">Transported</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Embark and Disembark -->
+
+          <!-- Emplacement Trooper -->
+          <a href="#emplacement-trooper"
+            ><button>Emplacement Trooper</button></a
+          >
+          <div id="emplacement-trooper" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Emplacement Trooper</h4>
+              <p>
+                An emplacement trooper is a type of unit. It is a subtype of the
+                trooper unit type.
+              </p>
+              <ul>
+                <li>
+                  Any game effect that targets or applies to troopers can target
+                  or apply to emplacement troopers.
+                </li>
+                <li>
+                  Emplacement trooper units follow the same rules as trooper
+                  units with the following exceptions:
+                  <ul>
+                    <li>
+                      Emplacement troopers are affixed to either a medium,
+                      large, or huge notched base.
+                    </li>
+                    <li>
+                      When an emplacement trooper performs a standard move, the
+                      player inserts the movement tool into the front notch of
+                      the mini’s base.
+                    </li>
+                    <li>
+                      Emplacement troopers can obscure other minis, and provide
+                      light cover when doing so.
+                    </li>
+                    <li>Emplacement troopers cannot climb or clamber.</li>
+                    <li>Emplacement troopers can pivot and reverse.</li>
+                    <li>
+                      Emplacement troopers cannot use the
+                      <strong class="keyword-reference">claim</strong> or
+                      <strong class="keyword-reference">sabotage/repair</strong>
+                      abilities.
+                    </li>
+                    <li>Emplacement troopers cannot be displaced.</li>
+                    <li>
+                      Ground vehicles cannot move through emplacement troopers.
+                    </li>
+                    <li>
+                      Another unit cannot end a compulsory move overlapping an
+                      emplacement trooper.
+                    </li>
+                    <li>
+                      When an emplacement trooper withdraws, it can perform free
+                      actions and use abilities. It must still spend all
+                      available actions and performs a speed-1 move.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Emplacement Trooper -->
+
+          <!-- End Phase -->
+          <a href="#end-phase"><button>End Phase</button></a>
+          <div id="end-phase" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>End Phase</h4>
+              <p>
+                In the End Phase, players prepare for the next round. In order
+                to resolve the End Phase, players perform the following steps in
+                order:
+              </p>
+              <ol>
+                <li>
+                  <strong>Discard Command Card:</strong> Each player discards
+                  their revealed command card; it cannot be used again this
+                  game.
+                  <ul>
+                    <li>
+                      If a player used the “Standing Orders” command card or was
+                      unable to play a command card this round, they will not
+                      have a card to discard.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Remove Tokens:</strong> Players remove all aim, dodge,
+                  and standby tokens from their units, as well as one
+                  suppression token from each unit.
+                </li>
+                <li>
+                  <strong>Update Order Pool and Promote:</strong> Each player
+                  places one of their order tokens on each of their undefeated
+                  units’ cards with a matching rank.
+                  <ul>
+                    <li>
+                      Excess order tokens are removed from the game. If all of a
+                      player’s commanders were defeated, starting with the blue
+                      player, players must promote a unit leader from one of
+                      their trooper units to be a commander, placing the
+                      commander token in the play area next to that mini. Then,
+                      that unit’s original order token is discarded, and a
+                      commander order token is placed on that unit’s card in its
+                      place.
+                    </li>
+                    <li>
+                      In the rare instance where a player no longer has a
+                      trooper unit to promote, they no longer have a commander
+                      and cannot play command cards.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Advance Round Counter:</strong> The player who has the
+                  round counter sets it so the next highest number is displayed;
+                  that is the number of the next round. Then, that player passes
+                  the round counter to their opponent.
+                  <ul>
+                    <li>After the sixth game round, the game ends.</li>
+                  </ul>
+                </li>
+              </ol>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#command-cards" class="link-to-c">Command Cards</a>
+                <a href="#commander" class="link-to-c">Commander</a>
+                <a href="#defeated" class="link-to-d">Defeated</a>
+                <a href="#order-tokens" class="link-to-o">Order Tokens</a>
+                <a href="#round" class="link-to-r">Round</a>
+                <a href="#round-counter" class="link-to-r">Round Counter</a>
+                <a href="#winning-the-game" class="link-to-w"
+                  >Winning the Game</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- End End Phase -->
+
+          <!-- Enemy -->
+          <a href="#enemy"><button>Enemy</button></a>
+          <div id="enemy" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Enemy</h4>
+              <p>
+                Any units controlled by a player’s opponent are enemy units for
+                that player.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#friendly" class="link-to-f">Friendly</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Enemy -->
+
+          <!-- Engaged -->
+          <a href="#engaged"><button>Engaged</button></a>
+          <div id="engaged" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Engaged</h4>
+              <p>
+                While a trooper unit is in a melee with another trooper unit,
+                those units are engaged. A unit that is engaged cannot perform
+                moves, cannot be displaced, cannot perform ranged attacks, and
+                cannot be targeted by ranged attacks, except from area weapons.
+              </p>
+              <ul>
+                <li>
+                  Trooper units can only be engaged with other trooper units.
+                  Trooper units cannot be engaged with vehicles, and vehicles
+                  cannot be engaged with other vehicles, even if both units are
+                  in a melee.
+                </li>
+                <li>
+                  If a trooper unit is engaged, it can leave that melee by
+                  withdrawing during its activation. For additional rules, see
+                  <strong class="keyword-reference"
+                    ><a src="#withdraw" class="link-to-w">Withdraw</a></strong
+                  >
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#melee" class="link-to-m">Melee</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Engaged -->
+
+          <!-- Enrage -->
+          <a href="#enrage-x"><button class="unit-keyword">Enrage X</button></a>
+          <div id="enrage-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Enrage X (Unit Keyword)</h4>
+              <p>
+                While a unit with the
+                <strong class="keyword-reference">enrage x</strong> keyword has
+                wound tokens equal to or exceeding x, treat that unit’s courage
+                value as “–” and that unit gains the
+                <strong class="keyword-reference">keyword</strong>.
+              </p>
+              <ul>
+                <li>
+                  If a unit with
+                  <strong class="keyword-reference">enrage x</strong> has wound
+                  tokens equal to or exceeding x, but then removes wound tokens
+                  through other game effects, such that it has fewer wound
+                  tokens than x, it no longer benefits from the
+                  <strong class="keyword-reference">enrage x</strong> keyword.
+                </li>
+                <li>
+                  While a unit’s courage value is treated as “–” it cannot gain
+                  suppression tokens. Remove any suppression tokens it had
+                  before its courage value was treated as “–”.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#courage" class="link-to-c">Courage</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#wounds" class="link-to-w">Wounds</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Enrage -->
+
+          <!-- Entourage: Unit Name -->
+          <a href="#entourage-unit-name"
+            ><button class="unit-keyword">Entourage: Unit Name</button></a
+          >
+          <div id="entourage-unit-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Entourage: Unit Name (Unit Keyword)</h4>
+              <p>
+                The <strong class="keyword-reference">entourage</strong> keyword
+                indicates that a unit is often accompanied or protected by
+                another specific unit. The
+                <strong class="keyword-reference">entourage</strong> keyword
+                specifically states the name of this other unit. When building
+                an army, if a player includes a unit with the
+                <strong class="keyword-reference">entourage</strong> keyword,
+                they may ignore the rank (but not points value) of a unit that
+                has the name specified by the
+                <strong class="keyword-reference">entourage</strong> keyword.
+                Ignoring the rank of a unit means that the unit’s rank does not
+                count against the rank restrictions for building an army. This
+                may cause an army to have more units of a specific rank than the
+                rules for building an army normally allow; because of the
+                <strong class="keyword-reference">entourage</strong> keyword,
+                such an army still meets the rules for building an army of that
+                type.
+              </p>
+              <p>
+                Each Command Phase, during the Issue Orders step, a unit with
+                the <strong class="keyword-reference">entourage</strong> keyword
+                may issue an order to a friendly unit at range 1–2 that has the
+                name specified by the
+                <strong class="keyword-reference">entourage</strong> keyword.
+              </p>
+              <ul>
+                <li>
+                  Orders issued with the
+                  <strong class="keyword-reference">entourage</strong> keyword
+                  are considered to be issued by the unit that has the
+                  <strong class="keyword-reference">entourage</strong> keyword.
+                </li>
+                <li>
+                  Game effects that trigger when a unit is issued an order, such
+                  as those on command cards, trigger when a unit is issued an
+                  order by the
+                  <strong class="keyword-reference">entourage</strong> keyword.
+                </li>
+                <li>
+                  Game effects that alter the range at which a unit issues
+                  orders or can be issued orders, such as from upgrade cards,
+                  can effect the range of the
+                  <strong class="keyword-reference">entourage</strong> keyword.
+                </li>
+                <li>
+                  When issuing an order via the
+                  <strong class="keyword-reference">entourage</strong> keyword,
+                  the order <strong>must</strong> be issued to a unit that has
+                  the name specified by the
+                  <strong class="keyword-reference">entourage</strong> keyword,
+                  however other game effects that trigger
+                  <strong>when</strong> a unit is issued an order may cause the
+                  order to be issued to a different unit instead.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#command-phase" class="link-to-c">Command Phase</a>
+                <a href="#issuing-orders" class="link-to-i">Issuing Orders</a>
+                <!-- See Army Building on page 5 ADD THIS LATER -->
+              </p>
+            </div>
+          </div>
+          <!-- End Entourage Unit Name -->
+
+          <!-- Equip -->
+          <a href="#equip"><button class="unit-keyword">Equip</button></a>
+          <div id="equip" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Equip (Unit Keyword)</h4>
+              <p>
+                Some unit cards feature the
+                <strong class="keyword-reference">equip</strong> keyword. During
+                army building, when a unit card with this keyword is chosen, it
+                must <strong class="keyword-reference">equip</strong> the
+                upgrade cards listed after its equip keyword.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <!-- see army building on page 5 ADD THIS LATER -->
+              </p>
+            </div>
+          </div>
+          <!-- End Equip -->
+
+          <!-- Exemplar -->
+          <a href="#exemplar"><button class="unit-keyword">Exemplar</button></a>
+          <div id="exemplar" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Exemplar (Unit Keyword)</h4>
+              <p>
+                Some heroes lead by example. Friendly units can spend the green
+                tokens of a friendly unit that has the
+                <strong class="keyword-reference">exemplar</strong> keyword and
+                is at range 1–2 and in line of sight.
+              </p>
+              <ul>
+                <li>
+                  Green tokens include aim, dodge, standby, and surge tokens.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim" class="link-to-A">Aim</a>
+                <a href="#dodge" class="link-to-d">Dodge</a>
+                <a href="#standby" class="link-to-s">Standby</a>
+                <a href="#surge-tokens" class="link-to-s">Surge Tokens</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- End Exemplar -->
+
+          <!-- Exhaust -->
+          <a href="#exhaust"><button>Exhaust</button></a>
+          <div id="exhaust" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Exhaust</h4>
+              <div class="aside">
+                <img src="img/legion-exhaust-on-cards.PNG" alt="Exhaust Icon" />
+                <p>Exhaust Icon</p>
+              </div>
+              <p>
+                A player must exhaust some upgrade cards to resolve the
+                abilities on those cards. An exhausted card cannot be exhausted
+                again until it is readied.
+              </p>
+              <ul>
+                <li>
+                  If a card has an exhaust icon on the right side above its game
+                  text, it requires the player to exhaust it in order to use its
+                  abilities.
+                </li>
+                <li>
+                  To exhaust a card, a player rotates it 90º clockwise so it is
+                  oriented horizontally.
+                </li>
+                <li>
+                  When a unit performs a recover action, all of its exhausted
+                  upgrade cards are readied.
+                </li>
+                <li>
+                  To ready an exhausted card, a player rotates it 90º
+                  counterclockwise so it is oriented vertically.
+                </li>
+                <li>All upgrade cards begin the game readied.</li>
+                <li>
+                  A card that does not have an exhaust icon cannot be exhausted.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#card-actions" class="link-to-c">Card Actions</a>
+                <a href="#free-card-actions" class="link-to-f"
+                  >Free Card Actions</a
+                >
+                <a href="#recover" class="link-to-r">Recover</a>
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+          <!-- end Exhaust -->
+
+          <!-- Expend -->
+          <a href="#expend"><button>Expend</button></a>
+          <div id="expend" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Expend</h4>
+              <div class="aside">
+                <img src="img/legion-expend.PNG" alt="Expend Icon" />
+                <p>Expend Icon</p>
+              </div>
+              <p>
+                A player must expend some upgrade cards to resolve the abilities
+                on those cards. Once a card is expended, it cannot be used again
+                for the rest of that game.
+              </p>
+              <ul>
+                <li>
+                  If a card has an expend icon, it requires the player to expend
+                  it in order to use its abilities.
+                </li>
+                <li>
+                  To expend a card, a player rotates it 180º so it is oriented
+                  upside down. This indicates that the card has been expended.
+                </li>
+                <li>Expended cards cannot be unexpended by any game effect.</li>
+                <li>All upgrade cards begin the game unexpended.</li>
+                <li>
+                  A card that does not have an expend icon cannot be expended.
+                </li>
+                <li>
+                  The points value of expended cards equipped to units that are
+                  defeated are still counted when determining the total points
+                  value of defeated units.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+
+                <a href="#exhaust">Exhaust</a>
+
+                <a href="#supply-deck" class="link-to-s">Supply Deck</a>
+                <a href="#upgrade-cards" class="link-to-u">UPgrade Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Expend -->
+
+          <!-- Expert Climber -->
+          <a href="#expert-climber"
+            ><button class="unit-keyword">Expert Climber</button></a
+          >
+          <div id="expert-climber" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Expert Climber (Unit Keyword)</h4>
+              <p>
+                Units that have the
+                <strong class="keyword-reference">expert climber</strong>
+                keyword are adept at quickly scaling vertical surfaces. When a
+                unit that has the expert climber keyword clambers, it does not
+                roll any white defense dice to suffer wounds.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+
+                <a href="#climb-and-clamber" class="link-to-c"
+                  >Climb and Clamber</a
+                >
+                <a href="#height" class="link-to-h">Height</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <!-- see vertical movement on page 10 ADD THIS LATER -->
+              </p>
+            </div>
+          </div>
+          <!-- End Expert Climber -->
+
+          <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
           <div id="rrg-entry-name" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6044,21 +7242,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
               </p>
             </div>
           </div>
-          <!-- PASTE THIS FOR NEW ENTRY
-
-          <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-        <div id="rrg-entry-name" class="entry hidden">
-          <a href="#a" class="entry-close"></a>
-          <div class="entry-dialog">
-            <h4>RRG Entry Name</h4>
-            <p>RRG TEXT CONTENT GOES HERE</p>
-            <p class="related-topics">
-              <strong class="keyword-reference"> Related Topics:</strong>
-              <a href="#actions">Actions</a>
-              <a href="#courage">Courage</a>
-            </p>
-          </div>
-        </div>
 
           -->
 
@@ -6071,35 +7254,52 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
       <div class="f-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
-          <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <!-- Factions -->
+          <a href="#factions"><button>Factions</button></a>
+          <div id="factions" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Factions</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- End Factions -->
+
+          <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
           <div id="rrg-entry-name" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>RRG Entry Name</h4>
               <p>RRG TEXT CONTENT GOES HERE</p>
               <p class="related-topics">
-                <strong class="keyword-reference"> Related Topics:</strong>
-                <a href="#actions">Actions</a>
-                <a href="#courage">Courage</a>
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
               </p>
             </div>
           </div>
-
-          <!-- PASTE THIS FOR NEW ENTRY
-
-          <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-        <div id="rrg-entry-name" class="entry hidden">
-          <a href="#a" class="entry-close"></a>
-          <div class="entry-dialog">
-            <h4>RRG Entry Name</h4>
-            <p>RRG TEXT CONTENT GOES HERE</p>
-            <p class="related-topics">
-              <strong class="keyword-reference"> Related Topics:</strong>
-              <a href="#actions">Actions</a>
-              <a href="#courage">Courage</a>
-            </p>
-          </div>
-        </div>
 
           -->
 
