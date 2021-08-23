@@ -8144,22 +8144,577 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>ID Tokens</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
+              <div class="aside"><img src="img/legion-id-tokens.png" alt="ID Tokens" /><p>ID Tokens</p></div>
+              <p>ID tokens help players keep track of multiple
+                units of the same type that have different
+                upgrade cards. When deploying such units,
+                place a unique ID token near the base of the
+                unit leader of each unit. Then, place each unit’s
+                matching ID token on its corresponding card.</p>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack" class="link-to-A">Attack</a>
-                <a href="#barricades" class="link-to-b">Barricades</a>
-                <a href="#base" class="link-to-b">Base</a>
-                <a href="#base-contact" class="link-to-b">Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice" class="link-to-d">Dice</a>
-                <a href="#suppression" class="link-to-s">Suppression</a>
-                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+                <a href="#army-building" class="link-to-A">Army Building</a>
+                <a href="#setup" class="link-to-s">Setup</a>
               </p>
             </div>
           </div>
           <!-- END ID Tokens -->
+
+          <!-- Immobilize Tokens -->
+          <a href="#immobilize-tokens"><button>Immobilize Tokens</button></a>
+          <div id="immobilize-tokens" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immobilize Tokens</h4>
+              <div class="aside"><img src="img/legion-immobilize.png" alt="Immobilize Token" /><p>Immobilize Token</p></div>
+              <p>A unit’s maximum speed is reduced by 1 for
+                each immobilize token it has. A unit whose
+                maximum speed is 0 and has at least one
+                immobilize token cannot perform moves of
+                any kind. At the end of a unit’s activation, it
+                removes any immobilize tokens that it has.</p>
+                <ul>
+                  <li>A unit with 1 or more immobilize tokens
+                    can still perform "speed–x" moves or have "speed–x" moves
+                    performed with it through effects that occur outside of its
+                    activation, even if its maximum speed is 0.</li>
+                  <li>When a unit performs a move, apply any effects that
+                    increase the unit’s maximum speed (up to speed 3), before
+                    applying any effects that reduce that unit’s maximum speed.</li>
+
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#activating-units" class="link-to-A">Activating Units</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Immobilize Tokens -->
+
+          <!-- Immobilize X -->
+          <a href="#immobilize-x"><button>Immobilize X</button></a>
+          <div id="immobilize-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immobilize X (Weapon Keyword)</h4>
+              <p>The <strong class="keyword-reference">immobilize x</strong> keyword is used to force enemy units to gain immobilize tokens.</p>
+              <ul>
+                <li>A unit that suffers one or more wounds after defending against an attack that includes a weapon that has the <strong class="keyword-reference">immobilize x</strong> keyword gains x immobilize tokens.</li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#activating-units" class="link-to-A">Activating Units</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Immobilize X -->
+
+          <!-- Immune: Blast -->
+          <a href="#immune-blast"><button class="unit-keyword">Immune: Blast</button></a>
+          <div id="immune-blast" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immune: Blast (Unit Keyword)</h4>
+              <p>While a unit with the <strong class="keyword-reference">immune: blast</strong> keyword is defending, the effects of the <strong class="keyword-reference">blast</strong> keyword are ignored.</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#blast" class="link-to-b">Blast</a>
+                <a href="#cover" class="link-to-c">Cover</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Immune: Blast -->
+
+          <!-- immune: deflect -->
+          <a href="#immune-deflect"><button class="unit-keyword">Immune: Deflect</button></a>
+          <div id="immune-deflect" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immune: Deflect (Unit Keyword)</h4>
+              <p>During an attack that includes a weapon with the <strong class="keyword-reference">immune: deflect</strong> keyword, if the only weapons in the attack pool are weapons with the <strong class="keyword-reference">immune: deflect</strong> keyword, the attacking unit cannot suffer wounds due to the defending unit using the <strong class="keyword-reference">deflect</strong>, <strong class="keyword-reference">djem so mastery</strong>, or <strong class="keyword-reference">soresu mastery</strong> abilities.</p>
+                <ul>
+                  <li>The defending unit can still gain the benefits of the other
+                    effects of the <strong class="keyword-reference">deflect</strong>, <strong class="keyword-reference">djem so mastery</strong>, and <strong class="keyword-reference">soresu mastery</strong> keywords.</li>
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#deflect" class="link-to-d">Deflect</a>
+                
+              </p>
+            </div>
+          </div>
+          <!-- End Immune: Deflect -->
+
+          <!-- Immune: Enemy Effects -->
+          <a href="#immune-enemy-effects"><button class="unit-keyword">Immune: Enemy Effects</button></a>
+          <div id="immune-enemy-effects" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immune: Enemy Effects (Unit Keyword)</h4>
+              <p>A unit with the <strong class="keyword-reference">immune: enemy effects</strong> keyword ignores all enemy card effects and cannot be targeted by any enemy card effects.</p>
+              <ul>
+                <li>The unit is still subject to friendly card effects and battle
+                  card effects.</li>
+                <li>Enemy card effects include all effects from abilities,
+                  keywords, and text on unit cards, upgrade cards, and
+                  command cards controlled by an opponent.</li>
+                <!-- <li>See Card Effect on page 4 ADD THIS LATER</li> -->
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#hostage-cards" class="link-to-h">Hostage Cards</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- End Immune: Enemy Effects -->
+
+          <!-- Immune Melee -->
+          <a href="#immune-melee"><button class="unit-keyword">Immune: Melee</button></a>
+          <div id="immune-melee" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immune: Melee (Unit Keyword)</h4>
+              <p>Enemy units cannot be placed in base contact with a unit that
+                has the <strong class="keyword-reference">immune: melee</strong> keyword.</p>
+              
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#melee" class="link-to-m">Melee</a>
+
+              </p>
+            </div>
+          </div>
+          <!-- End Immune Melee -->
+
+          <!-- Immune: Pierce -->
+          <a href="#immune-pierce"><button class="unit-keyword">Immune: Pierce</button></a>
+          <div id="immune-pierce" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immune: Pierce (Unit Keyword)</h4>
+              <p>While a unit with the <strong class="keyword-reference">immune: pierce</strong> keyword is defending, the attacker cannot use the <strong class="keyword-reference">pierce x</strong> keyword to cancel block (<img class="game-icon" src="img/legion-block.png" alt="Block Symbol" />) results on defense dice rolled by the defender.</p>
+                <ul>
+                  <li>While a unit with <strong class="keyword-reference">immune: pierce</strong> is using the <strong class="keyword-reference">guardian</strong> keyword, the attacker cannot use <strong class="keyword-reference">pierce x</strong> to cancel block (<img class="game-icon" src="img/legion-block.png" alt="Block Symbol" />) results on defense dice rolled by that unit.
+                          <ul>
+                      <li>The attacker <strong>can</strong> use <strong class="keyword-reference">pierce x</strong> on defense dice rolled by a unit without <strong class="keyword-reference">immune: pierce</strong> that is using the guardian keyword, even if the <strong>defender</strong> has <strong class="keyword-reference">immune: pierce</strong>.</li>
+                    </ul>
+                  </li>
+                </ul>
+              
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#pierce-x" class="link-to-p">Pierce X</a>
+
+              </p>
+            </div>
+          </div>
+          <!-- End Immune Pierce -->
+
+          <!-- Immune Range 1 weapons -->
+          <a href="#immune-range-1-weapons"><button class="unit-keyword">Immune: Range 1 Weapons</button></a>
+          <div id="immune-range-1-weapons" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Immune: Range 1 Weapons (Unit Keyword)</h4>
+              <p>A unit that has the <strong class="keyword-reference">immune: range 1 weapons</strong> keyword cannot be targeted by weapons that have a maximum range of 1.</p>
+              <ul>
+                <li>A unit with this keyword can still be targeted by enemy
+                  units that are at range 1, as long as those units are using
+                  weapons with a maximum range that is greater than 1.</li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#range" class="link-to-r">Range</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Immune Range 1 Weapons -->
+
+          <!-- Impact X -->
+          <a href="#impact-x"><button class="weapon-keyword">Impact X</button></a>
+          <div id="impact-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Impact X (Weapon Keyword)</h4>
+              <p>During the “Modify Attack Dice” step of an attack, if the
+                defender has the <strong class="keyword-reference">armor</strong> keyword, a unit whose attack pool includes a weapon that has the <strong class="keyword-reference">impact x</strong> keyword can modify
+                the results of the attack roll by changing hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />) results to
+                critical (<img class="game-icon" src="img/legion-crit.png" alt="Crit Symbol" />) results. The unit can change a number of hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />)
+                results to critical (<img class="game-icon" src="img/legion-crit.png" alt="Crit Symbol" />) results up to the value of x.</p>
+                <ul>
+                  <li>If the attacker is performing an attack against multiple
+                    targets, the attacker can modify only dice in the attack pool
+                    that the weapon with the <strong class="keyword-reference">impact x</strong> keyword contributed to.</li>
+                  <li>If a unit performs an attack using multiple weapons that
+                    have the <strong class="keyword-reference">impact x</strong> keyword and those weapons contribute
+                    dice to the same attack pool, the x values of each <strong class="keyword-reference">impact x</strong>
+                    keyword are cumulative.<br/><br/><em>For example, a unit that performs an attack using both a
+                      weapon that has impact 1 and a weapon that has impact
+                      2 contribute dice to the attack pool, that attack is treated as
+                      using a weapon that has impact 3 which allows that unit to
+                      change up to three hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />) results to critical (<img class="game-icon" src="img/legion-crit.png" alt="Crit Symbol" />) results.</em></li>
+                  <li>The attacker resolves abilities during the “Modify Attack
+                    Dice” step of an attack before the defender resolves abilities
+                    during that step. As such, the <strong class="keyword-reference">impact x</strong> keyword can be
+                    used to change hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />) results to critical (<img class="game-icon" src="img/legion-crit.png" alt="Crit Symbol" />) results before
+                    the armor keyword can be used to cancel hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />) results.</li>
+
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#armor" class="link-to-A">Armor</a>
+                <a href="#armor-x" class="link-to-A">Armor X</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+
+                
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Impact X -->
+
+          <!-- Impassable Terrain -->
+          <a href="#impassable-terrain"><button>Impassable Terrain</button></a>
+          <div id="impassable-terrain" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Impassable Terrain</h4>
+              <p>Impassable terrain represents buildings, high walls, wrecked
+                vehicles, deep chasms, and other major impediments.</p>
+                <ul>
+                  <li>Units cannot move through impassable terrain.</li>
+                  <li>Whether or not a piece of terrain is impassable depends on a
+                    unit’s type (trooper, ground vehicle, or repulsor vehicle).
+                  <ul>
+                    <li>When using custom terrain, it is important to define
+                      the difficulty of that terrain as it relates to each unit type
+                      prior to the beginning of the game.</li>
+                  </ul> </li>
+
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#difficult-terrain" class="link-to-d">Difficult Terrain</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#Open Terrain" class="link-to-o">Open Terrain</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <!-- See additional terrain rules" on page 8 ADD THIS LATER -->
+              </p>
+            </div>
+          </div>
+          <!-- End Impassable Terrain -->
+
+          <!-- Impervious -->
+          <a href="#impervious"><button class="unit-keyword">Impervious</button></a>
+          <div id="impervious" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Impervious (Unit Keyword)</h4>
+              <p>While a unit with the <strong class="keyword-reference">impervious</strong> keyword is defending, it rolls a number of additional defense dice equal to the <strong class="keyword-reference">pierce x</strong> value of the attack pool.</p>
+              <ul>
+                <li>The number of additional defense dice rolled is regardless of
+                  the number of <img class="game-icon" src="img/legion-hit.png" alt="hit symbol" /> and <img class="game-icon" src="img/legion-crit.png" alt="crit symbol" /> results rolled during the attack.<br/><br/><em>For example, during an attack, after the “Modify Attack Dice”
+                    step, there are 2 <img class="game-icon" src="img/legion-hit.png" alt="hit symbol" /> results and 1 <img class="game-icon" src="img/legion-crit.png" alt="crit symbol" /> result, and the attack pool has
+                    pierce 3. If the defender has the impervious keyword, it would
+                    roll 6 of its defense dice during the “Roll Defense Dice” step.</em></li>
+                <li>After rolling additional defense dice, <img class="game-icon" src="img/legion-block.png" alt="block symbol" /> results are still
+                  canceled as normal during the “Modify Defense Dice” step by
+                  the <strong class="keyword-reference">pierce x</strong> keyword.<br/><br/><em>For example, in the above attack, after rolling defense dice, there
+                    are 4 <img class="game-icon" src="img/legion-block.png" alt="block symbol" /> results. Pierce 3 cancels 3 of those <img class="game-icon" src="img/legion-block.png" alt="block symbol" /> results, leaving 1
+                    <img class="game-icon" src="img/legion-block.png" alt="block symbol" /> result. There were 2 <img class="game-icon" src="img/legion-hit.png" alt="hit symbol" /> results and 1 <img class="game-icon" src="img/legion-crit.png" alt="crit symbol" /> result; thus during the
+                    “Compare Results” step the defender would suffer 2 wounds.</em></li>
+                <li>A defender with <strong class="keyword-reference">impervious</strong> rolls additional dice equal to
+                  the <strong class="keyword-reference">pierce x</strong> value in the attack pool, regardless of whether pierce is applied to the defender’s dice or to dice rolled by another unit using the <strong class="keyword-reference">guardian</strong> keyword during the attack.</li>
+                <li>If a unit has both the <strong class="keyword-reference">impervious</strong> keyword and the <strong class="keyword-reference">immune: pierce</strong> keyword, the <strong class="keyword-reference">impervious</strong> keyword has no
+                  effect because <strong class="keyword-reference">pierce x</strong> is not being used during that attack.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#pierce-x" class="link-to-p">Pierce X</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Impervious -->
+
+          <!-- Incognito -->
+          <a href="#incognito"><button class="unit-keyword">Incognito</button></a>
+          <div id="incognito" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Incognito (Unit Keyword)</h4>
+              <div class="aside"><img src="img/legion-incognito.PNG" alt="incognito token"/><p>Incognito Token</p></div>
+              <p>Some units appear to be on the enemy’s side of a conflict—until they get close enough to reveal their true allegiances. A unit with the <strong class="keyword-reference">incognito</strong> keyword cannot be attacked by enemy units that are beyond range 1 of it. Additionally, its unit leader is not counted by objective cards.</p>
+              <p>If a unit with the <strong class="keyword-reference">incognito</strong> keyword ever performs an objective card action, performs an attack, or defends against an enemy attack, during that game, it loses the effects of the <strong class="keyword-reference">incognito</strong> keyword and can now be attacked by enemies as normal and is treated as a unit leader by objective cards.</p>
+              <ul>
+                <li>Objective card actions include any card actions or free card
+                  actions that units gain from the text of an objective card.
+                <ul>
+                  <li>Examples of objective cards with objective card actions
+                    include Recover the Supplies, Sabotage the Moisture
+                    Vaporators, Hostage Exchange, and Bombing Run.</li>
+                </ul></li>
+                <li>Units currently under the effect of the <strong class="keyword-reference">incognito</strong>
+                  keyword are not treated as unit leaders for the purposes of
+                  objective cards.
+                <ul><li>Examples of objective cards that interact with unit
+                  leaders include Bombing Run, Breakthrough, Intercept
+                  the Transmissions, Key Positions, and Payload.
+
+                </li></ul></li>
+                <li>Attacks made by condition cards, objective cards, objective
+                  tokens, condition tokens, or charge tokens are not
+                  considered enemy attacks. Only attacks made by enemy
+                  units are considered enemy attacks.</li>
+                <li>An <strong class="keyword-reference">incognito</strong> token may be used by a player to mark that a
+                  unit is under the effects of the <strong class="keyword-reference">incognito</strong> keyword. Remove
+                  the token if the unit attacks, defends against an enemy
+                  attack, or performs an objective card action.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#objective-cards" class="link-to-o">Objective Cards</a>
+                <a href="#range" class="link-to-r">Range</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Incognito -->
+
+          <!-- Inconspicuous -->
+          <a href="#inconspicuous"><button class="unit-keyword">Inconspicuous</button></a>
+          <div id="inconspicuous" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Inconspicuous (Unit Keyword)</h4>
+              <p>Some units appear inconsequential to the battle, and are often ignored by enemy forces. While a unit with the <strong class="keyword-reference">inconspicuous</strong> keyword has at least one suppression token, when an enemy unit performs an attack, it must target another unit, if able.</p>
+                <ul>
+                  <li>When a unit with the <strong class="keyword-reference">inconspicuous</strong> keyword rallies, it may choose not to remove any suppression tokens.
+                    <ul>
+                      <li>That unit still removes 1 suppression token during the End Phase, as normal.</li>
+                    </ul>
+                  </li>
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+               
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                
+              </p>
+            </div>
+          </div>
+          <!-- End Incospicuous -->
+
+          <!-- Indomitable -->
+          <a href="#indomitable"><button class="unit-keyword">Indomitable</button></a>
+          <div id="indomitable" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Indomitable (Unit Keyword)</h4>
+              <p>When a unit that has the <strong class="keyword-reference">Indomitable</strong> keyword performs its Rally step, instead of rolling white defense dice, it rolls a number of red defense dice equal to the number of suppression tokens it has.</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#rally" class="link-to-r">Rally</a>
+
+                <a href="#suppression" class="link-to-s">Suppression</a>
+               
+              </p>
+            </div>
+          </div>
+          <!-- End Indomitable -->
+
+          <!-- Infiltrate -->
+          <a href="#infiltrate"><button class="unit-keyword">Infiltrate</button></a>
+          <div id="infiltrate" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Infiltrate (Unit Keyword)</h4>
+              <p>Some units are masters of infiltration, and can position themselves on the battlefield before the fight has even begun. During setup, a unit with the <strong class="keyword-reference">infiltrate</strong> keyword may deploy anywhere on the battlefield that is beyond range 3 of each enemy unit.</p>
+              <ul>
+                <li>If there are no enemy units on the battlefield, a unit with the <strong class="keyword-reference">infiltrate</strong> keyword may deploy anywhere on the battlefield.</li>
+                <li>A unit with the <strong class="keyword-reference">infiltrate</strong> keyword can deploy anywhere within a friendly deployment zone as normal.</li>
+                <li>When playing a game that uses scenario battle cards, such as those found in the Downed AT-ST expansion, unless otherwise stated, the <strong class="keyword-reference">infiltrate</strong> keyword cannot be used.
+                  <ul>
+                    <li>Scenario battle cards have a scenario icon in the top right corner of the card.</li>
+                  </ul>
+                </li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#rally" class="link-to-r">Rally</a>
+
+                <a href="#suppression" class="link-to-s">Suppression</a>
+               
+              </p>
+            </div>
+          </div>
+          <!-- End Infiltrate -->
+
+          <!-- Inspire X -->
+          <a href="#inspire-x"><button class="unit-keyword">Inspire X</button></a>
+          <div id="inspire-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Inspire X (Unit Keyword)</h4>
+              <p>After a unit with the <strong class="keyword-reference">inspire x</strong> keyword performs its “Rally” step, remove a total of up to x suppression tokens from other friendly units at range 1–2.</p>
+              <ul>
+                <li>A unit performs its “Rally” step even if it has no
+                  suppression tokens.</li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                
+                <a href="#activating-units" class="link-to-A">Activating Units</a>
+                <a href="#activation-phase" class="link-to-A">Activation Phase</a>
+                <a href="#courage" class="link-to-c">Courage</a>
+                <a href="#panic" class="link-to-p">Panic</a>
+                <a href="#rally" class="link-to-r">Rally</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+               
+              </p>
+            </div>
+          </div>
+          <!-- End Inspire X -->
+
+          <!-- Ion Tokens -->
+          <a href="#ion-tokens"><button>Ion Tokens</button></a>
+          <div id="ion-tokens" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Ion Tokens</h4>
+              <div class="aside"><img src="img/legion-ion.png" alt="ion token"/><p>Ion Token</p></div>
+              <p>At the start of a unit’s activation, if that unit has one
+                or more ion tokens, it loses one action for each ion
+                token. At the end of a unit’s activation, it removes
+                any ion tokens that it has.</p>
+                <ul>
+                  <li>A vehicle or droid trooper unit that suffers wounds after defending against an attack that includes a weapon with the <strong class="keyword-reference">ion x</strong> keyword gains x ion tokens.</li>
+                  <li>Even if it loses both of its actions due to ion tokens, a
+                    unit can still perform free actions granted by abilities or
+                    upgrade cards.</li>
+
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#activating-units" class="link-to-A">Activating Units</a>
+                <a href="#activation-phase" class="link-to-A">Activation Phase</a>
+                <a href="#ion-x" class="link-to-i">Ion X</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>    
+              </p>
+            </div>
+          </div>
+          <!-- End Ion Tokens -->
+
+          <!-- Ion X -->
+          <a href="#ion-x"><button class="weapon-keyword">Ion X</button></a>
+          <div id="ion-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Ion X (Weapon Keyword)</h4>
+              <p>The <strong class="keyword-reference">ion x</strong> keyword is used to force enemy units to gain ion tokens.</p>
+              <ul>
+                <li>A vehicle or droid trooper unit that suffers wounds after defending against an attack that includes a weapon with the <strong class="keyword-reference">ion x</strong> keyword gains x ion tokens.</li>
+                <li>At the start of the “Roll Defense Dice” step, before any other
+                  effects, if the attack pool includes the <strong class="keyword-reference">ion x</strong> keyword, for each hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />) or critical (<img class="game-icon" src="img/legion-crit.png" alt="Crit Symbol" />) result, up to x, the defender must flip an active shield token if able. The defender does not add block (<img class="game-icon" src="img/legion-block.png" alt="Block Symbol" />) results for shield tokens flipped in this way.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack-pool" class="link-to-A">Attack Pool</a>
+                <a href="#ion-tokens" class="link-to-i">Ion Tokens</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#weapons" class="link-to-w">Weapons</a> 
+
+              </p>
+            </div>
+          </div>
+          <!-- End Ion X -->
+
+
+          <!-- issuing orders -->
+          <a href="#issuing-orders"><button>Issuing Orders</button></a>
+          <div id="issuing-orders" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Issuing Orders</h4>
+              <p>During the Command Phase, when it is a player’s turn to
+                resolve their revealed command card, they nominate one of
+                their commanders on the battlefield. That commander issues
+                orders to the number and type of units presented on the
+                revealed command card.</p>
+                <ul>
+                  <li>A unit needs to fulfill the following criteria to be issued
+                    an order:
+                  <ul>
+                    <li>The unit must be of a type presented on the player’s
+                      revealed command card.</li>
+                    <li>The unit must be at range 1–3 of the player’s
+                      nominated commander.</li>
+                    <li>The unit cannot have already received an order during
+                      the current game round.</li>
+
+                  </ul></li>
+                  <li>When a unit is issued an order, a player places an order
+                    token that matches the faction and rank of the unit receiving
+                    the orders near that unit on the battlefield; the player places
+                    the order token so its rank is faceup.</li>
+                  <li>When playing an operative’s command card, the player does
+                    not nominate a commander; instead they nominate the
+                    operative, and that operative issues orders.</li>
+                  <li>If a player does not have a commander or operative on the
+                    battlefield, that player cannot play a command card during
+                    the Command Phase.</li>
+                  <li>Orders are issued one at a time, in an order chosen by the
+                    player who controls the unit that is issuing the orders. Any
+                    game effects that triggers when or after an order is issued are
+                    resolved one at a time, when or after that order is issued, and
+                    before any other orders are issued.</li>
+                  <li>During the Command Phase, a unit can be issued an order
+                    only once, even if a game effect causes that order to be
+                    removed or issued to another unit instead.</li>
+
+                </ul>
+          <p class="related-topics">
+            <strong class="keyword-reference">Related Topics:</strong>
+            <a href="#command-cards" class="link-to-c">Command Cards</a>
+            <a href="#command-phase" class="link-to-c">Command Phase</a>
+            <a href="#commander" class="link-to-c">Commander</a>
+            <a href="#order-tokens" class="link-to-o">Order Tokens</a>
+            <a href="#range" class="link-to-r">Range</a>
+            <a href="#rank" class="link-to-r">Rank</a>                
+          </p>
+        </div>
+      </div>
+          <!-- End Issuing Orders -->
+
+
 
 <!-- PASTE THIS FOR NEW ENTRY
 
@@ -8195,31 +8750,1258 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="j-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
-        <div class="entries"></div>
+        <div class="entries">
+
+        <!-- Jedi Hunter -->
+        <a href="#jedi-hunter"><button class="unit-keyword">Jedi Hunter</button></a>
+        <div id="jedi-hunter" class="entry hidden">
+          <a href="#a" class="entry-close"></a>
+          <div class="entry-dialog">
+            <h4>Jedi Hunter (Unit Keyword)</h4>
+            <p>A unit with the <strong class="keyword-reference">jedi hunter</strong> keyword has dedicated itself to the pursuit and defeat of the Jedi Order. When attacking a unit with a <img class="game-icon" src="img/legion-force-upgrade.png" alt="force upgrade" /> upgrade icon, a unit with the jedi hunter keyword gains
+              “<img class="game-icon" src="img/legion-attack-surge.png" alt="attack surge symbol" /> : <img class="game-icon" src="img/legion-crit.png" alt="Crit symbol" />”.</p>
+              <ul>
+                <li>The <strong class="keyword-reference">jedi hunter</strong> keyword can be used against a unit that does not have a <img class="game-icon" src="img/legion-force-upgrade.png" alt="force upgrade" /> upgrade equipped, as long as it has the <img class="game-icon" src="img/legion-force-upgrade.png" alt="force upgrade" /> upgrade icon.</li>
+              </ul>
+            <p class="related-topics">
+              <strong class="keyword-reference">Related Topics:</strong>
+              <a href="#abilities" class="link-to-A">Abilities</a>
+              
+              <a href="#attack" class="link-to-A">Attack</a>
+              <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+            </p>
+          </div>
+        </div>
+        <!-- End Jedi Hunter -->
+
+        <!-- Jump X -->
+        <a href="#jump-x"><button class="unit-keyword">Jump X</button></a>
+        <div id="jump-x" class="entry hidden">
+          <a href="#a" class="entry-close"></a>
+          <div class="entry-dialog">
+            <h4>Jump X (Unit Keyword)</h4>
+            <p>A unit that has the <strong class="keyword-reference">jump x</strong> keyword can perform the jump x card action. To perform this action, the unit performs a move as
+              normal. However, the unit can ignore or end its movement on
+              top of terrain that is height x or lower.</p>
+              <ul>
+                <li>When a unit performs the <strong class="keyword-reference">jump x</strong> card action, treat this
+                  action as a move action.</li>
+                <li>When a unit performs the <strong class="keyword-reference">jump x</strong> action, measure height
+                  from that unit’s starting position.<br/><br/><em>For example, Luke Skywalker uses the jump 1 keyword to
+                    perform a move. Luke Skywalker’s starting position is on top
+                    of height 1 terrain. He may end his move on height 2 terrain
+                    or lower.</em></li>
+                <li>When a unit performs the <strong class="keyword-reference">jump x</strong> action, it may end its
+                  movement at any height lower than its starting position,
+                  regardless of the value of x.<br/><br/><em>For example, Luke Skywalker uses the jump 1 keyword to
+                    perform a move. Luke Skywalker’s starting position is on top
+                    of height 2 terrain. He may chose to end his move at a point
+                    on the battlefield that is lower than his starting position, even
+                    if the difference between his starting and final position is
+                    greater than height 1.</em></li>
+                <li>While performing a move with the <strong class="keyword-reference">jump x</strong> action, a unit
+                  ignores the effects of difficult terrain.</li>
+                <li>The <strong class="keyword-reference">jump x</strong> ability also allows a unit to ignore other minis
+                  with a height equal to or lower than x while performing
+                  a move with the <strong class="keyword-reference">jump x</strong> action. When doing so, the unit
+                  cannot end its move overlapping the base of a another mini.</li>
+                <li>The <strong class="keyword-reference">jump x</strong> ability can be used any time a unit would perform a move action or free move action, including while using the <strong class="keyword-reference">dauntless</strong> keyword or when a friendly unit uses the <strong class="keyword-reference">pulling the strings</strong> ability.</li>
+                <li>The <strong class="keyword-reference">jump x</strong> ability must be used while a panicked unit attempts to flee the battlefield if it will help the unit flee the battlefield by the most expeditious route.</li>
+
+              </ul>
+            <p class="related-topics">
+              <strong class="keyword-reference">Related Topics:</strong>
+              <a href="#actions" class="link-to-A">Actions</a>
+              <a href="#card-actions" class="link-to-c">Card Actions</a>
+              <a href="#dauntless" class="link-to-d">Dauntless</a>
+              <a href="#height" class="link-to-h">Height</a>
+              <a href="#movement" class="link-to-m">Movement</a>
+              <a href="#pulling-the-strings" class="link-to-p">Pulling the Strings</a>
+              <!-- See additional terrain rules on page 8 ADD THIS LATER -->
+            </p>
+          </div>
+        </div>
+        <!-- End Jump X -->
+
+        <!-- Juyo Mastery -->
+        <a href="#juyo-mastery"><button class="unit-keyword">Juyo Mastery</button></a>
+        <div id="juyo-mastery" class="entry hidden">
+          <a href="#a" class="entry-close"></a>
+          <div class="entry-dialog">
+            <h4>Juyo Mastery (Unit Keyword)</h4>
+            <p>When practicing the Juyo lightsaber form, a form strongly associated with the dark side of the force, the user taps into their inner rage, hatred, and pain to enhance and fuel their combat prowess. While a unit with the <strong class="keyword-reference">juyo mastery</strong> keyword has one or more wound tokens, it can perform one additional action during its activation.</p>
+            <ul>
+              <li>While the effects of <strong class="keyword-reference">juyo mastery</strong> are active during a
+                unit’s activation, that unit is limited to two move actions,
+                including free move actions.</li>
+              <li>The effects of <strong class="keyword-reference">juyo mastery</strong> apply even during an activation
+                in which a unit is suppressed. A unit that is suppressed and
+                under the effects of <strong class="keyword-reference">juyo mastery</strong> would have two actions
+                available during its activation.</li>
+              <li>A unit under the effects of <strong class="keyword-reference">juyo mastery</strong> that panics still
+                only performs one move action during its activation, as per
+                the rules of panicking.</li>
+              <li>If a unit with <strong class="keyword-reference">juyo mastery</strong> is not wounded at the start of
+                its activation, but becomes wounded during its activation,
+                it gains the benefit of <strong class="keyword-reference">juyo mastery</strong> and can perform an
+                additional action during that activation.</li>
+              <li>If a unit with <strong class="keyword-reference">juyo mastery</strong> is already wounded during
+                its activation, but has all wound tokens removed during
+                that activation, such that it is not longer wounded, it loses
+                the benefit of <strong class="keyword-reference">juyo mastery</strong> and any actions performed
+                during it’s activation up to that point are counted against the
+                normal number of actions it would be allowed to perform.</li>
+
+            </ul>
+            <p class="related-topics">
+              <strong class="keyword-reference">Related Topics:</strong>
+              <a href="#actions" class="link-to-A">Actions</a>
+              <a href="#activating-units" class="link-to-A">Activating Units</a>
+              <a href="#wounds" class="link-to-w">Wounds</a>
+            </p>
+          </div>
+        </div>
+        <!-- End Juyo Mastery -->
+
+<!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <div id="rrg-entry-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>RRG Entry Name</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+          -->
+
+          <!-- paste above this -->
+
+
+
+
+        </div>
       </div>
       <h2 class="btn-letter header-K">K</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="k-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
-        <div class="entries"></div>
+        <div class="entries">
+          <!-- Keywords -->
+          <a href="#Keywords"><button>Keywords</button></a>
+          <div id="Keywords" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Keywords</h4>
+              <p>A keyword is an ability possessed by units or weapons.</p>
+              <ul>
+                <li>There are two types of keywords: unit keywords and
+                  weapon keywords.
+                <ul>
+                  <li>A unit keyword is an inherent ability of a unit and it
+                    is presented on a unit’s card or added to a unit by an
+                    upgrade card.</li>
+                    <li>A weapon keyword is an inherent ability of a weapon
+                      and is presented as part of a weapon on either a unit’s
+                      card or an upgrade card.</li>
+                </ul></li>
+                <li>Each unit keyword provides a unit with an ability, including
+                  the timing of when the ability is used as well as the effect of
+                  the ability.</li>
+                <li>Each weapon keyword adds an ability to the attack pool in
+                  which it is included.</li>
+                <li>All keywords with a numerical value (an “x” value) are
+                  cumulative with themselves. This includes both weapon
+                  keywords and unit keywords (including unit keywords that
+                  are card actions, such as the <strong class="keyword-reference">jump x</strong> keyword).<br/><br/><em>For example, an AT-ST has the arsenal 2 keyword; if that AT-ST uses the free card action on the General Weiss upgrade card to gain arsenal 2, that AT-ST now has arsenal 4. Similarly, when a Stormtrooper unit composed of four minis performs an attack, if each mini chooses to use the weapon on an equipped Impact Grenades upgrade card, the attack pool would consist of four instances of impact 1, and thus the attack pool would have impact 4.</em></li>
+                <li>The front of each unit card provides reminder text of each of that unit’s keywords. The back of each unit card provides reminder text for each of that unit’s weapon keywords.
+                <ul><li>
+                  The reminder text is not an exhaustive description of the rules for a keyword. Rather, it is there to help players remember how and when to resolve each keyword. If a player has questions about how a keyword works, that player should refer to that keyword’s glossary entry.
+                </li></ul></li>
+
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>                
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#attack-pool" class="link-to-A">Attack Pool</a>                
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+
+              </p>
+            </div>
+          </div>
+          <!-- Keywords -->
+
+
+
+
+          <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <div id="rrg-entry-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>RRG Entry Name</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+          -->
+
+          <!-- paste above this -->
+        </div>
       </div>
       <h2 class="btn-letter header-L">L</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="l-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
-        <div class="entries"></div>
+        <div class="entries">
+
+          <!-- Leader -->
+          <a href="#leader"><button class="weapon-keyword">Leader</button></a>
+          <div id="leader" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Leader (Upgrade Keyword)</h4>
+              <p>If an upgrade that adds a miniature to a unit has the <strong class="keyword-reference">leader</strong>
+                keyword, treat the mini added by that upgrade as that unit’s
+                unit leader.</p>
+                <ul>
+                  <li>If a unit <strong class="keyword-reference">leader</strong> mini that was added by an upgrade card
+                    with the <strong class="keyword-reference">leader</strong> keyword is defeated, replace one of the
+                    remaining minis in that unit with the <strong class="keyword-reference">leader</strong> mini from
+                    that upgrade card.
+                  <ul>
+                    <li>If a mini with the <strong class="keyword-reference">leader</strong> keyword and a wound
+                      threshhold of 2 is defeated while in a unit with a wound
+                      threshhold of 1, replace one of the remaining minis
+                      in that unit as normal, then assign the mini with the
+                      <strong class="keyword-reference">leader</strong> keyword 1 wound token.</li>
+                  </ul></li>
+                  <li>Only one upgrade card with the leader keyword can be
+                    equipped to each unit.</li>
+
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#unit" class="link-to-u">Unit</a>
+                
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Leader -->
+
+          <!-- Leaving the Battlefield -->
+          <a href="#leaving-the-battlefield"><button>Leaving the Battlefield</button></a>
+          <div id="leaving-the-battlefield" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Leaving the Battlefield</h4>
+              <p>If at any time a unit leader's base is fully or partially outside of
+                the battlefield, that unit is defeated.</p>
+                <ul>
+                  <li>While performing a standard move, as a unit leader moves
+                    along a movement tool, if at any point the unit leader's base
+                    is outside of the battlefield, that unit is defeated.</li>
+                  <li>A unit cannot voluntarily leave the battlefield.</li>
+                  <li>When a player performs a move with an opponent’s unit,
+                    that unit cannot leave the battlefield.</li>
+
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#defeated" class="link-to-d">Defeated</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#panic" class="link-to-p">Panic</a>
+                                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Leaving the Battlefield -->
+
+          <!-- Lethal X -->
+          <a href="#lethal-x"><button class="weapon-keyword">Lethal X</button></a>
+          <div id="lethal-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Lethal X (Weapon Keyword)</h4>
+              <p>Certain weapons are particularly deadly when carefully aimed.
+                While a unit performs an attack with a weapon that has the
+                <strong class="keyword-reference">lethal x</strong> keyword, it can spend up to x aim tokens during the Modify Attack Dice step. If it does, the attack pool gains <strong class="keyword-reference">pierce 1</strong> for each aim token spent.</p>
+                <ul>
+                  <li>The attacking unit does not gain the usual benefits of spending an aim token if it spends it on the <strong class="keyword-reference">lethal x</strong>
+                    keyword.</li>
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim" class="link-to-A">Aim</a>
+
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#pierce-x" class="link-to-p">Pierce X</a>
+                
+              </p>
+            </div>
+          </div>
+          <!-- X Lethal X -->
+
+          <!-- Light Transport X: Open/Closed -->
+          <a href="#light-transport-x-open-closed"><button class="unit-keyword">Light Transport X: Open/Closed</button></a>
+          <div id="light-transport-x-open-closed" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Light Transport X: Open/Closed (Unit Keyword)</h4>
+              <p>The <strong class="keyword-reference">light transport x: open/closed</strong> keyword allows a vehicle to transport friendly trooper units that consist of a single mini, such as commanders and operatives. Eligible trooper units must consist of exactly 1 mini, and that mini must be on a small round base.</p>
+                <p>Units with the light <strong class="keyword-reference">light transport x: open/closed</strong> keyword otherwise follow all the same rules as units with the <strong class="keyword-reference">light transport x: open/closed</strong> keyword.</p>
+                <ul>
+                  <li>A vehicle with the light <strong class="keyword-reference">transport x</strong> keyword can transport a number of eligible units up to the value x.</li>
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#embark-and-disembark" class="link-to-A">Embark and Disembark</a>
+                <a href="#transported" class="link-to-t">Transported</a>
+                <a href="#transport-x-open-closed" class="link-to-t">Transport X: Open/Closed</a>
+                
+              </p>
+            </div>
+          </div>
+          <!-- END Light Transport X: Open/Closed -->
+
+          <!-- Line of Sight -->
+          <a href="#line-of-sight"><button>Line of Sight</button></a>
+          <div id="line-of-sight" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Line of Sight</h4>
+              <p>Line of sight is used to determine if one mini can see another
+                mini. A player determines line of sight from the perspective of
+                a mini, using a viewpoint where the center of the mini’s base
+                meets the top of the mini’s sculpt. If a player can see part of
+                an opponent’s mini, which includes that mini’s base, from that
+                viewpoint, that player’s mini has line of sight to that opponent’s
+                mini.</p>
+                <ul>
+                  <li>If a mini does not have line of sight to another mini, line of
+                    sight is blocked.
+                  <ul>
+                    <li>Pieces of terrain and vehicles can block line of sight.</li>
+                    <li>Trooper minis do not block line of sight. When
+                      determining line of sight, if a player cannot see a mini
+                      because it is concealed by one or more troopers on the
+                      battlefield, and that player could otherwise see the mini,
+                      that player’s mini has line of sight to the mini that is
+                      concealed by one or more troopers.</li>
+
+                  </ul></li>
+                  <li>During an attack, each mini in the attacker can contribute
+                    dice to the attack pool if that mini has line of sight to <strong>any</strong> mini in the defender.</li>
+                  <li>During an attack, if line of sight to a mini in the defender
+                    is blocked from all minis in the attacker, that mini in the
+                    defender cannot suffer wounds.</li>
+                  <li>A mini cannot block its own line of sight.</li>
+                  <li>When determining line of sight from an E-Web Heavy
+                    Blaster Team mini, players should check from the top of the
+                    head of the snowtrooper who is firing the E-Web, regardless
+                    of whether it is directly over the center of the base.</li>
+                  <li>When determining line of sight from a DF-90 Mortar
+                    Trooper Mini, players should check from the top of the head
+                    of the shoretrooper who is firing the mortar, regardless of
+                    whether it is directly over the center of the base.</li>
+                  <li>When determining line of sight from a TX-225 GAVw
+                    Occupier, players should check from the center of the roof
+                    of the crew compartment, regardless of whether it is directly
+                    over the center of the base.</li>
+
+                </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#miniature" class="link-to-m">Miniature</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+                <a href="#wounds" class="link-to-w">Wounds</a>
+               <!-- see additional terrain rules on page 8 ADD THIS LATER -->
+              </p>
+            </div>
+          </div>
+          <!-- End Line of Sight -->
+
+          <!-- Loadout -->
+          <a href="#loadout"><button class="unit-keyword">Loadout</button></a>
+          <div id="loadout" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Loadout (Unit Keyword)</h4>
+              <p>A unit with the <strong class="keyword-reference">loadout</strong> keyword is adaptable and prepared for multiple contingencies; they are able to customize their equipment and hone their skills before each mission. When a player includes a unit with the <strong class="keyword-reference">loadout</strong> keyword in their army, for each upgrade card equipped to that unit, they may choose another upgrade card of the same type with equal or lesser points cost and set it aside. When the unit with the <strong class="keyword-reference">loadout</strong> keyword deploys, it may swap any number of its equipped upgrade cards with the set-aside upgrade cards.</p>
+              <ul>
+                <li>Equipped upgrade cards can be swapped only with setaside
+                  upgrade cards of the same type and of equal or lesser
+                  points cost.</li>
+                <li>Each set-aside upgrade card must be able to be equipped by
+                  the unit with the <strong class="keyword-reference">loadout</strong> keyword.</li>
+                <li>When swapping upgrade cards, a unit cannot have two
+                  or more upgrades with the same name equipped at the
+                  same time.</li>
+                <li>If two or more units with the <strong class="keyword-reference">loadout</strong> keyword are in
+                  the same army, keep their respective set-aside upgrade
+                  cards separate. Each unit can swap upgrade cards only
+                  with their own set-aside cards; they cannot share set-aside
+                  upgrade cards.</li>
+                <li>A counterpart card that is added to a unit with the <strong class="keyword-reference">loadout</strong>
+                  keyword also benefits from the <strong class="keyword-reference">loadout</strong> ability.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#deployment" class="link-to-d">Deployment</a>
+                
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Loadout -->
+
+          <!-- long shot X -->
+          <a href="#long-shot-x"><button class="weapon-keyword">Long Shot X</button></a>
+          <div id="long-shot-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Long Shot X (Weapon Keyword)</h4>
+              <p>While a unit is performing a ranged attack, during the Form Attack Pool step, it may spend up to x aim tokens to increase the maximum range of a weapon with the <strong class="keyword-reference">long shot x</strong> keyword by 1 for each aim token spent in this way.</p>
+              <ul>
+                <li>Aim tokens spent in this way have no other effect.</li>
+                <li>The <strong class="keyword-reference">long shot x</strong> keyword applies only to the weapon with the keyword and can be used only to extend the range of that weapon.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim" class="link-to-A">Aim</a>
+                
+                <a href="#attack" class="link-to-A">Attack</a>
+                
+                <a href="#range" class="link-to-r">Range</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Long Shot X -->
+
+          <!-- Low Profile -->
+          <a href="#low-profile"><button class="unit-keyword">Low Profile</button></a>
+          <div id="low-profile" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Low Profile (Unit Keyword)</h4>
+              <p>While defending against an attack, if a unit with the <strong class="keyword-reference">low profile</strong> keyword has light cover, it improves its cover by 1.</p>
+              <ul>
+                <li>When determining cover, add cover values (not exceeding heavy cover) before subtracting cover values.<br/><br/><em>For example, a unit with a suppression token and low profile that is attacked by a unit with sharpshooter 1 would have light cover.</em></li>
+                <li>Cover is determined during the “Apply Dodge and Cover” step of an attack.</li>
+                <li>Cover is not applied during a melee attack.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                
+                
+                <a href="#cover" class="link-to-c">Cover</a>
+                
+              </p>
+            </div>
+          </div>
+          <!-- End Low Profile -->
+
+         
+
+          <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <div id="rrg-entry-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>RRG Entry Name</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+          -->
+
+          <!-- paste above this -->
+        </div>
       </div>
       <h2 class="btn-letter header-M">M</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="m-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
-        <div class="entries"></div>
+        <div class="entries">
+          <!-- Makashi Mastery -->
+          <a href="#makashi-mastery"><button class="unit-keyword">Makashi Mastery</button></a>
+          <div id="makashi-mastery" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Makashi Mastery</h4>
+              <p>Those who have masted the Makashi style have turned lightsaber dueling into a true art form. While a unit with the <strong class="keyword-reference">makashi mastery</strong> keyword performs a melee attack, it can reduce the <strong class="keyword-reference">pierce x</strong> value of the weapon with which it is performing the attack by 1. If it does, the defender cannot use the <strong class="keyword-reference">immune: pierce</strong> and <strong class="keyword-reference">impervious</strong> keywords.</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#immune-pierce" class="link-to-i">Immune: Pierce</a>
+                <a href="#melee">Melee</a>
+                <a href="#pierce-x" class="link-to-p">Pierce X</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Makashi mastery -->
+
+          <!-- Marksman -->
+          <a href="#marksman"><button class="unit-keyword">Marksman</button></a>
+          <div id="marksman" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Marksman</h4>
+              <p>While performing an attack, a unit with the <storng class="keyword-reference">marksman</storng> keyword can spend aim tokens to improve attack die results instead of rerolling dice. After the Convert Attack Surges step and before the Apply Dodge and Cover step, the unit may spend any number of aim tokens. For each aim token spent in this way, change a blank result to a hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />) result or a hit (<img class="game-icon" src="img/legion-hit.png" alt="Hit Symbol" />) result to a critical (<img class="game-icon" src="img/legion-crit.png" alt="Crit Symbol" />) result.</p>
+              <ul>
+                <li>A unit may spend two aim tokens to change a blank result to a (<img class="game-icon" src="img/legion-crit.png" alt="Crit Symbol" />) result.</li>
+                <li>Aim tokens spent in this way have no other effect.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim" class="link-to-A">Aim</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+                
+              </p>
+            </div>
+          </div>
+          <!-- End Marksman -->
+
+          <!-- Master of the Force X -->
+          <a href="#master-of-the-force-x"><button class="unit-keyword">Master of the Force X</button></a>
+          <div id="master-of-the-force-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Master of the Force X (Unit Keyword)</h4>
+              <p>At the end of its activation, a unit that has the <strong class="keyword-reference">master of the force x</strong> keyword may ready up to x of its exhausted Force (<img class="game-icon" src="img/legion-force-upgrade.png" alt="force upgrade icon" />) upgrade cards.</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#exhaust" class="link-to-e">Exhaust</a>
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Master of the Force X -->
+
+          <!-- Melee -->
+          <a href="#melee"><button>Melee</button></a>
+          <div id="melee" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Melee</h4>
+              <p>Melee represents close combat between opposing units. When two miniatures from opposing players’ units are in base contact, those units are in a melee.</p>
+              <ul>
+                <li>If two trooper units are in a melee, those units are engaged. Any unit type can be in a melee, but only troopers can be engaged.</li>
+                <li>When a unit performs an attack against a unit that it
+                  is in a melee with, that attack is a melee attack. Melee attacks follow the same rules as ranged attacks with the following exceptions:
+                <ul>
+                  <li>The attacker can use only weapons that have the melee (<img class="game-icon" src="img/legion-melee.png" alt="melee icon" />) icon.</li>
+                  <li>The target of the attack must be in the same melee as the attacker.</li>
+
+                </ul></li>
+                <li>If a unit has a melee weapon, it can start a melee by moving into base contact with an enemy miniature. To start a melee, a player must follow these steps in order:</li>
+
+              </ul>
+              <ol>
+                <li><strong>Move Unit Leader:</strong> The player performs a move, moving their unit leader into base contact with an enemy mini.</li>
+                <li><strong>Move Other Minis:</strong> Maintaining cohesion, the player places each other mini in the unit that started the melee into base contact with enemy minis that belong to the same enemy unit that their unit leader is now in melee with.</li>
+                <li><strong>Opponent Moves Minis:</strong> Maintaining cohesion, the player’s opponent moves any of their own minis that belong to the unit that is now in a melee (that are not already in base contact with an enemy mini) into base contact with minis from the unit that started the melee.
+                <ul>
+                  <li>If the opponent’s unit does not have a melee weapon, the opponent does not move their minis into base contact with the unit that started the melee.</li>
+                </ul></li>
+
+              </ol>
+              <ul>
+                <li>A unit cannot move in such a way that its minis would be placed in base contact with multiple enemy units.
+                  <ul>
+                    <li>It is possible for a unit to be in a melee with multiple enemy units if another unit joins later.</li>
+                  </ul>
+                </li>
+                <li>A unit that does not have a melee weapon cannot start
+                  a melee.</li>
+                <li>When moving minis into base contact with enemy minis
+                  after a melee has been started, if there is not space to place a mini in base contact with an enemy mini in the same melee, that mini must still be placed in cohesion.</li>
+                <li>Minis that are not in base contact with an enemy mini can still contribute to a melee attack if the unit to which that mini belongs is in a melee.</li>
+                <li>Whenever there are minis that are not in base contact with an enemy mini but those minis have a melee weapon and the unit to which they belong is in a melee, those minis must be placed in base contact with an enemy mini in the same melee as their unit if possible. This can happen when minis in a melee suffer wounds and are defeated, creating space for other minis that were not previously in base contact to be placed in base contact.
+                <ul>
+                  <li>If both players own minis that are not in base contact with an enemy mini and should be, the player that is currently activating a unit or has most recently activated a unit (even if that unit is not the unit with minis that should be placed in base contact with enemy minis) should move their minis into base contact with enemy minis before the other player does so. If neither play has activated a unit yet this round, the blue player should move their minis first.</li>
+                  <li>Minis that are no longer in base contact should always be placed back into base contact with an enemy mini if able, even if each enemy mini that was in base contact has just been defeated. This can happen when the defending unit does not have a melee weapon and not all defending minis were in base contact with an enemy mini.<br/><br/><em>For example, Luke Skywalker is in base contact with an enemy 74-Z Speeder Bike mini, while another mini from the same unit is not in base contact with Luke Skywalker. After performing an attack, Luke Skywalker defeats the enemy 74-Z Speeder Bike mini and is no longer is base contact with an enemy mini. Because there is another 74-Z Speeder Bike mini from that unit, Luke Skywalker should immediately be placed into base contact with that mini.</em></li>
+                  <li>If for any reason minis cannot be placed back into base contact with an enemy mini and none of the minis belonging to that unit are in base contact with an enemy mini, those minis stay where they are on the battlefield and that unit is no longer in melee.</li>
+
+                </ul></li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cohesion" class="link-to-c">Cohesion</a>
+                <a href="#engaged" class="link-to-e">Engaged</a>
+                <a href="#melee-weapon">Melee Weapon</a>
+                <a href="#movement">Movement</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+
+                
+              </p>
+            </div>
+          </div>
+          <!-- End Melee -->
+
+          <!-- melee weapon -->
+          <a href="#melee-weapon"><button>Melee Weapon</button></a>
+          <div id="melee-weapon" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Melee Weapon</h4>
+              <div class="aside"><img src="img/legion-black-attack-die-example.PNG" alt="Melee Weapon example"/><p>Melee Weapon</p></div>
+              <p>A weapon with a red melee icon (<img class="game-icon" src="img/legion-melee.png" alt="Melee Symbol" />) is a melee weapon. Melee weapons can only be used during melee attacks.</p>
+              <ul>
+                <li>If a unit has multiple minis each using a melee weapon, each melee weapon with the same name must be added to the same attack pool. Melee weapons with different names may be added to different attack pools.</li>
+                <li>A melee weapon cannot be in the same attack pool as a non-melee weapon.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#melee">Melee</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- End Melee Weapon -->
+
+          <!-- Miniature -->
+          <a href="#miniature"><button>Miniature</button></a>
+          <div id="miniature" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Miniature</h4>
+              <p>Each plastic sculpt is a miniature, often abbreviated as a “mini.”</p>
+              <ul>
+                <li>Most trooper minis are affixed to small round bases.</li>
+                <li>Creature and emplacement trooper minis are affixed to notched bases.</li>
+                <li>Ground vehicle minis are affixed to notched bases.</li>
+                <li>Repulsor vehicle minis are affixed to notched bases by clear plastic stands.</li>
+
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+
+              </p>
+            </div>
+          </div>
+          <!-- End Miniature -->
+
+          <!-- Movement -->
+          <a href="#movement"><button>Movement</button></a>
+          <div id="movement" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Movement</h4>
+              <p>Each unit can move about the battlefield in multiple ways.</p>
+              <ul>
+                <li>The primary way that units move is by performing a move action. When a unit performs a move action, it performs a standard move, reverse, strafe, pivot, climb, clamber, embark, or disembark.</li>
+                <li>To perform a standard move, a player performs the following steps:</li>
+
+              </ul>
+              <ol>
+                <li><strong>Take Movement Tool:</strong> The player chooses a movement tool.
+                <ul>
+                  <li>Each unit has a maximum speed of one, two, or three, which is represented by a number of red bars on the unit’s card. When a unit performs a standard move, it uses a movement tool with a value equal to or less than its maximum speed.</li>
+                </ul></li>
+                <li><strong>Place Movement Tool:</strong> The player places the movement tool against the moving unit’s base, according to the type of base:
+                <ul>
+                  <li><strong>Unnotched Base:</strong> The player places one end of the movement tool flush against any portion of the unit leader mini’s base.</li>
+                  <li><strong>Notched Base:</strong> The player places one end of the movement tool into the front notch of the vehicle’s base.</li>
+
+                </ul></li>
+                <li><strong>Adjust Movement Tool:</strong> The player can adjust the movement tool at its joint, bending it as they desire. The movement tool creates a path along which the mini will move.</li>
+                <li><strong>Execute Full or Partial Move:</strong> The player executes either a full or partial move.
+                <ul>
+                  <li><strong>Full:</strong> Holding the movement tool in place, the player lifts up the unit leader mini and moves it along the path of the movement tool, keeping the mini’s base centered in relation to the width of the tool. Then, if the mini has an unnotched base, the player places the mini’s base flush against the other end of the movement tool; if the mini has a notched base, the player places the mini so the other end of the movement tool is inserted into the rear notch of the mini’s base.</li>
+                  <li><strong>Partial:</strong> Holding the movement tool in place, the player lifts up the unit leader mini and moves it along the path of the movement tool, keeping the mini’s base centered in relation to the width of the tool. Then, the player places the mini anywhere along the path created by the movement tool, moving the movement tool out of the way and placing the mini on the battlefield. When placing a mini with a notched base during a partial move, the unit must be placed such that the central axis of the mini’s front and back notches is parallel to the section of the movement tool the mini reached at the furthest part of its move.</li>
+
+                </ul></li>
+                <li><strong>Establish Cohesion:</strong> The player places all minis of the moving unit that are not the unit leader in cohesion with the unit leader. See <a href="#cohesion" class="link-to-c">Cohesion</a>
+                <ul>
+                  <li>When a notched base mini is placed in cohesion, its base must be oriented in the exact same direction as the unit leader’s base.</li>
+                </ul></li>
+
+              </ol>
+              <ul>
+                <li>During a unit’s activation, it is possible for a unit to perform
+                  multiple move actions. Unlike other actions, a unit is not
+                  limited to only one move action per activation.</li>
+                <li>While moving a mini along a path created by a movement
+                  tool, if the base of the mini is impeded by an object, that
+                  mini must stop its movement prematurely unless the
+                  mini can legally move through, over, or on top of the
+                  obstructing object.</li>
+
+                <li>While performing a standard move, a reverse, or a strafe, if
+                  it is obvious that the mini will be unimpeded while moving
+                  along the path created by the movement tool, the mini can
+                  be placed directly at its final destination.</li>
+                <li>While moving a unit, if a movement tool cannot lie flat on
+                  the battlefield, the player can hold the tool above any objects
+                  that prevent the tool from lying flat, or mark the objects’
+                  positions and move them out of the way while performing
+                  the move.</li>
+                <li>A mini can move into base contact with an enemy mini only
+                  if the unit performing the move has a melee weapon and is
+                  entering into a melee with that enemy unit.</li>
+                <li>If a unit performs a move that causes any part of its unit
+                  leader's base to be outside of the battlefield, including while
+                  moving along a movement tool, that unit is defeated.</li>
+                <li>Unless a unit is able to displace other minis, the final
+                  position of a unit after a move cannot overlap the bases of
+                  other minis.</li>
+                <li>The final position of a unit after a move cannot overlap
+                  objective or condition tokens.</li>
+                <li>The bases of minis can partially overhang ledges, as long as
+                  the mini is stable and is not precariously placed.</li>
+                <li>A unit must be placed as flat as possible on the battlefield
+                  after performing any type of move. Not all terrain that a
+                  unit could end their move on top of is perfectly flat and
+                  players should agree before playing as to what terrain units
+                  cannot end their movement on; however, as a general rule,
+                  if overlapping a piece of terrain causes a mini to be unstable
+                  or fall over, or causes the mini’s base to be at an angle
+                  greater than 45 degrees, that mini cannot end a move in
+                  that position.</li>
+                <li>If a game effect allows or forces a unit to perform a
+                  “speed-x” move, that unit performs a full or partial standard
+                  move with a speed equal to or lower than “x.” Climbing,
+                  clambering, embarking, disembarking, reversing, strafing,
+                  and pivoting are not standard moves and thus cannot be
+                  performed in place of a speed-x move.</li>
+
+              </ul>
+              <p class="related-topics"><strong class="keyword-reference">Movement Summaries:</strong>
+                <a href="#trooper-movement-summary">Trooper Movement Summary</a>
+                <a href="#emplacement-trooper-movement-summary">Emplacement Trooper Movement Summary</a>
+                <a href="#creature-trooper-movement-summary">Creature Trooper Movement Summary</a>
+                <a href="#ground-vehicle-movement-summary">Ground Vehicle Movement Summary</a>
+                <a href="#repulsor-vehicle-movement-summary">Repulsor Vehicle Movement Summary</a>
+                
+
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#climb-and-clamber" class="link-to-c">Climb and Clamber</a>
+                
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#difficult-terrain" class="link-to-d">Difficult Terrain</a>
+                
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#impassable-terrain" class="link-to-i">Impassable Terrain</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                <a href="#open-terrain" class="link-to-o">Open Terrain</a>
+                <a href="#pivot" class="link-to-p">Pivot</a>
+                <a href="#reverse" class="link-to-r">Reverse</a>
+                <a href="#speeder-x" class="link-to-s">Speeder X</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+                <!-- See vertical movement on page 10 ADD THIS LATER -->
+
+
+
+
+              </p>
+            </div>
+          </div>
+          <!-- End Movement -->
+
+          <!-- Trooper Movement Summary -->
+          <a href="#trooper-movement-summary"><button>Trooper Movement Summary</button></a>
+          <div id="trooper-movement-summary" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Trooper Movement Summary</h4>
+              <ul>
+                <li>A trooper mini can move through friendly and enemy noncreature trooper minis and repulsor vehicle minis.</li>
+                <li>A trooper mini cannot move through friendly or enemy ground vehicle minis or creature trooper minis.</li>
+                <li>While performing a standard move, a trooper mini can
+                  move onto or over a piece of terrain that has a height that is equal to or less than the height of the unit leader’s mini.
+                <ul>
+                  <li>If using silhouettes, do not use the mini to measure. Instead, a trooper mini can move onto or over a piece of terrain that has a height that is equal to or less than the height of the silhouette.</li>
+                </ul></li>
+                <li>A trooper mini can climb to move onto terrain that is equal to or less than height 1.</li>
+                <li>A trooper mini can clamber to move onto terrain that is equal to or less than height 2.</li>
+                <li>A trooper mini can embark and disembark.</li>
+                <li>A trooper mini that is engaged cannot perform moves,
+                  except to withdraw during its activation.</li>
+                <li>Clone trooper and droid trooper minis do not have any
+                  additional movement rules or exceptions.</li>
+
+              </ul>
+              <p class="related-topics"><strong class="keyword-reference">Movement Summaries:</strong>
+                
+                <a href="#emplacement-trooper-movement-summary">Emplacement Trooper Movement Summary</a>
+                <a href="#creature-trooper-movement-summary">Creature Trooper Movement Summary</a>
+                <a href="#ground-vehicle-movement-summary">Ground Vehicle Movement Summary</a>
+                <a href="#repulsor-vehicle-movement-summary">Repulsor Vehicle Movement Summary</a>
+                
+
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#climb-and-clamber" class="link-to-c">Climb and Clamber</a>
+                
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#difficult-terrain" class="link-to-d">Difficult Terrain</a>
+                
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#impassable-terrain" class="link-to-i">Impassable Terrain</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                <a href="#movement">Movement</a>
+                <a href="#open-terrain" class="link-to-o">Open Terrain</a>
+                <a href="#pivot" class="link-to-p">Pivot</a>
+                <a href="#reverse" class="link-to-r">Reverse</a>
+                <a href="#speeder-x" class="link-to-s">Speeder X</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+            </div>
+          </div>
+          <!-- End Trooper Movement Summary -->
+
+          <!-- emplacement trooper movement summary -->
+          <a href="#emplacement-trooper-movement-summary"><button>Emplacement Trooper Movement Summary</button></a>
+          <div id="emplacement-trooper-movement-summary" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Emplacement Trooper Movement Summary</h4>
+              <ul>
+                <li>An emplacement trooper mini can move through friendly
+                  and enemy non-creature trooper minis and repulsor vehicle
+                  minis.</li>
+                <li>An emplacement trooper mini cannot move through
+                  friendly or enemy ground vehicle minis or creature
+                  trooper minis.</li>
+                <li>While performing a standard move, an emplacement
+                  trooper mini can move onto or over a piece of terrain that
+                  has a height that is equal to or less than the height of the
+                  unit leader’s mini.</li>
+                <li>An emplacement trooper mini cannot climb or clamber.</li>
+                <li>An emplacement trooper mini can pivot and reverse.</li>
+                <li>An emplacement trooper mini can embark and disembark.</li>
+                <li>When an emplacement trooper mini withdraws it can
+                  perform free actions and use abilities.</li>
+
+              </ul>
+              <p class="related-topics"><strong class="keyword-reference">Movement Summaries:</strong>
+                <a href="#trooper-movement-summary">Trooper Movement Summary</a>
+                
+                <a href="#creature-trooper-movement-summary">Creature Trooper Movement Summary</a>
+                <a href="#ground-vehicle-movement-summary">Ground Vehicle Movement Summary</a>
+                <a href="#repulsor-vehicle-movement-summary">Repulsor Vehicle Movement Summary</a>
+                
+
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#climb-and-clamber" class="link-to-c">Climb and Clamber</a>
+                
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#difficult-terrain" class="link-to-d">Difficult Terrain</a>
+                
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#impassable-terrain" class="link-to-i">Impassable Terrain</a>
+                <a href="#movement">Movement</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                <a href="#open-terrain" class="link-to-o">Open Terrain</a>
+                <a href="#pivot" class="link-to-p">Pivot</a>
+                <a href="#reverse" class="link-to-r">Reverse</a>
+                <a href="#speeder-x" class="link-to-s">Speeder X</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+                <!-- See vertical movement on page 10 ADD THIS LATER -->
+
+
+
+
+              </p>
+            </div>
+          </div>
+          <!-- End emplacement trooper movement summary -->
+
+          <!-- Creature Trooper Movement Summary -->
+          <a href="#creature-trooper-movement-summary"><button>Creature Trooper Movement Summary</button></a>
+          <div id="creature-trooper-movement-summary" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Creature Trooper Movement Summary</h4>
+              <ul>
+                <li>A creature trooper mini can move through friendly and
+                  enemy repulsor vehicle minis.</li>
+                <li>A creature trooper mini cannot move through friendly or
+                  enemy ground vehicle minis.</li>
+                <li>A creature trooper mini can displace friendly and enemy
+                  trooper minis by moving through them.
+                <ul>
+                  <li>A creature trooper mini cannot move through or
+                    displace a trooper mini that is engaged.</li>
+                  <li>A creature trooper mini cannot move through or
+                    displace emplacement trooper minis.</li>
+                  <li>A creature trooper mini cannot move through or
+                    displace other creature trooper minis.</li>
+                  <li>While withdrawing, creature trooper minis <strong>can</strong> displace non-creature, non-emplacement trooper minis with which they are engaged.</li>
+
+                </ul></li>
+                <li>While performing a standard move, a creature trooper
+                  mini can move onto or over a piece of terrain that has a height that is equal to or less than <strong>half</strong> the height of the unit
+                  leader’s mini.</li>
+                <li>A creature trooper mini cannot climb or clamber.</li>
+                <li>A creature trooper mini can pivot and reverse.</li>
+                <li>A creature trooper mini cannot embark or disembark.</li>
+                <li>When a creature trooper mini withdraws it can perform free actions and use abilities.</li>
+
+              </ul>
+              <p class="related-topics"><strong class="keyword-reference">Movement Summaries:</strong>
+                <a href="#trooper-movement-summary">Trooper Movement Summary</a>
+                
+                <a href="#emplacement-trooper-movement-summary">Emplacement Trooper Movement Summary</a>
+                <a href="#ground-vehicle-movement-summary">Ground Vehicle Movement Summary</a>
+                <a href="#repulsor-vehicle-movement-summary">Repulsor Vehicle Movement Summary</a>
+                
+
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#climb-and-clamber" class="link-to-c">Climb and Clamber</a>
+                
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#difficult-terrain" class="link-to-d">Difficult Terrain</a>
+                
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#impassable-terrain" class="link-to-i">Impassable Terrain</a>
+                <a href="#movement">Movement</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                <a href="#open-terrain" class="link-to-o">Open Terrain</a>
+                <a href="#pivot" class="link-to-p">Pivot</a>
+                <a href="#reverse" class="link-to-r">Reverse</a>
+                <a href="#speeder-x" class="link-to-s">Speeder X</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+                <!-- See vertical movement on page 10 ADD THIS LATER -->
+
+
+
+
+              </p>
+            </div>
+          </div>
+          <!-- End Creature Trooper Movement Summary -->
+
+          <!-- Ground vehicle movement summary -->
+          <a href="#ground-vehicle-movement-summary"><button>Ground Vehicle Movement Summary</button></a>
+          <div id="ground-vehicle-movement-summary" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Ground Vehicle Movement Summary</h4>
+              <ul>
+                <li>A ground vehicle mini can move through friendly and
+                  enemy repulsor vehicle minis.</li>
+                <li>A ground vehicle mini cannot climb or clamber unless it has the <strong class="keyword-reference">climbing vehicle</strong> keyword.</li>
+                <li>A ground vehicle mini cannot embark or disembark.</li>
+                <li>A ground vehicle mini can reverse.</li>
+                <li>A ground vehicle mini can pivot, and if it has a non-round
+                  base, it displaces friendly and enemy trooper minis when
+                  doing so.</li>
+                <li>A ground vehicle mini can displace friendly and enemy
+                  trooper minis by moving through them.
+                <ul>
+                  <li>A ground vehicle mini cannot move through or displace
+                    a trooper mini that is engaged.</li>
+                  <li>A ground vehicle mini cannot move through or displace
+                    emplacement trooper minis.</li>
+                  <li>A ground vehicle mini cannot move through or displace
+                    creature trooper minis.</li>
+
+                </ul></li>
+                <li>A ground vehicle mini cannot move through friendly or
+                  enemy ground vehicle minis.</li>
+                <li>While performing a standard move, a ground vehicle can
+                  move onto or over a piece of a terrain that has a height
+                  that is equal to or less than <strong>half</strong> the height of the unit
+                  leader’s mini.</li>
+
+              </ul>
+              <p class="related-topics"><strong class="keyword-reference">Movement Summaries:</strong>
+                <a href="#trooper-movement-summary">Trooper Movement Summary</a>
+                
+                <a href="#emplacement-trooper-movement-summary">Emplacement Trooper Movement Summary</a>
+                <a href="#creature-trooper-movement-summary">Creature Trooper Movement Summary</a>
+                <a href="#repulsor-vehicle-movement-summary">Repulsor Vehicle Movement Summary</a>
+                
+
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#climb-and-clamber" class="link-to-c">Climb and Clamber</a>
+                
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#difficult-terrain" class="link-to-d">Difficult Terrain</a>
+                
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#impassable-terrain" class="link-to-i">Impassable Terrain</a>
+                <a href="#movement">Movement</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                <a href="#open-terrain" class="link-to-o">Open Terrain</a>
+                <a href="#pivot" class="link-to-p">Pivot</a>
+                <a href="#reverse" class="link-to-r">Reverse</a>
+                <a href="#speeder-x" class="link-to-s">Speeder X</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+                <!-- See vertical movement on page 10 ADD THIS LATER -->
+
+
+
+
+              </p>
+            </div>
+          </div>
+          <!-- end ground vehicle movement summary -->
+
+          <!-- repulsor vehicle movement summary -->
+          <a href="#repulsor-vehicle-movement-summary"><button>Repulsor Vehicle Movement Summary</button></a>
+          <div id="repulsor-vehicle-movement-summary" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Repulsor Vehicle Movement Summary</h4>
+              <ul>
+                <li>A repulsor vehicle mini can move through all types of units.</li>
+                <li>A repulsor vehicle mini cannot climb, clamber, embark,
+                  or disembark.</li>
+                <li>A repulsor vehicle cannot reverse unless it has the
+                  <strong class="keyword-reference">hover</strong> keyword.</li>
+                <li>A repulsor vehicle mini can pivot.</li>
+                <li>While performing a standard move, reverse, or strafe, a
+                  repulsor vehicle mini can move onto or over a piece of a
+                  terrain that has a height that is equal to or less than the
+                  height of the unit leader’s mini.</li>
+                <li>When a repulsor vehicle mini’s final movement position
+                  would overlap one or more trooper minis during a
+                  <strong>compulsory</strong> move, those minis are displaced.
+                <ul>
+                  <li>Repulsor vehicles cannot displace troopers when
+                    performing any move other than a compulsory move.</li>
+                  <li>A repulsor vehicle performing a compulsory move
+                    cannot displace a trooper mini that is engaged.</li>
+                  <li>A repulsor vehicle performing a compulsory move
+                    cannot displace emplacement trooper minis.</li>
+                  <li>A repulsor vehicle performing a compulsory move
+                    cannot displace creature trooper minis.</li>
+
+                </ul></li>
+
+              </ul>
+              <p class="related-topics"><strong class="keyword-reference">Movement Summaries:</strong>
+                <a href="#trooper-movement-summary">Trooper Movement Summary</a>
+                
+                <a href="#emplacement-trooper-movement-summary">Emplacement Trooper Movement Summary</a>
+                <a href="#creature-trooper-movement-summary">Creature Trooper Movement Summary</a>
+                <a href="#ground-vehicle-movement-summary">Ground Vehicle Movement Summary</a>
+                
+
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#climb-and-clamber" class="link-to-c">Climb and Clamber</a>
+                
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#difficult-terrain" class="link-to-d">Difficult Terrain</a>
+                
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#impassable-terrain" class="link-to-i">Impassable Terrain</a>
+                <a href="#movement">Movement</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+                <a href="#open-terrain" class="link-to-o">Open Terrain</a>
+                <a href="#pivot" class="link-to-p">Pivot</a>
+                <a href="#reverse" class="link-to-r">Reverse</a>
+                <a href="#speeder-x" class="link-to-s">Speeder X</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <a href="#withdraw" class="link-to-w">Withdraw</a>
+                <!-- See vertical movement on page 10 ADD THIS LATER -->
+
+
+
+
+              </p>
+            </div>
+          </div>
+          <!-- end repulsor vehicle movement summary -->
+
+
+
+   <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <div id="rrg-entry-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>RRG Entry Name</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+          -->
+
+          <!-- paste above this -->
+          
+        </div>
       </div>
       <h2 class="btn-letter header-N">N</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="n-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
-        <div class="entries"></div>
+        <div class="entries">
+
+          <!-- Nimble -->
+          <a href="#Nimble"><button class="unit-keyword">Nimble</button></a>
+          <div id="Nimble" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Nimble (Unit Keyword)</h4>
+              <p>After a unit that has the <strong class="keyword-reference">nimble</strong> keyword defends against an attack, if it spent at least one dodge token, it gains one
+                dodge token.</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                
+                <a href="#dodge" class="link-to-d">Dodge</a>
+                
+              </p>
+            </div>
+          </div>
+          <!-- End Nimble -->
+
+           <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <div id="rrg-entry-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>RRG Entry Name</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+          -->
+
+          <!-- paste above this -->
+        </div>
       </div>
       <h2 class="btn-letter header-O">O</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
