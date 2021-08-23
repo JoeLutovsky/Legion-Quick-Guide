@@ -25,6 +25,7 @@ body {
   line-height: 1.5em;
   color: #424042;
   background-color: #e6e4e1;
+  font-size: 18px;
 }
 
 h4 {
@@ -145,9 +146,13 @@ ol li ol {
 }
 
 .aside p {
-  text-transform: uppercase;
-
+  /* text-transform: uppercase; */
+  font-size: 16px;
   font-family: aero_matics_displayregular;
+}
+
+.aside img {
+  max-width: 150px;
 }
 
 .entry:target {
