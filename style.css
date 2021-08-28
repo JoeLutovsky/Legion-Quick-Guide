@@ -28,14 +28,25 @@ body {
   font-size: 18px;
 }
 
-h4 {
+h4,
+h5 {
   font-family: aero_matics_displayregular;
-  font-size: 2em;
+
   line-height: 1;
-  border-bottom: 10px solid #26416d;
+
   margin-bottom: 0.5em;
   letter-spacing: 0.15em;
   padding-bottom: 0.25em;
+}
+
+h4 {
+  font-size: 2em;
+  border-bottom: 10px solid #26416d;
+}
+
+h5 {
+  font-size: 1.25em;
+  border-bottom: 5px solid #26416d;
 }
 
 .container {
@@ -208,7 +219,8 @@ ol li ol {
   padding: 0.5em;
 }
 
-a:link {
+a:link,
+a:visited {
   color: #26416d;
 }
 
@@ -283,15 +295,20 @@ a:link {
   border-radius: 15px;
 }
 
-.rank-list {
+.icon-list {
   display: grid;
   grid-template-columns: 50px 1fr 50px 1fr;
   align-items: center;
   gap: 5px;
 }
 
-.rank-list img {
+.icon-list img {
   justify-self: center;
+}
+
+.upgrade-icon {
+  display: inline;
+  height: 2.5em;
 }
 
 @media (max-width: 1000px) {
@@ -313,6 +330,10 @@ a:link {
 
   h4 {
     font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 1em;
   }
 
   .keyword-reference {
