@@ -272,8 +272,8 @@
                 <a href="#activation-phase">Activation Phase</a>
                 <a href="#aim">Aim</a> <a href="#attack">Attack</a>
                 <a href="#card-actions" class="link-to-c">Card Actions</a>
-                <a href="#Courage" class="link-to-c">Courage</a>
-                <a href="#damaged">Damaged</a>
+                <a href="#courage" class="link-to-c">Courage</a>
+                <a href="#damaged" class="link-to-d">Damaged</a>
                 <a href="#dodge" class="link-to-d">Dodge</a>
                 <a href="#free-actions" class="link-to-f">Free Actions</a>
                 <a href="#free-card-actions" class="link-to-f"
@@ -924,6 +924,74 @@
             </div>
           </div>
           <!-- END Arsenal X -->
+
+          <!-- Ataru Mastery -->
+          <a href="#ataru-mastery"
+            ><button class="unit-keyword">Ataru Mastery</button></a
+          >
+          <div id="ataru-mastery" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Ataru Mastery (Unit Keyword)</h4>
+              <p>
+                A unit that has the
+                <strong class="keyword-reference">ataru mastery</strong> keyword
+                can perform up to 2 attack actions. After it performs an attack,
+                it gains 1 dodge token. After it defends, it gains 1 aim token.
+                While defending against a ranged attack, if it spends a dodge
+                token, the attacker suffers 1 wound for each result rolled.
+              </p>
+              <img
+                class="game-icon"
+                src="img/legion-defense-surge.png"
+                alt="defense surge symbol"
+              />
+              <ul>
+                <li>
+                  The defender must spend at least one dodge token and at least
+                  one hit (
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit symbol"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                  />) result must be canceled during the “Apply Dodge and Cover”
+                  step of the attack in order for the attacker to suffer one
+                  wound.
+                  <ul>
+                    <li>
+                      If all hit (<img
+                        class="game-icon"
+                        src="img/legion-hit.png"
+                        alt="Hit symbol"
+                      />) results would be canceled by cover, the defender can
+                      still spend a dodge token in order to gain the benefits of
+                      ataru mastery, including causing the attacker to suffer
+                      one wound.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  If <strong class="keyword-reference">ataru mastery</strong> is
+                  used against an attack that includes the immune: deflect
+                  keyword, it cannot cause wounds to the attacker.
+                </li>
+              </ul>
+
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim">Aim</a>
+                <a href="#attack">Attack</a>
+
+                <a href="#deflect" class="link-to-d">Deflect</a>
+                <a href="#dodge" class="link-to-d">Dodge</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Ataru Mastery -->
 
           <!-- AT (RANGE) -->
           <a href="#at-range"><button>At (Range)</button></a>
@@ -2294,11 +2362,19 @@
               <h4>RRG Entry Name</h4>
               <p>RRG TEXT CONTENT GOES HERE</p>
               <p class="related-topics">
-                <strong class="keyword-reference"> Related Topics:</strong>
-                <a href="#actions">Actions</a>
-                <a href="#courage">Courage</a>
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
               </p>
             </div>
+          </div>
           </div>
 
             -->
@@ -3140,7 +3216,7 @@
                   If neither player can play a command card, the player with the
                   round counter rolls a red die to determine which player has
                   <strong class="keyword-reference"
-                    ><a class="link-to-p" href="#priortiy">priority</a></strong
+                    ><a class="link-to-p" href="#priority">priority</a></strong
                   >, as if both players had played command cards with the same
                   number of pips.
                 </li>
@@ -7192,7 +7268,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 <a href="#exhaust">Exhaust</a>
 
                 <a href="#supply-deck" class="link-to-s">Supply Deck</a>
-                <a href="#upgrade-cards" class="link-to-u">UPgrade Cards</a>
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
               </p>
             </div>
           </div>
@@ -8166,7 +8242,30 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
               </p>
             </div>
           </div>
-          <!-- ENd Guardian X -->
+          <!-- End Guardian X -->
+
+          <!-- Guidance -->
+          <a href="#guidance"><button class="unit-keyword">Guidance</button></a>
+          <div id="guidance" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Guidance (Unit Keyword)</h4>
+              <p>
+                When a unit uses the
+                <strong class="keyword-reference">guidance</strong> keyword
+                action, choose another friendly unit at range 1-2. That unit may
+                perform a free non-attack action.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#free-actions" class="link-to-f">Free Actions</a>
+                <a href="#free-card-actions" class="link-to-f"
+                  >Free Card Actions</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- End Guidance -->
 
           <!-- Gunslinger -->
           <a href="#gunslinger"
@@ -8226,6 +8325,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- paste above this -->
         </div>
       </div>
+
       <h2 class="btn-letter header-H">H</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="h-entries collapse hidden">
@@ -11613,9 +11713,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   >Defining the Battlefield</a
                 >
 
-                <a href="#objective-tokens" class="link-to-o"
-                  >Objective Tokens</a
-                >
+                <a href="#objective-tokens">Objective Tokens</a>
                 <a href="#victory-tokens" class="link-to-v">Victory Tokens</a>
                 <a href="#winning-the-game" class="link-to-w"
                   >Winning the Game</a
@@ -11682,7 +11780,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 <a href="#defining-the-battlefield" class="link-to-b"
                   >Defining the Battlefield</a
                 >
-                <a href="#objective-cards" class="link-to-o">Objective Cards</a>
+                <a href="#objective-cards">Objective Cards</a>
                 <a href="#victory-tokens" class="link-to-v">Victory Tokens</a>
                 <a href="#winning-the-game" class="link-to-w"
                   >Winning the Game</a
@@ -12060,6 +12158,95 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
             </div>
           </div>
           <!-- End Order Tokens -->
+
+          <!-- Override X -->
+          <a href="#override-x"
+            ><button class="unit-keyword">Override X</button></a
+          >
+          <div id="override-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Override X (Unit Keyword)</h4>
+              <p>
+                When a friendly unit at range X of a unit that has the
+                <strong class="keyword-reference">override</strong> keyword
+                activates, the unit with
+                <strong class="keyword-reference">override</strong> may gain 1
+                suppression token. If it does, that unit ignores AI during its
+                activation.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#ai-action" class="link-to-A">AI: Action</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Override X -->
+
+          <!-- Overrun X -->
+          <a href="#overrun-x"
+            ><button class="weapon-keyword">Overrun X</button></a
+          >
+          <div id="overrun-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Overrun X (Weapon Keyword)</h4>
+              <p>
+                <strong>Overrun Weapons:</strong> A weapon with a red overrun
+                (<img
+                  class="game-icon"
+                  src="img/legion-overrun-icon.PNG"
+                  alt="overrun icon"
+                />) icon is an overrun weapon. Overrun weapons can be used only
+                during overrun attacks. A unit may make X overrun attacks during
+                its activation.
+              </p>
+              <ul>
+                <li>
+                  A unit with an overrun weapon can perform an overrun attack
+                  after it performs a standard move in which it moved through an
+                  enemy unit. After completing the move and resolving any
+                  displacement, the unit with the overrun weapon performs an
+                  attack against the unit it moved through using only its
+                  <strong class="keyword-reference">overrun</strong> weapon.
+                  <ul>
+                    <li>
+                      If a unit can perform multiple overrun attacks during its
+                      activation, it must perform a separate move through an
+                      enemy unit for each overrun attack.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Overrun attacks are not ranged attacks. Game effects that
+                  apply to ranged attacks do not apply to overrun attacks. For
+                  example:
+                  <ul>
+                    <li>Overrun attacks ignore cover</li>
+                    <li>
+                      Fire Support cannot be used during an overrun attack.
+                    </li>
+                    <li>
+                      Overrun attacks do not cause the defender to gain 1
+                      suppression token, unless the overrun attack has the
+                      <strong class="keyword-reference">suppressive</strong>
+                      keyword.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#fire-support" class="link-to-f">Fire Support</a>
+
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#suppressive" class="link-to-s">Suppressive</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Overrun X -->
 
           <!-- PASTE THIS FOR NEW ENTRY
 
@@ -14035,13 +14222,2263 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="s-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
-        <div class="entries"></div>
+        <div class="entries">
+          <!-- Sabotage/Repair -->
+          <a href="#sabotage-repair"
+            ><button class="unit-keyword">Sabotage/Repair</button></a
+          >
+          <div id="sabotage-repair" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Sabotage/Repair (Unit Keyword)</h4>
+              <p>
+                <strong class="keyword-reference">See:</strong>
+                <a href="#objective-tokens" class="link-to-o"
+                  >Objective Tokens</a
+                >
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#objective-cards" class="link-to-o">Objective Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Sabotage/Repair -->
+
+          <!-- Scale -->
+          <a href="#scale"><button class="unit-keyword">Scale</button></a>
+          <div id="scale" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Scale (Unit Keyword)</h4>
+              <p>
+                The scale keyword allows a unit to traverse the battlefield with
+                startling agility. When a unit with the
+                <strong class="keyword-reference">scale</strong> keyword
+                performs a move action, it may either perform a free clamber
+                action before performing that move or perform a free clamber
+                action after performing that move.
+              </p>
+              <ul>
+                <li>
+                  Move actions that can trigger the
+                  <strong class="keyword-reference">scale</strong> keyword
+                  include standard moves, climb, clamber, and disembark.
+                  <ul>
+                    <li>
+                      A unit with the
+                      <strong class="keyword-reference">scale</strong> keyword
+                      can use
+                      <strong class="keyword-reference">scale</strong> in
+                      combination with a clamber action move up or down a
+                      distance up to height 2.
+                    </li>
+                    <li>
+                      A unit with the
+                      <strong class="keyword-reference">scale</strong> keyword
+                      can use
+                      <strong class="keyword-reference">scale</strong> in
+                      combination with a clamber action to move up and over a
+                      fence, wall, or other obstruction that a mini cannot be
+                      placed on top of, up to height 1.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  When a unit that has the
+                  <strong class="keyword-reference">scale</strong> keyword
+                  performs a move, it does not reduce its speed for moving out
+                  of, into, or through difficult terrain.
+                </li>
+                <li>
+                  When a unit that has the
+                  <strong class="keyword-reference">scale</strong> keyword
+                  clambers, it does not roll any white defense dice or suffer
+                  wounds.
+                </li>
+                <li>
+                  A unit cannot use the
+                  <strong class="keyword-reference">scale</strong> keyword after
+                  withdrawing.
+                </li>
+                <li>
+                  A unit can use the
+                  <strong class="keyword-reference">scale</strong> keyword
+                  multiple times during the same activation.
+                </li>
+                <li>
+                  While a panicked unit with the
+                  <strong class="keyword-reference">scale</strong> keyword
+                  attempts to flee the battlefield, it must use the keyword if
+                  it will help it to flee the battlefield by the most
+                  expeditious route.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#climb-and-clamber" class="link-to-c"
+                  >Climb and Clamber</a
+                >
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Scale -->
+
+          <!-- Scatter -->
+          <a href="#scatter"><button class="weapon-keyword">Scatter</button></a>
+          <div id="scatter" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Scatter (Weapon Keyword)</h4>
+              <p>
+                The <strong class="keyword-reference">scatter</strong> keyword
+                allows an attacking unit to send the defender into disarray.
+                After a unit performs an attack using a weapon with the
+                <strong class="keyword-reference">scatter</strong> keyword
+                against a trooper unit whose minis are affixed to small bases,
+                it may move any nonunit leader minis in the defending unit,
+                following all the rules of cohesion, as if the defending unit
+                leader had just performed a standard move.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#cohesion" class="link-to-c">Cohesion</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Scatter -->
+
+          <!-- Scouting Party X -->
+          <a href="#scouting-party-x"
+            ><button class="unit-keyword">Scouting Party X</button></a
+          >
+          <div id="scouting-party-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Scouting Party X (Unit Keyword)</h4>
+              <p>
+                The
+                <strong class="keyword-reference">scouting party x</strong>
+                keyword allows especially skilled scouts to lead a small band of
+                troopers into a forward position. After a unit with the
+                <strong class="keyword-reference">scouting party x</strong>
+                keyword uses the
+                <strong class="keyword-reference">scout</strong> keyword, it may
+                choose up to x friendly trooper units at range 1–2 that have
+                <strong>not</strong> performed a move using the
+                <strong class="keyword-reference">scout</strong> keyword. Each
+                chosen unit may perform a move with a speed equal to x, where x
+                is the scout x value of the unit with the
+                <strong class="keyword-reference">scouting party</strong>
+                keyword.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#setup">Setup</a>
+                <a href="#scout-x">Scout X</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Scouting Party X -->
+
+          <!-- Scout X -->
+          <a href="#scout-x"><button class="unit-keyword">Scout X</button></a>
+          <div id="scout-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Scout X (Unit Keyword)</h4>
+              <p>
+                After a unit with the
+                <strong class="keyword-reference">scout x</strong> keyword
+                deploys, it may perform a standard move, up to speed x.
+              </p>
+              <ul>
+                <li>This move may be a full or partial move.</li>
+                <li>
+                  A unit can perform this move regardless of its maximum speed.
+                  <ul>
+                    <li>
+                      A unit can perform this move regardless of its maximum
+                      speed.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  The <strong class="keyword-reference">scout x</strong> keyword
+                  is cumulative. Thus, if a unit with scout 2 gains
+                  <strong class="keyword-reference">scout 1</strong>, it would
+                  have <strong class="keyword-reference">scout 3</strong>.
+                  <ul>
+                    <li>
+                      The “x” value of the
+                      <strong class="keyword-reference">scout x</strong> keyword
+                      cannot exceed “3.” If a unit would ever have
+                      <strong class="keyword-reference">scout x</strong>
+                      exceeding
+                      <strong class="keyword-reference">scout 3</strong>, it has
+                      <strong class="keyword-reference">scout 3</strong>
+                      instead.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  A unit with the stationary keyword cannot perform standard
+                  moves even if it has the
+                  <strong class="keyword-reference">scout x</strong> keyword.
+                </li>
+                <li>
+                  The effects of difficult terrain are ignored during this move.
+                </li>
+                <li>
+                  A move performed with the
+                  <strong class="keyword-reference">scout x</strong> keyword is
+                  a move, but is not a move action.
+                </li>
+                <li>
+                  The <strong class="keyword-reference">scout x</strong> keyword
+                  is only used after a unit is deployed. If a unit is placed on
+                  the battlefield by a game effect, such as the Rapid
+                  Reinforcements condition card, the
+                  <strong class="keyword-reference">scout x</strong> keyword
+                  does not apply.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#deployment" class="link-to-d">Deployment</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#setup">Setup</a>
+                <a href="#scouting-party-x">Scouting Party X</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Scout X -->
+
+          <!-- Secret Mission -->
+          <a href="#secret-mission"
+            ><button class="unit-keyword">Secret Mission</button></a
+          >
+          <div id="secret-mission" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Secret Mission (Unit Keyword)</h4>
+              <p>
+                While a battle rages on, some units have a hidden directive or a
+                dire goal that will swing the tide of the larger conflict. Once
+                per game, as a free card action, a unit with the
+                <strong class="keyword-reference">secret mission</strong>
+                keyword can place 1 victory token on their card if they are
+                within an enemy deployment zone. At the end of the game, if that
+                unit has at least 1 victory token, used the
+                <strong class="keyword-reference">secret mission</strong>
+                ability, and is not defeated, the player that controls that unit
+                gains 1 victory token.
+              </p>
+              <ul>
+                <li>
+                  A player who controls a unit that has the
+                  <strong class="keyword-reference">secret mission</strong>
+                  keyword and has a victory token gains 1 victory token only if
+                  that unit has a victory token due to using the
+                  <strong class="keyword-reference">secret mission</strong>
+                  ability.
+                </li>
+                <li>
+                  When playing a game that uses scenario battle cards, such as
+                  those found in the Downed AT-ST expansion, unless otherwise
+                  stated, the
+                  <strong class="keyword-reference">secret mission</strong>
+                  keyword cannot be used.
+                  <ul>
+                    <li>
+                      Scenario battle cards have a scenario icon in the top
+                      right corner of the card.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#victory-tokens" class="link-to-v">Victory Tokens</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Secret Mission -->
+
+          <!-- SETUP -->
+          <!-- ADD THIS LATER -->
+          <!-- End Setup -->
+
+          <!-- Sentinel -->
+          <a href="#sentinel"><button class="unit-keyword">Sentinel</button></a>
+          <div id="sentinel" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Sentinel (Unit Keyword)</h4>
+              <p>
+                A unit with the
+                <strong class="keyword-reference">sentinel</strong> keyword can
+                spend a standby token after an enemy unit attacks, moves, or
+                performs an action and is at range 1–3, rather than at range
+                1–2.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#standby">Standby</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Sentinel -->
+
+          <!-- Sharpshooter X -->
+          <a href="#sharpshooter-x"
+            ><button class="unit-keyword">Sharpshooter X</button></a
+          >
+          <div id="sharpshooter-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Sharpshooter X (Unit Keyword)</h4>
+              <p>
+                During the “Apply Dodge and Cover” step of an attack, a unit
+                with the sharpshooter x keyword subtracts x from the defender’s
+                cover.
+              </p>
+              <ul>
+                <li>
+                  When determining cover, add cover values (not exceeding heavy
+                  cover), before subtracting cover values.<br /><br /><em
+                    >For example, a unit with heavy cover and a suppression
+                    token that is attacked by a unit with sharpshooter 1 has
+                    light cover.</em
+                  >
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#cover" class="link-to-c">Cover</a>
+
+                <a href="#cover-x" class="link-to-c">Cover X</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Sharpshooter X -->
+
+          <!-- Shield Tokens -->
+          <a href="#shield-tokens"><button>Shield Tokens</button></a>
+          <div id="shield-tokens" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Shield Tokens</h4>
+              <figure class="aside">
+                <img
+                  src="img/legion-shield-tokens.PNG"
+                  alt="Active and Inactive Shield tokens"
+                />
+                <p>Active and Inactive Shield Tokens</p>
+              </figure>
+              <p>
+                Certain units have shield tokens that allow them to cancel hit
+                (<img
+                  class="game-icon"
+                  src="img/legion-hit.PNG"
+                  alt="Hit icon"
+                />) results or even critical (<img
+                  class="game-icon"
+                  src="img/legion-crit.PNG"
+                  alt="crit icon"
+                />) results. Shield tokens are double-sided, with an active side
+                and an inactive side.
+              </p>
+              <ul>
+                <li>
+                  Shield tokens always enter play with their active side faceup.
+                </li>
+                <li>
+                  Shield tokens are placed on the battlefield next to the unit
+                  that has those shield tokens.
+                </li>
+                <li>
+                  Shield tokens belong to the unit, and are not assigned to
+                  individual minis.
+                </li>
+                <li>
+                  When a unit flips an active shield token, that shield token is
+                  flipped to its inactive side and is now inactive. When a unit
+                  flips an inactive shield token, that shield token is flipped
+                  to its active side and is now active.
+                </li>
+                <li>
+                  While defending against a ranged attack, during the “Apply
+                  Dodge and Cover ” step of the attack, a unit can flip any
+                  number of its active shield tokens to their inactive side to
+                  cancel 1 hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.PNG"
+                    alt="Hit icon"
+                  />) results or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.PNG"
+                    alt="crit icon"
+                  />) result for each shield token flipped in this way.
+                  <ul>
+                    <li>
+                      Shield tokens can be used this way only during ranged
+                      attacks, not melee attacks.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  If an attack pool as the
+                  <strong class="keyword-reference">ion x</strong> keyword,
+                  During the Apply Dodge and Cover step of the attack, the
+                  defender must apply any other effects (such as dodge tokens
+                  and cover) before flipping active shield tokens. Then, for
+                  each hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.PNG"
+                    alt="Hit icon"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.PNG"
+                    alt="crit icon"
+                  />) result remaining up to x, where x is the value of the ion
+                  x keyword, the defender must flip an active shield token to
+                  its inactive side. Shield tokens flipped in this way do not
+                  cancel a hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.PNG"
+                    alt="Hit icon"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.PNG"
+                    alt="crit icon"
+                  />) result. After doing so, if any active shield tokens
+                  remain, the defender may flip them to cancel hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.PNG"
+                    alt="Hit icon"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.PNG"
+                    alt="crit icon"
+                  />) results as normal.
+                </li>
+                <li>
+                  Certain game effects allow a unit to flip inactive shield
+                  tokens. When doing so, flip shield tokens from their inactive
+                  side to their active side.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#blocked" class="link-to-b">Blocked</a>
+
+                <a href="#cancel" class="link-to-c">Cancel</a>
+
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#pierce-x" class="link-to-p">Pierce X</a>
+              </p>
+            </div>
+          </div>
+          <!-- Shield Tokens -->
+
+          <!-- Shielded X -->
+          <a href="#shielded-x"
+            ><button class="unit-keyword">Shielded X</button></a
+          >
+          <div id="shielded-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Shielded X (Unit Keyword)</h4>
+              <p>
+                A unit with the
+                <strong class="keyword-reference">shielded x</strong> keyword
+                has x shield tokens.
+              </p>
+              <ul>
+                <li>
+                  If a unit gains the
+                  <strong class="keyword-reference">shielded x</strong> keyword,
+                  it gains x shield tokens. Similarly, if a unit loses the
+                  <strong class="keyword-reference">shielded x</strong> keyword
+                  it loses x shield tokens.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#keywords" class="link-to-k">Keywords</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Shielded X -->
+
+          <!-- Sidearm: Melee/Ranged -->
+          <a href="#sidearm-melee-ranged"
+            ><button class="weapon-keyword">Sidearm: Melee/Ranged</button></a
+          >
+          <div id="sidearm-melee-ranged" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Sidearm: Melee/Ranged (Upgrade Keyword)</h4>
+              <p>
+                If an upgrade that adds a miniature to a unit has the
+                <strong class="keyword-reference">sidearm: melee</strong>
+                keyword or the
+                <strong class="keyword-reference">sidearm: ranged</strong>
+                keyword, the mini added by that upgrade cannot use any weapons
+                during a melee or ranged attack, respectively, other than the
+                weapon on the upgrade card that added that mini.<br /><br /><em
+                  >For example, the Electrostaff Guard upgrade card has a melee
+                  weapon and the
+                  <strong class="keyword-reference">sidearm: melee</strong>
+                  keyword. The mini added by that upgrade can only use the
+                  weapon on the Electrostaff Guard upgrade during a melee
+                  attack. That mini may still use any available ranged weapon,
+                  such as the ranged weapon on the Imperial Royal Guard unit
+                  card, during a ranged attack.</em
+                >
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack-pool" class="link-to-A">Attack Pool</a>
+                <a href="#melee-weapon" class="link-to-m">Melee Weapon</a>
+                <a href="#ranged-weapon" class="link-to-r">Ranged Weapon</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Sidearm: Melee/Ranged -->
+
+          <!-- Small -->
+          <a href="#small"><button class="weapon-keyword">Small</button></a>
+          <div id="small" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Small (Upgrade Keyword)</h4>
+              <p>
+                Some minis that are added to units by upgrade cards or
+                counterpart cards are very small, and their presence has a
+                negligible effect when that unit is targeted by a non-area
+                ranged attack. While a unit is defending against a non-area
+                ranged attack, each mini with the
+                <strong class="keyword-reference">small</strong> keyword is
+                ignored for the purposes of determining line of sight, cover,
+                and range.
+              </p>
+              <ul>
+                <li>
+                  When determining line of sight during a non-area attack,
+                  ignore each mini with the
+                  <strong class="keyword-reference">small</strong> keyword in
+                  the defending unit. Determine line of sight to that unit as
+                  normal for all other effects.
+                  <ul>
+                    <li>
+                      If a mini with the
+                      <strong class="keyword-reference">small</strong> keyword
+                      is the only mini in a unit visible to an enemy unit, that
+                      unit cannot be attacked by that enemy unit.
+                    </li>
+                    <li>
+                      A mini with the
+                      <strong class="keyword-reference">small</strong> keyword
+                      still suffers wounds as normal if the attacking unit would
+                      otherwise have line of sight to it during an attack.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  When determining cover during an attack, ignore each mini with
+                  the <strong class="keyword-reference">small</strong> keyword
+                  in the defending unit.
+                  <ul>
+                    <li>
+                      For the purposes of determining cover, each mini with the
+                      <strong class="keyword-reference">small</strong> keyword
+                      is treated as though it were not a part of the defending
+                      unit.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  When determining range to a defending unit during an attack,
+                  ignore each mini with the
+                  <strong class="keyword-reference">small</strong> keyword in
+                  the defending unit. Measure range to that unit as normal for
+                  all other effects.
+                  <ul>
+                    <li>
+                      If a mini with the
+                      <strong class="keyword-reference">small</strong> keyword
+                      is the only mini in a unit that an enemy unit’s weapons
+                      would have range to, that unit cannot be attacked by that
+                      enemy unit.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  The <strong class="keyword-reference">small</strong> keyword
+                  is used only during ranged attacks.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#cover" class="link-to-c">Cover</a>
+                <a href="#line-of-sight" class="link-to-l">Line of Sight</a>
+                <a href="#miniature" class="link-to-m">Miniature</a>
+                <a href="#range" class="link-to-r">Range</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Small -->
+
+          <!-- Smoke Tokens -->
+          <a href="#smoke-tokens"><button>Smoke Tokens</button></a>
+          <div id="smoke-tokens" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Smoke Tokens</h4>
+              <figure class="aside">
+                <img src="img/legion-smoke-token.PNG" alt="Smoke Token" />
+                <p>Smoke Token</p>
+              </figure>
+              <p>
+                Clouds of smoke on the battlefield can provide tactical cover to
+                troops. Trooper units whose unit leader is at range 1 of a smoke
+                token improve their cover by 1. While a trooper unit is
+                attacking, if the attacking unit leader is at range 1 of a smoke
+                token, the defender improves their cover by 1. Smoke tokens are
+                removed at the end of each round.
+              </p>
+              <ul>
+                <li>
+                  A vehicle unit at range 1 of a smoke token does not improve
+                  its cover, and units defending against a vehicle unit whose
+                  unit leader is at range 1 of a smoke token do not improve
+                  their cover.
+                </li>
+                <li>
+                  During the End Phase, all smoke tokens are returned to the
+                  supply.
+                </li>
+                <li>
+                  Effects that improve a unit's cover are cumulative.<br /><br /><em
+                    >For example, a unit whose unit leader is at range 1 of two
+                    smoke tokens would improve its cover by 2.</em
+                  >
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#cover" class="link-to-c">Cover</a>
+
+                <a href="#smoke-x">Smoke X</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Smoke Tokens -->
+
+          <!-- Smoke X -->
+          <a href="#smoke-x"><button class="unit-keyword">Smoke X</button></a>
+          <div id="smoke-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Smoke X (Unit Keyword)</h4>
+              <p>
+                A unit that has the
+                <strong class="keyword-reference">smoke x</strong> keyword can
+                perform the
+                <strong class="keyword-reference">smoke x</strong> card action.
+                To perform this action, the unit places x smoke tokens
+                <strong>within</strong> range 1 and in line of sight of its unit
+                leader.
+              </p>
+              <ul>
+                <li>
+                  Smoke tokens cannot overlap any objective, condition, charge,
+                  or other smoke tokens, and must be placed on a flat surface.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#cover" class="link-to-c">Cover</a>
+
+                <a href="#smoke-tokens">Smoke Tokens</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Smoke X -->
+
+          <!-- Soresu Mastery -->
+          <a href="#soresu-mastery"
+            ><button class="unit-keyword">Soresu Mastery</button></a
+          >
+          <div id="soresu-mastery" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Soresu Mastery (Unit Keyword)</h4>
+              <p>
+                Those who have mastered the Soresu style of lightsaber combat
+                have perfected the defensive arts. While a unit with
+                <strong class="keyword-reference">soresu mastery</strong> is
+                defending or using the
+                <strong class="keyword-reference">guardian x</strong> keyword,
+                if it spends a dodge token, its surge conversion chart gains
+                “<img
+                  class="game-icon"
+                  src="img/legion-defense-surge.png"
+                  alt="Defense Surge Symbol"
+                />
+                :
+                <img
+                  class="game-icon"
+                  src="img/legion-block.png"
+                  alt="Block Symbol"
+                />,” and the attacker suffers 1 wound for each defense surge
+                (<img
+                  class="game-icon"
+                  src="img/legion-defense-surge.png"
+                  alt="Defense Surge Symbol"
+                />
+                ) result rolled during the “Roll Defense Dice” step.
+              </p>
+              <ul>
+                <li>
+                  While using the
+                  <strong class="keyword-reference">guardian x</strong> keyword,
+                  a unit with the
+                  <strong class="keyword-reference">soresu mastery</strong>
+                  keyword can spend 1 dodge token at the start of the “Modify
+                  Attack Dice” step of an attack to cancel 1 hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />
+                  ) result.
+                  <ul>
+                    <li>
+                      This canceled hit (<img
+                        class="game-icon"
+                        src="img/legion-hit.png"
+                        alt="Hit Symbol"
+                      />) result counts as one of the x hit (<img
+                        class="game-icon"
+                        src="img/legion-hit.png"
+                        alt="Hit Symbol"
+                      />) results canceled with
+                      <strong class="keyword-reference">guardian x</strong>.
+                    </li>
+                    <li>
+                      If the unit with
+                      <strong class="keyword-reference">soresu mastery</strong>
+                      spends a dodge token in this way, it will roll 1 fewer
+                      defense die while using
+                      <strong class="keyword-reference">guardian x</strong>.
+                    </li>
+                    <li>
+                      <strong class="keyword-reference">soresu mastery</strong>
+                      cannot be used to spend a dodge token while using
+                      <strong class="keyword-reference">guardian x</strong> if
+                      the attack pool contains only weapons with the
+                      <strong class="keyword-reference">high velocity</strong>
+                      keyword.
+                    </li>
+                    <li>
+                      While using the
+                      <strong class="keyword-reference">guardian x</strong>
+                      keyword, a unit with the
+                      <strong class="keyword-reference">soresu mastery</strong>
+                      keyword can spend only 1 dodge token.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  If
+                  <strong class="keyword-reference">soresu mastery</strong> is
+                  used against an attack that includes the
+                  <strong class="keyword-reference">immune: deflect</strong>
+                  keyword, it cannot cause wounds to the attacker.
+                </li>
+                <li>
+                  A unit must spend a dodge token to gain the benefits of the
+                  <strong class="keyword-reference">soresu mastery</strong>
+                  keyword. Spending this dodge token cancels one hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) result. If the unit is defending, it may spend additional
+                  dodge tokens to cancel additional hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) results; however, doing so does not improve or add to the
+                  benefits of the
+                  <strong class="keyword-reference">soresu mastery</strong>
+                  keyword.
+                </li>
+                <li>
+                  If a unit uses the
+                  <strong class="keyword-reference">soresu mastery</strong>
+                  keyword during an attack, it is possible for the attacker to
+                  be defeated during the “Roll Defense Dice” step. If the
+                  <strong class="keyword-reference">soresu mastery</strong>
+                  keyword inflicts a number of wounds that causes the attacker
+                  to be defeated, the attack still continues and the defender
+                  can still suffer wounds.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#guardian-x" class="link-to-g">Guardian X</a>
+                <a href="#immune-deflect" class="link-to-i">Immune: Deflect</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Soresu Mastery -->
+
+          <!-- Speed -->
+          <a href="#speed"><button>Speed</button></a>
+          <div id="speed" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Speed</h4>
+
+              <p class="related-topics">
+                <strong class="keyword-reference">See:</strong>
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Speed -->
+
+          <!-- Speeder X -->
+          <a href="#speeder-x"
+            ><button class="unit-keyword">Speeder X</button></a
+          >
+          <div id="speeder-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Speeder X (Unit Keyword)</h4>
+              <p>
+                The <strong class="keyword-reference">speeder x</strong> keyword
+                indicates that a vehicle is constantly in motion, as represented
+                by compulsory moves, while also indicating the height of terrain
+                the vehicle can freely move over.
+              </p>
+              <ul>
+                <li>
+                  A unit with the
+                  <strong class="keyword-reference">speeder x</strong> keyword
+                  must perform a free compulsory move action at the
+                  <strong>start</strong> or <strong>end</strong> of the Perform
+                  Actions step of its activation.
+                  <ul>
+                    <li>
+                      A compulsory move is a free standard move action, and
+                      therefore triggers abilities that occur after move actions
+                      are performed. However, as a free action, it does not
+                      count against the unit’s two actions per activation.
+                    </li>
+                    <li>
+                      To perform a compulsory move, the unit performs a full
+                      move at its maximum speed. If it cannot do so, or if a
+                      full move would cause any part of the unit leader’s base
+                      to be outside the battlefield, it can perform a partial
+                      move instead, ending its movement as far along the
+                      movement template as possible. If the unit performs a
+                      partial movement in this way, the unit suffers a number of
+                      wounds equal to its maximum speed.
+                      <ul>
+                        <li>
+                          If the unit leader ends this movement with any part of
+                          its base outside of the battlefield, the unit is
+                          defeated.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      A repulsor vehicle’s final position after performing a
+                      move cannot overlap another unit unless it is performing a
+                      compulsory move. If it is performing a compulsory move,
+                      its final position can overlap trooper minis. If its final
+                      position after performing a compulsory move would overlap
+                      one or more trooper minis, those trooper minis are
+                      displaced.
+                      <ul>
+                        <li>
+                          Troopers that are engaged cannot be displaced by a
+                          compulsory move. If a repulsor vehicle's final
+                          position after performing a compulsory move would
+                          overlap an engaged trooper, it must perform a partial
+                          move instead.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  During a move, a unit that has the
+                  <strong class="keyword-reference">speeder x</strong> keyword
+                  can move over terrain equal to or less than height x.
+                </li>
+                <li>
+                  A unit that has the
+                  <strong class="keyword-reference">speeder x</strong> keyword
+                  may end its movement on a piece of terrain that has a height
+                  equal to or less than x.
+                </li>
+                <li>
+                  A unit that has the
+                  <strong class="keyword-reference">speeder x</strong> keyword
+                  must still be placed as flat as possible on the battlefield
+                  after performing any type of move. Not all terrain that a unit
+                  could end their move on top of is perfectly flat and players
+                  should agree before playing as to what terrain units cannot
+                  end their movement on; however, as a general rule, if
+                  overlapping a piece of terrain causes a mini to be unstable or
+                  fall over, or causes the mini’s base to be at an angle greater
+                  than 45 degrees, that mini cannot end a move in that position.
+                  <ul>
+                    <li>
+                      If a unit performing a compulsory move cannot complete a
+                      full move without overlapping a piece of terrain that is
+                      not flat enough to be placed on top of, it must perform a
+                      partial move instead, and suffer damage equal to its
+                      maximum speed.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  The final position of a unit after any move cannot overlap
+                  objective or condition tokens.
+                </li>
+                <li>
+                  When a unit performs a compulsory move, the bases of the minis
+                  in the unit can partially overhang ledges, as long as each
+                  mini is stable and is not precariously placed. If there is not
+                  room to place a unit leader’s base on the surface that the
+                  unit is moving onto, or if any mini’s base cannot be placed
+                  legally and maintain cohesion, that unit cannot complete the
+                  compulsory move.
+                </li>
+                <li>
+                  During a compulsory move, if the unit leader would end its
+                  movement on a piece of terrain it would normally ignore due to
+                  the
+                  <strong class="keyword-reference">speeder x</strong> keyword
+                  or the repulsor vehicle unit type, it may shift backwards
+                  along the movement tool by a distance no greater than half the
+                  length of its base, so that its base is able to be placed
+                  legally on the battlefield or terrain piece. It may not do so
+                  if the terrain is not ignored by the
+                  <strong class="keyword-reference">speeder x</strong> keyword
+                  or the repulsor vehicle unit type and would cause the unit to
+                  be unable to complete the compulsory move.
+                  <ul>
+                    <li>
+                      A unit leader’s base may only be moved backwards along the
+                      movement tool, it cannot be moved forward past the end of
+                      the movement tool.
+                    </li>
+                    <li>
+                      A unit leader’s base cannot be moved back more than half
+                      the diameter of the base.
+                    </li>
+                    <li>
+                      A unit leader must still move as far along the movement
+                      tool as possible, it may move back only to allow its base
+                      to be placed legally and in a stable position on the
+                      battlefield or piece of terrain.
+                    </li>
+                    <li>
+                      If the unit leader still cannot be legally placed on the
+                      battlefield, it moves as far along the movement tool as
+                      possible and takes damage equal to its speed for failing
+                      to complete its compulsory move.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#defeated" class="link-to-d">Defeated</a>
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#height" class="link-to-h">Height</a>
+
+                <a href="#leaving-the-battlefield" class="link-to-l"
+                  >Leaving the Battlefield</a
+                >
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+                <!-- see additional terrain rules on page 8 ADD THIS LATER -->
+              </p>
+            </div>
+          </div>
+          <!-- End Speeder X -->
+
+          <!-- Spend -->
+          <a href="#spend"><button>Spend</button></a>
+          <div id="spend" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Spend</h4>
+              <p>
+                Game effects often call for units to spend tokens or spend
+                actions.
+              </p>
+              <ul>
+                <li>
+                  When a unit spends a token, the token is returned to the
+                  supply.
+                </li>
+                <li>
+                  When a unit spends an action, it loses that action. In order
+                  to spend more than one action, a unit must be able to perform
+                  two consecutive actions, and cannot have lost an action from
+                  being suppressed or damaged. <br /><br />
+                  <em
+                    >For example, during its “Perform Actions” step, a disabled
+                    AT-RT decides to move. Because it is disabled, the AT-RT
+                    spends two actions in order to perform the move. Then, with
+                    no actions left and with no free actions available, the
+                    AT-RT ends its activation.</em
+                  >
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#aim" class="link-to-A">Aim</a>
+
+                <a href="#dodge" class="link-to-d">Dodge</a>
+                <a href="#standby">Standby</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Spend -->
+
+          <!-- Spotter X -->
+          <a href="#spotter-x"
+            ><button class="unit-keyword">Spotter X</button></a
+          >
+          <div id="spotter-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Spotter X (Unit Keyword)</h4>
+              <p>
+                As a card action, a unit with the
+                <strong class="keyword-reference">spotter x</strong> keyword can
+                choose up to x friendly units at range 1. Each chosen unit gains
+                one aim token.
+              </p>
+              <ul>
+                <li>
+                  This effect is different than performing an aim action, and
+                  therefore does not trigger abilities that occur after aim
+                  actions are performed.
+                </li>
+                <li>
+                  A unit using the
+                  <strong class="keyword-reference">spotter x</strong> keyword
+                  may choose itself as one of the friendly units.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#aim" class="link-to-A">Aim</a>
+
+                <a href="#card-actions" class="link-to-c">Card Actions</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Spotter X -->
+
+          <!-- Spray -->
+          <a href="#spray"><button class="weapon-keyword">Spray</button></a>
+          <div id="spray" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Spray (Weapon Keyword)</h4>
+              <p>
+                A weapon that has the
+                <strong class="keyword-reference">spray</strong> keyword is
+                effective against units that comprise multiple miniatures. When
+                a mini adds a weapon that has the
+                <strong class="keyword-reference">spray</strong> keyword to the
+                attack pool, that weapon contributes its dice a number of times
+                equal to the number of minis in the defender that are in line of
+                sight of the mini using that weapon.<br /><br /><em
+                  >For example, if a weapon has the spray keyword and one black
+                  attack die icon, it contributes three black attack dice to the
+                  attack pool when targeting a unit that comprises three
+                  minis.</em
+                >
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#attack-pool" class="link-to-A">Attack Pool</a>
+
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#line-of-sight" class="link-to-l">Line of Sight</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Spray -->
+
+          <!-- Spur -->
+          <a href="#spur"><button class="unit-keyword">Spur</button></a>
+          <div id="spur" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Spur (Unit Keyword)</h4>
+              <p>
+                While a unit with the
+                <strong class="keyword-reference">spur</strong> keyword performs
+                a move, it may gain 1 suppression token to increase its maximum
+                speed by 1.
+              </p>
+              <ul>
+                <li>
+                  A unit using the
+                  <strong class="keyword-reference">spur</strong> keyword cannot
+                  gain multiple suppression tokens during the same move to
+                  increase its maximum speed by more than 1.
+                </li>
+                <li>
+                  When a unit uses the
+                  <strong class="keyword-reference">spur</strong> keyword, its
+                  maximum speed is increased only for that move, not for
+                  subsequent moves.
+                </li>
+                <li>
+                  When a unit performs a move, apply any effects that increase
+                  the unit’s maximum speed (up to speed 3), before applying any
+                  effects that reduce that unit’s maximum speed.<br /><br /><em
+                    >For example, a unit that normally has a maximum speed of 1,
+                    but has 1 immobilize token, can use the
+                    <strong class="keyword-reference">spur</strong> keyword to
+                    perform a move with a total maximum speed of 1. However, a
+                    unit that normally has a maximum speed of 1, but has 2
+                    immobilize tokens, cannot use the
+                    <strong class="keyword-reference">spur</strong> keyword to
+                    perform a move because its maximum speed would still be
+                    0.</em
+                  >
+                </li>
+                <li>A unit cannot have a maximum speed beyond 3.</li>
+                <li>
+                  While a panicked unit with the
+                  <strong class="keyword-reference">spur</strong> keyword
+                  attempts to flee the battlefield, it must use the
+                  <strong class="keyword-reference">spur</strong> keyword if it
+                  will help it to flee the battlefield by the most expeditious
+                  route.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#immobilize-tokens" class="link-to-i"
+                  >Immobilize Tokens</a
+                >
+                <a href="#movement" class="link-to-m">Movement</a>
+
+                <a href="#speed" class="link-to-s">Speed</a>
+                <a href="#suppression">Suppression</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Spur -->
+
+          <!-- Standard Move -->
+          <a href="#standard-move"><button>Standard Move</button></a>
+          <div id="standard-move" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Standard Move</h4>
+              <p>
+                A standard move is the most common way that units maneuver
+                across the battlefield. To perform a standard move, a unit
+                places a movement tool against the base of its unit leader and
+                moves that leader along the tool. If it is a notched base, the
+                movement tool is placed in the notch in the front of the unit
+                leader's base.
+              </p>
+              <ul>
+                <li>All speed-x moves are standard moves.</li>
+                <li>A compulsory move is a standard move.</li>
+                <li>
+                  Pivot, Reverse, Strafe, Climb, Clamber, Embark, and Disembark
+                  are <strong>not</strong> standard moves.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#compulsory-move" class="link-to-c">Compulsory Move</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Standard Move -->
+
+          <!-- Standby -->
+          <a href="#standby"><button>Standby</button></a>
+          <div id="standby" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Standby</h4>
+              <figure class="aside">
+                <img src="img/legion-standby.png" alt="Standby Token" />
+                <p>Standby Token</p>
+              </figure>
+              <p>
+                Troopers and ground vehicles can perform the standby action. A
+                unit can only perform the standby action if it has not performed
+                an attack during its activation. To perform a standby action, a
+                player places a standby token on the battlefield near the unit
+                leader.
+              </p>
+              <p>
+                After an enemy unit attacks, moves, or performs an action, if
+                that unit is at range 1–2 and in line of sight of a unit with a
+                standby token, that unit may spend that standby token to perform
+                a free attack action or a free move action.
+              </p>
+              <ul>
+                <li>
+                  A unit cannot perform a standby action if it has performed an
+                  attack during its activation.
+                </li>
+                <li>
+                  If a trooper unit gains a suppression token or performs a
+                  move, an attack, or an action, it removes any standby tokens
+                  it has.
+                </li>
+                <li>
+                  If a ground vehicle unit performs a move, an attack, or an
+                  action, it removes any standby tokens it has.
+                </li>
+                <li>A unit cannot have more than one standby token.</li>
+                <li>
+                  A unit cannot spend more than one standby token per instance
+                  of being able to spend standby tokens, even if that unit is
+                  able to spend standby tokens from other units.
+                </li>
+                <li>
+                  Standby tokens can be spent only during the Activation Phase.
+                </li>
+                <li>
+                  During the End Phase, all unspent standby tokens are returned
+                  to the supply.
+                </li>
+                <li>
+                  A unit must have line of sight to an enemy unit moving,
+                  attacking, or performing an action in order to spend a standby
+                  token.
+                </li>
+                <li>
+                  A unit with a standby token measures range from any mini in
+                  its unit to any mini in the enemy unit that attacked, moved,
+                  or performed an action. However, when spending a standby token
+                  to perform an attack, the range of the
+                  <strong>attack</strong> is still measured from the unit leader
+                  of the attacking unit to any mini in the defending unit.
+                </li>
+                <li>
+                  A standby token may be spent <strong>before</strong> any
+                  effects that trigger after an attack, attack action, move, or
+                  move action.<br /><br /><em
+                    >For example, Darth Vader performs a move action to move
+                    into range 2 of a unit of Rebel Troopers that have a standby
+                    token. Before Vader can trigger relentless to perform an
+                    attack with the “Saber Throw” upgrade card, the Rebel
+                    Troopers spend their standby token to perform a move, taking
+                    them beyond range 2 of Darth Vader. With no enemy unit in
+                    range 1–2, Darth Vader can no longer perform an attack.</em
+                  >
+                  <ul>
+                    <li>
+                      Gaining a suppression token is a part of an attack, and
+                      not an effect that triggers after an attack. Thus a
+                      trooper unit cannot spend a standby token after defending
+                      against an attack before it would gain a suppression token
+                      and remove its standby token.
+                    </li>
+                    <li>
+                      If a unit is defeated by an enemy unit performing an
+                      attack by spending a standby token, the defeated unit
+                      cannot then trigger other effects.<br /><br /><em
+                        >For example, a unit of Snowtroopers performs a move and
+                        is at range 2 of a unit of Fleet Troopers that have a
+                        standby token. The Fleet Troopers spend their standby
+                        token to perform a free attack action. During the
+                        attack, the Snowtroopers suffer wounds exceeding their
+                        total health and are defeated. Because the Snowtroopers
+                        are defeated, they can no longer trigger the steady
+                        keyword.</em
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#free-actions" class="link-to-f">Free Actions</a>
+
+                <a href="#movement" class="link-to-m">Movement</a>
+
+                <a href="#suppression">Suppression</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Standby -->
+
+          <!-- Stationary -->
+          <a href="#stationary"
+            ><button class="unit-keyword">Stationary</button></a
+          >
+          <div id="stationary" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Stationary (Unit Keyword)</h4>
+              <p>
+                A unit with the
+                <strong class="keyword-reference">stationary</strong> keyword
+                cannot perform moves or have moves performed with it through
+                other game effects, either during its activation or outside of
+                its normal activation, unless the move is a pivot.
+              </p>
+              <ul>
+                <li>
+                  When a unit with the
+                  <strong class="keyword-reference">stationary</strong> keyword
+                  activates, after its Rally step, if it is panicked, it does
+                  not perform any actions, then it ends its activation.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Stationary -->
+
+          <!-- Steady -->
+          <a href="#steady"><button class="unit-keyword">Steady</button></a>
+          <div id="steady" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Steady (Unit Keyword)</h4>
+              <p>
+                After a unit that has the
+                <strong class="keyword-reference">steady</strong> keyword
+                performs a move action, it may perform a free ranged attack
+                action.
+              </p>
+              <ul>
+                <li>
+                  This attack action is a free action and therefore does not
+                  count as one of the unit’s two actions.
+                </li>
+                <li>
+                  A unit that has already performed an attack action during its
+                  activation cannot perform a free attack action.
+                </li>
+                <li>
+                  A unit that has already performed a free attack action during
+                  its activation cannot perform another attack action.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#free-actions" class="link-to-f">Free Actions</a>
+
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Steady -->
+
+          <!-- Strafe -->
+          <a href="#strafe"><button>Strafe</button></a>
+          <div id="strafe" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Strafe</h4>
+              <p>
+                Strafing is a type of movement unique to units with the
+                <strong class="keyword-reference">hover</strong> keyword and
+                that have side notches on their base. A strafe is a sideways
+                movement in which the unit generally maintains the same facing.
+              </p>
+              <ul>
+                <li>
+                  To perform a strafe, place the end of a movement tool into one
+                  of the side notches on the unit’s base. Keeping the movement
+                  tool in place on the battlefield, lift the unit and place the
+                  <strong>opposite</strong> side notch into the
+                  <strong>opposite</strong> end of the movement tool.
+                </li>
+                <li>
+                  While performing a strafe, a mini moves along the path created
+                  by the movement tool and its base must not overlap terrain or
+                  units that it cannot move through.
+                  <ul>
+                    <li>
+                      A mini may stop moving anywhere along the path of the
+                      movement tool to perform a partial move.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  A player can adjust the joint of the movement tool while
+                  performing a strafe.
+                </li>
+                <li>
+                  A unit reduces its speed by 1, to a minimum of 1, while
+                  performing a strafe.
+                  <ul>
+                    <li>
+                      Strafing through difficult terrain can cause a unit’s
+                      speed to be reduced by 2, but only to a minimum of 1.
+                    </li>
+                    <li>
+                      Performing a strafe while having 1 or more immobilize
+                      tokens can cause a unit’s speed to be zero.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  A strafe is a move. It is not a standard move or a speed-x
+                  move.
+                </li>
+                <li>
+                  While performing a strafe, a repulsor vehicle mini can move
+                  onto or over a piece of a terrain that has a height that is
+                  equal to or less than the height of the unit leader’s mini.
+                </li>
+                <li>
+                  Only units with both the
+                  <strong class="keyword-reference">hover</strong> keyword and
+                  side notches on their base can strafe.
+                  <ul>
+                    <li>
+                      A unit with the
+                      <strong class="keyword-reference">hover</strong> keyword
+                      but without side notches cannot strafe.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#hover-ground-air-x" class="link-to-h"
+                  >Hover: Ground/Air X</a
+                >
+                <a href="#immobilize-tokens" class="link-to-i"
+                  >Immobilize Tokens</a
+                >
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#notch" class="link-to-n">Notch</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Strafe -->
+
+          <!-- Supply Deck -->
+          <a href="#supply-deck"><button>Supply Deck</button></a>
+          <div id="supply-deck" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Supply Deck</h4>
+              <figure class="aside">
+                <img src="img/legion-supply-deck.jpg" alt="Supply Deck" />
+                <p>Supply Card Back</p>
+              </figure>
+              <p>
+                The Supply Drop condition card requires one supply deck. A
+                supply deck is comprised of 16 supply cards. Both players draw
+                from the same supply deck while playing with this condition
+                card. Supply cards are equipped to units during a game by using
+                the <strong class="keyword-reference">resupply</strong> ability
+                found on the Supply Drop condition card.
+              </p>
+              <ul>
+                <li>
+                  A supply deck is always comprised of the following supply
+                  cards:
+                  <ul>
+                    <li>Two copies of Bacta Capsules.</li>
+                    <li>Two copies of Arc Welder.</li>
+                    <li>Two copies of Camouflage.</li>
+                    <li>Two copies of Grapnel-Harpoon.</li>
+                    <li>Two copies of Precision Scopes.</li>
+                    <li>Two copies of Targeting Rangefinder.</li>
+                    <li>Two copies of Holoprojector.</li>
+                    <li>Two copies of Field Scanner.</li>
+                  </ul>
+                </li>
+                <li>
+                  Supply upgrade cards can only be equipped via the Supply Drop
+                  condition card text and can only be used in conjunction with
+                  that condition card.
+                </li>
+                <li>
+                  A unit can equip two copies of the same supply upgrade card.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#condition-cards" class="link-to-c">Condition Cards</a>
+                <a href="#condition-tokens" class="link-to-c"
+                  >Condition Tokens</a
+                >
+
+                <a href="#exhaust" class="link-to-e">Exhaust</a>
+                <a href="#expend" class="link-to-e">Expend</a>
+
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Supply Deck -->
+
+          <!-- Suppression -->
+          <a href="#suppression"><button>Suppression</button></a>
+          <div id="suppression" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Suppression</h4>
+              <figure class="aside">
+                <img src="img/legion-suppression.png" alt="Suppression Token" />
+                <p>Suppression Token</p>
+              </figure>
+              <p>
+                Units can gain suppression tokens in various ways. Units with
+                suppression tokens improve their cover but can suffer penalties
+                when they are activated.
+              </p>
+              <ul>
+                <li>
+                  When a unit gains a suppression token, a player takes a
+                  suppression token from the supply and places it on the
+                  battlefield next to that unit.
+                </li>
+                <li>
+                  If a trooper unit has one or more suppression tokens assigned
+                  to it, that unit improves its cover by one when defending
+                  against ranged attacks.
+                </li>
+                <li>
+                  During the “Rally” step of a unit’s activation, the player who
+                  controls that unit rolls one white defense die for each
+                  suppression token that unit has. Then, one suppression token
+                  is removed from that unit for each block (<img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                  />) or defense surge (<img
+                    class="game-icon"
+                    src="img/legion-defense-surge.png"
+                    alt="defense surge symbol"
+                  />) result the roll produces.
+                </li>
+                <li>
+                  If a trooper unit ever has a number of suppression tokens
+                  assigned to it that is equal to or greater than that unit's
+                  courage value, that unit is suppressed.
+                </li>
+                <li>
+                  Immediately after the “Rally” step of a trooper unit’s
+                  activation, if that unit is suppressed, it loses one of its
+                  two actions for that activation.
+                </li>
+                <li>
+                  Immediately after the “Rally” step of a trooper unit’s
+                  activation, if that unit has a number of suppression tokens
+                  equal to or greater than twice its courage value, it panics.
+                  During a panicked unit’s activation, it cannot perform free
+                  actions and must use its entire activation to perform a single
+                  move at its maximum speed as directly as possible toward the
+                  nearest edge of the battlefield.
+                </li>
+                <li>
+                  A unit cannot lose an action due to gaining suppression tokens
+                  and becoming suppressed after it has already performed its
+                  "Rally" step. Nor can a unit regain a lost action by removing
+                  suppression tokens to no longer be suppressed.
+                  <ul>
+                    <li>
+                      If the unit leader ends this movement with any part of its
+                      base outside of the battlefield, the unit is defeated.
+                    </li>
+                    <li>
+                      If a unit is at range 1–3 of a friendly commander, it may
+                      use that commander’s courage value instead of its own when
+                      checking to see if it is panicked.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  After an attack, if the attack dice produced at least one hit
+                  (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                  />) result, the attack was ranged, and the defender is a
+                  trooper, the defender gains a suppression token.
+                  <ul>
+                    <li>
+                      The defender gains the suppression token after the attack
+                      action is resolved.
+                    </li>
+                    <li>
+                      The defender gains the suppression token even if all hit
+                      (<img
+                        class="game-icon"
+                        src="img/legion-hit.png"
+                        alt="hit symbol"
+                      />) or critical (<img
+                        class="game-icon"
+                        src="img/legion-crit.png"
+                        alt="crit symbol"
+                      />) results are canceled and even if it does not suffer
+                      any wounds.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  If a vehicle mini displaces a trooper, the displaced trooper’s
+                  unit gains one suppression token.
+                  <ul>
+                    <li>
+                      A unit cannot gain more than one suppression token due to
+                      being displaced even if more than one of its minis was
+                      displaced.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  During the End Phase, each player removes one suppression
+                  token from each friendly unit that has one or more suppression
+                  tokens.
+                </li>
+                <li>
+                  To remove a suppression token from a unit, a player takes the
+                  token from the battlefield and places it in the supply.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#activating-units" class="link-to-A"
+                  >Activating Units</a
+                >
+                <a href="#activation-phase" class="link-to-A"
+                  >Activation Phase</a
+                >
+
+                <a href="#courage" class="link-to-c">Courage</a>
+                <a href="#cover" class="link-to-c">Cover</a>
+
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#displacement" class="link-to-d">Displacement</a>
+                <a href="#end-phase" class="link-to-e">End Phase</a>
+                <a href="#free-actions" class="link-to-f">Free Actions</a>
+                <a href="#panic" class="link-to-p">Panic</a>
+                <a href="#recover" class="link-to-r">Recover</a>
+                <a href="#troopers" class="link-to-t">Troopers</a>
+
+                <a href="#unit" class="link-to-u">Unit</a>
+                <a href="#vehicles" class="link-to-v">Vehicles</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Suppression -->
+
+          <!-- Suppressive -->
+          <a href="#suppressive"
+            ><button class="weapon-keyword">Suppressive</button></a
+          >
+          <div id="suppressive" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Suppressive (Weapon Keyword)</h4>
+              <p>
+                After defending against an attack that includes a weapon with
+                the
+                <strong class="keyword-reference">suppressive</strong> keyword,
+                the defender gains one suppression token.
+              </p>
+              <ul>
+                <li>
+                  The suppression token gained by
+                  <strong class="keyword-reference">suppressive</strong> is in
+                  addition to any other suppression tokens the defender gains
+                  from the attack.
+                </li>
+                <li>
+                  The effect of
+                  <strong class="keyword-reference">suppressive</strong> is only
+                  applied to an attack pool that includes a weapon with the
+                  <strong class="keyword-reference">suppressive</strong>
+                  keyword. Thus, only the defender that the weapon was used
+                  against gains a suppression token.
+                </li>
+                <li>
+                  <strong class="keyword-reference">suppressive</strong> is not
+                  cumulative; if multiple weapons with the
+                  <strong class="keyword-reference">suppressive</strong> keyword
+                  are included in the same attack pool, the defender still only
+                  gains one suppression token.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#attack-pool" class="link-to-A">Attack Pool</a>
+
+                <a href="#suppression">Suppression</a>
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Suppressive -->
+
+          <!-- Surge Tokens -->
+          <a href="#surge-tokens"><button>Surge Tokens</button></a>
+          <div id="surge-tokens" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Surge Tokens</h4>
+              <figure class="aside">
+                <img src="img/legion-surge-token.png" alt="surge token" />
+              </figure>
+              <p>
+                Units can gain surge tokens that allow them to convert surges
+                during an attack or while defending.
+              </p>
+              <ul>
+                <li>
+                  During the “Convert Attack Surges” step of an attack, an
+                  attacking unit may spend 1 or more surge tokens to convert 1
+                  attack surge (<img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                  />) result to a hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                  />) result for each surge token spent.
+                </li>
+                <li>
+                  During the “Convert Defense Surges” step of an attack, a
+                  defending unit may spend 1 or more surge tokens to convert 1
+                  defense surge (<img
+                    class="game-icon"
+                    src="img/legion-defense-surge.png"
+                    alt="defense surge symbol"
+                  />) result to a block (<img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                  />) result for each surge token spent.
+                </li>
+                <li>
+                  While a unit uses the
+                  <strong class="keyword-reference">guardian x</strong> keyword,
+                  after rolling defense dice, it can spend 1 or more surge
+                  tokens to convert 1 defense surge (<img
+                    class="game-icon"
+                    src="img/legion-defense-surge.png"
+                    alt="defense surge symbol"
+                  />) result to a block (<img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                  />) result for each surge token spent.
+                </li>
+                <li>
+                  During the End Phase, all unspent surge tokens are returned to
+                  the supply.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#surges">Surges</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Surge Tokens -->
+
+          <!-- Surges -->
+          <a href="#surges"><button>Surges</button></a>
+          <div id="surges" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Surges</h4>
+              <p>
+                Surges are icons that appear on attack and defense dice. A surge
+                has no inherent effect, but some units can change surges into
+                other icons after making attack or defense rolls.
+              </p>
+              <ul>
+                <li>
+                  Each unit card contains an offensive and a defensive surge
+                  conversion chart that indicates whether that unit can convert
+                  surge icons to other icons. If either of a unit’s surge
+                  conversion charts are blank, that unit cannot convert the
+                  associated surge result.
+                  <ul>
+                    <li>
+                      <img
+                        class="game-icon"
+                        src="img/legion-attack-surge.png"
+                        alt="attack surge symbol"
+                      />: Attack surge. Some units can change attack surge (<img
+                        class="game-icon"
+                        src="img/legion-attack-surge.png"
+                        alt="attack surge symbol"
+                      />) results to hit (<img
+                        class="game-icon"
+                        src="img/legion-hit.png"
+                        alt="hit symbol"
+                      />) or critical (<img
+                        class="game-icon"
+                        src="img/legion-crit.png"
+                        alt="crit symbol"
+                      />) results while attacking, as indicated on their surge
+                      conversion chart.
+                    </li>
+                    <li>
+                      <img
+                        class="game-icon"
+                        src="img/legion-defense-surge.png"
+                        alt="defense surge symbol"
+                      />: Defense surge. Some units can change defense surge
+                      (<img
+                        class="game-icon"
+                        src="img/legion-defense-surge.png"
+                        alt="defense surge symbol"
+                      />) results to block (<img
+                        class="game-icon"
+                        src="img/legion-block.png"
+                        alt="block symbol"
+                      />) results while defending, as indicated on their surge
+                      conversion chart.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Surge results can have additional effects through the use of
+                  abilities. These effects are specifically described within
+                  that ability’s text.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#deflect" class="link-to-d">Deflect</a>
+
+                <a href="#dice" class="link-to-d">Dice</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Surges -->
+
+          <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <div id="rrg-entry-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>RRG Entry Name</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+        --></div>
       </div>
       <h2 class="btn-letter header-T">T</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
       <div class="t-entries collapse hidden">
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
-        <div class="entries"></div>
+        <div class="entries">
+          <!-- Tactical X -->
+          <a href="#tactical-x"
+            ><button class="unit-keyword">Tactical X</button></a
+          >
+          <div id="tactical-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Tactical X (Unit Keyword)</h4>
+              <p>
+                The
+                <strong class="keyword-reference">tactical x</strong> keyword
+                allows a unit to gain a number of aim tokens equal to x, each
+                time that unit performs a standard move action.
+              </p>
+              <ul>
+                <li>
+                  Climbing, clambering, embarking, disembarking, pivoting,
+                  reversing, and strafing are not standard move actions.
+                </li>
+                <li>
+                  The effect of the
+                  <strong class="keyword-reference">tactical x</strong> keyword
+                  is triggered by both free and non-free standard move actions.
+                </li>
+                <li>A compulsory move action is a standard move action.</li>
+                <li>
+                  This effect is different than performing an aim action, and
+                  therefore does not trigger abilities that occur after aim
+                  actions are performed.
+                </li>
+                <li>
+                  A unit with
+                  <strong class="keyword-reference">tactical x</strong> gains x
+                  aim tokens only after it performs a standard move
+                  <strong>action</strong>. A unit with the tactical x keyword
+                  that performs a standard move during the Deployment Phase
+                  (such as by using the
+                  <strong class="keyword-reference">scout x</strong> keyword)
+                  does not gain x aim tokens.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim" class="link-to-A">Aim</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Tactical X -->
+
+          <!-- Take Cover X -->
+          <a href="#take-cover-x"
+            ><button class="unit-keyword">Take Cover X</button></a
+          >
+          <div id="take-cover-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Take Cover X</h4>
+              <p>
+                As a card action, a unit with the
+                <strong class="keyword-reference">take cover x</strong> keyword
+                can choose up to x friendly units at range 1. Each chosen unit
+                gains one dodge token.
+              </p>
+              <ul>
+                <li>
+                  This effect is different than performing a dodge action, and
+                  therefore does not trigger abilities that occur after dodge
+                  actions are performed.
+                </li>
+                <li>
+                  A unit using the
+                  <strong class="keyword-reference">take cover x</strong>
+                  keyword may choose itself as one of the friendly units.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#card-actions" class="link-to-c">Card Actions</a>
+
+                <a href="#dodge" class="link-to-d">Dodge</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Take Cover X -->
+
+          <!-- Teamwork: Unit name -->
+          <a href="#teamwork-unit-name"
+            ><button class="unit-keyword">Teamwork: Unit Name</button></a
+          >
+          <div id="teamwork-unit-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Teamwork: Unit Name (Unit Keyword)</h4>
+              <p>
+                The <strong class="keyword-reference">teamwork</strong> keyword
+                indicates that a unit often teams up with another specific unit.
+                The <strong class="keyword-reference">teamwork</strong> keyword
+                specifically states the name of this other unit. When a unit
+                with the
+                <strong class="keyword-reference">teamwork</strong> keyword is
+                at range 1–2 of a friendly unit that has the name specified by
+                the <strong class="keyword-reference">teamwork</strong> keyword,
+                if either unit gains an aim token or a dodge token, the other
+                unit gains a token of the same type.
+              </p>
+              <ul>
+                <li>
+                  The
+                  <strong class="keyword-reference">teamwork</strong> keyword
+                  triggers when a unit gains an aim or dodge token, whether that
+                  token was gained from the aim or dodge action, or from some
+                  other game effect.
+                </li>
+                <li>
+                  If a unit triggers the
+                  <strong class="keyword-reference">teamwork</strong> keyword by
+                  gaining multiple aim or dodge tokens at once, the other unit
+                  gains an equal number of tokens of the same type.
+                </li>
+                <li>
+                  When a unit gains an aim or a dodge token through an instance
+                  of the
+                  <strong class="keyword-reference">teamwork</strong> keyword
+                  triggering, it cannot trigger another instance of the same
+                  <strong class="keyword-reference">teamwork</strong> keyword.
+                </li>
+              </ul>
+
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#aim" class="link-to-A">Aim</a>
+                <a href="#dodge" class="link-to-d">Dodge</a>
+
+                <a href="#unit" class="link-to-u">Unit</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Teamwork: Unit name -->
+
+          <!-- Target X -->
+          <a href="#target-x"><button class="unit-keyword">Target X</button></a>
+          <div id="target-x" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Target X (Unit Keyword)</h4>
+              <p>
+                When a unit with the
+                <strong class="keyword-reference">target x</strong> keyword is
+                issued an order, it gains x aim tokens.
+              </p>
+              <ul>
+                <li>
+                  If a unit with the
+                  <strong class="keyword-reference">target x</strong> keyword
+                  would be issued an order but a game effect causes that order
+                  not to be issued or to be issued to another unit instead, that
+                  unit cannot use the
+                  <strong class="keyword-reference">target x</strong> keyword.
+                </li>
+                <li>
+                  This effect is different than performing an aim action, and
+                  therefore does not trigger abilities that occur after aim
+                  actions are performed.
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#actions" class="link-to-A">Actions</a>
+                <a href="#aim" class="link-to-A">Aim</a>
+
+                <a href="#issuing-orders" class="link-to-i">Issuing Orders</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Target X -->
+
+          <!-- Tempted -->
+          <a href="#tempted"><button class="unit-keyword">Tempted</button></a>
+          <div id="tempted" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Tempted (Unit Keyword)</h4>
+              <p>
+                The dark side of the Force is a pathway to many abilities that
+                some consider to be unnatural. The temptation to tap into its
+                raw power, even for a noble cause, is strong, and not all can
+                resist. A unit with the
+                <strong class="keyword-reference">tempted</strong> keyword
+                straddles the line between the light and the dark side of the
+                force, and can therefore equip upgrades with the “Dark Side
+                only” or “Light Side only” restrictions, regardless of that
+                unit’s faction.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+
+                <a href="#upgrade-cards" class="link-to-u">Upgrade Cards</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Tempted   -->
+
+          <!-- Terrain -->
+          <!-- See additional terrain rules on page 8 ADD THIS LATER -->
+          <!-- End Terrain -->
+
+          <!-- Timing -->
+          <a href="#timing"><button>Timing</button></a>
+          <div id="timing" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Timing</h4>
+              <p>
+                Sometimes, game effects occupy the same timing window. When this
+                occurs, the effects are resolved as follows:
+              </p>
+              <ul>
+                <li>
+                  If a unit has access to more than one effect that takes place
+                  during the same timing window, the player controlling that
+                  unit decides the order of those effects.<br /><br /><em
+                    >For example, Cad Bane equipped with Ascension Cables moves
+                    into base contact with the side of a height 1 building. The
+                    player controlling Cad Bane can choose to trigger his
+                    <strong class="keyword-reference">steady</strong> keyword to
+                    perform an attack, then trigger his
+                    <strong class="keyword-reference">scale</strong> keyword to
+                    place Cad Bane on top of the building or that player can
+                    choose to place Cad Bane on top of the building and then
+                    perform an attack.</em
+                  >
+                </li>
+                <li>
+                  Standby and detonate effects trigger before all other
+                  abilities.<br /><br /><em
+                    >For example, Cad Bane moves into range 1 of both an enemy
+                    charge token and an enemy unit with a standby token. The
+                    opposing player can choose to detonate that charge token
+                    and/or use their standby token before Cad Bane can use his
+                    <strong class="keyword-reference">steady</strong> keyword to
+                    perform an attack.</em
+                  >
+                </li>
+                <li>
+                  In all other cases, when there are two effects that happen
+                  during the same timing window, the blue player decides which
+                  effect resolves first.<br /><br /><em
+                    >For example, two players are each fielding Cad Bane and
+                    chose to
+                    <strong class="keyword-reference">divulge</strong> his "I
+                    Make the Rules Now" command card at the start of the Deploy
+                    Units step. The blue player chooses which player resolves
+                    the effect and places their Bane tokens first.</em
+                  >
+                </li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#abilities" class="link-to-A">Abilities</a>
+                <a href="#attack" class="link-to-A">Attack</a>
+
+                <a href="#movement" class="link-to-m">Movement</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Timing -->
+
+          <!-- Tow Cable -->
+          <a href="#tow-cable"
+            ><button class="weapon-keyword">Tow Cable</button></a
+          >
+          <div id="tow-cable" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>Tow Cable (Weapon Keyword)</h4>
+              <p>
+                After a vehicle is wounded by an attack that included a weapon
+                with the
+                <strong class="keyword-reference">tow cable</strong> keyword,
+                the player who performed the attack performs a pivot with the
+                vehicle that was wounded.
+              </p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#movement" class="link-to-m">Movement</a>
+                <a href="#pivot" class="link-to-p">Pivot</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+
+                <a href="#weapons" class="link-to-w">Weapons</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Tow Cable -->
+
+          <!-- PASTE THIS FOR NEW ENTRY
+
+         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
+          <div id="rrg-entry-name" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <h4>RRG Entry Name</h4>
+              <p>RRG TEXT CONTENT GOES HERE</p>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack" class="link-to-A">Attack</a>
+                <a href="#barricades" class="link-to-b">Barricades</a>
+                <a href="#base" class="link-to-b">Base</a>
+                <a href="#base-contact" class="link-to-b">Base Contact</a>
+                <a href="#cancel">Cancel</a>
+                <a href="#cover-x">Cover X</a>
+                <a href="#dice" class="link-to-d">Dice</a>
+                <a href="#suppression" class="link-to-s">Suppression</a>
+                <a href="#unit-leader" class="link-to-u">Unit Leader</a>
+              </p>
+            </div>
+          </div>
+
+        --></div>
       </div>
       <h2 class="btn-letter header-U">U</h2>
       <!-- Hidden container that is revealed with JS to show all the buttons in the letter. -->
@@ -14080,6 +16517,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <div class="entries"></div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
