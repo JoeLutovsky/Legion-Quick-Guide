@@ -26,6 +26,7 @@ body {
   color: #424042;
   background-color: #e6e4e1;
   font-size: 18px;
+  border-bottom: 10px solid #26416d;
 }
 
 h4,
@@ -47,10 +48,43 @@ h4 {
 h5 {
   font-size: 1.25em;
   border-bottom: 5px solid #26416d;
+  letter-spacing: 0.15em;
+}
+
+article {
+  margin-top: 1em;
+  padding: 1em;
+  border-bottom: 5px solid #26416d;
+  font-size: 1.25em;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 1.25em;
+  border-top: 10px solid #26416d;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+section {
+  border-bottom: 10px solid #26416d;
+  box-shadow: 0px 15px 10px rgb(0 0 0 / 0.1);
+  padding: 30px 10px;
+}
+
+section h5 {
+  border-bottom: none;
+}
+
+.footer-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .container {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -311,6 +345,10 @@ a:visited {
   height: 2.5em;
 }
 
+.easter-egg {
+  text-decoration: none;
+}
+
 @media (max-width: 1000px) {
   .container {
     width: 100%;
@@ -318,6 +356,10 @@ a:visited {
 
   .body {
     font-size: 16px;
+  }
+
+  .page-title {
+    line-height: 1em;
   }
 
   .btn-letter {

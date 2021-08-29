@@ -24,9 +24,9 @@ const headerT = document.querySelector(".header-T");
 const headerU = document.querySelector(".header-U");
 const headerV = document.querySelector(".header-V");
 const headerW = document.querySelector(".header-W");
-const headerX = document.querySelector(".header-X");
-const headerY = document.querySelector(".header-Y");
-const headerZ = document.querySelector(".header-Z");
+// const headerX = document.querySelector(".header-X");
+// const headerY = document.querySelector(".header-Y");
+// const headerZ = document.querySelector(".header-Z");
 
 //Selecting sections that contain all the entries for hiding/un-hiding
 const sectionA = document.querySelector(".a-entries");
@@ -52,9 +52,9 @@ const sectionT = document.querySelector(".t-entries");
 const sectionU = document.querySelector(".u-entries");
 const sectionV = document.querySelector(".v-entries");
 const sectionW = document.querySelector(".w-entries");
-const sectionX = document.querySelector(".x-entries");
-const sectionY = document.querySelector(".y-entries");
-const sectionZ = document.querySelector(".z-entries");
+// const sectionX = document.querySelector(".x-entries");
+// const sectionY = document.querySelector(".y-entries");
+// const sectionZ = document.querySelector(".z-entries");
 
 //inter section links for the Related Item links
 //THIS IS A NODELIST due to querySelectorAll()
@@ -82,9 +82,9 @@ const linkToT = document.querySelectorAll(".link-to-t");
 const linkToU = document.querySelectorAll(".link-to-u");
 const linkToV = document.querySelectorAll(".link-to-v");
 const linkToW = document.querySelectorAll(".link-to-w");
-const linkToX = document.querySelectorAll(".link-to-x");
-const linkToY = document.querySelectorAll(".link-to-y");
-const linkToZ = document.querySelectorAll(".link-to-z");
+// const linkToX = document.querySelectorAll(".link-to-x");
+// const linkToY = document.querySelectorAll(".link-to-y");
+// const linkToZ = document.querySelectorAll(".link-to-z");
 
 // Expands letter sections when main letter button is clicked
 function expandSection(headerXXX, sectionXXX) {
@@ -129,9 +129,9 @@ expandSection(headerT, sectionT);
 expandSection(headerU, sectionU);
 expandSection(headerV, sectionV);
 expandSection(headerW, sectionW);
-expandSection(headerX, sectionX);
-expandSection(headerY, sectionY);
-expandSection(headerZ, sectionZ);
+// expandSection(headerX, sectionX);
+// expandSection(headerY, sectionY);
+// expandSection(headerZ, sectionZ);
 
 linkTo(linkToA, sectionA);
 linkTo(linkToB, sectionB);
@@ -156,6 +156,6 @@ linkTo(linkToT, sectionT);
 linkTo(linkToU, sectionU);
 linkTo(linkToV, sectionV);
 linkTo(linkToW, sectionW);
-linkTo(linkToX, sectionX);
-linkTo(linkToY, sectionY);
-linkTo(linkToZ, sectionZ);
+// linkTo(linkToX, sectionX);
+// linkTo(linkToY, sectionY);
+// linkTo(linkToZ, sectionZ);
