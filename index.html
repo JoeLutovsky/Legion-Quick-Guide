@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEGION Quick Guide</title>
+    <meta name="author" content="Joe Lutovky" />
+    <meta
+      name="description"
+      content="The Legion Quick Guide contains all of the glossary items from the Star Wars Legion Rules Reference Guide and aims to make them more easily searchable and navigable during gameplay."
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Legion Quick Guide</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <h1 class="page-title">Legion Quick Guide</h1>
-
       <article>
+        <h1 class="page-title">Legion Quick Guide</h1>
         <p>
           This site contains all
           <strong class="keyword-reference">Glossary</strong> entries from the
@@ -20,7 +28,7 @@
         </p>
         <p>Last updated: <strong>8.29.2021</strong>. RRG Version 2.0.2</p>
         <!-- <p>
-          <a target="_blank" href="https://www.atomicmassgames.com/sw-docs"
+          <a target="_blank" rel="noopener" href="https://www.atomicmassgames.com/sw-docs"
             >Official RRG Document Can Be Found here Maybe?</a
           >
         </p> -->
@@ -48,7 +56,7 @@
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Abilities -->
-          <a href="#abilities"><button>Abilities</button></a>
+          <a href="#abilities" class="entry-button">Abilities</a>
           <div id="abilities" class="entry hidden">
             <a href="#a" class="entry-close"></a>
 
@@ -82,6 +90,7 @@
                     class="game-icon"
                     src="img/legion-action.png"
                     alt="Action Symbol"
+                    loading="lazy"
                   />) icon, that ability can be performed as a card action as
                   one of the two actions that a unit can perform during its
                   activation.
@@ -91,6 +100,7 @@
                     class="game-icon"
                     src="img/legion-free-action.png"
                     alt="Free Action Symbol"
+                    loading="lazy"
                   />) icon, that ability can be performed as a free card action
                   in addition to the two actions that a unit can perform during
                   its activation.
@@ -101,6 +111,7 @@
                     class="game-icon"
                     src="img/legion-exhaust.png"
                     alt="Exhaust Symbol"
+                    loading="lazy"
                   />) icon.
                   <ul>
                     <li>
@@ -162,7 +173,7 @@
           <!-- End Abilities -->
 
           <!-- Actions -->
-          <a href="#actions"><button>Actions</button></a>
+          <a href="#actions" class="entry-button">Actions</a>
           <div id="actions" class="entry hidden">
             <a href="#a" class="entry-close"></a>
 
@@ -193,6 +204,7 @@
                     class="game-icon"
                     src="img/legion-action.png"
                     alt="Action Symbol"
+                    loading="lazy"
                   />) icon, that ability is a card action.
                   <ul>
                     <li>
@@ -208,6 +220,7 @@
                     class="game-icon"
                     src="img/legion-free-action.png"
                     alt="Free Action Symbol"
+                    loading="lazy"
                   />) icon, that ability is a free card action. Free card
                   actions do not count against the two actions that a unit can
                   perform during its activation.
@@ -315,7 +328,7 @@
           <!-- End Actions -->
 
           <!-- Activating Units -->
-          <a href="#activating-units"><button>Activating Units</button></a>
+          <a href="#activating-units" class="entry-button">Activating Units</a>
           <div id="activating-units" class="entry hidden">
             <a href="#a" class="entry-close"></a>
 
@@ -359,10 +372,12 @@
                         class="game-icon"
                         src="img/legion-block.png"
                         alt="Block Symbol"
+                        loading="lazy"
                       />) or defense surge (<img
                         class="game-icon"
                         src="img/legion-defense-surge.png"
                         alt="Free Action Symbol"
+                        loading="lazy"
                       />) result the roll produces, the unit removes one of its
                       suppression tokens
                     </li>
@@ -417,7 +432,7 @@
           </div>
           <!-- End Activating Units -->
           <!-- Activation Phase -->
-          <a href="#activation-phase"><button>Activation Phase</button></a>
+          <a href="#activation-phase" class="entry-button">Activation Phase</a>
           <div id="activation-phase" class="entry hidden">
             <a href="#a" class="entry-close"></a>
 
@@ -496,7 +511,7 @@
           </div>
           <!-- End Activation Phase -->
           <!-- Agile -->
-          <a href="#agile"><button class="unit-keyword">Agile X</button></a>
+          <a href="#agile" class="unit-keyword entry-button">Agile X</a>
           <div id="agile" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -549,9 +564,7 @@
           </div>
           <!-- End AGILE X -->
           <!-- AI: ACTION -->
-          <a href="#ai-action"
-            ><button class="unit-keyword">AI: Action</button></a
-          >
+          <a href="#ai-action" class="unit-keyword entry-button">AI: Action</a>
           <div id="ai-action" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -598,12 +611,14 @@
           </div>
           <!-- END AI: ACTION -->
           <!-- AIM -->
-          <a href="#aim"><button>Aim</button></a>
+          <a href="#aim" class="entry-button">Aim</a>
           <div id="aim" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Aim</h4>
-              <div class="aside"><img src="img/legion-aim.png" /></div>
+              <figure class="aside">
+                <img src="img/legion-aim.png" alt="aim token" loading="lazy" />
+              </figure>
               <p>
                 Units can gain aim tokens that allow them to reroll dice during
                 an attack.
@@ -670,17 +685,24 @@
           <!-- END AREA TERRAIN -->
           <!-- AREA WEAPON -->
 
-          <a href="#area-weapon"><button>Area Weapon</button></a>
+          <a href="#area-weapon" class="entry-button">Area Weapon</a>
           <div id="area-weapon" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Area Weapon</h4>
-              <div class="aside"><img src="img/legion-area-weapon.png" /></div>
+              <figure class="aside">
+                <img
+                  src="img/legion-area-weapon.png"
+                  alt="area weapon example"
+                  loading="lazy"
+                />
+              </figure>
               <p>
                 A weapon with a yellow range icon (<img
                   class="game-icon"
                   src="img/legion-range1-5.png"
                   alt="Range 1 through 5 Symbols"
+                  loading="lazy"
                 />) is an area weapon. When using an area weapon, perform a
                 separate attack against each unit that is in line of sight and
                 at the range indicated by the number on the range icon.
@@ -728,8 +750,8 @@
           </div>
           <!-- END AREA WEAPON -->
           <!-- Arm X: Charge Token -->
-          <a href="#arm-x-charge-token"
-            ><button class="weapon-keyword">Arm X: Charge Token</button></a
+          <a href="#arm-x-charge-token" class="weapon-keyword entry-button"
+            >Arm X: Charge Token</a
           >
           <div id="arm-x-charge-token" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -772,7 +794,7 @@
           </div>
           <!-- END Arm X: Charge Token -->
           <!-- Armor -->
-          <a href="#armor"><button>Armor</button></a>
+          <a href="#armor" class="entry-button">Armor</a>
           <div id="armor" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -784,6 +806,7 @@
                   class="game-icon"
                   src="img/legion-hit.png"
                   alt="Hit Symbol"
+                  loading="lazy"
                 />) results produced by the attack roll.
               </p>
               <ul>
@@ -795,15 +818,18 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) results to critical (<img
                     class="game-icon"
                     src="img/legion-crit.png"
                     alt="Crit Symbol"
+                    loading="lazy"
                   />) results before the armor keyword can be used to cancel hit
                   (<img
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) results.
                 </li>
                 <li>
@@ -811,6 +837,7 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) result, that die is removed from the attack pool.
                 </li>
               </ul>
@@ -827,7 +854,7 @@
 
           <!-- END Armor -->
           <!-- Armor X -->
-          <a href="#armor-x"><button class="unit-keyword">Armor X</button></a>
+          <a href="#armor-x" class="entry-button unit-keyword">Armor X</a>
           <div id="armor-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -843,6 +870,7 @@
                   class="game-icon"
                   src="img/legion-hit.png"
                   alt="Hit Symbol"
+                  loading="lazy"
                 />) results produced by the attack roll.
               </p>
               <ul>
@@ -861,15 +889,18 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) results to critical (<img
                     class="game-icon"
                     src="img/legion-crit.png"
                     alt="crit Symbol"
+                    loading="lazy"
                   />) results before the armor x keyword can be used to cancel
                   hit (<img
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) results.
                 </li>
 
@@ -878,6 +909,7 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) result, that die is removed from the attack pool.
                 </li>
               </ul>
@@ -899,9 +931,7 @@
           <!-- END Army Building -->
 
           <!-- Arsenal X -->
-          <a href="#arsenal-x"
-            ><button class="unit-keyword">Arsenal X</button></a
-          >
+          <a href="#arsenal-x" class="entry-button unit-keyword">Arsenal X</a>
           <div id="arsenal-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -946,8 +976,8 @@
           <!-- END Arsenal X -->
 
           <!-- Ataru Mastery -->
-          <a href="#ataru-mastery"
-            ><button class="unit-keyword">Ataru Mastery</button></a
+          <a href="#ataru-mastery" class="entry-button unit-keyword"
+            >Ataru Mastery</a
           >
           <div id="ataru-mastery" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -964,6 +994,7 @@
                   class="game-icon"
                   src="img/legion-defense-surge.png"
                   alt="defense surge symbol"
+                  loading="lazy"
                 />
                 result rolled.
               </p>
@@ -1016,7 +1047,7 @@
           <!-- End Ataru Mastery -->
 
           <!-- AT (RANGE) -->
-          <a href="#at-range"><button>At (Range)</button></a>
+          <a href="#at-range" class="entry-button">At (Range)</a>
           <div id="at-range" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1052,7 +1083,7 @@
           <!-- END AT (RANGE) -->
 
           <!-- Attack -->
-          <a href="#attack"><button>Attack</button></a>
+          <a href="#attack" class="entry-button">Attack</a>
           <div id="attack" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1089,31 +1120,37 @@
                         class="game-icon"
                         src="img/legion-range1.png"
                         alt="Range 1 Symbol"
+                        loading="lazy"
                       />,
                       <img
                         class="game-icon"
                         src="img/legion-range2.png"
                         alt="Range 2 Symbol"
+                        loading="lazy"
                       />,
                       <img
                         class="game-icon"
                         src="img/legion-range3.png"
                         alt="range 3 Symbol"
+                        loading="lazy"
                       />,
                       <img
                         class="game-icon"
                         src="img/legion-range4.png"
                         alt="Range 4 Symbol"
+                        loading="lazy"
                       />,
                       <img
                         class="game-icon"
                         src="img/legion-range5.png"
                         alt="Range 5 Symbol"
+                        loading="lazy"
                       />,
                       <img
                         class="game-icon"
                         src="img/legion-range0.png"
                         alt="Range 0 Symbol"
+                        loading="lazy"
                       />) icon.
                     </li>
                     <li>
@@ -1123,6 +1160,7 @@
                         class="game-icon"
                         src="img/legion-melee.png"
                         alt="Melee Symbol"
+                        loading="lazy"
                       />) icon.
                     </li>
                   </ul>
@@ -1217,6 +1255,7 @@
                         class="game-icon"
                         src="img/legion-attack-surge.png"
                         alt="Attack Surge Symbol"
+                        loading="lazy"
                       />) results to the result indicated on its unit card by
                       turning the die. If no result is indicated, the attacker
                       changes the result to a blank.
@@ -1230,11 +1269,13 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) results. Dodge tokens and cover cannot be used to cancel
                   critical (<img
                     class="game-icon"
                     src="img/legion-crit.png"
                     alt="Crit Symbol"
+                    loading="lazy"
                   />) results.
                   <ul>
                     <li>A unit can apply cover only against ranged attacks.</li>
@@ -1256,10 +1297,12 @@
                         class="game-icon"
                         src="img/legion-hit.png"
                         alt="Hit Symbol"
+                        loading="lazy"
                       />) and critical (<img
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) result on the attacker’s dice, the defender rolls one
                       defense die whose color matches the defender’s defense,
                       which is presented on the defender’s unit card.
@@ -1274,6 +1317,7 @@
                         class="game-icon"
                         src="img/legion-defense-surge.png"
                         alt="Defense Surge Symbol"
+                        loading="lazy"
                       />) results to the result indicated on its unit card by
                       turning the die. If no result is indicated, the defender
                       changes the result to a blank.
@@ -1292,14 +1336,17 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) and critical (<img
                     class="game-icon"
                     src="img/legion-crit.png"
                     alt="Crit Symbol"
+                    loading="lazy"
                   />) results, and the defender counts the number of block (<img
                     class="game-icon"
                     src="img/legion-block.png"
                     alt="Block Symbol"
+                    loading="lazy"
                   />) results. Then, the defender’s total is subtracted from the
                   attacker’s total, and if the attacker’s total is greater, the
                   defender suffers a number of wounds equal to the difference.
@@ -1309,6 +1356,7 @@
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) results have no additional effect.
                     </li>
                   </ul>
@@ -1326,10 +1374,12 @@
                         class="game-icon"
                         src="img/legion-hit.png"
                         alt="Hit Symbol"
+                        loading="lazy"
                       />) or critical (<img
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) result, the attack was ranged, and the defender is a
                       trooper, the defender gains a suppression token.
                     </li>
@@ -1379,7 +1429,7 @@
           <!-- END Attack -->
 
           <!-- Attack Pool -->
-          <a href="#attack-pool"><button>Attack Pool</button></a>
+          <a href="#attack-pool" class="entry-button">Attack Pool</a>
           <div id="attack-pool" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1469,8 +1519,8 @@
           <!-- END Attack Pool -->
 
           <!-- Authoritative -->
-          <a href="#authoritative"
-            ><button class="unit-keyword">Authoritative</button></a
+          <a href="#authoritative" class="entry-button unit-keyword"
+            >Authoritative</a
           >
           <div id="authoritative" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -1516,15 +1566,19 @@
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Bane TOkens -->
-          <a href="#bane-tokens"><button>Bane Tokens</button></a>
+          <a href="#bane-tokens" class="entry-button">Bane Tokens</a>
           <div id="bane-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Bane Tokens</h4>
-              <div class="aside">
-                <img src="img/legion-bane-back.png" alt="Bane Token Back" />
+              <figure class="aside">
+                <img
+                  src="img/legion-bane-back.png"
+                  alt="Bane Token Back"
+                  loading="lazy"
+                />
                 <p>Bane Token (Back)</p>
-              </div>
+              </figure>
               <p>
                 Cad Bane has a set of three unique Bane tokens that he can place
                 on the battlefield. Bane tokens are double-sided, with a uniform
@@ -1544,20 +1598,26 @@
                   overlap Bane tokens.
                 </li>
                 <li>
-                  <div class="aside">
+                  <figure class="aside">
                     <img
                       src="img/legion-here-i-am.png"
                       alt="Bane Token Here I am"
+                      loading="lazy"
                     />
                     <p>Here I am</p>
                     <img
                       src="img/legion-smoke-and-mirrors.png"
                       alt="Smoke and Mirrors"
+                      loading="lazy"
                     />
                     <p>Smoke and Mirrors</p>
-                    <img src="img/legion-kablamo.png" alt="Kablamo" />
+                    <img
+                      src="img/legion-kablamo.png"
+                      alt="Kablamo"
+                      loading="lazy"
+                    />
                     <p>Kablamo</p>
-                  </div>
+                  </figure>
                   When a Bane token is revealed, it has the following effect,
                   according to the image on its front:
                   <ul>
@@ -1604,7 +1664,7 @@
           <!-- End Bane Tokens -->
 
           <!-- Barrage -->
-          <a href="#barrage"><button class="unit-keyword">Barrage</button></a>
+          <a href="#barrage" class="entry-button unit-keyword">Barrage</a>
           <div id="barrage" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1645,7 +1705,7 @@
           <!-- End Barrage -->
 
           <!-- Barricades -->
-          <a href="#barricades"><button>Barricades</button></a>
+          <a href="#barricades" class="entry-button">Barricades</a>
           <div id="barricades" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1704,7 +1764,7 @@
           <!-- End Barricades -->
 
           <!-- Base -->
-          <a href="#base"><button>Base</button></a>
+          <a href="#base" class="entry-button">Base</a>
           <div id="base" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1755,14 +1815,14 @@
           <!-- End Base -->
 
           <!-- Base Contact -->
-          <a href="#base-contact"><button>Base Contact</button></a>
+          <a href="#base-contact" class="entry-button">Base Contact</a>
           <div id="base-contact" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Base Contact</h4>
               <p>
                 Base contact refers to a miniature’s base physically touching
-                something on the battlefield, typically a piece of terrain,
+                something on the battlefield, typically a piece of terrain
                 another mini, or an objective token.
               </p>
 
@@ -1786,6 +1846,7 @@
                     class="game-icon"
                     src="img/legion-melee.png"
                     alt="Melee Symbol"
+                    loading="lazy"
                   />), in which case the unit leader can perform a move into
                   base contact with a mini from an enemy unit to start a melee.
                 </li>
@@ -1846,7 +1907,7 @@
           <!-- End Base Contact -->
 
           <!-- Battle Cards -->
-          <a href="#battle-cards"><button>Battle Cards</button></a>
+          <a href="#battle-cards" class="entry-button">Battle Cards</a>
           <div id="battle-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1879,7 +1940,7 @@
           <!-- End Battle Cards -->
 
           <!-- Battlefield -->
-          <a href="#battlefield"><button>Battlefield</button></a>
+          <a href="#battlefield" class="entry-button">Battlefield</a>
           <div id="battlefield" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1909,7 +1970,7 @@
           <!-- End Battlefield -->
 
           <!-- Beam X -->
-          <a href="#beam-x"><button class="weapon-keyword">Beam X</button></a>
+          <a href="#beam-x" class="entry-button weapon-keyword">Beam X</a>
           <div id="beam-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1968,7 +2029,7 @@
           <!-- End Beam X -->
 
           <!-- Beyond Range -->
-          <a href="#beyond-range"><button>Beyond (Range)</button></a>
+          <a href="#beyond-range" class="entry-button">Beyond (Range)</a>
           <div id="beyond-range" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -1997,7 +2058,7 @@
           <!-- End Beyond Range -->
 
           <!-- Blast -->
-          <a href="#blast"><button class="weapon-keyword">Blast</button></a>
+          <a href="#blast" class="entry-button weapon-keyword">Blast</a>
           <div id="blast" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2013,6 +2074,7 @@
                   defender cannot use light or heavy cover to cancel hit (<img
                     src="img/legion-hit.png"
                     alt="hit symbol"
+                    loading="lazy"
                     class="game-icon"
                   />) results produced by an attack pool that contains a die
                   that was contributed by a weapon that has the
@@ -2031,7 +2093,7 @@
           <!-- End Blast -->
 
           <!-- Block -->
-          <a href="#block"><button class="unit-keyword">Block</button></a>
+          <a href="#block" class="entry-button unit-keyword">Block</a>
           <div id="block" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2044,11 +2106,13 @@
                   src="img/legion-defense-surge.png"
                   alt="defense surge symbol"
                   class="game-icon"
+                  loading="lazy"
                 />
                 :
                 <img
                   src="img/legion-block.png"
                   alt="block symbol"
+                  loading="lazy"
                   class="game-icon"
                 />”.
               </p>
@@ -2060,11 +2124,13 @@
                     src="img/legion-hit.png"
                     alt="hit symbol"
                     class="game-icon"
+                    loading="lazy"
                   />) result, as normal. The defender may spend additional dodge
                   tokens to cancel additional hit (<img
                     src="img/legion-hit.png"
                     alt="hit symbol"
                     class="game-icon"
+                    loading="lazy"
                   />) results; however, doing so does not improve or add to the
                   benefits of the
                   <strong class="keyword-reference">keyword</strong>.
@@ -2081,7 +2147,7 @@
           <!-- End Block -->
 
           <!-- blocked -->
-          <a href="#blocked"><button>Blocked</button></a>
+          <a href="#blocked" class="entry-button">Blocked</a>
           <div id="blocked" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2100,9 +2166,7 @@
           <!-- end blue and red player -->
 
           <!-- Bolster X -->
-          <a href="#bolster-x"
-            ><button class="unit-keyword">Bolster X</button></a
-          >
+          <a href="#bolster-x" class="entry-button unit-keyword">Bolster X</a>
           <div id="bolster-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2131,7 +2195,7 @@
           <!-- end bolster x -->
 
           <!-- Bomb Carts -->
-          <a href="#bomb-carts"><button>Bomb Carts</button></a>
+          <a href="#bomb-carts" class="entry-button">Bomb Carts</a>
           <div id="bomb-carts" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2154,6 +2218,7 @@
                 src="img/legion-bomb-cart-miniature.png"
                 alt="bomb cart miniature illustration"
                 class="clipped-corners"
+                loading="lazy"
               />
               <p>Each bomb cart mini has the following special rules:</p>
               <ul>
@@ -2211,7 +2276,7 @@
           <!-- End Bomb Carts -->
 
           <!-- Bounty -->
-          <a href="#bounty"><button class="unit-keyword">Bounty</button></a>
+          <a href="#bounty" class="entry-button unit-keyword">Bounty</a>
           <div id="bounty" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2353,32 +2418,6 @@
           </div>
           <!-- End Bounty -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-            <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-          </div>
-
-            -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -2389,8 +2428,8 @@
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Calcuate Odds -->
-          <a href="#calculate-odds"
-            ><button class="unit-keyword">Calculate Odds</button></a
+          <a href="#calculate-odds" class="entry-button unit-keyword"
+            >Calculate Odds</a
           >
           <div id="calculate-odds" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -2434,7 +2473,7 @@
           <!-- End Calculate Odds -->
 
           <!-- Cancel -->
-          <a href="#cancel"><button>Cancel</button></a>
+          <a href="#cancel" class="entry-button">Cancel</a>
           <div id="cancel" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2451,10 +2490,12 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) or critical (<img
                     class="game-icon"
                     src="img/legion-crit.png"
                     alt="Crit Symbol"
+                    loading="lazy"
                   />) results.
                 </li>
               </ul>
@@ -2471,7 +2512,7 @@
           <!-- End Cancel -->
 
           <!-- card actions -->
-          <a href="#card-actions"><button>Card Actions</button></a>
+          <a href="#card-actions" class="entry-button">Card Actions</a>
           <div id="card-actions" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2480,7 +2521,9 @@
                 A card action is a type of action. If an ability is preceded by
                 a card action (<img
                   src="img/legion-action.png"
+                  alt="card action icon"
                   class="game-icon"
+                  loading="lazy"
                 />) icon, that ability is a card action.
               </p>
               <ul>
@@ -2537,7 +2580,7 @@
           <!-- End Card Actions -->
 
           <!-- Charge -->
-          <a href="#charge"><button class="unit-keyword">Charge</button></a>
+          <a href="#charge" class="entry-button unit-keyword">Charge</a>
           <div id="charge" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2575,14 +2618,18 @@
           <!-- End Charge -->
 
           <!-- Charge Tokens -->
-          <a href="#charge-tokens"><button>Charge Tokens</button></a>
+          <a href="#charge-tokens" class="entry-button">Charge Tokens</a>
           <div id="charge-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Charge Tokens</h4>
-              <div class="aside">
-                <img src="img/legion-charge-tokens.png" alt="Charge Tokens" />
-              </div>
+              <figure class="aside">
+                <img
+                  src="img/legion-charge-tokens.png"
+                  alt="Charge Tokens"
+                  loading="lazy"
+                />
+              </figure>
               <p>
                 Each charge token has a unique type and can be identified by a
                 unique icon on the charge token itself. Each charge token type
@@ -2620,7 +2667,7 @@
           <!-- End Charge Tokens -->
 
           <!-- Claim -->
-          <a href="#claim"><button>Claim</button></a>
+          <a href="#claim" class="entry-button">Claim</a>
           <div id="claim" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2635,7 +2682,9 @@
           <!-- End Claim -->
 
           <!-- Climb and Clamber -->
-          <a href="#climb-and-clamber"><button>Climb and Clamber</button></a>
+          <a href="#climb-and-clamber" class="entry-button"
+            >Climb and Clamber</a
+          >
           <div id="climb-and-clamber" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2685,6 +2734,7 @@
                         class="game-icon"
                         src="img/legion-block.png"
                         alt="block symbol"
+                        loading="lazy"
                       />) result, the unit suffers one wound.
                       <ul>
                         <li>
@@ -2734,6 +2784,7 @@
                         class="game-icon"
                         src="img/legion-block.png"
                         alt="block symbol"
+                        loading="lazy"
                       />) result, the unit suffers one wound.
                     </li>
                   </ul>
@@ -2860,7 +2911,7 @@
           <!-- End Climb and Clamber -->
 
           <!-- Climbing Vehicle -->
-          <a href="#climbing-vehicle"><button>Climbing Vehicle</button></a>
+          <a href="#climbing-vehicle" class="entry-button">Climbing Vehicle</a>
           <div id="climbing-vehicle" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2890,7 +2941,7 @@
           <!-- end Climbing Vehicle -->
 
           <!-- Clone Trooper -->
-          <a href="#clone-trooper"><button>Clone Trooper</button></a>
+          <a href="#clone-trooper" class="entry-button">Clone Trooper</a>
           <div id="clone-trooper" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -2925,7 +2976,7 @@
           <!-- End Clone Trooper -->
 
           <!-- cohesion -->
-          <a href="#cohesion"><button>Cohesion</button></a>
+          <a href="#cohesion" class="entry-button">Cohesion</a>
           <div id="cohesion" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -3085,7 +3136,7 @@
           <!-- end cohesion -->
 
           <!-- command cards -->
-          <a href="#command-cards"><button>Command Cards</button></a>
+          <a href="#command-cards" class="entry-button">Command Cards</a>
           <div id="command-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -3312,7 +3363,7 @@
           <!-- End Command Cards -->
 
           <!-- command phase -->
-          <a href="#command-phase"><button>Command Phase</button></a>
+          <a href="#command-phase" class="entry-button">Command Phase</a>
           <div id="command-phase" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -3351,6 +3402,7 @@
                         src="img/legion-block.png"
                         alt="Block Symbol"
                         class="game-icon"
+                        loading="lazy"
                       />), that player has priority. Otherwise, their opponent
                       has priority.
                     </li>
@@ -3435,21 +3487,26 @@
           <!-- END Command Phase -->
 
           <!-- Commander -->
-          <a href="#commander"><button>Commander</button></a>
+          <a href="#commander" class="entry-button">Commander</a>
           <div id="commander" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Commander</h4>
-              <div class="aside">
-                <img src="img/legion-commander-icon.png" alt="Commander Icon" />
+              <figure class="aside">
+                <img
+                  src="img/legion-commander-icon.png"
+                  alt="Commander Icon"
+                  loading="lazy"
+                />
                 <p class="keyword-reference">Commander Icon</p>
-              </div>
+              </figure>
               <p>
                 The
                 <img
                   class="game-icon"
                   src="img/legion-commander-icon.png"
                   alt="Commander Icon"
+                  loading="lazy"
                 />
                 icon indicates that a unit has the rank of commander. Commanders
                 are powerful heroes and villains that can issue orders to other
@@ -3479,13 +3536,14 @@
                   promote a new commander during the End Phase.
                   <ul>
                     <li>
-                      <div class="aside">
+                      <figure class="aside">
                         <img
                           src="img/legion-commander-token.png"
                           alt="Commander Token"
+                          loading="lazy"
                         />
                         <p class="keyword-reference">Commander Token</p>
-                      </div>
+                      </figure>
                       To promote a commander, a player chooses any of their
                       trooper units or units with the field commander keyword on
                       the battlefield and places a commander token next to that
@@ -3549,7 +3607,7 @@
           <!-- End Commander -->
 
           <!-- Compel -->
-          <a href="#compel"><button class="unit-keyword">Compel</button></a>
+          <a href="#compel" class="entry-button unit-keyword">Compel</a>
           <div id="compel" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -3594,7 +3652,7 @@
           <!-- END COMPEL -->
 
           <!-- Compusory Move -->
-          <a href="#compulsory-move"><button>Compulsory Move</button></a>
+          <a href="#compulsory-move" class="entry-button">Compulsory Move</a>
           <div id="compulsory-move" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -3704,7 +3762,7 @@
           <!-- end compulsory move -->
 
           <!-- Condition Cards -->
-          <a href="#condition-cards"><button>Condition Cards</button></a>
+          <a href="#condition-cards" class="entry-button">Condition Cards</a>
           <div id="condition-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -3731,18 +3789,19 @@
           <!-- End Condition Cards -->
 
           <!-- Condition Tokens -->
-          <a href="#condition-tokens"><button>Condition Tokens</button></a>
+          <a href="#condition-tokens" class="entry-button">Condition Tokens</a>
           <div id="condition-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Condition Tokens</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img
                   src="img/legion-condition-tokens.png"
                   alt="Condition Tokens"
+                  loading="lazy"
                 />
                 <p class="keyword-reference">Condition Tokens</p>
-              </div>
+              </figure>
               <p>
                 Some condition cards instruct players to place condition tokens
                 on the battlefield. These tokens will have game effects
@@ -3828,8 +3887,8 @@
           <!-- End Condition Tokens -->
 
           <!-- contingencies X -->
-          <a href="#contingencies-x"
-            ><button class="unit-keyword">Contingencies X</button></a
+          <a href="#contingencies-x" class="entry-button unit-keyword"
+            >Contingencies X</a
           >
           <div id="contingencies-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -3913,8 +3972,10 @@
           <!-- End Contingencies X -->
 
           <!-- Coordinate: Unit Name/Type -->
-          <a href="#coordinate-x-unit-name-type"
-            ><button class="unit-keyword">Coordinate: Unit Name/Type</button></a
+          <a
+            href="#coordinate-x-unit-name-type"
+            class="entry-button unit-keyword"
+            >Coordinate: Unit Name/Type</a
           >
           <div id="coordinate-x-unit-name-type" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -3968,6 +4029,7 @@
                             src="img/legion-corps-icon.png"
                             alt="Corps Icon"
                             class="game-icon"
+                            loading="lazy"
                           />
                           trooper</strong
                         >
@@ -3987,8 +4049,8 @@
           <!-- End Coordinate: Unit Name/Type -->
 
           <!-- Counterpart: Unit Name -->
-          <a href="#counterpart-unit-name"
-            ><button class="unit-keyword">Counterpart: Unit Name</button></a
+          <a href="#counterpart-unit-name" class="entry-button unit-keyword"
+            >Counterpart: Unit Name</a
           >
           <div id="counterpart-unit-name" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -4100,15 +4162,19 @@
           <!-- End Counterpart: Unit Name -->
 
           <!-- Courage -->
-          <a href="#courage"><button>Courage</button></a>
+          <a href="#courage" class="entry-button">Courage</a>
           <div id="courage" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Courage</h4>
-              <div class="aside">
-                <img src="img/legion-courage-value.PNG" alt="courage value" />
+              <figure class="aside">
+                <img
+                  src="img/legion-courage-value.PNG"
+                  alt="courage value"
+                  loading="lazy"
+                />
                 <p class="keyword-reference">Courage Value</p>
-              </div>
+              </figure>
               <p>
                 Courage is an attribute presented on each trooper’s unit card.
               </p>
@@ -4182,7 +4248,7 @@
           <!-- End Courage -->
 
           <!-- Cover -->
-          <a href="#cover"><button>Cover</button></a>
+          <a href="#cover" class="entry-button">Cover</a>
           <div id="cover" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4230,11 +4296,13 @@
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) result, and a unit that has heavy cover can cancel up to
                   two hit (<img
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) results.
                   <ul>
                     <li>
@@ -4242,6 +4310,7 @@
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) results cannot be canceled by cover.
                     </li>
                   </ul>
@@ -4390,7 +4459,7 @@
           <!-- End Cover -->
 
           <!-- Cover X -->
-          <a href="#cover-x"><button class="unit-keyword">Cover X</button></a>
+          <a href="#cover-x" class="entry-button unit-keyword">Cover X</a>
           <div id="cover-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4413,9 +4482,7 @@
           <!-- End Cover X -->
 
           <!-- Covert Ops -->
-          <a href="#covert-ops"
-            ><button class="unit-keyword">Covert Ops</button></a
-          >
+          <a href="#covert-ops" class="entry-button unit-keyword">Covert Ops</a>
           <div id="covert-ops" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4489,7 +4556,7 @@
           <!-- End Covert Ops -->
 
           <!-- Creature Trooper -->
-          <a href="#creature-trooper"><button>Creature Trooper</button></a>
+          <a href="#creature-trooper" class="entry-button">Creature Trooper</a>
           <div id="creature-trooper" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4577,8 +4644,8 @@
           <!-- End Creature Trooper -->
 
           <!-- Critical X -->
-          <a href="#critical-x"
-            ><button class="weapon-keyword">Critical X</button></a
+          <a href="#critical-x" class="entry-button weapon-keyword"
+            >Critical X</a
           >
           <div id="critical-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -4592,10 +4659,12 @@
                   class="game-icon"
                   src="img/legion-attack-surge.png"
                   alt="Attack Surge Symbol"
+                  loading="lazy"
                 />) results to critical (<img
                   class="game-icon"
                   src="img/legion-crit.png"
                   alt="Crit Symbol"
+                  loading="lazy"
                 />) results.
               </p>
               <ul>
@@ -4606,6 +4675,7 @@
                     class="game-icon"
                     src="img/legion-attack-surge.png"
                     alt="Attack Surge Symbol"
+                    loading="lazy"
                   />) results not converted with the
                   <strong class="keyword-reference">critical x</strong> keyword
                   according to the surge conversion chart on its unit card.
@@ -4622,8 +4692,8 @@
           <!-- End Critical X -->
 
           <!-- Cumbersome -->
-          <a href="#cumbersome"
-            ><button class="weapon-keyword">Cumbersome</button></a
+          <a href="#cumbersome" class="entry-button weapon-keyword"
+            >Cumbersome</a
           >
           <div id="cumbersome" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -4669,7 +4739,7 @@
 
           <!-- cunning -->
 
-          <a href="#cunning"><button class="unit-keyword">Cunning</button></a>
+          <a href="#cunning" class="entry-button unit-keyword">Cunning</a>
           <div id="cunning" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4704,7 +4774,7 @@
           <!-- End Cunning -->
 
           <!-- Cycle -->
-          <a href="#cycle"><button class="weapon-keyword">Cycle</button></a>
+          <a href="#cycle" class="entry-button weapon-keyword">Cycle</a>
           <div id="cycle" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4742,31 +4812,6 @@
           </div>
           <!-- End Cycle -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-            <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-            -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -4777,20 +4822,24 @@
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Damaged -->
-          <a href="#damaged"><button>Damaged</button></a>
+          <a href="#damaged" class="entry-button">Damaged</a>
           <div id="damaged" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Damaged</h4>
-              <div class="aside">
-                <img src="img/legion-damaged.png" alt="Damaged Token" />
+              <figure class="aside">
+                <img
+                  src="img/legion-damaged.png"
+                  alt="Damaged Token"
+                  loading="lazy"
+                />
                 <p>Damaged Token</p>
-              </div>
+              </figure>
               <p>
                 A vehicle unit can become damaged when it has wound tokens equal
                 to or exceeding its resilience value (see
                 <strong class="keyword-reference"
-                  ><a clas="link-to-r" href="#resilience">Resilience</a></strong
+                  ><a href="#resilience">Resilience</a></strong
                 >
               </p>
               <ul>
@@ -4830,8 +4879,8 @@
           <!-- End Damaged -->
 
           <!-- Danger Sense -->
-          <a href="#danger-sense-x"
-            ><button class="unit-keyword">Danger Sense X</button></a
+          <a href="#danger-sense-x" class="entry-button unit-keyword"
+            >Danger Sense X</a
           >
           <div id="danger-sense-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -4893,9 +4942,7 @@
           <!-- End Danger Sense -->
 
           <!-- Dauntless -->
-          <a href="#dauntless"
-            ><button class="unit-keyword">Dauntless</button></a
-          >
+          <a href="#dauntless" class="entry-button unit-keyword">Dauntless</a>
           <div id="dauntless" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4931,7 +4978,9 @@
           <!-- End Dauntless -->
 
           <!-- Delcaring Terrain -->
-          <a href="#declaring-terrain"><button>Declaring Terrain</button></a>
+          <a href="#declaring-terrain" class="entry-button"
+            >Declaring Terrain</a
+          >
           <div id="declaring-terrain" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -4994,14 +5043,13 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#cover">Cover</a>
                 <a href="#line-of-sight">Line of Sight</a>
-                <a href="#setup">Setup</a>
               </p>
             </div>
           </div>
           <!-- End Declaring Terrain -->
 
           <!-- Defeated -->
-          <a href="#defeated"><button>Defeated</button></a>
+          <a href="#defeated" class="entry-button">Defeated</a>
           <div id="defeated" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5059,7 +5107,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Defeated -->
 
           <!-- Defend X -->
-          <a href="#defend-x"><button class="unit-keyword">Defend X</button></a>
+          <a href="#defend-x" class="entry-button unit-keyword">Defend X</a>
           <div id="defend-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5096,8 +5144,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Defend X -->
 
           <!-- Defning the Battlefield -->
-          <a href="#defining-the-battlefield"
-            ><button>Defining the Battlefield</button></a
+          <a href="#defining-the-battlefield" class="entry-button"
+            >Defining the Battlefield</a
           >
           <div id="defining-the-battlefield" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -5143,7 +5191,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Defining the Battlefield -->
 
           <!-- Deflect -->
-          <a href="#deflect"><button class="unit-keyword">Deflect</button></a>
+          <a href="#deflect" class="entry-button unit-keyword">Deflect</a>
           <div id="deflect" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5162,15 +5210,18 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                     class="game-icon"
                     src="img/legion-defense-surge.png"
                     alt="Defense Surge Symbol"
+                    loading="lazy"
                   />) results are converted to block (<img
                     class="game-icon"
                     src="img/legion-block.png"
                     alt="Block Symbol"
+                    loading="lazy"
                   />) results; additionally, if the attack is ranged, the
                   attacker suffers one wound for each defense surge (<img
                     class="game-icon"
                     src="img/legion-defense-surge.png"
                     alt="Defense Surge Symbol"
+                    loading="lazy"
                   />) result rolled by the defender during the “Roll Defense
                   Dice” step.
                 </li>
@@ -5182,6 +5233,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) result, as normal. The defender may spend additional dodge
                   tokens to cancel additional hits; however, doing so does not
                   improve or add to the benefits of the
@@ -5213,8 +5265,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Deflect -->
 
           <!-- Demoralize X -->
-          <a href="#demoralize-x"
-            ><button class="unit-keyword">Demoralize X</button></a
+          <a href="#demoralize-x" class="entry-button unit-keyword"
+            >Demoralize X</a
           >
           <div id="demoralize-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -5245,7 +5297,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Demoralize X -->
 
           <!-- Deployment -->
-          <a href="#deployment"><button>Deployment</button></a>
+          <a href="#deployment" class="entry-button">Deployment</a>
           <div id="deployment" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5327,7 +5379,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Deployment -->
 
           <!-- Destroyed -->
-          <a href="#destroyed"><button>Destroyed</button></a>
+          <a href="#destroyed" class="entry-button">Destroyed</a>
           <div id="destroyed" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5344,8 +5396,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Destroyed -->
 
           <!-- Detachment Unit Name/Type -->
-          <a href="#detachment-unit-name-type"
-            ><button class="unit-keyword">Detachment: Unit Name/Type</button></a
+          <a href="#detachment-unit-name-type" class="entry-button unit-keyword"
+            >Detachment: Unit Name/Type</a
           >
           <div id="detachment-unit-name-type" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -5454,7 +5506,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Detachment Unit Name/Type -->
 
           <!-- Detonate -->
-          <a href="#detonate"><button>Detonate</button></a>
+          <a href="#detonate" class="entry-button">Detonate</a>
           <div id="detonate" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5476,6 +5528,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                     class="game-icon"
                     src="img/legion-range1-5.png"
                     alt="Range 1 through 5 Symbols"
+                    loading="lazy"
                   />) indicates that a weapon is an area weapon. When a charge
                   or condition token detonates, use the area weapon on the card
                   associated with that token.
@@ -5547,8 +5600,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Detonate -->
 
           <!-- Detonate X Charge Type -->
-          <a href="#detonate-x-charge-type"
-            ><button class="weapon-keyword">Detonate X: Charge Type</button></a
+          <a href="#detonate-x-charge-type" class="entry-button weapon-keyword"
+            >Detonate X: Charge Type</a
           >
           <div id="detonate-x-charge-type" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -5641,7 +5694,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Detonate X Charge Type -->
 
           <!-- Dice -->
-          <a href="#dice"><button>Dice</button></a>
+          <a href="#dice" class="entry-button">Dice</a>
           <div id="dice" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5661,6 +5714,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-hit.png"
                         alt="Hit Symbol"
+                        loading="lazy"
                       />: Hit
                     </li>
                     <li>
@@ -5668,6 +5722,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="crit Symbol"
+                        loading="lazy"
                       />: Crit
                     </li>
                     <li>
@@ -5675,6 +5730,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-attack-surge.png"
                         alt="attack surge Symbol"
+                        loading="lazy"
                       />: Attack Surge
                     </li>
                     <li>
@@ -5682,6 +5738,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-defense-surge.png"
                         alt="Defense Surge Symbol"
+                        loading="lazy"
                       />: Defense Surge
                     </li>
                     <li>
@@ -5689,6 +5746,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-block.png"
                         alt="block Symbol"
+                        loading="lazy"
                       />: Block
                     </li>
                     <li>Blank</li>
@@ -5706,6 +5764,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         <img
                           src="img/legion-red-attack-die-example.PNG"
                           alt="Red Attack Die Example"
+                          loading="lazy"
                         />
                       </div>
                     </li>
@@ -5715,6 +5774,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         <img
                           src="img/legion-white-attack-die-example.PNG"
                           alt="white Attack Die Example"
+                          loading="lazy"
                         />
                       </div>
                     </li>
@@ -5724,6 +5784,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         <img
                           src="img/legion-black-attack-die-example.PNG"
                           alt="black Attack Die Example"
+                          loading="lazy"
                         />
                       </div>
                     </li>
@@ -5740,6 +5801,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         <img
                           src="img/legion-red-defense-die-example.PNG"
                           alt="red Defense Die Example"
+                          loading="lazy"
                         />
                       </div>
                     </li>
@@ -5749,6 +5811,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         <img
                           src="img/legion-white-defense-die-example.PNG"
                           alt="White Defense Die Example"
+                          loading="lazy"
                         />
                       </div>
                     </li>
@@ -5765,7 +5828,9 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Dice -->
 
           <!-- Difficult Terrain -->
-          <a href="#difficult-terrain"><button>Difficult Terrain</button></a>
+          <a href="#difficult-terrain" class="entry-button"
+            >Difficult Terrain</a
+          >
           <div id="difficult-terrain" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5855,7 +5920,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Difficult Terrain -->
 
           <!-- Direct -->
-          <a href="#Direct"><button class="unit-keyword">Direct</button></a>
+          <a href="#Direct" class="entry-button unit-keyword">Direct</a>
           <div id="Direct" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -5913,15 +5978,19 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Direct -->
 
           <!-- Disabled -->
-          <a href="#disabled"><button>Disabled</button></a>
+          <a href="#disabled" class="entry-button">Disabled</a>
           <div id="disabled" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Disabled</h4>
-              <div class="aside">
-                <img src="img/legion-disabled.png" alt="Disabled Token" />
+              <figure class="aside">
+                <img
+                  src="img/legion-disabled.png"
+                  alt="Disabled Token"
+                  loading="lazy"
+                />
                 <p>Disabled Token</p>
-              </div>
+              </figure>
               <p>
                 A vehicle unit can become disabled when it has wound tokens
                 equal to or exceeding its
@@ -5964,8 +6033,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Disabled -->
 
           <!-- Disciplined X -->
-          <a href="#disciplined-x"
-            ><button class="unit-keyword">Disciplined X</button></a
+          <a href="#disciplined-x" class="entry-button unit-keyword"
+            >Disciplined X</a
           >
           <div id="disciplined-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -5986,9 +6055,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Disciplined X -->
 
           <!-- Disengage -->
-          <a href="#disengage"
-            ><button class="unit-keyword">Disengage</button></a
-          >
+          <a href="#disengage" class="entry-button unit-keyword">Disengage</a>
           <div id="disengage" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6016,7 +6083,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Disengage -->
 
           <!-- Displacement -->
-          <a href="#displacement"><button>Displacement</button></a>
+          <a href="#displacement" class="entry-button">Displacement</a>
           <div id="displacement" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6127,7 +6194,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Displacement -->
 
           <!-- Distract -->
-          <a href="#distract"><button class="unit-keyword">Distract</button></a>
+          <a href="#distract" class="entry-button unit-keyword">Distract</a>
           <div id="distract" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6187,7 +6254,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Distract -->
 
           <!-- Divulge -->
-          <a href="#divulge"><button>Divulge</button></a>
+          <a href="#divulge" class="entry-button">Divulge</a>
           <div id="divulge" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6236,8 +6303,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- Divulge -->
 
           <!-- Djem So Mastery -->
-          <a href="#djem-so-mastery"
-            ><button class="unit-keyword">Djem So Mastery</button></a
+          <a href="#djem-so-mastery" class="entry-button unit-keyword"
+            >Djem So Mastery</a
           >
           <div id="djem-so-mastery" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -6254,6 +6321,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   class="game-icon"
                   src="img/legion-defense-surge.png"
                   alt="Defense Surge Symbol"
+                  loading="lazy"
                 />
                 :
                 <img
@@ -6264,10 +6332,12 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   class="game-icon"
                   src="img/legion-hit.png"
                   alt="Hit Symbol"
+                  loading="lazy"
                 />) or critical (<img
                   class="game-icon"
                   src="img/legion-crit.png"
                   alt="Crit Symbol"
+                  loading="lazy"
                 />) result is canceled, the attacker suffers one wound during
                 the “Apply Dodge and Cover” step.
               </p>
@@ -6278,10 +6348,12 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                     class="game-icon"
                     src="img/legion-hit.png"
                     alt="Hit Symbol"
+                    loading="lazy"
                   />) or critical (<img
                     class="game-icon"
                     src="img/legion-crit.png"
                     alt="Crit Symbol"
+                    loading="lazy"
                   />) result must be canceled during the “Apply Dodge and Cover”
                   step of the attack in order for the attacker to suffer one
                   wound.
@@ -6291,6 +6363,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-hit.png"
                         alt="Hit Symbol"
+                        loading="lazy"
                       />) results would be canceled by cover, the defender can
                       still spend a dodge token in order to gain the benefits of
                       <strong class="keyword-reference">djem so mastery</strong
@@ -6301,31 +6374,37 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) results at the start of the “Apply Dodge and Cover”
                       step, and the defender is unable to cancel critical (<img
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) results, the defender can still spend a dodge token to
                       gain “<img
                         class="game-icon"
                         src="img/legion-defense-surge.png"
                         alt="Defense Surge Symbol"
+                        loading="lazy"
                       />
                       :
                       <img
                         class="game-icon"
                         src="img/legion-block.png"
                         alt="Block Symbol"
+                        loading="lazy"
                       />.” The attacker does not suffer a wound, since no hit
                       (<img
                         class="game-icon"
                         src="img/legion-hit.png"
                         alt="Hit Symbol"
+                        loading="lazy"
                       />) or critical (<img
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) results were canceled.
                     </li>
                     <li>
@@ -6334,6 +6413,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                         class="game-icon"
                         src="img/legion-crit.png"
                         alt="Crit Symbol"
+                        loading="lazy"
                       />) results.
                     </li>
                   </ul>
@@ -6391,15 +6471,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Djem So Mastery -->
 
           <!-- dodge -->
-          <a href="#dodge"><button>Dodge</button></a>
+          <a href="#dodge" class="entry-button">Dodge</a>
           <div id="dodge" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Dodge</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-dodge.png" alt="Dodge Token" />
                 <p>Dodge Token</p>
-              </div>
+              </figure>
               <p>
                 Units can gain dodge tokens that allow them to cancel hit
                 results during an attack.
@@ -6473,7 +6553,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Dodge -->
 
           <!-- Droid Trooper -->
-          <a href="#droid-trooper"><button>Droid Trooper</button></a>
+          <a href="#droid-trooper" class="entry-button">Droid Trooper</a>
           <div id="droid-trooper" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6523,7 +6603,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Droid Trooper -->
 
           <!-- Dual Sided Cards -->
-          <a href="#dual-sided-cards"><button>Dual Sided Cards</button></a>
+          <a href="#dual-sided-cards" class="entry-button">Dual Sided Cards</a>
           <div id="dual-sided-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6567,7 +6647,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Dual Sided Cards -->
 
           <!-- Duelist -->
-          <a href="#duelist"><button class="unit-keyword">Duelist</button></a>
+          <a href="#duelist" class="entry-button unit-keyword">Duelist</a>
           <div id="duelist" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6611,31 +6691,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Duelist -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-             <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-            -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -6646,8 +6701,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Embark and Disembark -->
-          <a href="#embark-and-disembark"
-            ><button>Embark and Disembark</button></a
+          <a href="#embark-and-disembark" class="entry-button"
+            >Embark and Disembark</a
           >
           <div id="embark-and-disembark" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -6767,8 +6822,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Embark and Disembark -->
 
           <!-- Emplacement Trooper -->
-          <a href="#emplacement-trooper"
-            ><button>Emplacement Trooper</button></a
+          <a href="#emplacement-trooper" class="entry-button"
+            >Emplacement Trooper</a
           >
           <div id="emplacement-trooper" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -6834,7 +6889,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Emplacement Trooper -->
 
           <!-- End Phase -->
-          <a href="#end-phase"><button>End Phase</button></a>
+          <a href="#end-phase" class="entry-button">End Phase</a>
           <div id="end-phase" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6909,7 +6964,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End End Phase -->
 
           <!-- Enemy -->
-          <a href="#enemy"><button>Enemy</button></a>
+          <a href="#enemy" class="entry-button">Enemy</a>
           <div id="enemy" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6928,7 +6983,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Enemy -->
 
           <!-- Engaged -->
-          <a href="#engaged"><button>Engaged</button></a>
+          <a href="#engaged" class="entry-button">Engaged</a>
           <div id="engaged" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -6950,7 +7005,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   If a trooper unit is engaged, it can leave that melee by
                   withdrawing during its activation. For additional rules, see
                   <strong class="keyword-reference"
-                    ><a src="#withdraw">Withdraw</a></strong
+                    ><a href="#withdraw">Withdraw</a></strong
                   >
                 </li>
               </ul>
@@ -6967,7 +7022,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Engaged -->
 
           <!-- Enrage -->
-          <a href="#enrage-x"><button class="unit-keyword">Enrage X</button></a>
+          <a href="#enrage-x" class="entry-button unit-keyword">Enrage X</a>
           <div id="enrage-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7006,8 +7061,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Enrage -->
 
           <!-- Entourage: Unit Name -->
-          <a href="#entourage-unit-name"
-            ><button class="unit-keyword">Entourage: Unit Name</button></a
+          <a href="#entourage-unit-name" class="entry-button unit-keyword"
+            >Entourage: Unit Name</a
           >
           <div id="entourage-unit-name" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -7080,7 +7135,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Entourage Unit Name -->
 
           <!-- Equip -->
-          <a href="#equip"><button class="unit-keyword">Equip</button></a>
+          <a href="#equip" class="entry-button unit-keyword">Equip</a>
           <div id="equip" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7102,7 +7157,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Equip -->
 
           <!-- Exemplar -->
-          <a href="#exemplar"><button class="unit-keyword">Exemplar</button></a>
+          <a href="#exemplar" class="entry-button unit-keyword">Exemplar</a>
           <div id="exemplar" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7131,15 +7186,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Exemplar -->
 
           <!-- Exhaust -->
-          <a href="#exhaust"><button>Exhaust</button></a>
+          <a href="#exhaust" class="entry-button">Exhaust</a>
           <div id="exhaust" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Exhaust</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-exhaust-on-cards.PNG" alt="Exhaust Icon" />
                 <p>Exhaust Icon</p>
-              </div>
+              </figure>
               <p>
                 A player must exhaust some upgrade cards to resolve the
                 abilities on those cards. An exhausted card cannot be exhausted
@@ -7183,15 +7238,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- end Exhaust -->
 
           <!-- Expend -->
-          <a href="#expend"><button>Expend</button></a>
+          <a href="#expend" class="entry-button">Expend</a>
           <div id="expend" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Expend</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-expend.PNG" alt="Expend Icon" />
                 <p>Expend Icon</p>
-              </div>
+              </figure>
               <p>
                 A player must expend some upgrade cards to resolve the abilities
                 on those cards. Once a card is expended, it cannot be used again
@@ -7230,8 +7285,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Expend -->
 
           <!-- Expert Climber -->
-          <a href="#expert-climber"
-            ><button class="unit-keyword">Expert Climber</button></a
+          <a href="#expert-climber" class="entry-button unit-keyword"
+            >Expert Climber</a
           >
           <div id="expert-climber" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -7256,31 +7311,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Expert Climber -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -7291,7 +7321,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Factions -->
-          <a href="#factions"><button>Factions</button></a>
+          <a href="#factions" class="entry-button">Factions</a>
           <div id="factions" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7330,7 +7360,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Factions -->
 
           <!-- Flawed -->
-          <a href="#flawed"><button class="unit-keyword">Flawed</button></a>
+          <a href="#flawed" class="entry-button unit-keyword">Flawed</a>
           <div id="flawed" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7386,8 +7416,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Flawed -->
 
           <!-- Field Commander -->
-          <a href="#field-commander"
-            ><button class="unit-keyword">Field Commander</button></a
+          <a href="#field-commander" class="entry-button unit-keyword"
+            >Field Commander</a
           >
           <div id="field-commander" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -7448,8 +7478,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Field Commander -->
 
           <!-- Fire Support -->
-          <a href="#fire-support"
-            ><button class="unit-keyword">Fire Support</button></a
+          <a href="#fire-support" class="entry-button unit-keyword"
+            >Fire Support</a
           >
           <div id="fire-support" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -7568,7 +7598,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Fire Support -->
 
           <!-- Firing Arcs -->
-          <a href="#firing-arcs"><button>Firing Arcs</button></a>
+          <a href="#firing-arcs" class="entry-button">Firing Arcs</a>
           <div id="firing-arcs" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7637,8 +7667,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Firing Arcs -->
 
           <!-- Fixed: Front/Rear -->
-          <a href="#fixed-front-rear"
-            ><button class="weapon-keyword">Fixed: Front/Rear</button></a
+          <a href="#fixed-front-rear" class="entry-button weapon-keyword"
+            >Fixed: Front/Rear</a
           >
           <div id="fixed-front-rear" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -7687,7 +7717,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Fixed: Front/Rear -->
 
           <!-- Free Actions -->
-          <a href="#free-actions"><button>Free Actions</button></a>
+          <a href="#free-actions" class="entry-button">Free Actions</a>
           <div id="free-actions" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7762,7 +7792,9 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Free Action -->
 
           <!-- Free Card Actions -->
-          <a href="#free-card-actions"><button>Free Card Actions</button></a>
+          <a href="#free-card-actions" class="entry-button"
+            >Free Card Actions</a
+          >
           <div id="free-card-actions" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7828,7 +7860,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Free Card Actions -->
 
           <!-- Friendly -->
-          <a href="#friendly"><button>Friendly</button></a>
+          <a href="#friendly" class="entry-button">Friendly</a>
           <div id="friendly" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7848,9 +7880,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Friendly -->
 
           <!-- Full Pivot -->
-          <a href="#full-pivot"
-            ><button class="unit-keyword">Full Pivot</button></a
-          >
+          <a href="#full-pivot" class="entry-button unit-keyword">Full Pivot</a>
           <div id="full-pivot" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -7868,31 +7898,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Full Pivot -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -7903,8 +7908,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Generator X -->
-          <a href="#generator-x"
-            ><button class="unit-keyword">Generator X</button></a
+          <a href="#generator-x" class="entry-button unit-keyword"
+            >Generator X</a
           >
           <div id="generator-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -7928,15 +7933,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Generator X -->
 
           <!-- Graffiti Token -->
-          <a href="#graffiti-token"><button>Graffiti Token</button></a>
+          <a href="#graffiti-token" class="entry-button">Graffiti Token</a>
           <div id="graffiti-token" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Graffiti Token</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-grafitti.png" alt="Graffiti Token" />
                 <p>Graffiti Token</p>
-              </div>
+              </figure>
               <p>
                 A graffiti token represents a striking image or symbol painted
                 onto the terrain of the battlefield. Graffiti tokens affect a
@@ -7996,7 +8001,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Graffiti Token -->
 
           <!-- Ground Vechicles -->
-          <a href="#ground-vehicles"><button>Ground Vehicles</button></a>
+          <a href="#ground-vehicles" class="entry-button">Ground Vehicles</a>
           <div id="ground-vehicles" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8012,7 +8017,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Ground Vehicles -->
 
           <!-- Grounded -->
-          <a href="#grounded"><button class="unit-keyword">Grounded</button></a>
+          <a href="#grounded" class="entry-button unit-keyword">Grounded</a>
           <div id="grounded" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8033,9 +8038,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Grounded -->
 
           <!-- Guardian X -->
-          <a href="#guardian-x"
-            ><button class="unit-keyword">Guardian X</button></a
-          >
+          <a href="#guardian-x" class="entry-button unit-keyword">Guardian X</a>
           <div id="guardian-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8188,7 +8191,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Guardian X -->
 
           <!-- Guidance -->
-          <a href="#guidance"><button class="unit-keyword">Guidance</button></a>
+          <a href="#guidance" class="entry-button unit-keyword">Guidance</a>
           <div id="guidance" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8211,9 +8214,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Guidance -->
 
           <!-- Gunslinger -->
-          <a href="#gunslinger"
-            ><button class="unit-keyword">Gunslinger</button></a
-          >
+          <a href="#gunslinger" class="entry-button unit-keyword">Gunslinger</a>
           <div id="gunslinger" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8240,31 +8241,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Gunslinger -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -8275,8 +8251,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Heavy Weapon -->
-          <a href="#heavy-weapon-team"
-            ><button class="unit-keyword">Heavy Weapon Team</button></a
+          <a href="#heavy-weapon-team" class="entry-button unit-keyword"
+            >Heavy Weapon Team</a
           >
           <div id="heavy-weapon-team" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8308,7 +8284,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Heavy Weapon -->
 
           <!-- Height -->
-          <a href="#height"><button>Height</button></a>
+          <a href="#height" class="entry-button">Height</a>
           <div id="height" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8354,8 +8330,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Height -->
 
           <!-- High Velocity -->
-          <a href="#high-velocity"
-            ><button class="weapon-keyword">High Velocity</button></a
+          <a href="#high-velocity" class="entry-button weapon-keyword"
+            >High Velocity</a
           >
           <div id="high-velocity" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8394,18 +8370,18 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End High Velocity -->
 
           <!-- hostage Cards -->
-          <a href="#hostage-cards"><button>Hostage Cards</button></a>
+          <a href="#hostage-cards" class="entry-button">Hostage Cards</a>
           <div id="hostage-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Hostage Cards</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img
                   src="img/legion-hostage-card-back.PNG"
                   alt="Hostage Card Back"
                 />
                 <p>Hostage Card Back</p>
-              </div>
+              </figure>
               <p>
                 The Hostage Exchange objective card requires two hostage upgrade
                 cards. Both hostage upgrade cards are identical. Hostage upgrade
@@ -8437,8 +8413,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Hostage Cards -->
 
           <!-- hover: ground/air x -->
-          <a href="#hover-ground-air-x"
-            ><button class="unit-keyword">Hover: Ground/Air X</button></a
+          <a href="#hover-ground-air-x" class="entry-button unit-keyword"
+            >Hover: Ground/Air X</a
           >
           <div id="hover-ground-air-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8556,31 +8532,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Hover: Ground/AIr X -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -8591,15 +8542,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- ID Tokens -->
-          <a href="#id-tokens"><button>ID Tokens</button></a>
+          <a href="#id-tokens" class="entry-button">ID Tokens</a>
           <div id="id-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>ID Tokens</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-id-tokens.png" alt="ID Tokens" />
                 <p>ID Tokens</p>
-              </div>
+              </figure>
               <p>
                 ID tokens help players keep track of multiple units of the same
                 type that have different upgrade cards. When deploying such
@@ -8617,15 +8568,17 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- END ID Tokens -->
 
           <!-- Immobilize Tokens -->
-          <a href="#immobilize-tokens"><button>Immobilize Tokens</button></a>
+          <a href="#immobilize-tokens" class="entry-button"
+            >Immobilize Tokens</a
+          >
           <div id="immobilize-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Immobilize Tokens</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-immobilize.png" alt="Immobilize Token" />
                 <p>Immobilize Token</p>
-              </div>
+              </figure>
               <p>
                 A unit’s maximum speed is reduced by 1 for each immobilize token
                 it has. A unit whose maximum speed is 0 and has at least one
@@ -8657,7 +8610,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immobilize Tokens -->
 
           <!-- Immobilize X -->
-          <a href="#immobilize-x"><button>Immobilize X</button></a>
+          <a href="#immobilize-x" class="entry-button">Immobilize X</a>
           <div id="immobilize-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8686,8 +8639,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immobilize X -->
 
           <!-- Immune: Blast -->
-          <a href="#immune-blast"
-            ><button class="unit-keyword">Immune: Blast</button></a
+          <a href="#immune-blast" class="entry-button unit-keyword"
+            >Immune: Blast</a
           >
           <div id="immune-blast" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8711,8 +8664,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immune: Blast -->
 
           <!-- immune: deflect -->
-          <a href="#immune-deflect"
-            ><button class="unit-keyword">Immune: Deflect</button></a
+          <a href="#immune-deflect" class="entry-button unit-keyword"
+            >Immune: Deflect</a
           >
           <div id="immune-deflect" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8752,8 +8705,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immune: Deflect -->
 
           <!-- Immune: Enemy Effects -->
-          <a href="#immune-enemy-effects"
-            ><button class="unit-keyword">Immune: Enemy Effects</button></a
+          <a href="#immune-enemy-effects" class="entry-button unit-keyword"
+            >Immune: Enemy Effects</a
           >
           <div id="immune-enemy-effects" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8787,8 +8740,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immune: Enemy Effects -->
 
           <!-- Immune Melee -->
-          <a href="#immune-melee"
-            ><button class="unit-keyword">Immune: Melee</button></a
+          <a href="#immune-melee" class="entry-button unit-keyword"
+            >Immune: Melee</a
           >
           <div id="immune-melee" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8811,8 +8764,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immune Melee -->
 
           <!-- Immune: Pierce -->
-          <a href="#immune-pierce"
-            ><button class="unit-keyword">Immune: Pierce</button></a
+          <a href="#immune-pierce" class="entry-button unit-keyword"
+            >Immune: Pierce</a
           >
           <div id="immune-pierce" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8866,8 +8819,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immune Pierce -->
 
           <!-- Immune Range 1 weapons -->
-          <a href="#immune-range-1-weapons"
-            ><button class="unit-keyword">Immune: Range 1 Weapons</button></a
+          <a href="#immune-range-1-weapons" class="entry-button unit-keyword"
+            >Immune: Range 1 Weapons</a
           >
           <div id="immune-range-1-weapons" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -8899,9 +8852,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Immune Range 1 Weapons -->
 
           <!-- Impact X -->
-          <a href="#impact-x"
-            ><button class="weapon-keyword">Impact X</button></a
-          >
+          <a href="#impact-x" class="entry-button weapon-keyword">Impact X</a>
           <div id="impact-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -8996,7 +8947,9 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Impact X -->
 
           <!-- Impassable Terrain -->
-          <a href="#impassable-terrain"><button>Impassable Terrain</button></a>
+          <a href="#impassable-terrain" class="entry-button"
+            >Impassable Terrain</a
+          >
           <div id="impassable-terrain" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9023,7 +8976,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#difficult-terrain">Difficult Terrain</a>
                 <a href="#movement">Movement</a>
-                <a href="#open Terrain">Open Terrain</a>
+                <a href="#open-terrain">Open Terrain</a>
                 <a href="#base-contact">Base Contact</a>
                 <!-- See additional terrain rules" on page 8 ADD THIS LATER -->
               </p>
@@ -9032,9 +8985,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Impassable Terrain -->
 
           <!-- Impervious -->
-          <a href="#impervious"
-            ><button class="unit-keyword">Impervious</button></a
-          >
+          <a href="#impervious" class="entry-button unit-keyword">Impervious</a>
           <div id="impervious" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9161,17 +9112,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Impervious -->
 
           <!-- Incognito -->
-          <a href="#incognito"
-            ><button class="unit-keyword">Incognito</button></a
-          >
+          <a href="#incognito" class="entry-button unit-keyword">Incognito</a>
           <div id="incognito" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Incognito (Unit Keyword)</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-incognito.PNG" alt="incognito token" />
                 <p>Incognito Token</p>
-              </div>
+              </figure>
               <p>
                 Some units appear to be on the enemy’s side of a conflict—until
                 they get close enough to reveal their true allegiances. A unit
@@ -9241,8 +9190,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Incognito -->
 
           <!-- Inconspicuous -->
-          <a href="#inconspicuous"
-            ><button class="unit-keyword">Inconspicuous</button></a
+          <a href="#inconspicuous" class="entry-button unit-keyword"
+            >Inconspicuous</a
           >
           <div id="inconspicuous" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -9281,8 +9230,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Incospicuous -->
 
           <!-- Indomitable -->
-          <a href="#indomitable"
-            ><button class="unit-keyword">Indomitable</button></a
+          <a href="#indomitable" class="entry-button unit-keyword"
+            >Indomitable</a
           >
           <div id="indomitable" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -9308,9 +9257,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Indomitable -->
 
           <!-- Infiltrate -->
-          <a href="#infiltrate"
-            ><button class="unit-keyword">Infiltrate</button></a
-          >
+          <a href="#infiltrate" class="entry-button unit-keyword">Infiltrate</a>
           <div id="infiltrate" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9363,9 +9310,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Infiltrate -->
 
           <!-- Inspire X -->
-          <a href="#inspire-x"
-            ><button class="unit-keyword">Inspire X</button></a
-          >
+          <a href="#inspire-x" class="entry-button unit-keyword">Inspire X</a>
           <div id="inspire-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9397,15 +9342,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Inspire X -->
 
           <!-- Ion Tokens -->
-          <a href="#ion-tokens"><button>Ion Tokens</button></a>
+          <a href="#ion-tokens" class="entry-button">Ion Tokens</a>
           <div id="ion-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Ion Tokens</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-ion.png" alt="ion token" />
                 <p>Ion Token</p>
-              </div>
+              </figure>
               <p>
                 At the start of a unit’s activation, if that unit has one or
                 more ion tokens, it loses one action for each ion token. At the
@@ -9438,7 +9383,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Ion Tokens -->
 
           <!-- Ion X -->
-          <a href="#ion-x"><button class="weapon-keyword">Ion X</button></a>
+          <a href="#ion-x" class="entry-button weapon-keyword">Ion X</a>
           <div id="ion-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9486,7 +9431,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Ion X -->
 
           <!-- issuing orders -->
-          <a href="#issuing-orders"><button>Issuing Orders</button></a>
+          <a href="#issuing-orders" class="entry-button">Issuing Orders</a>
           <div id="issuing-orders" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9559,31 +9504,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Issuing Orders -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -9594,8 +9514,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Jedi Hunter -->
-          <a href="#jedi-hunter"
-            ><button class="unit-keyword">Jedi Hunter</button></a
+          <a href="#jedi-hunter" class="entry-button unit-keyword"
+            >Jedi Hunter</a
           >
           <div id="jedi-hunter" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -9654,7 +9574,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Jedi Hunter -->
 
           <!-- Jump X -->
-          <a href="#jump-x"><button class="unit-keyword">Jump X</button></a>
+          <a href="#jump-x" class="entry-button unit-keyword">Jump X</a>
           <div id="jump-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9739,8 +9659,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Jump X -->
 
           <!-- Juyo Mastery -->
-          <a href="#juyo-mastery"
-            ><button class="unit-keyword">Juyo Mastery</button></a
+          <a href="#juyo-mastery" class="entry-button unit-keyword"
+            >Juyo Mastery</a
           >
           <div id="juyo-mastery" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -9806,31 +9726,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Juyo Mastery -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -9841,7 +9736,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Keywords -->
-          <a href="#keywords"><button>Keywords</button></a>
+          <a href="#keywords" class="entry-button">Keywords</a>
           <div id="keywords" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -9917,31 +9812,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- Keywords -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -9952,7 +9822,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Leader -->
-          <a href="#leader"><button class="weapon-keyword">Leader</button></a>
+          <a href="#leader" class="entry-button weapon-keyword">Leader</a>
           <div id="leader" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -10000,8 +9870,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Leader -->
 
           <!-- Leaving the Battlefield -->
-          <a href="#leaving-the-battlefield"
-            ><button>Leaving the Battlefield</button></a
+          <a href="#leaving-the-battlefield" class="entry-button"
+            >Leaving the Battlefield</a
           >
           <div id="leaving-the-battlefield" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -10036,9 +9906,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Leaving the Battlefield -->
 
           <!-- Lethal X -->
-          <a href="#lethal-x"
-            ><button class="weapon-keyword">Lethal X</button></a
-          >
+          <a href="#lethal-x" class="entry-button weapon-keyword">Lethal X</a>
           <div id="lethal-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -10069,13 +9937,13 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
               </p>
             </div>
           </div>
-          <!-- X Lethal X -->
+          <!-- End Lethal X -->
 
           <!-- Light Transport X: Open/Closed -->
-          <a href="#light-transport-x-open-closed"
-            ><button class="unit-keyword">
-              Light Transport X: Open/Closed
-            </button></a
+          <a
+            href="#light-transport-x-open-closed"
+            class="entry-button unit-keyword"
+            >Light Transport X: Open/Closed</a
           >
           <div id="light-transport-x-open-closed" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -10120,7 +9988,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- END Light Transport X: Open/Closed -->
 
           <!-- Line of Sight -->
-          <a href="#line-of-sight"><button>Line of Sight</button></a>
+          <a href="#line-of-sight" class="entry-button">Line of Sight</a>
           <div id="line-of-sight" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -10196,7 +10064,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Line of Sight -->
 
           <!-- Loadout -->
-          <a href="#loadout"><button class="unit-keyword">Loadout</button></a>
+          <a href="#loadout" class="entry-button unit-keyword">Loadout</a>
           <div id="loadout" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -10256,8 +10124,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Loadout -->
 
           <!-- long shot X -->
-          <a href="#long-shot-x"
-            ><button class="weapon-keyword">Long Shot X</button></a
+          <a href="#long-shot-x" class="entry-button weapon-keyword"
+            >Long Shot X</a
           >
           <div id="long-shot-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -10292,8 +10160,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Long Shot X -->
 
           <!-- Low Profile -->
-          <a href="#low-profile"
-            ><button class="unit-keyword">Low Profile</button></a
+          <a href="#low-profile" class="entry-button unit-keyword"
+            >Low Profile</a
           >
           <div id="low-profile" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -10329,31 +10197,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Low Profile -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -10364,8 +10207,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Makashi Mastery -->
-          <a href="#makashi-mastery"
-            ><button class="unit-keyword">Makashi Mastery</button></a
+          <a href="#makashi-mastery" class="entry-button unit-keyword"
+            >Makashi Mastery</a
           >
           <div id="makashi-mastery" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -10393,14 +10236,14 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Makashi mastery -->
 
           <!-- Marksman -->
-          <a href="#marksman"><button class="unit-keyword">Marksman</button></a>
+          <a href="#marksman" class="entry-button unit-keyword">Marksman</a>
           <div id="marksman" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Marksman</h4>
               <p>
                 While performing an attack, a unit with the
-                <storng class="keyword-reference">marksman</storng> keyword can
+                <strong class="keyword-reference">marksman</strong> keyword can
                 spend aim tokens to improve attack die results instead of
                 rerolling dice. After the Convert Attack Surges step and before
                 the Apply Dodge and Cover step, the unit may spend any number of
@@ -10440,8 +10283,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Marksman -->
 
           <!-- Master of the Force X -->
-          <a href="#master-of-the-force-x"
-            ><button class="unit-keyword">Master of the Force X</button></a
+          <a href="#master-of-the-force-x" class="entry-button unit-keyword"
+            >Master of the Force X</a
           >
           <div id="master-of-the-force-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -10466,7 +10309,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Master of the Force X -->
 
           <!-- Melee -->
-          <a href="#melee"><button>Melee</button></a>
+          <a href="#melee" class="entry-button">Melee</a>
           <div id="melee" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -10626,18 +10469,18 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Melee -->
 
           <!-- melee weapon -->
-          <a href="#melee-weapon"><button>Melee Weapon</button></a>
+          <a href="#melee-weapon" class="entry-button">Melee Weapon</a>
           <div id="melee-weapon" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Melee Weapon</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img
                   src="img/legion-black-attack-die-example.PNG"
                   alt="Melee Weapon example"
                 />
                 <p>Melee Weapon</p>
-              </div>
+              </figure>
               <p>
                 A weapon with a red melee icon (<img
                   class="game-icon"
@@ -10671,7 +10514,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Melee Weapon -->
 
           <!-- Miniature -->
-          <a href="#miniature"><button>Miniature</button></a>
+          <a href="#miniature" class="entry-button">Miniature</a>
           <div id="miniature" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -10706,7 +10549,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Miniature -->
 
           <!-- Movement -->
-          <a href="#movement"><button>Movement</button></a>
+          <a href="#movement" class="entry-button">Movement</a>
           <div id="movement" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -10916,8 +10759,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Movement -->
 
           <!-- Trooper Movement Summary -->
-          <a href="#trooper-movement-summary"
-            ><button>Trooper Movement Summary</button></a
+          <a href="#trooper-movement-summary" class="entry-button"
+            >Trooper Movement Summary</a
           >
           <div id="trooper-movement-summary" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -11007,8 +10850,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Trooper Movement Summary -->
 
           <!-- emplacement trooper movement summary -->
-          <a href="#emplacement-trooper-movement-summary"
-            ><button>Emplacement Trooper Movement Summary</button></a
+          <a href="#emplacement-trooper-movement-summary" class="entry-button"
+            >Emplacement Trooper Movement Summary</a
           >
           <div id="emplacement-trooper-movement-summary" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -11080,8 +10923,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End emplacement trooper movement summary -->
 
           <!-- Creature Trooper Movement Summary -->
-          <a href="#creature-trooper-movement-summary"
-            ><button>Creature Trooper Movement Summary</button></a
+          <a href="#creature-trooper-movement-summary" class="entry-button"
+            >Creature Trooper Movement Summary</a
           >
           <div id="creature-trooper-movement-summary" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -11176,8 +11019,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Creature Trooper Movement Summary -->
 
           <!-- Ground vehicle movement summary -->
-          <a href="#ground-vehicle-movement-summary"
-            ><button>Ground Vehicle Movement Summary</button></a
+          <a href="#ground-vehicle-movement-summary" class="entry-button"
+            >Ground Vehicle Movement Summary</a
           >
           <div id="ground-vehicle-movement-summary" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -11273,8 +11116,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- end ground vehicle movement summary -->
 
           <!-- repulsor vehicle movement summary -->
-          <a href="#repulsor-vehicle-movement-summary"
-            ><button>Repulsor Vehicle Movement Summary</button></a
+          <a href="#repulsor-vehicle-movement-summary" class="entry-button"
+            >Repulsor Vehicle Movement Summary</a
           >
           <div id="repulsor-vehicle-movement-summary" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -11365,31 +11208,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- end repulsor vehicle movement summary -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -11400,7 +11218,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Nimble -->
-          <a href="#Nimble"><button class="unit-keyword">Nimble</button></a>
+          <a href="#Nimble" class="entry-button unit-keyword">Nimble</a>
           <div id="Nimble" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -11422,8 +11240,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Nimble -->
 
           <!-- Noncombatant -->
-          <a href="#noncombatant"
-            ><button class="weapon-keyword">Noncombatant</button></a
+          <a href="#noncombatant" class="entry-button weapon-keyword"
+            >Noncombatant</a
           >
           <div id="noncombatant" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -11472,7 +11290,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Noncombatant -->
 
           <!-- Notch -->
-          <a href="#notch"><button>Notch</button></a>
+          <a href="#notch" class="entry-button">Notch</a>
           <div id="notch" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -11534,31 +11352,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Notch -->
 
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
-
           <!-- paste above this -->
         </div>
       </div>
@@ -11569,7 +11362,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Objective Cards -->
-          <a href="#objective-cards"><button>Objective Cards</button></a>
+          <a href="#objective-cards" class="entry-button">Objective Cards</a>
           <div id="objective-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -11609,18 +11402,18 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Objective Cards -->
 
           <!-- Objective Tokens -->
-          <a href="#objective-tokens"><button>Objective Tokens</button></a>
+          <a href="#objective-tokens" class="entry-button">Objective Tokens</a>
           <div id="objective-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Objective Tokens</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img
                   src="img/legion-objective-tokens.png"
                   alt="Objective Tokens"
                 />
                 <p>Unclaimed and Claimed Objective Tokens</p>
-              </div>
+              </figure>
               <p>
                 Many objective cards instruct players to place objective tokens
                 on the battlefield. Players can claim objective tokens to earn
@@ -11672,18 +11465,20 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Objective Tokens -->
 
           <!-- Observation Tokens -->
-          <a href="#observation-tokens"><button>Observation Tokens</button></a>
+          <a href="#observation-tokens" class="entry-button"
+            >Observation Tokens</a
+          >
           <div id="observation-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Observation Tokens</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img
                   src="img/legion-observation-token.png"
                   alt="Observatoin Token"
                 />
                 <p>Observation Token</p>
-              </div>
+              </figure>
               <p>
                 When an observation token is assigned to a unit, it means that
                 the enemy has gained an advantage over them by observing some
@@ -11729,9 +11524,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Observation Tokens -->
 
           <!-- Observe X -->
-          <a href="#observe-x"
-            ><button class="unit-keyword">Observe X</button></a
-          >
+          <a href="#observe-x" class="entry-button unit-keyword">Observe X</a>
           <div id="observe-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -11755,7 +11548,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Observe X -->
 
           <!-- Obscured -->
-          <a href="#obscured"><button>Obscured</button></a>
+          <a href="#obscured" class="entry-button">Obscured</a>
           <div id="obscured" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -11770,7 +11563,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Obscured -->
 
           <!-- Open Terrain -->
-          <a href="#open-terrain"><button>Open Terrain</button></a>
+          <a href="#open-terrain" class="entry-button">Open Terrain</a>
           <div id="open-terrain" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -11806,15 +11599,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Open Terrain -->
 
           <!-- Operative -->
-          <a href="#operative"><button>Operative</button></a>
+          <a href="#operative" class="entry-button">Operative</a>
           <div id="operative" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Operative</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img src="img/legion-operative-icon.png" alt="Operative Icon" />
                 <p>Operative Icon</p>
-              </div>
+              </figure>
               <p>
                 The
                 <img
@@ -11886,7 +11679,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Operative -->
 
           <!-- Order Pool -->
-          <a href="#order-pool"><button>Order Pool</button></a>
+          <a href="#order-pool" class="entry-button">Order Pool</a>
           <div id="order-pool" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -11938,7 +11731,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Order Pool -->
 
           <!-- Order Tokens -->
-          <a href="#order-tokens"><button>Order Tokens</button></a>
+          <a href="#order-tokens" class="entry-button">Order Tokens</a>
           <div id="order-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12026,9 +11819,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Order Tokens -->
 
           <!-- Override X -->
-          <a href="#override-x"
-            ><button class="unit-keyword">Override X</button></a
-          >
+          <a href="#override-x" class="entry-button unit-keyword">Override X</a>
           <div id="override-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12053,9 +11844,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Override X -->
 
           <!-- Overrun X -->
-          <a href="#overrun-x"
-            ><button class="weapon-keyword">Overrun X</button></a
-          >
+          <a href="#overrun-x" class="entry-button weapon-keyword">Overrun X</a>
           <div id="overrun-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12115,31 +11904,6 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
             </div>
           </div>
           <!-- End Overrun X -->
-
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-          -->
         </div>
       </div>
       <!-- P -->
@@ -12149,17 +11913,17 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Panic -->
-          <a href="#panic"><button>Panic</button></a>
+          <a href="#panic" class="entry-button">Panic</a>
           <div id="panic" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Panic</h4>
-              <div class="aside">
+              <figure class="aside">
                 <img
                   src="img/legion-panic-token.png"
                   alt="the panic token is completely worthless"
                 />
-              </div>
+              </figure>
               <p>
                 If a unit receives too much suppression, it can become panicked
                 and attempt to flee the battlefield.
@@ -12245,7 +12009,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Panic -->
 
           <!-- Permanent -->
-          <a href="#permanent"><button>Permanent</button></a>
+          <a href="#permanent" class="entry-button">Permanent</a>
           <div id="permanent" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12267,9 +12031,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Permanent -->
 
           <!-- Pierce X -->
-          <a href="#pierce-x"
-            ><button class="weapon-keyword">Pierce X</button></a
-          >
+          <a href="#pierce-x" class="entry-button weapon-keyword">Pierce X</a>
           <div id="pierce-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12356,7 +12118,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Pierce X -->
 
           <!-- Pivot -->
-          <a href="#pivot"><button>Pivot</button></a>
+          <a href="#pivot" class="entry-button">Pivot</a>
           <div id="pivot" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12409,7 +12171,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Pivot -->
 
           <!-- poison tokens -->
-          <a href="#poison-tokens"><button>Poison Tokens</button></a>
+          <a href="#poison-tokens" class="entry-button">Poison Tokens</a>
           <div id="poison-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12444,9 +12206,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Poison Tokens -->
 
           <!-- Poison X -->
-          <a href="#poison-x"
-            ><button class="weapon-keyword">Poison X</button></a
-          >
+          <a href="#poison-x" class="entry-button weapon-keyword">Poison X</a>
           <div id="poison-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12476,7 +12236,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Poison X -->
 
           <!-- Play Area -->
-          <a href="#play-area"><button>Play Area</button></a>
+          <a href="#play-area" class="entry-button">Play Area</a>
           <div id="play-area" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12492,9 +12252,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Play Area -->
 
           <!-- Precise X -->
-          <a href="#precise-x"
-            ><button clas="unit-keyword">Precise X</button></a
-          >
+          <a href="#precise-x" class="entry-button unit-keyword">Precise X</a>
           <div id="precise-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12524,7 +12282,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Precise X -->
 
           <!-- Premeasuring -->
-          <a href="#premeasuring"><button>Premeasuring</button></a>
+          <a href="#premeasuring" class="entry-button">Premeasuring</a>
           <div id="premeasuring" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12559,7 +12317,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Premeasuring -->
 
           <!-- Priority -->
-          <a href="#priority"><button>Priority</button></a>
+          <a href="#priority" class="entry-button">Priority</a>
           <div id="priority" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12604,9 +12362,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Priority -->
 
           <!-- Programmed -->
-          <a href="#programmed"
-            ><button class="unit-keyword">Programmed</button></a
-          >
+          <a href="#programmed" class="entry-button unit-keyword">Programmed</a>
           <div id="programmed" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12632,7 +12388,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Programmed -->
 
           <!-- Promote -->
-          <a href="#promote"><button>Promote</button></a>
+          <a href="#promote" class="entry-button">Promote</a>
           <div id="promote" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12647,8 +12403,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Promote -->
 
           <!-- Pulling the strings -->
-          <a href="#pulling-the-strings"
-            ><button class="unit-keyword">Pulilng The Strings</button></a
+          <a href="#pulling-the-strings" class="entry-button unit-keyword"
+            >Pulilng The Strings</a
           >
           <div id="pulling-the-strings" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -12696,31 +12452,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
             </div>
           </div>
           <!-- End Pulling the strings -->
-
-          <!-- PASTE THIS FOR NEW ENTRY
-
-         <a href="#rrg-entry-name"><button>RRG Entry Name</button></a>
-          <div id="rrg-entry-name" class="entry hidden">
-            <a href="#a" class="entry-close"></a>
-            <div class="entry-dialog">
-              <h4>RRG Entry Name</h4>
-              <p>RRG TEXT CONTENT GOES HERE</p>
-              <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
-                <a href="#attack"  >Attack</a>
-                <a href="#barricades"  >Barricades</a>
-                <a href="#base"  >Base</a>
-                <a href="#base-contact"  >Base Contact</a>
-                <a href="#cancel">Cancel</a>
-                <a href="#cover-x">Cover X</a>
-                <a href="#dice"  >Dice</a>
-                <a href="#suppression"  >Suppression</a>
-                <a href="#unit-leader"  >Unit Leader</a>
-              </p>
-            </div>
-          </div>
-
-        --></div>
+        </div>
       </div>
       <!-- Q -->
       <h2 class="btn-letter header-Q">Q</h2>
@@ -12729,8 +12461,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Quick Thinking -->
-          <a href="#quick-thinking"
-            ><button class="unit-keyword">Quick Thinking</button></a
+          <a href="#quick-thinking" class="entry-button unit-keyword"
+            >Quick Thinking</a
           >
           <div id="quick-thinking" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -12796,7 +12528,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Rally -->
-          <a href="#rally"><button>Rally</button></a>
+          <a href="#rally" class="entry-button">Rally</a>
           <div id="rally" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12876,7 +12608,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Rally -->
 
           <!-- Ram X -->
-          <a href="#ram-x"><button class="weapon-keyword">Ram X</button></a>
+          <a href="#ram-x" class="entry-button weapon-keyword">Ram X</a>
           <div id="ram-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -12946,7 +12678,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Ram X -->
           <!-- range -->
-          <a href="#range"><button>Range</button></a>
+          <a href="#range" class="entry-button">Range</a>
           <div id="range" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13151,7 +12883,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- end range -->
 
           <!-- ranged weapon -->
-          <a href="#ranged-weapon"><button>Ranged Weapon</button></a>
+          <a href="#ranged-weapon" class="entry-button">Ranged Weapon</a>
           <div id="ranged-weapon" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13199,7 +12931,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- end ranged weapon -->
 
           <!-- rank -->
-          <a href="#rank"><button>Rank</button></a>
+          <a href="#rank" class="entry-button">Rank</a>
           <div id="rank" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13323,7 +13055,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 <a href="#activatiion-phase">Activation Phase</a>
 
                 <a href="#command-cards">Command Cards</a>
-                <a href="#Command Phase">Command Phase</a>
+                <a href="#command-phase">Command Phase</a>
                 <a href="#commander">Commander</a>
                 <a href="#order-pool">Order Pool</a>
                 <a href="#order-tokens">Order Tokens</a>
@@ -13338,7 +13070,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- end rank -->
 
           <!-- Ready -->
-          <a href="#ready"><button>Ready</button></a>
+          <a href="#ready" class="entry-button">Ready</a>
           <div id="ready" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13353,7 +13085,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Ready -->
 
           <!-- Ready X -->
-          <a href="#ready-x"><button class="unit-keyword">Ready X</button></a>
+          <a href="#ready-x" class="entry-button unit-keyword">Ready X</a>
           <div id="ready-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13381,16 +13113,14 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Ready X -->
 
           <!-- Recharge X -->
-          <a href="#recharge-x"
-            ><button class="unit-keyword">Recharge X</button></a
-          >
+          <a href="#recharge-x" class="entry-button unit-keyword">Recharge X</a>
           <div id="recharge-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Recharge X (Unit Keyword)</h4>
               <p>
                 When a unit with the
-                <strong strong="keyword-reference">recharge x</strong> keyword
+                <strong class="keyword-reference">recharge x</strong> keyword
                 recovers, it may flip up to x inactive shield tokens from their
                 inactive side to their active side.
               </p>
@@ -13405,8 +13135,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End recharge x -->
 
           <!-- Reconfigure -->
-          <a href="#reconfigure"
-            ><button class="weapon-keyword">Reconfigure</button></a
+          <a href="#reconfigure" class="entry-button weapon-keyword"
+            >Reconfigure</a
           >
           <div id="reconfigure" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -13446,7 +13176,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Reconfigure -->
 
           <!-- Recover -->
-          <a href="#recover"><button>Recover</button></a>
+          <a href="#recover" class="entry-button">Recover</a>
           <div id="recover" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13478,8 +13208,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Recover -->
 
           <!-- Regenerate X -->
-          <a href="#regenerate-x"
-            ><button class="unit-keyword">Regenerate X</button></a
+          <a href="#regenerate-x" class="entry-button unit-keyword"
+            >Regenerate X</a
           >
           <div id="regenerate-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -13517,8 +13247,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Regenerate X -->
 
           <!-- Reinforcements -->
-          <a href="#reinforcements"
-            ><button class="unit-keyword">Reinforcements</button></a
+          <a href="#reinforcements" class="entry-button unit-keyword"
+            >Reinforcements</a
           >
           <div id="reinforcements" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -13540,9 +13270,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Reinforcements -->
 
           <!-- Reliable X -->
-          <a href="#reliable-x"
-            ><button class="unit-keyword">Reliable X</button></a
-          >
+          <a href="#reliable-x" class="entry-button unit-keyword">Reliable X</a>
           <div id="reliable-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13569,9 +13297,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Reliable X -->
 
           <!-- relentless -->
-          <a href="#relentless"
-            ><button class="unit-keyword">Relentless</button></a
-          >
+          <a href="#relentless" class="entry-button unit-keyword">Relentless</a>
           <div id="relentless" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13608,8 +13334,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Relentless -->
 
           <!-- Repair X capacity Y -->
-          <a href="#repair-x-capacity-y"
-            ><button class="weapon-keyword">Repair X: Capacity Y</button></a
+          <a href="#repair-x-capacity-y" class="entry-button weapon-keyword"
+            >Repair X: Capacity Y</a
           >
           <div id="repair-x-capacity-y" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -13697,9 +13423,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- end Repair X Capacity Y -->
 
           <!-- Reposition -->
-          <a href="#reposition"
-            ><button class="unit-keyword">Reposition</button></a
-          >
+          <a href="#reposition" class="entry-button unit-keyword">Reposition</a>
           <div id="reposition" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13744,7 +13468,9 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Reposition -->
 
           <!-- Repulsor Vehicles -->
-          <a href="#repulsor-vehicles"><button>Repulsor Vehicles</button></a>
+          <a href="#repulsor-vehicles" class="entry-button"
+            >Repulsor Vehicles</a
+          >
           <div id="repulsor-vehicles" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13759,7 +13485,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Repulsor Vehicles -->
 
           <!-- Resilience -->
-          <a href="#resilience"><button>Reslience</button></a>
+          <a href="#resilience" class="entry-button">Reslience</a>
           <div id="resilience" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13868,7 +13594,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End REsolving Disputes -->
 
           <!-- Restore -->
-          <a href="#restore"><button>Restore</button></a>
+          <a href="#restore" class="entry-button">Restore</a>
           <div id="restore" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13910,7 +13636,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Restore -->
 
           <!-- Retinue -->
-          <a href="#retinue"><button class="unit-keyword">Retinue</button></a>
+          <a href="#retinue" class="entry-button unit-keyword">Retinue</a>
           <div id="retinue" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -13933,7 +13659,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Retinue -->
 
           <!-- Reverse -->
-          <a href="#reverse"><button>Reverse</button></a>
+          <a href="#reverse" class="entry-button">Reverse</a>
           <div id="reverse" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14004,7 +13730,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Reverse -->
 
           <!-- Round -->
-          <a href="#round"><button>Round</button></a>
+          <a href="#round" class="entry-button">Round</a>
           <div id="round" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14035,7 +13761,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Round -->
 
           <!-- round Counter -->
-          <a href="#round-counter"><button>Round Counter</button></a>
+          <a href="#round-counter" class="entry-button">Round Counter</a>
           <div id="round-counter" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14113,8 +13839,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Sabotage/Repair -->
-          <a href="#sabotage-repair"
-            ><button class="unit-keyword">Sabotage/Repair</button></a
+          <a href="#sabotage-repair" class="entry-button unit-keyword"
+            >Sabotage/Repair</a
           >
           <div id="sabotage-repair" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -14133,7 +13859,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Sabotage/Repair -->
 
           <!-- Scale -->
-          <a href="#scale"><button class="unit-keyword">Scale</button></a>
+          <a href="#scale" class="entry-button unit-keyword">Scale</a>
           <div id="scale" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14212,7 +13938,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Scale -->
 
           <!-- Scatter -->
-          <a href="#scatter"><button class="weapon-keyword">Scatter</button></a>
+          <a href="#scatter" class="entry-button weapon-keyword">Scatter</a>
           <div id="scatter" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14239,16 +13965,15 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Scatter -->
 
           <!-- Scouting Party X -->
-          <a href="#scouting-party-x"
-            ><button class="unit-keyword">Scouting Party X</button></a
+          <a href="#scouting-party-x" class="entry-button unit-keyword"
+            >Scouting Party X</a
           >
           <div id="scouting-party-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
               <h4>Scouting Party X (Unit Keyword)</h4>
               <p>
-                The
-                <strong class="keyword-reference">scouting party x</strong>
+                The <strong class="keyword-reference">scouting party x</strong>
                 keyword allows especially skilled scouts to lead a small band of
                 troopers into a forward position. After a unit with the
                 <strong class="keyword-reference">scouting party x</strong>
@@ -14273,7 +13998,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Scouting Party X -->
 
           <!-- Scout X -->
-          <a href="#scout-x"><button class="unit-keyword">Scout X</button></a>
+          <a href="#scout-x" class="entry-button unit-keyword">Scout X</a>
           <div id="scout-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14346,8 +14071,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Scout X -->
 
           <!-- Secret Mission -->
-          <a href="#secret-mission"
-            ><button class="unit-keyword">Secret Mission</button></a
+          <a href="#secret-mission" class="entry-button unit-keyword"
+            >Secret Mission</a
           >
           <div id="secret-mission" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -14397,8 +14122,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
           <!-- End Secret Mission -->
 
-          <a href="#self-destruct-x"
-            ><button class="unit-keyword">Self Destruct X</button></a
+          <a href="#self-destruct-x" class="entry-button unit-keyword"
+            >Self Destruct X</a
           >
           <div id="self-destruct-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -14445,7 +14170,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Setup -->
 
           <!-- Sentinel -->
-          <a href="#sentinel"><button class="unit-keyword">Sentinel</button></a>
+          <a href="#sentinel" class="entry-button unit-keyword">Sentinel</a>
           <div id="sentinel" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14466,8 +14191,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Sentinel -->
 
           <!-- Sharpshooter X -->
-          <a href="#sharpshooter-x"
-            ><button class="unit-keyword">Sharpshooter X</button></a
+          <a href="#sharpshooter-x" class="entry-button unit-keyword"
+            >Sharpshooter X</a
           >
           <div id="sharpshooter-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -14500,7 +14225,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Sharpshooter X -->
 
           <!-- Shield Tokens -->
-          <a href="#shield-tokens"><button>Shield Tokens</button></a>
+          <a href="#shield-tokens" class="entry-button">Shield Tokens</a>
           <div id="shield-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14620,9 +14345,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- Shield Tokens -->
 
           <!-- Shielded X -->
-          <a href="#shielded-x"
-            ><button class="unit-keyword">Shielded X</button></a
-          >
+          <a href="#shielded-x" class="entry-button unit-keyword">Shielded X</a>
           <div id="shielded-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14651,8 +14374,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Shielded X -->
 
           <!-- Sidearm: Melee/Ranged -->
-          <a href="#sidearm-melee-ranged"
-            ><button class="weapon-keyword">Sidearm: Melee/Ranged</button></a
+          <a href="#sidearm-melee-ranged" class="entry-button weapon-keyword"
+            >Sidearm: Melee/Ranged</a
           >
           <div id="sidearm-melee-ranged" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -14687,7 +14410,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Sidearm: Melee/Ranged -->
 
           <!-- Small -->
-          <a href="#small"><button class="weapon-keyword">Small</button></a>
+          <a href="#small" class="entry-button weapon-keyword">Small</a>
           <div id="small" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14772,7 +14495,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Small -->
 
           <!-- Smoke Tokens -->
-          <a href="#smoke-tokens"><button>Smoke Tokens</button></a>
+          <a href="#smoke-tokens" class="entry-button">Smoke Tokens</a>
           <div id="smoke-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14820,7 +14543,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Smoke Tokens -->
 
           <!-- Smoke X -->
-          <a href="#smoke-x"><button class="unit-keyword">Smoke X</button></a>
+          <a href="#smoke-x" class="entry-button unit-keyword">Smoke X</a>
           <div id="smoke-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14853,8 +14576,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Smoke X -->
 
           <!-- Soresu Mastery -->
-          <a href="#soresu-mastery"
-            ><button class="unit-keyword">Soresu Mastery</button></a
+          <a href="#soresu-mastery" class="entry-button unit-keyword"
+            >Soresu Mastery</a
           >
           <div id="soresu-mastery" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -14981,7 +14704,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Soresu Mastery -->
 
           <!-- Speed -->
-          <a href="#speed"><button>Speed</button></a>
+          <a href="#speed" class="entry-button">Speed</a>
           <div id="speed" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -14996,9 +14719,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Speed -->
 
           <!-- Speeder X -->
-          <a href="#speeder-x"
-            ><button class="unit-keyword">Speeder X</button></a
-          >
+          <a href="#speeder-x" class="entry-button unit-keyword">Speeder X</a>
           <div id="speeder-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15161,7 +14882,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Speeder X -->
 
           <!-- Spend -->
-          <a href="#spend"><button>Spend</button></a>
+          <a href="#spend" class="entry-button">Spend</a>
           <div id="spend" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15203,9 +14924,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Spend -->
 
           <!-- Spotter X -->
-          <a href="#spotter-x"
-            ><button class="unit-keyword">Spotter X</button></a
-          >
+          <a href="#spotter-x" class="entry-button unit-keyword">Spotter X</a>
           <div id="spotter-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15240,7 +14959,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Spotter X -->
 
           <!-- Spray -->
-          <a href="#spray"><button class="weapon-keyword">Spray</button></a>
+          <a href="#spray" class="entry-button weapon-keyword">Spray</a>
           <div id="spray" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15273,7 +14992,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Spray -->
 
           <!-- Spur -->
-          <a href="#spur"><button class="unit-keyword">Spur</button></a>
+          <a href="#spur" class="entry-button unit-keyword">Spur</a>
           <div id="spur" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15336,7 +15055,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Spur -->
 
           <!-- Standard Move -->
-          <a href="#standard-move"><button>Standard Move</button></a>
+          <a href="#standard-move" class="entry-button">Standard Move</a>
           <div id="standard-move" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15368,7 +15087,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Standard Move -->
 
           <!-- Standby -->
-          <a href="#standby"><button>Standby</button></a>
+          <a href="#standby" class="entry-button">Standby</a>
           <div id="standby" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15485,9 +15204,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Standby -->
 
           <!-- Stationary -->
-          <a href="#stationary"
-            ><button class="unit-keyword">Stationary</button></a
-          >
+          <a href="#stationary" class="entry-button unit-keyword">Stationary</a>
           <div id="stationary" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15516,7 +15233,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Stationary -->
 
           <!-- Steady -->
-          <a href="#steady"><button class="unit-keyword">Steady</button></a>
+          <a href="#steady" class="entry-button unit-keyword">Steady</a>
           <div id="steady" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15554,7 +15271,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Steady -->
 
           <!-- Strafe -->
-          <a href="#strafe"><button>Strafe</button></a>
+          <a href="#strafe" class="entry-button">Strafe</a>
           <div id="strafe" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15637,8 +15354,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Strafe -->
 
           <!-- Strategize X -->
-          <a href="#strategize-x"
-            ><button class="unit-keyword">Strategize X</button></a
+          <a href="#strategize-x" class="entry-button unit-keyword"
+            >Strategize X</a
           >
           <div id="strategize-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -15664,7 +15381,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Strategize X -->
 
           <!-- Supply Deck -->
-          <a href="#supply-deck"><button>Supply Deck</button></a>
+          <a href="#supply-deck" class="entry-button">Supply Deck</a>
           <div id="supply-deck" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15720,7 +15437,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Supply Deck -->
 
           <!-- Suppression -->
-          <a href="#suppression"><button>Suppression</button></a>
+          <a href="#suppression" class="entry-button">Suppression</a>
           <div id="suppression" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15873,8 +15590,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Suppression -->
 
           <!-- Suppressive -->
-          <a href="#suppressive"
-            ><button class="weapon-keyword">Suppressive</button></a
+          <a href="#suppressive" class="entry-button weapon-keyword"
+            >Suppressive</a
           >
           <div id="suppressive" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -15922,7 +15639,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Suppressive -->
 
           <!-- Surge Tokens -->
-          <a href="#surge-tokens"><button>Surge Tokens</button></a>
+          <a href="#surge-tokens" class="entry-button">Surge Tokens</a>
           <div id="surge-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -15992,7 +15709,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Surge Tokens -->
 
           <!-- Surges -->
-          <a href="#surges"><button>Surges</button></a>
+          <a href="#surges" class="entry-button">Surges</a>
           <div id="surges" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16100,9 +15817,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Tactical X -->
-          <a href="#tactical-x"
-            ><button class="unit-keyword">Tactical X</button></a
-          >
+          <a href="#tactical-x" class="entry-button unit-keyword">Tactical X</a>
           <div id="tactical-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16150,8 +15865,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Tactical X -->
 
           <!-- Take Cover X -->
-          <a href="#take-cover-x"
-            ><button class="unit-keyword">Take Cover X</button></a
+          <a href="#take-cover-x" class="entry-button unit-keyword"
+            >Take Cover X</a
           >
           <div id="take-cover-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -16187,8 +15902,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Take Cover X -->
 
           <!-- Teamwork: Unit name -->
-          <a href="#teamwork-unit-name"
-            ><button class="unit-keyword">Teamwork: Unit Name</button></a
+          <a href="#teamwork-unit-name" class="entry-button unit-keyword"
+            >Teamwork: Unit Name</a
           >
           <div id="teamwork-unit-name" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -16241,7 +15956,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Teamwork: Unit name -->
 
           <!-- Target X -->
-          <a href="#target-x"><button class="unit-keyword">Target X</button></a>
+          <a href="#target-x" class="entry-button unit-keyword">Target X</a>
           <div id="target-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16279,7 +15994,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Target X -->
 
           <!-- Tempted -->
-          <a href="#tempted"><button class="unit-keyword">Tempted</button></a>
+          <a href="#tempted" class="entry-button unit-keyword">Tempted</a>
           <div id="tempted" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16309,7 +16024,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Terrain -->
 
           <!-- Timing -->
-          <a href="#timing"><button>Timing</button></a>
+          <a href="#timing" class="entry-button">Timing</a>
           <div id="timing" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16370,9 +16085,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Timing -->
 
           <!-- Tow Cable -->
-          <a href="#tow-cable"
-            ><button class="weapon-keyword">Tow Cable</button></a
-          >
+          <a href="#tow-cable" class="entry-button weapon-keyword">Tow Cable</a>
           <div id="tow-cable" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16398,7 +16111,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Tow Cable -->
 
           <!-- Transfer -->
-          <a href="#transfer"><button>Transfer</button></a>
+          <a href="#transfer" class="entry-button">Transfer</a>
           <div id="transfer" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16430,8 +16143,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Transfer -->
 
           <!-- Transport X: Open/Closed -->
-          <a href="#transport-x-open-closed"
-            ><button class="unit-keyword">Transport X: Open/Closed</button></a
+          <a href="#transport-x-open-closed" class="entry-button unit-keyword"
+            >Transport X: Open/Closed</a
           >
           <div id="transport-x-open-closed" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -16471,7 +16184,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Transport X: Open/Closed -->
 
           <!-- transported -->
-          <a href="#transported"><button>Transported</button></a>
+          <a href="#transported" class="entry-button">Transported</a>
           <div id="transported" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16663,8 +16376,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Transported -->
 
           <!-- Treat X: Capacity Y -->
-          <a href="#treat-x-capacity-y"
-            ><button class="weapon-keyword">Treat X: Capacity Y</button></a
+          <a href="#treat-x-capacity-y" class="entry-button weapon-keyword"
+            >Treat X: Capacity Y</a
           >
           <div id="treat-x-capacity-y" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -16756,7 +16469,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Treat X: Capacity Y -->
 
           <!-- Troopers -->
-          <a href="#troopers"><button>Troopers</button></a>
+          <a href="#troopers" class="entry-button">Troopers</a>
           <div id="troopers" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16888,8 +16601,8 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- uncanny Luck X -->
-          <a href="#uncanny-luck-x"
-            ><button class="unit-keyword">Uncanny Luck X</button></a
+          <a href="#uncanny-luck-x" class="entry-button unit-keyword"
+            >Uncanny Luck X</a
           >
           <div id="uncanny-luck-x" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -16926,9 +16639,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Uncanny Luck X -->
 
           <!-- Unhindered -->
-          <a href="#unhindered"
-            ><button class="unit-keyword">Unhindered</button></a
-          >
+          <a href="#unhindered" class="entry-button unit-keyword">Unhindered</a>
           <div id="unhindered" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16952,7 +16663,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Unhindered -->
 
           <!-- Unique Cards -->
-          <a href="#unique-cards"><button>Unique Cards</button></a>
+          <a href="#unique-cards" class="entry-button">Unique Cards</a>
           <div id="unique-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -16982,7 +16693,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Unique Cards -->
 
           <!-- Unit -->
-          <a href="#unit"><button>Unit</button></a>
+          <a href="#unit" class="entry-button">Unit</a>
           <div id="unit" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17101,7 +16812,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Unit Card -->
 
           <!-- Unit Leader -->
-          <a href="#unit-leader"><button>Unit Leader</button></a>
+          <a href="#unit-leader" class="entry-button">Unit Leader</a>
           <div id="unit-leader" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17134,7 +16845,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           <!-- End Unit Leader -->
 
           <!-- Upgrade Cards -->
-          <a href="#upgrade-cards"><button>Upgrade Cards</button></a>
+          <a href="#upgrade-cards" class="entry-button">Upgrade Cards</a>
           <div id="upgrade-cards" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17300,7 +17011,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   “<img
                     class="game-icon"
                     src="img/legion-force.png"
-                    class="force upgrade icon"
+                    alt="force upgrade icon"
                   />
                   icon only.” To equip an upgrade card with an upgrade icon
                   restriction, a unit must have the corresponding upgrade icon
@@ -17427,8 +17138,8 @@ Building” on page 5. ADD THIS LATER -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- Vehicle Damage Tokens -->
-          <a href="#vehicle-damage-tokens"
-            ><button>Vehicle Damage Tokens</button></a
+          <a href="#vehicle-damage-tokens" class="entry-button"
+            >Vehicle Damage Tokens</a
           >
           <div id="vehicle-damage-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -17474,7 +17185,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Vehicle Damage Tokens -->
 
           <!-- Vehicles -->
-          <a href="#vehicles"><button>Vehicles</button></a>
+          <a href="#vehicles" class="entry-button">Vehicles</a>
           <div id="vehicles" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17589,9 +17300,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Vehicles -->
 
           <!-- versatile -->
-          <a href="#versatile"
-            ><button class="weapon-keyword">Versatile</button></a
-          >
+          <a href="#versatile" class="entry-button weapon-keyword">Versatile</a>
           <div id="versatile" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17632,7 +17341,9 @@ Building” on page 5. ADD THIS LATER -->
 
           <!-- Vertical Movement -->
 
-          <a href="#vertical-moevment"><button>Vertical Movement</button></a>
+          <a href="#vertical-moevment" class="entry-button"
+            >Vertical Movement</a
+          >
           <div id="vertical-moevment" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17647,7 +17358,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Vertiacl Movement -->
 
           <!-- Victory Tokens -->
-          <a href="#victory-tokens"><button>Victory Tokens</button></a>
+          <a href="#victory-tokens" class="entry-button">Victory Tokens</a>
           <div id="victory-tokens" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17721,8 +17432,8 @@ Building” on page 5. ADD THIS LATER -->
         <!-- container that holds all of the buttons, separate from above container so display can be set to FLEX -->
         <div class="entries">
           <!-- weak point x: rear/sides -->
-          <a href="#weak-point-x-rear-sides"
-            ><button class="unit-keyword">Weak Point X: Rear/Sides</button></a
+          <a href="#weak-point-x-rear-sides" class="entry-button unit-keyword"
+            >Weak Point X: Rear/Sides</a
           >
           <div id="weak-point-x-rear-sides" class="entry hidden">
             <a href="#a" class="entry-close"></a>
@@ -17763,7 +17474,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End weak point x: rear/sides -->
 
           <!-- Weapon Disrupted -->
-          <a href="#weapon-disrupted"><button>Weapon Disrupted</button></a>
+          <a href="#weapon-disrupted" class="entry-button">Weapon Disrupted</a>
           <div id="weapon-disrupted" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17823,7 +17534,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Weapon Disrupted -->
 
           <!-- Weapons -->
-          <a href="#weapons"><button>Weapons</button></a>
+          <a href="#weapons" class="entry-button">Weapons</a>
           <div id="weapons" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -17993,9 +17704,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Weapons -->
 
           <!-- Wheel Mode -->
-          <a href="#wheel-mode"
-            ><button class="unit-keyword">Wheel Mode</button></a
-          >
+          <a href="#wheel-mode" class="entry-button unit-keyword">Wheel Mode</a>
           <div id="wheel-mode" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -18072,7 +17781,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Wheel Mode -->
 
           <!-- Winning the Game -->
-          <a href="#winning-the-game"><button>Winning the Game</button></a>
+          <a href="#winning-the-game" class="entry-button">Winning the Game</a>
           <div id="winning-the-game" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -18119,7 +17828,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Winning the Game -->
 
           <!-- Withdraw -->
-          <a href="#withdraw"><button>Withdraw</button></a>
+          <a href="#withdraw" class="entry-button">Withdraw</a>
           <div id="withdraw" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -18189,7 +17898,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Withdraw -->
 
           <!-- Within Range -->
-          <a href="#within-range"><button>Within (Range)</button></a>
+          <a href="#within-range" class="entry-button">Within (Range)</a>
           <div id="within-range" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -18228,7 +17937,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Within Range -->
 
           <!-- Wookiee Trooper -->
-          <a href="#wookiee-trooper"><button>Wookiee Trooper</button></a>
+          <a href="#wookiee-trooper" class="entry-button">Wookiee Trooper</a>
           <div id="wookiee-trooper" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -18238,6 +17947,7 @@ Building” on page 5. ADD THIS LATER -->
                 <a
                   target="_blank"
                   class="easter-egg"
+                  rel="noopener"
                   href="https://youtu.be/6hH8rxarVG8?t=213"
                   >Wookiee</a
                 >
@@ -18263,7 +17973,7 @@ Building” on page 5. ADD THIS LATER -->
           <!-- End Wookiee Trooper -->
 
           <!-- Wounds -->
-          <a href="#wounds"><button>Wounds</button></a>
+          <a href="#wounds" class="entry-button">Wounds</a>
           <div id="wounds" class="entry hidden">
             <a href="#a" class="entry-close"></a>
             <div class="entry-dialog">
@@ -18271,6 +17981,7 @@ Building” on page 5. ADD THIS LATER -->
               <figure class="aside">
                 <img
                   src="img/legion-wound-threshold.PNG"
+                  alt="wound threshold"
                   class="wound threshold"
                 />
                 <p>Wound Threshold</p>
@@ -18435,11 +18146,8 @@ Building” on page 5. ADD THIS LATER -->
       <footer>
         <p>If you appreciate this tool, why not buy me a beer?</p>
         <div class="footer-buttons">
-          <script
-            type="text/javascript"
-            src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
-          ></script>
-          <script type="text/javascript">
+          <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+          <script>
             kofiwidget2.init("Buy me a Beer?", "#26416d", "K3K35ZL25");
             kofiwidget2.draw();
           </script>
@@ -18451,13 +18159,10 @@ Building” on page 5. ADD THIS LATER -->
             data-show-count="false"
             >Follow @RogueDakotan</a
           >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
+          <script async src="https://platform.twitter.com/widgets.js"></script>
           <a
             target="_blank"
+            rel="noopener"
             href="https://github.com/JoeLutovsky/Legion-Quick-Guide/issues"
             ><img src="img/github-logo.png" alt="report an issue."
           /></a>
