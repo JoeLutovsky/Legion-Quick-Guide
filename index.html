@@ -26,7 +26,15 @@
           Legion Rules Reference Guide for quick and easy reference during play.
           This site is a fan project and not affiliated with Atomic Mass Games.
         </p>
-        <p>Last updated: <strong>8.29.2021</strong>. RRG Version 2.0.2</p>
+        <p>Last updated: <strong>9.06.2021</strong>. RRG Version 2.0.2</p>
+        <!-- <p>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://forums.atomicmassgames.com/topic/629-frequently-asked-questions/"
+            >Official Rules FAQs</a
+          >
+        </p> -->
         <!-- <p>
           <a target="_blank" rel="noopener" href="https://www.atomicmassgames.com/sw-docs"
             >Official RRG Document Can Be Found here Maybe?</a
@@ -1722,21 +1730,7 @@
                 <li>
                   A barricade does not provide creature troopers with cover.
                 </li>
-                <li>
-                  Typically, barricades do not provide vehicles with cover.
-                  <ul>
-                    <li>
-                      However, barricades <strong>can</strong> provide cover to
-                      vehicles if, when declaring terrain during Set Up, the
-                      barricade obscures half or more of that vehicle.<br /><br />
-                      <em
-                        >For example, barricades can provide heavy cover to both
-                        standing and ball-form droidekas minis, the X-34
-                        Landspeeder, and the TX-225 GAVw Occupier.</em
-                      >
-                    </li>
-                  </ul>
-                </li>
+                <li>Barricades do not provide vehicles with cover.</li>
                 <li>
                   All units can move over a barricade.
                   <ul>
@@ -1751,6 +1745,14 @@
                       unit, it will also be difficult terrain for that unit.
                     </li>
                   </ul>
+                </li>
+                <li>
+                  Barricades cannot be placed overlapping objective or condition
+                  tokens.
+                </li>
+                <li>
+                  Barricades that have been nominated with an objective token
+                  cannot be moved by game or player effects.
                 </li>
               </ul>
               <p class="related-topics">
@@ -1868,7 +1870,11 @@
                     <li>
                       Second, the vertical space separating the two bases is
                       less than the thickness of a standard
-                      <em>STAR WARS: LEGION</em> base.
+                      <em>STAR WARS: LEGION</em> base. Or, if players are using
+                      the official silhouette found in the
+                      <em>STAR WARS: LEGION</em> Tournament Regulations, the
+                      vertical space separating the two bases is less than the
+                      height of the official silhouette.
                     </li>
                     <li>
                       If these two conditions are met, minis in this situation
@@ -5439,11 +5445,12 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   </ul>
                 </li>
                 <li>
-                  During the “Deploy Units” step of Setup, a unit with the
+                  During the Deploy Units step of Setup, the unit leader of a
+                  unit with the
                   <strong class="keyword-reference">detachment</strong> keyword
                   must be placed at speed-1 and within height 1 of a unit leader
-                  from a friendly unit that has the unit name or type specified
-                  by the
+                  belonging to a friendly unit that has the unit name or type
+                  specified by the
                   <strong class="keyword-reference">detachment</strong> keyword.
                   <ul>
                     <li>
@@ -6293,6 +6300,11 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   <strong class="keyword-reference">divulge</strong> keyword
                   effect from the normal command card effect.
                 </li>
+                <li>
+                  If a command card is Divulged during the "Deploy Units" step,
+                  its effect persists until the end of the "Deploy Units" step,
+                  even if it is discarded.
+                </li>
               </ul>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -6725,9 +6737,9 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
               <p>
                 To embark into a transport with the
                 <strong class="keyword-reference">transport x: closed</strong>
-                keyword, a unit spends its entire activation to perform a
-                speed-1 move that puts its unit leader into base contact with a
-                friendly vehicle that can transport that type of unit.
+                keyword, a unit must spend two actions to perform a speed-1 move
+                that puts its unit leader into base contact with a friendly
+                vehicle that can transport that type of unit.
               </p>
               <p>
                 Then, the unit is removed from the battlefield and a pair of ID
@@ -6753,10 +6765,10 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 </li>
                 <li>
                   When a unit disembarks, if the vehicle that is transporting
-                  that unit has performed more than one standard move or reverse
-                  during the current round, disembarking uses that unit’s entire
-                  activation and it cannot perform additional actions or any
-                  free actions.
+                  that unit has performed more than one non-pivot move during
+                  the current round, disembarking uses all of its available
+                  actions, and it cannot perform additional actions or any free
+                  actions.
                 </li>
                 <li>
                   A unit that is disembarking cannot be placed into base contact
@@ -6804,8 +6816,12 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   move, it cannot use that move to embark or disembark.
                 </li>
                 <li>
-                  A unit that is being transported can use its standby token to
-                  disembark.
+                  A unit that is being transported by a vehicle with
+                  <strong class="keyword-reference">transport X: open</strong>
+                  can use its standby token to disembark; a unit transported by
+                  a vehicle with
+                  <strong class="keyword-reference">transport X: closed</strong>
+                  cannot spend standby tokens.
                 </li>
               </ul>
               <p class="related-topics">
@@ -6914,7 +6930,7 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 </li>
                 <li>
                   <strong>Remove Tokens:</strong> Players remove all aim, dodge,
-                  and standby tokens from their units, as well as one
+                  surge, smoke, observation and standby tokens, as well as one
                   suppression token from each unit.
                 </li>
                 <li>
@@ -9400,9 +9416,11 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   x ion tokens.
                 </li>
                 <li>
-                  At the start of the “Roll Defense Dice” step, before any other
-                  effects, if the attack pool includes the
-                  <strong class="keyword-reference">ion x</strong> keyword, for
+                  If an attack pool as the
+                  <strong class="keyword-reference">ion x</strong> keyword,
+                  During the Apply Dodge and Cover step of the attack, the
+                  defender must apply any other effects (such as dodge tokens
+                  and cover) before flipping active shield tokens. Then, for
                   each hit (<img
                     class="game-icon"
                     src="img/legion-hit.png"
@@ -9411,12 +9429,28 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                     class="game-icon"
                     src="img/legion-crit.png"
                     alt="Crit Symbol"
-                  />) result, up to x, the defender must flip an active shield
-                  token if able. The defender does not add block (<img
+                  />) result remaining up to x, where x is the value of the
+                  <strong class="keyword-reference">ion x</strong> keyword, the
+                  defender must flip an active shield token to its inactive
+                  side. Shield tokens flipped in this way do not cancel a hit
+                  (<img
                     class="game-icon"
-                    src="img/legion-block.png"
-                    alt="Block Symbol"
-                  />) results for shield tokens flipped in this way.
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="Crit Symbol"
+                  />) result. After doing so, if any active shield tokens
+                  remain, the defender may flip them to cancel hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) or critical (<img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="Crit Symbol"
+                  />) results as normal.
                 </li>
               </ul>
               <p class="related-topics">
@@ -10450,6 +10484,12 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                     </li>
                   </ul>
                 </li>
+                <li>
+                  When either player is placing their minis in base contact with
+                  an enemy unit, they must place their minis in such a way that
+                  as many of their minis can be placed in base contact as
+                  possible.
+                </li>
               </ul>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -11138,9 +11178,10 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 <li>A repulsor vehicle mini can pivot.</li>
                 <li>
                   While performing a standard move, reverse, or strafe, a
-                  repulsor vehicle mini can move onto or over a piece of a
-                  terrain that has a height that is equal to or less than the
-                  height of the unit leader’s mini.
+                  repulsor vehicle mini can move onto, over,
+                  <strong>or off of</strong> a piece of a terrain that has a
+                  height that is equal to or less than the height of the unit
+                  leader’s mini.
                 </li>
                 <li>
                   When a repulsor vehicle mini’s final movement position would
@@ -14784,7 +14825,13 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                 <li>
                   During a move, a unit that has the
                   <strong class="keyword-reference">speeder x</strong> keyword
-                  can move over terrain equal to or less than height x.
+                  can move over terrain equal to or less than height x. Measure
+                  the height from the unit leader's starting position.
+                </li>
+                <li>
+                  During a move, a unit that has the speeder x keyword may end
+                  its movement at any height lower than its starting position,
+                  regardless of the value of x.
                 </li>
                 <li>
                   A unit that has the
@@ -15148,6 +15195,12 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   to perform an attack, the range of the
                   <strong>attack</strong> is still measured from the unit leader
                   of the attacking unit to any mini in the defending unit.
+                </li>
+                <li>
+                  Repulsor vehicles cannot perform the standby action and cannot
+                  gain or spend standby tokens. If a repulsor vehicle would gain
+                  a standby token through a game effect, the token is returned
+                  to the supply instead.
                 </li>
                 <li>
                   A standby token may be spent <strong>before</strong> any
@@ -16313,8 +16366,12 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   While a unit is being transported, it can spend any token.
                 </li>
                 <li>
-                  While a unit is being transported, its weapons lose all
-                  <strong class="keyword-reference">fixed</strong> keywords.
+                  While a transported unit is performing an attack, it ignores
+                  the restrictions of any
+                  <strong class="keyword-reference">fixed</strong> keywords on
+                  its weapons (the weapons are still considered to have
+                  <strong class="keyword-reference">fixed</strong> keywords for
+                  the purposes of other game effects).
                 </li>
                 <li>
                   While a unit is being transported, it can perform any action
@@ -17839,8 +17896,9 @@ Building” on page 5. ADD THIS LATER -->
               </p>
               <ul>
                 <li>
-                  To withdraw a unit must use its entire activation and spend
-                  all of its available actions to perform a single speed-1 move.
+                  To withdraw a unit must spend all of its available actions to
+                  perform a single speed-1 move and it cannot perform additional
+                  actions or any free actions.
                 </li>
                 <li>
                   A unit that is withdrawing cannot perform any other actions,
@@ -18081,6 +18139,12 @@ Building” on page 5. ADD THIS LATER -->
                       can be added (of any color, rounding up).
                     </li>
                   </ul>
+                </li>
+                <li>
+                  A unit leader cannot be chosen to suffer wounds, unless it is
+                  the only mini in the defending unit that is in line of sight
+                  of the attacker, if it is the only wounded mini in the unit,
+                  or if it is the last mini in the unit.
                 </li>
               </ul>
               <p class="related-topics">
