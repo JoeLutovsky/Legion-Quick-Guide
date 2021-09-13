@@ -1,4 +1,7 @@
+"use strict";
+
 const acc = document.getElementsByClassName("btn-letter");
+const backButton = document.querySelectorAll(".btn-back");
 
 //Refactor this using forEach sometime
 for (let i = 0; i < acc.length; i++) {
@@ -12,3 +15,10 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+backButton.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    history.back();
+    console.log("back");
+  });
+});
