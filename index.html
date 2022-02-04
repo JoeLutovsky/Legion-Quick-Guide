@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-49241892-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-49241892-1");
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,15 +33,50 @@
   </head>
   <body>
     <div class="container">
-      <article>
-        <h1 class="page-title">Legion Quick Guide</h1>
+      <header>
+        <div class="logos">
+          <img
+            alt="Legion Quick Guide Logo"
+            src="img/logos/LegionQuickGuideLogo.png"
+          />
+          <img
+            alt="The Fifth Trooper Logo"
+            src="img/logos/TFT-Logo-Website.png"
+          />
+        </div>
+        <!-- <h1 class="page-title">Legion Quick Guide</h1> -->
         <p>
           This site contains all
           <strong class="keyword-reference">Glossary</strong> entries from the
           Legion Rules Reference Guide for quick and easy reference during play.
-          This site is a fan project and not affiliated with Atomic Mass Games.
+          This site is a fan project by Joe Lutovsky and not affiliated with
+          <a
+            href="https://www.atomicmassgames.com/"
+            rel="noopener"
+            target="_blank"
+            >Atomic Mass Games</a
+          >.
         </p>
-        <p>Last updated: <strong>9.06.2021</strong>. RRG Version 2.0.2</p>
+
+        <p>
+          Rules Last Updated Here: <strong>10.27.2021</strong>. RRG Version
+          2.0.2
+        </p>
+
+        <div class="official-rules-links">
+          <a
+            target="_blank"
+            href="https://www.atomicmassgames.com/star-wars-legion-documents"
+            rel="noopener"
+            >Official Rules Documents</a
+          >
+          <a
+            target="_blank"
+            href="https://forums.atomicmassgames.com/forum/24-star-wars-legion-rules-questions/"
+            rel="noopener"
+            >Official Rules Forums</a
+          >
+        </div>
         <!-- <p>
           <a
             target="_blank"
@@ -40,20 +90,13 @@
             >Official RRG Document Can Be Found here Maybe?</a
           >
         </p> -->
-      </article>
+      </header>
       <!-- NEW ENTRIES -->
       <section>
         <h5>New Entries</h5>
         <p class="related-topics">
-          <a href="#ataru-mastery">Ataru Mastery</a>
-          <a href="#guidance">Guidance</a>
-          <a href="#override-x">Override X</a>
-          <a href="#overrun-x">Overrun X</a>
-
-          <a href="#programmed">Programmed</a>
-          <a href="#reinforcements">Reinforcements</a>
-          <a href="#self-destruct-x">Self Destruct X</a>
-          <a href="#strategize-x">Strategize X</a>
+          <a href="#clone-trooper">Clone Trooper</a>
+          <a href="#low-profile">Low Profile</a>
         </p>
       </section>
 
@@ -510,7 +553,7 @@
               </ul>
               <p class="related-topics">
                 <strong class="keyword-reference"> Related Topics:</strong>
-                <a href="#actions">Actions</a>,
+                <a href="#actions">Actions</a>
                 <a href="#courage">Courage</a>
                 <a href="#free-actions">Free Actions</a>
                 <a href="#issuing-orders">Issuing Orders</a>
@@ -3008,9 +3051,10 @@
                   with the following exceptions:
                   <ul>
                     <li>
-                      A clone trooper unit can spend the aim, dodge, and surge
-                      tokens of friendly clone trooper units at range 1 and in
-                      line of sight as if they were their own.
+                      While attacking or defending, a clone trooper unit may
+                      spend 1 aim, dodge, or surge token belonging to a friendly
+                      clone trooper unit at range 1 and in line of sight, as if
+                      it were its own token.
                     </li>
                   </ul>
                 </li>
@@ -9474,9 +9518,17 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
               <h4>Inspire X (Unit Keyword)</h4>
               <p>
                 After a unit with the
-                <strong class="keyword-reference">inspire x</strong> keyword
-                performs its “Rally” step, remove a total of up to x suppression
-                tokens from other friendly units at range 1–2.
+                <strong class="keyword-reference"
+                  ><a
+                    href="https://youtu.be/HXdbEvZK3G8?t=2368"
+                    target="_blank"
+                    class="easter-egg"
+                    rel="noopener"
+                    >inspire x</a
+                  ></strong
+                >
+                keyword performs its “Rally” step, remove a total of up to x
+                suppression tokens from other friendly units at range 1–2.
               </p>
               <ul>
                 <li>
@@ -10360,28 +10412,37 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
               <p>
                 While defending against an attack, if a unit with the
                 <strong class="keyword-reference">low profile</strong> keyword
-                has light cover, it improves its cover by 1.
+                has cover, cancel one additional hit (<img
+                  class="game-icon"
+                  src="img/legion-hit.png"
+                  alt="Hit Symbol"
+                />) result.
               </p>
               <ul>
                 <li>
-                  When determining cover, add cover values (not exceeding heavy
-                  cover) before subtracting cover values.<br /><br /><em
-                    >For example, a unit with a suppression token and low
-                    profile that is attacked by a unit with sharpshooter 1 would
-                    have light cover.</em
-                  >
+                  When determining cover, if the attack pool has
+                  <strong class="keyword-reference">blast</strong>, you do not
+                  cancel one additional hit (<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                  />) result as the effects of cover are ignored.
                 </li>
                 <li>
-                  Cover is determined during the “Apply Dodge and Cover” step of
-                  an attack.
+                  When determining cover, if the value of
+                  <strong class="keyword-reference">sharpshooter x</strong> is
+                  equal to or greater than the level of cover,
+                  <strong class="keyword-reference">low profile</strong>
+                  has no effect.
                 </li>
-                <li>Cover is not applied during a melee attack.</li>
               </ul>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#attack">Attack</a>
+                <a href="#blast">Blast</a>
 
                 <a href="#cover">Cover</a>
+                <a href="#sharpshooter-x">Sharpshooter X</a>
               </p>
             </div>
           </div>
@@ -12038,6 +12099,57 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
             </div>
           </div>
           <!-- End Order Tokens -->
+
+          <!-- Outmaneuver -->
+          <a href="#outmaneuver" class="entry-button unit-keyword"
+            >Outmaneuver</a
+          >
+          <div id="outmaneuver" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <img class="btn-back" src="img/legion-exhaust.png" />
+              <h4>Outmaneuver (Unit Keyword)</h4>
+              <p>
+                During the Apply Dodge and Cover step of an attack, a unit with
+                the
+                <strong class="keyword-reference">outmaneuver</strong> keyword
+                can spend dodge tokens to cancel critical (<img
+                  src="img/legion-crit.png"
+                  alt="Crit Symbol"
+                  class="game-icon"
+                />) results.
+              </p>
+              <ul>
+                <li>
+                  To cancel critical (<img
+                    src="img/legion-crit.png"
+                    alt="Crit Symbol"
+                    class="game-icon"
+                  />) results with the outmaneuver keyword, a unit spends dodge
+                  tokens in the same way it would spend them to cancel (<img
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                    class="game-icon"
+                  />) results.
+                </li>
+                <li>
+                  A unit with the outmaneuver keyword can also spend dodge
+                  tokens to cancel (<img
+                    src="img/legion-hit.png"
+                    alt="Hit Symbol"
+                    class="game-icon"
+                  />) results as normal.
+                </li>
+                <li>Dodge tokens spent in this way have no other effect.</li>
+              </ul>
+              <p class="related-topics">
+                <strong class="keyword-reference">Related Topics:</strong>
+                <a href="#attack">Attack</a>
+                <a href="#dodge">dodge</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Outmaneuver-->
 
           <!-- Override X -->
           <a href="#override-x" class="entry-button unit-keyword">Override X</a>
@@ -18524,7 +18636,7 @@ Building” on page 5. ADD THIS LATER -->
           /></a>
 
           <a href="http://www.jodocast.com/" rel="noopener" target="_blank"
-            ><img src="img/jodocast.jpg" alt="The Jodo Cast"
+            ><img src="img/logos/JodoCastLogo.png" alt="The Jodo Cast"
           /></a>
         </div>
       </footer>

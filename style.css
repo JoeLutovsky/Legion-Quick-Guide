@@ -26,7 +26,7 @@ body {
   color: #424042;
   background-color: #e6e4e1;
   font-size: 18px;
-  border-bottom: 10px solid #26416d;
+  border-bottom: 15px solid #8d1f20;
 }
 
 h4,
@@ -51,10 +51,21 @@ h5 {
   letter-spacing: 0.15em;
 }
 
-article {
+header {
   padding: 1em;
-  border-bottom: 5px solid #26416d;
+
   font-size: 1.25em;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 10px solid #26416d;
+  margin-bottom: 1.5em;
+  padding: 0.25em 0;
+  border-radius: 0px 0px 25px 25px;
 }
 
 footer {
@@ -63,10 +74,12 @@ footer {
   border-top: 10px solid #26416d;
   padding: 20px 0px 20px 0px;
   text-align: center;
+  border-radius: 25px 25px 0px 0px;
 }
 
 section {
-  border-bottom: 10px solid #26416d;
+  border-top: 5px solid #26416d;
+  border-bottom: 10px solid #8d1f20;
   box-shadow: 0px 15px 10px rgb(0 0 0 / 0.1);
   padding: 30px 10px;
   background-color: #fff;
@@ -75,6 +88,8 @@ section {
 
 section h5 {
   border-bottom: none;
+  margin-left: 0.5em;
+  color: #26416d;
 }
 
 .footer-buttons {
@@ -117,7 +132,7 @@ footer img {
   color: #26416d;
   background: linear-gradient(to right, #26416d, #e6e4e1, #26416d);
 
-  transition: color 0.5s 0.1s ease-out;
+  transition: color 0.4s 0.1s ease-out;
 }
 
 .active,
@@ -156,6 +171,43 @@ footer img {
 .entries button:active {
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 30%);
 } */
+
+.official-rules-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.official-rules-links a:link,
+.official-rules-links a:visited {
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.5em;
+  padding: 0.25em;
+  box-shadow: 0px 5px 10px rgb(0 0 0 / 0.1);
+  font-size: 1.25em;
+
+  border: 1px solid #26416d;
+  border-bottom: 5px solid #8d1f20;
+  color: #26416d;
+  background-color: #fff;
+  font-family: aero_matics_displayregular;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  text-decoration: none;
+}
+
+.official-rules-links a:hover {
+  color: #fff;
+  background-color: #8d1f20;
+}
+
+.official-rules-links a:active {
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 30%);
+}
 
 .entry-button {
   border-radius: 15px;
@@ -474,5 +526,9 @@ a:visited {
 
   .btn-back {
     max-height: 1.25em;
+  }
+
+  .logos img {
+    max-width: 100%;
   }
 }
