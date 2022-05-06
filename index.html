@@ -6,6 +6,11 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-49241892-1"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L9R8T9LR81"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -13,7 +18,7 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "UA-49241892-1");
+      gtag("config", "G-L9R8T9LR81");
     </script>
 
     <meta charset="UTF-8" />
@@ -39,10 +44,11 @@
             alt="Legion Quick Guide Logo"
             src="img/logos/LegionQuickGuideLogo.png"
           />
-          <img
-            alt="The Fifth Trooper Logo"
-            src="img/logos/TFT-Logo-Website.png"
-          />
+          <a target="_blank" href="https://thefifthtrooper.com/" rel="noopener"
+            ><img
+              alt="The Fifth Trooper Logo"
+              src="img/logos/TFT-Logo-Website.png"
+          /></a>
         </div>
         <!-- <h1 class="page-title">Legion Quick Guide</h1> -->
         <p>
@@ -58,10 +64,7 @@
           >.
         </p>
 
-        <p>
-          Rules Last Updated Here: <strong>10.27.2021</strong>. RRG Version
-          2.0.2
-        </p>
+        <p>Last Update: <strong>5.5.2022</strong>. RRG Version 2.0.2</p>
 
         <div class="official-rules-links">
           <a
@@ -2763,7 +2766,7 @@
 
               <p class="related-topics">
                 <strong class="keyword-reference">See:</strong>
-                <a href="#objective-token">Objective Token</a>
+                <a href="#objective-tokens">Objective Tokens</a>
               </p>
             </div>
           </div>
@@ -6745,6 +6748,22 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
           </div>
 
           <!-- End Droid Trooper -->
+
+          <!-- Drop -->
+          <a href="#drop" class="entry-button">Drop</a>
+          <div id="drop" class="entry hidden">
+            <a href="#a" class="entry-close"></a>
+            <div class="entry-dialog">
+              <img class="btn-back" src="img/legion-exhaust.png" />
+              <h4>Drop</h4>
+
+              <p class="related-topics">
+                <strong class="keyword-reference">See:</strong>
+                <a href="#objective-tokens">Objective Tokens</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Drop -->
 
           <!-- Dual Sided Cards -->
           <a href="#dual-sided-cards" class="entry-button">Dual Sided Cards</a>
@@ -11700,6 +11719,94 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
                   tokens.
                 </li>
                 <li>
+                  Objective tokens cannot be placed overlapping other objective
+                  tokens
+                </li>
+                <li>
+                  When placing objective tokens on the battlefield, objective
+                  tokens cannot be placed underneath pieces of terrain.
+                </li>
+                <li>
+                  Each objective token has two sides, a claimed side and an
+                  unclaimed side.
+                </li>
+                <li>
+                  Some objective cards specify that objective tokens can be
+                  claimed by units via the
+                  <strong class="keyword-reference">claim</strong> action.
+                  <ul>
+                    <li>
+                      Only a unit leader can claim an objective token. To claim
+                      an objective token, a unit’s leader must be in base
+                      contact with the objective token.
+                    </li>
+                    <li>
+                      When a player's unit leader claims an objective token,
+                      that player flips the objective token from its unclaimed
+                      side to the claimed side and places it back onto the
+                      battlefield in the <strong>same</strong> position and in
+                      base contact with the unit leader. The token will remain
+                      in base contact with the unit leader as it moves around
+                      the battlefield, unless the unit leader becomes panicked
+                      or is defeated.
+                    </li>
+                    <li>
+                      After a player's unit leader with a claimed objective
+                      token performs a move, that player picks up the claimed
+                      objective token and places it <strong>anywhere</strong> in
+                      base contact with the unit leader.
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  If the objective card states that a claimed objective token is
+                  placed in base contact with a unit during setup, that
+                  objective token is considered to be claimed by that unit.
+                  <ul>
+                    <li>
+                      If a player’s unit leader with a claimed objective token
+                      becomes panicked or is defeated, before they remove or
+                      move the unit leader, that player flips the objective
+                      token to its unclaimed side and places it back onto the
+                      battlefield in the <strong>same</strong> position and in
+                      base contact with the unit leader. The objective token
+                      remains on the battlefield where it was placed and can be
+                      claimed again as normal.
+                    </li>
+                    <li>
+                      An objective token that has been claimed by a unit leader
+                      cannot leave the battlefield or be place fully or
+                      partially outside of the battlefield at any point.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  If the objective card does not specify that objective tokens
+                  can be claimed, tokens cannot be claimed this game. Instead,
+                  these tokens are used to mark areas or serve other purposes,
+                  as described by the objective card.
+                </li>
+
+                <li>
+                  Some objective cards specify that claimed objective tokens can
+                  be dropped by units via the
+                  <strong class="keyword-reference">drop</strong> free action.
+                  <ul>
+                    <li>
+                      When a player's unit leader drops a claimed objective
+                      token, that player flips the objective token to its
+                      unclaimed side and places it back onto the battlefield in
+                      the same position and in base contact with the unit leader
+                    </li>
+                    <li>
+                      After an objective token is dropped by a unit, it is no
+                      longer considered to be claimed by that unit.
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
                   Some objective cards specify that objective tokens can be
                   interacted with via the
                   <strong class="keyword-reference">sabotage/repair</strong>
@@ -14221,13 +14328,11 @@ guide when determining terrain effects during setup. ADD THIS LATER</li> -->
             <div class="entry-dialog">
               <img class="btn-back" src="img/legion-exhaust.png" />
               <h4>Sabotage/Repair (Unit Keyword)</h4>
-              <p>
-                <strong class="keyword-reference">See:</strong>
-                <a href="#objective-tokens">Objective Tokens</a>
-              </p>
+
               <p class="related-topics">
-                <strong class="keyword-reference">Related Topics:</strong>
+                <strong class="keyword-reference">See:</strong>
                 <a href="#objective-cards">Objective Cards</a>
+                <a href="#objective-tokens">Objective Tokens</a>
               </p>
             </div>
           </div>
@@ -18635,7 +18740,10 @@ Building” on page 5. ADD THIS LATER -->
             ><img src="img/github-logo.png" alt="report an issue."
           /></a>
 
-          <a href="http://www.jodocast.com/" rel="noopener" target="_blank"
+          <a
+            href="https://www.youtube.com/playlist?list=PLW1esCAoGLp3YOT6UcL5AGEAJEbur0ZN2"
+            rel="noopener"
+            target="_blank"
             ><img src="img/logos/JodoCastLogo.png" alt="The Jodo Cast"
           /></a>
         </div>
