@@ -19071,11 +19071,18 @@ Building” on page 5. ADD THIS LATER -->
  -->
 
       <footer>
-        <p>If you appreciate this tool, why not buy me a beer?</p>
+        <p>
+          If you appreciate this tool, why not fuel my energy drink habit or
+          help me afford more minis?
+        </p>
         <div class="footer-buttons">
           <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
           <script>
-            kofiwidget2.init("Buy me a Beer?", "#26416d", "K3K35ZL25");
+            kofiwidget2.init(
+              "Buy me a an energy drink?",
+              "#26416d",
+              "K3K35ZL25"
+            );
             kofiwidget2.draw();
           </script>
 
@@ -19108,5 +19115,14 @@ Building” on page 5. ADD THIS LATER -->
     </div>
 
     <script src="script.js"></script>
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+    <script>
+      kofiWidgetOverlay.draw("joelutovsky", {
+        type: "floating-chat",
+        "floating-chat.donateButton.text": "Tip Me",
+        "floating-chat.donateButton.background-color": "#26416dc3",
+        "floating-chat.donateButton.text-color": "#fff",
+      });
+    </script>
   </body>
 </html>
