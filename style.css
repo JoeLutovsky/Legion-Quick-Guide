@@ -57,6 +57,38 @@ header {
   font-size: 1.25em;
 }
 
+figure {
+  text-align: center;
+}
+
+.callout {
+  color: white;
+  background-color: #26416d;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.example-text {
+  font-style: italic;
+  color: #26416d;
+}
+
+.example-photo {
+  border: 2px solid black;
+  box-shadow: 0px 15px 10px rgb(0 0 0 / 0.1);
+  float: right;
+  margin-left: 0.25em;
+  max-width: 100%;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
 .logos {
   display: flex;
   align-items: center;
@@ -468,13 +500,19 @@ a:visited {
   height: 2.5em;
 }
 
-.easter-egg {
+.easter-egg a:link {
   text-decoration: none;
+  color: #424042;
 }
 
 @media (max-width: 1000px) {
   .container {
     width: 100%;
+  }
+
+  .example-photo {
+    float: none;
+    margin-left: 0px;
   }
 
   .body {
