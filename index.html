@@ -39,10 +39,12 @@
             alt="Legion Quick Guide Logo"
             src="img/logos/LegionQuickGuideLogo.png"
           />
-          <img
-            alt="The Fifth Trooper Logo"
-            src="img/logos/TFT-Logo-Website.png"
-          />
+          <a href="https://thefifthtrooper.com/">
+            <img
+              alt="The Fifth Trooper Logo"
+              src="img/logos/TFT-Logo-Website.png"
+          /></a>
+          <!-- <img alt="The Jodo Cast Logo" src="img/logos/JodoCastLogo.png" /> -->
         </div>
         <!-- <h1 class="page-title">Legion Quick Guide</h1> -->
 
@@ -50,9 +52,12 @@
           This site attempts to alphabetize all keywords and concepts from the
           Legion Core Rulebook for quick and easy reference during play. This
           site is a fan project by
-          <strong class="keyword-reference">Joe Lutovsky</strong> and not
-          affiliated with
+          <strong class="keyword-reference"
+            ><a href="https://ko-fi.com/joelutovsky">Joe Lutovsky</a></strong
+          >
+          and not affiliated with
           <a
+            class="keyword-reference"
             href="https://www.atomicmassgames.com/"
             rel="noopener"
             target="_blank"
@@ -60,10 +65,26 @@
           >.
         </p>
 
-        <p>
-          QuickGuide last updated: <strong>01.17.2023</strong>. Core Rulebook
-          Version 2.5
-        </p>
+        <h5 class="example patch-notes-button">
+          Patch Notes (if clicking this does nothing clear your cache...)
+        </h5>
+        <div class="panel">
+          <p class="patch-notes">
+            Most
+            <strong class="keyword-reference">examples</strong> throughout the
+            rules entries now are collapsed by default (like these patch notes)
+            and can be expanding by clicking on them. This should make scrolling
+            through long entries like
+            <a href="#movement">Movement</a> easier!<br />
+          </p>
+          <p class="patch-notes">
+            I have applied all of the updates listed on
+            <a
+              href="https://forums.atomicmassgames.com/topic/9231-core-rule-book-change-log-updated-1202022/"
+              >this Changelog Forum Post.</a
+            >
+          </p>
+        </div>
 
         <div class="official-rules-links">
           <a
@@ -78,11 +99,18 @@
             rel="noopener"
             >Official Rules Forums</a
           >
+          <a target="_blank" href="https://ko-fi.com/joelutovsky" rel="noopener"
+            >Support Legion Quick Guide</a
+          >
         </div>
+        <h6>
+          Legion Quick Guide last updated: <strong>01.20.2023</strong>. Core
+          Rulebook Version 2.5
+        </h6>
       </header>
-      <!-- NEW ENTRIES -->
+      <!-- NEW ENTRIES AND UPDATES -->
       <!-- <section>
-        <h5>New Entries</h5>
+        <h5>New Entries and Updates</h5>
         <p class="related-topics">
           <a href="#clone-trooper">Clone Trooper</a>
           <a href="#low-profile">Low Profile</a>
@@ -104,10 +132,9 @@
               <img class="btn-back" src="img/legion-exhaust.png" />
               <h4>Actions</h4>
               <p>
-                Actions are how units of miniatures move and fight their way
-                across the battlefield. A unit will typically perform two
-                actions during its activation. The following actions are
-                available to every unit.
+                During the Perform Actions step, a unit may perform up to 2 of
+                the actions below. A unit may only perform each action once per
+                activation, except for the move action.
               </p>
               <ul>
                 <li>
@@ -262,27 +289,34 @@
                 unit’s activation, it removes suppression tokens equal to its
                 courage value.
               </p>
-              <h5>EXAMPLE: SUPPRESSED AND PANICKED</h5>
-              <p class="example-text">
-                On Ryan’s turn, he chooses to activate a Clone Trooper unit with
-                two suppression tokens. After resolving any effects at the start
-                of the Clone Trooper unit’s activation, he performs the unit’s
-                Rally step and rolls two white defense dice, one for each
-                suppression token. Unfortunately, he rolls two blanks and does
-                not remove any suppression tokens from the unit. Because the
-                Clone Troopers have a courage value of 1 and have a number of
-                suppression tokens equal to or greater than their courage value,
-                they are still suppressed and must perform one fewer action
-                during the Perform Actions step of their activation.
-              </p>
-              <p class="example-text">
-                Additionally, because the Clone Troopers have suppression equal
-                to or greater than double their courage value, they are still
-                panicked as well as suppressed. Therefore, they drop any claimed
-                objective tokens, perform no actions or free actions, and at the
-                end of their activation, they remove suppression tokens equal to
-                their courage value.
-              </p>
+              <!--Button to click to expand the example section-->
+
+              <h5 class="example">EXAMPLE: SUPPRESSED AND PANICKED</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  On Ryan’s turn, he chooses to activate a Clone Trooper unit
+                  with two suppression tokens. After resolving any effects at
+                  the start of the Clone Trooper unit’s activation, he performs
+                  the unit’s Rally step and rolls two white defense dice, one
+                  for each suppression token. Unfortunately, he rolls two blanks
+                  and does not remove any suppression tokens from the unit.
+                  Because the Clone Troopers have a courage value of 1 and have
+                  a number of suppression tokens equal to or greater than their
+                  courage value, they are still suppressed and must perform one
+                  fewer action during the Perform Actions step of their
+                  activation.
+                </p>
+                <p class="example-text">
+                  Additionally, because the Clone Troopers have suppression
+                  equal to or greater than double their courage value, they are
+                  still panicked as well as suppressed. Therefore, they drop any
+                  claimed objective tokens, perform no actions or free actions,
+                  and at the end of their activation, they remove suppression
+                  tokens equal to their courage value.
+                </p>
+              </div>
+
               <div class="callout">
                 <h5>COMMANDERS AND CHECKING FOR PANIC</h5>
                 <p>
@@ -496,11 +530,11 @@
                 The active player chooses to either activate a friendly unit
                 with a faceup order token or to draw an order token randomly
                 from the order pool and activate a unit matching that order
-                token’s rank. If a player draws an order token with a rank that
-                does not have any corresponding units on the battlefield, remove
-                that token from the game and randomly draw another order token
-                from the order pool. Alternatively, a player may be able to
-                pass.
+                token’s rank that does not have an order token. If a player
+                draws an order token with a rank that does not have any
+                corresponding units on the battlefield, remove that token from
+                the game and randomly draw another order token from the order
+                pool. Alternatively, a player may be able to pass.
               </p>
               <p>
                 A player may pass if they have fewer remaining orders than their
@@ -711,7 +745,10 @@
               <h4>Aim</h4>
               <figure class="aside">
                 <img src="img/legion-aim.png" alt="aim token" loading="lazy" />
-                <p>Used when attacking to reroll up to two attack dice.</p>
+                <p>
+                  Used when attacking to reroll up to two attack dice. Aim
+                  tokens are green tokens.
+                </p>
               </figure>
               <p>
                 A unit that performs an aim action gains an aim token which it
@@ -757,7 +794,7 @@
               </p>
               <p class="related-topics">
                 <strong class="keyword-reference"> Related Topics:</strong>
-                <a href="#actions">Actions</a>
+                <a href="#affiliations">Affiliations</a>
               </p>
             </div>
           </div>
@@ -956,7 +993,9 @@
               <p>
                 When choosing weapons during the Choose Weapons and Gather Dice
                 step, each miniature in the unit that has the Arsenal X keyword
-                can choose up to X weapons to contribute to the attack pool.
+                can form up to X attack pools and can choose up to X weapons to
+                contribute to each pool. Each weapon can still only be added to
+                one attack pool.
               </p>
               <p class="related-topics">
                 <strong class="keyword-reference"> Related Topics:</strong>
@@ -1141,27 +1180,33 @@
                 defending unit is at range of at least one of the attacking
                 unit’s weapons and has at least one miniature in LOS to the
                 attacking unit leader. If either of these conditions cannot be
-                met, the attack or attack action cannot be made and is wasted.
+                met, the attack or attack action cannot be made.
               </p>
-              <img
-                class="example-photo"
-                src="/img/declare-defender.jpg"
-                alt="declare defender example"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Sarah has declared an attack action with her unit of Battle
-                Droids. The first step of the attack sequence is to declare a
-                defender. Measuring from the Battle Droids’ unit leader, Sarah
-                chooses an enemy unit that is in range of at least one of the
-                Battle Droid’s weapons and that has at least one miniature in
-                LOS. In this case, since the Battle Droids’ weapons are range
-                1–3, Sarah must choose an enemy unit at range 1–3 of the Battle
-                Droids’ unit leader that is also in LOS. Since the Battle Droid
-                unit leader has LOS to both Obi-Wan Kenobi and the Clone
-                Troopers, and both are in range of at least one of the Battle
-                Droids’ weapons, Sarah can choose either as the defending unit.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Declare Defender</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="/img/declare-defender.jpg"
+                  alt="declare defender example"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Sarah has declared an attack action with her unit of Battle
+                  Droids. The first step of the attack sequence is to declare a
+                  defender. Measuring from the Battle Droids’ unit leader, Sarah
+                  chooses an enemy unit that is in range of at least one of the
+                  Battle Droid’s weapons and that has at least one miniature in
+                  LOS. In this case, since the Battle Droids’ weapons are range
+                  1–3, Sarah must choose an enemy unit at range 1–3 of the
+                  Battle Droids’ unit leader that is also in LOS. Since the
+                  Battle Droid unit leader has LOS to both Obi-Wan Kenobi and
+                  the Clone Troopers, and both are in range of at least one of
+                  the Battle Droids’ weapons, Sarah can choose either as the
+                  defending unit.
+                </p>
+              </div>
               <h5>Form Attack Pool</h5>
               <p>
                 The attack pool consists of all the attack dice the attacking
@@ -1227,35 +1272,40 @@
                 gather all the dice for that attack pool and place them on the
                 battlefield next to the defending unit.
               </p>
-              <h5>Example: Forming Attack Pools</h5>
-              <img
-                class="example-photo"
-                src="/img/form-attack-pool.jpg"
-                alt="declare defender example"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Summer has declared an attack with her unit of Battle Droids and
-                ensured that the defending unit of Clone Troopers are in range
-                and LOS. Next, Summer determines eligible miniatures by checking
-                LOS from each individual Battle Droid in the unit. A miniature
-                is eligible to contribute dice to an attack pool if it has LOS
-                to any miniature in the defending unit. Summer determines that
-                all but one of Battle Droids are eligible miniatures. Then, for
-                each eligible miniature, Summer chooses one of the weapons
-                available to the unit for that miniature to contribute to the
-                attack pool. A miniature must meet all requirements, if any, to
-                choose a particular weapon. Finally, Summer cannot choose any
-                weapons if the Clone Troopers would be closer than the weapon’s
-                minimum range or beyond the weapon’s maximum range.
-              </p>
-              <p class="example-text">
-                Since the Clone Troopers are at range 2 and Summer has four
-                eligible Battle Droids, she decides to add four range 1–3
-                blaster rifles to the attack pool. She gathers the dice for
-                these weapons and places them together on the battlefield next
-                to the defending unit.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Forming Attack Pools</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="/img/form-attack-pool.jpg"
+                  alt="declare defender example"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Summer has declared an attack with her unit of Battle Droids
+                  and ensured that the defending unit of Clone Troopers are in
+                  range and LOS. Next, Summer determines eligible miniatures by
+                  checking LOS from each individual Battle Droid in the unit. A
+                  miniature is eligible to contribute dice to an attack pool if
+                  it has LOS to any miniature in the defending unit. Summer
+                  determines that all but one of Battle Droids are eligible
+                  miniatures. Then, for each eligible miniature, Summer chooses
+                  one of the weapons available to the unit for that miniature to
+                  contribute to the attack pool. A miniature must meet all
+                  requirements, if any, to choose a particular weapon. Finally,
+                  Summer cannot choose any weapons if the Clone Troopers would
+                  be closer than the weapon’s minimum range or beyond the
+                  weapon’s maximum range.
+                </p>
+                <p class="example-text">
+                  Since the Clone Troopers are at range 2 and Summer has four
+                  eligible Battle Droids, she decides to add four range 1–3
+                  blaster rifles to the attack pool. She gathers the dice for
+                  these weapons and places them together on the battlefield next
+                  to the defending unit.
+                </p>
+              </div>
 
               <div class="callout">
                 <h5>Attacking in Melee</h5>
@@ -1277,18 +1327,21 @@
                 be added to an attack pool if a weapon with the same name has
                 already been added to a different attack pool.
               </p>
-              <h5>Example: Declare Additional Defender</h5>
-              <p class="example-text">
-                In the previous example, Sarah put all the Clone Troopers’
-                weapons into the same attack pool. If she wishes, she may leave
-                the heavy weapon out of the attack pool and instead form a pool
-                with only the four blaster rifles, leaving an eligible miniature
-                that has not contributed a weapon to an attack pool. After she
-                has formed the first attack pool, she may then choose to declare
-                a new defender and repeat steps 1–2 of the attack sequence,
-                forming a new attack pool with the heavy weapon against a
-                different defending unit.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Declare Additional Defender</h5>
+              <div class="panel">
+                <p class="example-text">
+                  In the previous example, Sarah put all the Clone Troopers’
+                  weapons into the same attack pool. If she wishes, she may
+                  leave the heavy weapon out of the attack pool and instead form
+                  a pool with only the four blaster rifles, leaving an eligible
+                  miniature that has not contributed a weapon to an attack pool.
+                  After she has formed the first attack pool, she may then
+                  choose to declare a new defender and repeat steps 1–2 of the
+                  attack sequence, forming a new attack pool with the heavy
+                  weapon against a different defending unit.
+                </p>
+              </div>
               <h5>Roll Attack dice</h5>
               <ol>
                 <li>
@@ -1336,126 +1389,130 @@
                   turn the die to a blank result.
                 </li>
               </ol>
-              <h5>Example: Roll Attack Dice</h5>
-              <p class="example-text">
-                Simone has an attacking unit of Snowtroopers with an attack pool
-                that consists of five white dice. She rolls the dice and gets
-                one
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />, one
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />, one
-                <img
-                  class="game-icon"
-                  src="img/legion-attack-surge.png"
-                  alt="attack surge symbol"
-                  loading="lazy"
-                />, and two blank results. Having rolled the dice, Simone then
-                resolves any abilities that let her reroll dice. The
-                Snowtroopers do not have any reroll abilities, but they do have
-                an aim token. Simone chooses to use the aim token to reroll up
-                to two dice of her choice. Both dice must be rerolled at the
-                same time; she cannot reroll one and then reroll it again with
-                the same aim token. Simone chooses to reroll both blank dice,
-                getting one
-                <img
-                  class="game-icon"
-                  src="img/legion-attack-surge.png"
-                  alt="attack surge symbol"
-                  loading="lazy"
-                />
-                and one blank result, bringing the final dice results to one
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />, one
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />, two
-                <img
-                  class="game-icon"
-                  src="img/legion-attack-surge.png"
-                  alt="attack surge symbol"
-                  loading="lazy"
-                />, and one blank result. Next, she converts attack surges.
-                Since the Snowtroopers have
-                <img
-                  class="game-icon"
-                  src="img/legion-attack-surge.png"
-                  alt="attack surge symbol"
-                  loading="lazy"
-                />:<img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                on the surge chart on their Unit Card, Simone changes the two
-                <img
-                  class="game-icon"
-                  src="img/legion-attack-surge.png"
-                  alt="attack surge symbol"
-                  loading="lazy"
-                />
-                results to
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                results. If the Snowtroopers did not have
-                <img
-                  class="game-icon"
-                  src="img/legion-attack-surge.png"
-                  alt="attack surge symbol"
-                  loading="lazy"
-                />:<img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />, she would have turned the
-                <img
-                  class="game-icon"
-                  src="img/legion-attack-surge.png"
-                  alt="attack surge symbol"
-                  loading="lazy"
-                />
-                results to blank results instead. The final dice results for the
-                attack are therefore one
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />, three
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />, and one blank result.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Roll Attack Dice</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Simone has an attacking unit of Snowtroopers with an attack
+                  pool that consists of five white dice. She rolls the dice and
+                  gets one
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />, one
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />, one
+                  <img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                    loading="lazy"
+                  />, and two blank results. Having rolled the dice, Simone then
+                  resolves any abilities that let her reroll dice. The
+                  Snowtroopers do not have any reroll abilities, but they do
+                  have an aim token. Simone chooses to use the aim token to
+                  reroll up to two dice of her choice. Both dice must be
+                  rerolled at the same time; she cannot reroll one and then
+                  reroll it again with the same aim token. Simone chooses to
+                  reroll both blank dice, getting one
+                  <img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                    loading="lazy"
+                  />
+                  and one blank result, bringing the final dice results to one
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />, one
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />, two
+                  <img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                    loading="lazy"
+                  />, and one blank result. Next, she converts attack surges.
+                  Since the Snowtroopers have
+                  <img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                    loading="lazy"
+                  />:<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  on the surge chart on their Unit Card, Simone changes the two
+                  <img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                    loading="lazy"
+                  />
+                  results to
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  results. If the Snowtroopers did not have
+                  <img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                    loading="lazy"
+                  />:<img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />, she would have turned the
+                  <img
+                    class="game-icon"
+                    src="img/legion-attack-surge.png"
+                    alt="attack surge symbol"
+                    loading="lazy"
+                  />
+                  results to blank results instead. The final dice results for
+                  the attack are therefore one
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />, three
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />, and one blank result.
+                </p>
+              </div>
               <h5>Apply Dodge and Cover</h5>
               <ol>
                 <li>
                   <strong>Apply Dodge:</strong> If the defending unit has one or
                   more dodge tokens, the defending player may spend any number
-                  of them to cancel one
+                  of them. For each token spent, cancel one
                   <img
                     class="game-icon"
                     src="img/legion-hit.png"
@@ -1463,12 +1520,20 @@
                     loading="lazy"
                   />
                   result in the attack pool for each token spent, removing that
-                  die from the pool. If the attack is a ranged attack, the
-                  defending unit may benefit from cover. If the attack is not a
-                  ranged attack, players can skip to the Modify Attack Dice
-                  step. After spending any dodge tokens, the defending player
-                  applies cover to cancel any remaining hit results. To apply
-                  cover, the players follow the below steps.
+                  die from the pool. Units may spend dodge tokens even if there
+                  are no
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  results in the attack pool. If the attack is a ranged attack,
+                  the defending unit may benefit from cover. If the attack is
+                  not a ranged attack, players can skip to the Modify Attack
+                  Dice step. After spending any dodge tokens, the defending
+                  player applies cover to cancel any remaining hit results. To
+                  apply cover, the players follow the below steps.
                 </li>
                 <li>
                   <strong>Determine Number of Obscured Miniatures:</strong> The
@@ -1517,63 +1582,68 @@
                   results in the attack pool.
                 </li>
               </ol>
-              <h5>Example: Applying Cover</h5>
-              <p class="example-text">
-                Summer’s Clone Troopers are attacking Brian’s Battle Droids with
-                a ranged attack and have rolled one
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />
-                and three
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                results. Brian’s Battle Droids didn’t have any dodge tokens, so
-                the next step is to apply cover. To do so, Summer checks LOS
-                from the Clone Troopers’ unit leader to each miniature in the
-                Battle Droid unit. If LOS to any part of a Battle Droid’s
-                silhouette is blocked by terrain other than terrain in base
-                contact with the Clone Troopers’ unit leader, that Battle Droid
-                is obscured. Summer checks LOS and determines that five Battle
-                Droids are obscured.
-              </p>
-              <p class="example-text">
-                Because at least half of the Battle Droids are obscured, the
-                Battle Droids have cover. Before the game, Brian and Summer
-                determined that the building provide heavy cover and the crates
-                provide light cover. Because over half of the Battle Droids are
-                obscured by heavy cover, the Battle Droids have heavy cover.
-              </p>
-              <p class="example-text">
-                Finally, because the Battle Droids have heavy cover, Brian
-                cancels two
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                results in Summer’s dice roll, leaving the dice results at one
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />
-                and one
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Applying Cover</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Summer’s Clone Troopers are attacking Brian’s Battle Droids
+                  with a ranged attack and have rolled one
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />
+                  and three
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  results. Brian’s Battle Droids didn’t have any dodge tokens,
+                  so the next step is to apply cover. To do so, Summer checks
+                  LOS from the Clone Troopers’ unit leader to each miniature in
+                  the Battle Droid unit. If LOS to any part of a Battle Droid’s
+                  silhouette is blocked by terrain other than terrain in base
+                  contact with the Clone Troopers’ unit leader, that Battle
+                  Droid is obscured. Summer checks LOS and determines that five
+                  Battle Droids are obscured.
+                </p>
+                <p class="example-text">
+                  Because at least half of the Battle Droids are obscured, the
+                  Battle Droids have cover. Before the game, Brian and Summer
+                  determined that the building provide heavy cover and the
+                  crates provide light cover. Because over half of the Battle
+                  Droids are obscured by heavy cover, the Battle Droids have
+                  heavy cover.
+                </p>
+                <p class="example-text">
+                  Finally, because the Battle Droids have heavy cover, Brian
+                  cancels two
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  results in Summer’s dice roll, leaving the dice results at one
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />
+                  and one
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />.
+                </p>
+              </div>
               <h5>Modify Attack Dice</h5>
               <p>
                 The attacking player can resolve any effects that modify the
@@ -1640,87 +1710,91 @@
                   result for every surge token spent.
                 </li>
               </ol>
-              <h5>Example: Rolling Defense Dice</h5>
-              <p class="example-text">
-                Summer has attacked Brian’s Battle Droids and has a dice pool of
-                one
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />
-                and one
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                result after applying dodge and cover. Since Battle Droids have
-                white defense dice, Brian rolls two white defense dice, one for
-                each
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                and
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />
-                result remaining. He rolls one
-                <img
-                  class="game-icon"
-                  src="img/legion-block.png"
-                  alt="block symbol"
-                  loading="lazy"
-                />
-                and one
-                <img
-                  class="game-icon"
-                  src="img/legion-defense-surge.png"
-                  alt="defense surge symbol"
-                  loading="lazy"
-                />
-                result.
-              </p>
-              <p class="example-text">
-                After rolling defense dice, Brian may use any abilities that
-                allow him to reroll defense dice. The Battle Droids do not have
-                such an ability, so he proceeds to convert defense surges. Since
-                Battle Droids do not have
-                <img
-                  class="game-icon"
-                  src="img/legion-defense-surge.png"
-                  alt="defense surge symbol"
-                  loading="lazy"
-                />:<img
-                  class="game-icon"
-                  src="img/legion-block.png"
-                  alt="block symbol"
-                  loading="lazy"
-                />
-                on their Unit Card, he changes the
-                <img
-                  class="game-icon"
-                  src="img/legion-defense-surge.png"
-                  alt="defense surge symbol"
-                  loading="lazy"
-                />
-                he rolled to a blank, resulting in a final roll of one
-                <img
-                  class="game-icon"
-                  src="img/legion-block.png"
-                  alt="block symbol"
-                  loading="lazy"
-                />
-                and one blank result.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Rolling Defense Dice</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Summer has attacked Brian’s Battle Droids and has a dice pool
+                  of one
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />
+                  and one
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  result after applying dodge and cover. Since Battle Droids
+                  have white defense dice, Brian rolls two white defense dice,
+                  one for each
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  and
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />
+                  result remaining. He rolls one
+                  <img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                    loading="lazy"
+                  />
+                  and one
+                  <img
+                    class="game-icon"
+                    src="img/legion-defense-surge.png"
+                    alt="defense surge symbol"
+                    loading="lazy"
+                  />
+                  result.
+                </p>
+                <p class="example-text">
+                  After rolling defense dice, Brian may use any abilities that
+                  allow him to reroll defense dice. The Battle Droids do not
+                  have such an ability, so he proceeds to convert defense
+                  surges. Since Battle Droids do not have
+                  <img
+                    class="game-icon"
+                    src="img/legion-defense-surge.png"
+                    alt="defense surge symbol"
+                    loading="lazy"
+                  />:<img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                    loading="lazy"
+                  />
+                  on their Unit Card, he changes the
+                  <img
+                    class="game-icon"
+                    src="img/legion-defense-surge.png"
+                    alt="defense surge symbol"
+                    loading="lazy"
+                  />
+                  he rolled to a blank, resulting in a final roll of one
+                  <img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                    loading="lazy"
+                  />
+                  and one blank result.
+                </p>
+              </div>
               <h5>Modify Defense Dice</h5>
               <p>
                 The defending player can resolve any effects that modify the
@@ -1775,56 +1849,61 @@
                 results. The defending unit suffers a number of wounds equal to
                 the difference.
               </p>
-              <h5>Example: Comparing Results</h5>
-              <p class="example-text">
-                Summer has rolled one
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />
-                and one
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                result after applying cover in her attack against Brian’s Battle
-                Droids, and he has rolled one
-                <img
-                  class="game-icon"
-                  src="img/legion-block.png"
-                  alt="block symbol"
-                  loading="lazy"
-                />
-                and one blank result in defense. Summer counts her
-                <img
-                  class="game-icon"
-                  src="img/legion-hit.png"
-                  alt="hit symbol"
-                  loading="lazy"
-                />
-                and
-                <img
-                  class="game-icon"
-                  src="img/legion-crit.png"
-                  alt="crit symbol"
-                  loading="lazy"
-                />
-                results for a total of two. Brian counts his
-                <img
-                  class="game-icon"
-                  src="img/legion-block.png"
-                  alt="block symbol"
-                  loading="lazy"
-                />
-                results for a total of one. The players subtract Brian’s total
-                from Summer’s total for 2-1=1. Since the defending unit suffers
-                a number of wounds equal to the difference in the attacking and
-                defending results, Brian’s Battle Droids suffer one wound.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Comparing Results</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Summer has rolled one
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />
+                  and one
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  result after applying cover in her attack against Brian’s
+                  Battle Droids, and he has rolled one
+                  <img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                    loading="lazy"
+                  />
+                  and one blank result in defense. Summer counts her
+                  <img
+                    class="game-icon"
+                    src="img/legion-hit.png"
+                    alt="hit symbol"
+                    loading="lazy"
+                  />
+                  and
+                  <img
+                    class="game-icon"
+                    src="img/legion-crit.png"
+                    alt="crit symbol"
+                    loading="lazy"
+                  />
+                  results for a total of two. Brian counts his
+                  <img
+                    class="game-icon"
+                    src="img/legion-block.png"
+                    alt="block symbol"
+                    loading="lazy"
+                  />
+                  results for a total of one. The players subtract Brian’s total
+                  from Summer’s total for 2-1=1. Since the defending unit
+                  suffers a number of wounds equal to the difference in the
+                  attacking and defending results, Brian’s Battle Droids suffer
+                  one wound.
+                </p>
+              </div>
               <h5>Suffering Wounds and Defeating Miniatures</h5>
               <p>
                 When a player’s unit suffers wounds, that player chooses a
@@ -1904,38 +1983,45 @@
                   the normal rules for assigning wounds.
                 </p>
               </div>
-              <h5>Example: Assigning Wounds and Defeating Miniatures</h5>
-              <p class="example-text">
-                After comparing results, Dallas’ unit of five Clone Troopers has
-                suffered three wounds from an attack. He then assigns one of the
-                wounds to a miniature in the unit. Since all the miniatures in
-                the Clone Trooper unit have a wound threshold of 1, the
-                miniature that Dallas assigned a wound to is defeated. Since
-                there are two unassigned wounds remaining, Dallas chooses
-                another miniature from the same unit and repeats the process
-                until either all wounds have been suffered or all miniatures in
-                the unit have been defeated. Since each Clone Trooper only has a
-                wound threshold of 1 and the unit suffered three wounds, this
-                means that three Clone Troopers are defeated, leaving two Clone
-                Troopers remaining.
-              </p>
-              <p class="example-text">
-                After comparing results, Chris’ unit of three unwounded Wookiees
-                has suffered four wounds. He then assigns one of the wounds to a
-                miniature in the unit. Because Wookiees have a wound threshold
-                of 3, the Wookiee is not defeated when it is assigned the wound,
-                and Chris has three more wounds left to assign. However, because
-                the Wookiee has at least one wound token assigned to it, it is
-                wounded, and Chris MUST choose to assign it any additional wound
-                tokens since it has more wound tokens assigned to it than any
-                other miniature in the unit. Chris is forced to assign the next
-                two wounds to the Wookiee until it reaches its wound threshold
-                of 3 and is defeated, leaving one wound left to be assigned.
-                Chris must choose a non-unit leader Wookiee to assign the wound
-                to. In the future, because the wounded Wookiee has more wound
-                tokens than the other, Chris must assign wounds to it first, and
-                must continue to do so until it is defeated.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">
+                Example: Assigning Wounds and Defeating Miniatures
+              </h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  After comparing results, Dallas’ unit of five Clone Troopers
+                  has suffered three wounds from an attack. He then assigns one
+                  of the wounds to a miniature in the unit. Since all the
+                  miniatures in the Clone Trooper unit have a wound threshold of
+                  1, the miniature that Dallas assigned a wound to is defeated.
+                  Since there are two unassigned wounds remaining, Dallas
+                  chooses another miniature from the same unit and repeats the
+                  process until either all wounds have been suffered or all
+                  miniatures in the unit have been defeated. Since each Clone
+                  Trooper only has a wound threshold of 1 and the unit suffered
+                  three wounds, this means that three Clone Troopers are
+                  defeated, leaving two Clone Troopers remaining.
+                </p>
+                <p class="example-text">
+                  After comparing results, Chris’ unit of three unwounded
+                  Wookiees has suffered four wounds. He then assigns one of the
+                  wounds to a miniature in the unit. Because Wookiees have a
+                  wound threshold of 3, the Wookiee is not defeated when it is
+                  assigned the wound, and Chris has three more wounds left to
+                  assign. However, because the Wookiee has at least one wound
+                  token assigned to it, it is wounded, and Chris MUST choose to
+                  assign it any additional wound tokens since it has more wound
+                  tokens assigned to it than any other miniature in the unit.
+                  Chris is forced to assign the next two wounds to the Wookiee
+                  until it reaches its wound threshold of 3 and is defeated,
+                  leaving one wound left to be assigned. Chris must choose a
+                  non-unit leader Wookiee to assign the wound to. In the future,
+                  because the wounded Wookiee has more wound tokens than the
+                  other, Chris must assign wounds to it first, and must continue
+                  to do so until it is defeated.
+                </p>
+              </div>
               <h5>Assign Suppression Token to Defender</h5>
               <p>
                 After resolving steps 1–9 of the attack sequence, if there were
@@ -2067,35 +2153,40 @@
                 gather all the dice for that attack pool and place them on the
                 battlefield next to the defending unit.
               </p>
-              <h5>Example: Forming Attack Pools</h5>
-              <img
-                class="example-photo"
-                src="/img/form-attack-pool.jpg"
-                alt="declare defender example"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Summer has declared an attack with her unit of Battle Droids and
-                ensured that the defending unit of Clone Troopers are in range
-                and LOS. Next, Summer determines eligible miniatures by checking
-                LOS from each individual Battle Droid in the unit. A miniature
-                is eligible to contribute dice to an attack pool if it has LOS
-                to any miniature in the defending unit. Summer determines that
-                all but one of Battle Droids are eligible miniatures. Then, for
-                each eligible miniature, Summer chooses one of the weapons
-                available to the unit for that miniature to contribute to the
-                attack pool. A miniature must meet all requirements, if any, to
-                choose a particular weapon. Finally, Summer cannot choose any
-                weapons if the Clone Troopers would be closer than the weapon’s
-                minimum range or beyond the weapon’s maximum range.
-              </p>
-              <p class="example-text">
-                Since the Clone Troopers are at range 2 and Summer has four
-                eligible Battle Droids, she decides to add four range 1–3
-                blaster rifles to the attack pool. She gathers the dice for
-                these weapons and places them together on the battlefield next
-                to the defending unit.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Forming Attack Pools</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="/img/form-attack-pool.jpg"
+                  alt="declare defender example"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Summer has declared an attack with her unit of Battle Droids
+                  and ensured that the defending unit of Clone Troopers are in
+                  range and LOS. Next, Summer determines eligible miniatures by
+                  checking LOS from each individual Battle Droid in the unit. A
+                  miniature is eligible to contribute dice to an attack pool if
+                  it has LOS to any miniature in the defending unit. Summer
+                  determines that all but one of Battle Droids are eligible
+                  miniatures. Then, for each eligible miniature, Summer chooses
+                  one of the weapons available to the unit for that miniature to
+                  contribute to the attack pool. A miniature must meet all
+                  requirements, if any, to choose a particular weapon. Finally,
+                  Summer cannot choose any weapons if the Clone Troopers would
+                  be closer than the weapon’s minimum range or beyond the
+                  weapon’s maximum range.
+                </p>
+                <p class="example-text">
+                  Since the Clone Troopers are at range 2 and Summer has four
+                  eligible Battle Droids, she decides to add four range 1–3
+                  blaster rifles to the attack pool. She gathers the dice for
+                  these weapons and places them together on the battlefield next
+                  to the defending unit.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference"> Related Topics:</strong>
@@ -2263,12 +2354,10 @@
             <div class="entry-dialog">
               <img class="btn-back" src="img/legion-exhaust.png" />
               <h4>Barricades</h4>
-              <p>
-                Barricades are a specific type of scatter terrain found in some
-                Star Wars: Legion Core Sets and in their own expansion pack.
-                Barricades are difficult terrain for trooper units and provide
-                non-creature trooper units with heavy cover.
-              </p>
+              Barricades are a specific type of scatter terrain found in some
+              <em>Star Wars:</em> Legion Core Sets and in their own expansion
+              pack. Barricades are difficult terrain for trooper units and
+              provide non-creature trooper trooper units with heavy cover.
               <img
                 class="example-photo"
                 src="/img/barricades.jpg"
@@ -2502,7 +2591,8 @@
               </p>
               <p>
                 Other friendly units may not use the Fire Support keyword during
-                the additional attacks made with Beam X.
+                the additional attacks made with Beam X. Units may not use the
+                Beam X and Gunslinger keywords during the same attack.
               </p>
 
               <p class="related-topics">
@@ -2969,49 +3059,66 @@
               <img class="btn-back" src="img/legion-exhaust.png" />
               <h4>Climb</h4>
               <p>
-                Sometimes units maneuver onto tall pieces of obstacle terrain.
-                This is accomplished by performing a climb. Miniatures on
-                notched bases may not climb.
+                Miniatures can make standard moves onto or through obstacle
+                terrain that is shorter than the height of the moving unit’s
+                silhouette. When placing the movement tool, it may not overlap
+                an obstacle terrain feature that is taller than the moving
+                miniature’s silhouette. When a unit is overlapping an obstacle
+                terrain feature, it may perform a standard move if the vertical
+                distance changed is not greater than the height of the moving
+                unit’s silhouette. If they wish to move onto, off of, or through
+                obstacle terrain greater than the height of their silhouette,
+                they must instead perform a climb. Miniatures on notched bases
+                may not climb.
+              </p>
+              <p>
+                Sometimes units maneuver onto or through tall pieces of obstacle
+                terrain. This is accomplished by performing a climb. Miniatures
+                on notched bases may not climb.
               </p>
               <p>
                 To perform a climb, a unit performs a move as normal, except
                 that it must use the speed-1 tool. A miniature may move a
                 vertical distance up to height 1 when making a climb and may
-                place the movement tool overlapping obstacle terrain that is
-                taller than the height of the moving unit’s silhouette.
+                place the movement tool overlapping obstacle terrain that is up
+                to height 1 taller than the height of the moving unit’s
+                silhouette and any terrain the unit may be on.
               </p>
-              <h5>Example: Performing a Climb</h5>
-              <img
-                class="example-photo"
-                src="/img/climb-example.jpg"
-                alt="example of a climb"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Sarah wishes to move her Clone Trooper unit on top of the
-                building. She measures the height of the building and determines
-                that it is taller than the Clone Trooper's silhouette, meaning
-                that the Clone Troopers cannot reach the top by performing a
-                standard move. Instead, Sarah performs a climb with the Clone
-                Troopers.
-              </p>
-              <p class="example-text">
-                The Clone Troopers move as normal, except they must use the
-                speed-1 movement tool when climbing, and they may move up to a
-                vertical distance of height 1 when making a climb.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Performing a Climb</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="/img/climb-example.jpg"
+                  alt="example of a climb"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Sarah wishes to move her Clone Trooper unit on top of the
+                  building. She measures the height of the building and
+                  determines that it is taller than the Clone Trooper's
+                  silhouette, meaning that the Clone Troopers cannot reach the
+                  top by performing a standard move. Instead, Sarah performs a
+                  climb with the Clone Troopers.
+                </p>
+                <p class="example-text">
+                  The Clone Troopers move as normal, except they must use the
+                  speed-1 movement tool when climbing, and they may move up to a
+                  vertical distance of height 1 when making a climb.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#base-contact">Base Contact</a>
                 <a href="#cohesion">Cohesion</a>
-                <a href="#dice">Dice</a>
                 <a href="#height">Height</a>
                 <a href="#movement">Movement</a>
+                <a href="#scale">Scale</a>
+
                 <a href="#troopers">Troopers</a>
-                <a href="#unit-leader">Unit Leader</a>
-                <a href="#vehicles">Vehicles</a>
-                <a href="#wounds">Wounds</a>
+
                 <!-- See Additional Terrain Rules and Vertical Movement in the intro pages or whatever... ADD THIS LATER -->
               </p>
             </div>
@@ -3302,27 +3409,31 @@
                   granting that order.
                 </p>
               </div>
-              <h5>Example: Issuing Orders</h5>
-              <img
-                class="example-photo"
-                src="img/issuing-orders.jpg"
-                alt="issuing orders example"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Nick has played the Command Card Push, which lets him issue
-                orders to two units. Nick nominates Obi-Wan Kenobi as his
-                commander. Nick can then issue the two orders from Push to two
-                units at command range of his chosen commander, which in this
-                case is at range 1–3 of Obi-Wan Kenobi. He chooses to issue an
-                order to the Clone Trooper unit. For the second order, he cannot
-                choose the Clone Trooper unit again, as it already has a faceup
-                order token. The Infantry Support Platform is outside of Obi-
-                Wan Kenobi’s command range, so it cannot be issued an order.
-                Choosing between the AT-RT and Obi-Wan Kenobi, Nick decides to
-                issue an order to Obi-Wan Kenobi, who is in command range
-                because a miniature is always at range 1 of itself.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Issuing Orders</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="img/issuing-orders.jpg"
+                  alt="issuing orders example"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Nick has played the Command Card Push, which lets him issue
+                  orders to two units. Nick nominates Obi-Wan Kenobi as his
+                  commander. Nick can then issue the two orders from Push to two
+                  units at command range of his chosen commander, which in this
+                  case is at range 1–3 of Obi-Wan Kenobi. He chooses to issue an
+                  order to the Clone Trooper unit. For the second order, he
+                  cannot choose the Clone Trooper unit again, as it already has
+                  a faceup order token. The Infantry Support Platform is outside
+                  of Obi- Wan Kenobi’s command range, so it cannot be issued an
+                  order. Choosing between the AT-RT and Obi-Wan Kenobi, Nick
+                  decides to issue an order to Obi-Wan Kenobi, who is in command
+                  range because a miniature is always at range 1 of itself.
+                </p>
+              </div>
               <h5>Create the Order Pool</h5>
               <p>
                 After issuing orders, each player creates their order pool by
@@ -3732,12 +3843,12 @@
               <p>
                 Trooper units have a courage value on their Unit Card. When a
                 unit has a number of suppression tokens equal to or greater than
-                its courage value, it is suppressed. If a unit has a number of
-                suppression tokens that is equal to or greater than double its
-                courage value, it is panicked. A suppressed unit performs one
-                less action each activation, while a panicked unit cannot
-                perform actions, including free actions. For more information on
-                the effects of suppression, see
+                than its courage value, it is suppressed. If a unit has a number
+                of suppression tokens that is equal to or greater than double
+                its courage value, it is panicked. A suppressed unit performs
+                one less action each activation, while a panicked unit suffers
+                additional effects. For more information on the effects of
+                suppression, see
                 <strong class="keyword-reference"
                   ><a href="#suppression">Suppression</a></strong
                 >.
@@ -4180,8 +4291,9 @@
               <h4>Dauntless (Unit Keyword)</h4>
               <p>
                 After a unit with the Dauntless keyword performs its Rally step
-                and is suppressed but not panicked, it may gain one suppression
-                token to perform a free move action.
+                and is suppressed but not panicked, at the beginning of its
+                Perform Action step, it may gain one suppression token to
+                perform a free move action.
               </p>
               <p>
                 A unit with the Dauntless keyword may not be affected by the
@@ -4252,38 +4364,45 @@
                   longer in melee.
                 </p>
               </div>
-              <h5>Example: Assigning Wounds and Defeating Miniatures</h5>
-              <p class="example-text">
-                After comparing results, Dallas’ unit of five Clone Troopers has
-                suffered three wounds from an attack. He then assigns one of the
-                wounds to a miniature in the unit. Since all the miniatures in
-                the Clone Trooper unit have a wound threshold of 1, the
-                miniature that Dallas assigned a wound to is defeated. Since
-                there are two unassigned wounds remaining, Dallas chooses
-                another miniature from the same unit and repeats the process
-                until either all wounds have been suffered or all miniatures in
-                the unit have been defeated. Since each Clone Trooper only has a
-                wound threshold of 1 and the unit suffered three wounds, this
-                means that three Clone Troopers are defeated, leaving two Clone
-                Troopers remaining.
-              </p>
-              <p class="example-text">
-                After comparing results, Chris’ unit of three unwounded Wookiees
-                has suffered four wounds. He then assigns one of the wounds to a
-                miniature in the unit. Because Wookiees have a wound threshold
-                of 3, the Wookiee is not defeated when it is assigned the wound,
-                and Chris has three more wounds left to assign. However, because
-                the Wookiee has at least one wound token assigned to it, it is
-                wounded, and Chris MUST choose to assign it any additional wound
-                tokens since it has more wound tokens assigned to it than any
-                other miniature in the unit. Chris is forced to assign the next
-                two wounds to the Wookiee until it reaches its wound threshold
-                of 3 and is defeated, leaving one wound left to be assigned.
-                Chris must choose a non-unit leader Wookiee to assign the wound
-                to. In the future, because the wounded Wookiee has more wound
-                tokens than the other, Chris must assign wounds to it first, and
-                must continue to do so until it is defeated.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">
+                Example: Assigning Wounds and Defeating Miniatures
+              </h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  After comparing results, Dallas’ unit of five Clone Troopers
+                  has suffered three wounds from an attack. He then assigns one
+                  of the wounds to a miniature in the unit. Since all the
+                  miniatures in the Clone Trooper unit have a wound threshold of
+                  1, the miniature that Dallas assigned a wound to is defeated.
+                  Since there are two unassigned wounds remaining, Dallas
+                  chooses another miniature from the same unit and repeats the
+                  process until either all wounds have been suffered or all
+                  miniatures in the unit have been defeated. Since each Clone
+                  Trooper only has a wound threshold of 1 and the unit suffered
+                  three wounds, this means that three Clone Troopers are
+                  defeated, leaving two Clone Troopers remaining.
+                </p>
+                <p class="example-text">
+                  After comparing results, Chris’ unit of three unwounded
+                  Wookiees has suffered four wounds. He then assigns one of the
+                  wounds to a miniature in the unit. Because Wookiees have a
+                  wound threshold of 3, the Wookiee is not defeated when it is
+                  assigned the wound, and Chris has three more wounds left to
+                  assign. However, because the Wookiee has at least one wound
+                  token assigned to it, it is wounded, and Chris MUST choose to
+                  assign it any additional wound tokens since it has more wound
+                  tokens assigned to it than any other miniature in the unit.
+                  Chris is forced to assign the next two wounds to the Wookiee
+                  until it reaches its wound threshold of 3 and is defeated,
+                  leaving one wound left to be assigned. Chris must choose a
+                  non-unit leader Wookiee to assign the wound to. In the future,
+                  because the wounded Wookiee has more wound tokens than the
+                  other, Chris must assign wounds to it first, and must continue
+                  to do so until it is defeated.
+                </p>
+              </div>
               <div class="callout">
                 <p>
                   When a miniature added by an Upgrade Card is defeated, the
@@ -4377,23 +4496,27 @@
                 Next, players resolve any Setup instructions on the Objective
                 Card, then resolve any Setup instructions on the Condition Card.
               </p>
-              <h5>Example: Defining the Battlefield</h5>
-              <p class="example-text">
-                Matt and Andrew have determined that Matt will be the blue
-                player and Andrew will be the red player. Using Matt’s Battle
-                Deck, they separate the Objective, Deployment, and Condition
-                Cards into three separate facedown piles, shuffling each. Then
-                they draw four cards from each category, placing each category
-                horizontally in a row. Starting with Matt, he and Andrew take
-                turns choosing a row and eliminating the leftmost card in that
-                row. Matt chooses the Objective row, and the leftmost card is
-                eliminated. Andrew then chooses Conditions, and the leftmost
-                card is eliminated. Matt then chooses to eliminate the leftmost
-                card in the Deployment row. Content with how things are, Andrew
-                decides to not eliminate any more cards. The leftmost cards in
-                each row are the Battle Cards that Matt and Andrew will use for
-                their game.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Defining the Battlefield</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Matt and Andrew have determined that Matt will be the blue
+                  player and Andrew will be the red player. Using Matt’s Battle
+                  Deck, they separate the Objective, Deployment, and Condition
+                  Cards into three separate facedown piles, shuffling each. Then
+                  they draw four cards from each category, placing each category
+                  horizontally in a row. Starting with Matt, he and Andrew take
+                  turns choosing a row and eliminating the leftmost card in that
+                  row. Matt chooses the Objective row, and the leftmost card is
+                  eliminated. Andrew then chooses Conditions, and the leftmost
+                  card is eliminated. Matt then chooses to eliminate the
+                  leftmost card in the Deployment row. Content with how things
+                  are, Andrew decides to not eliminate any more cards. The
+                  leftmost cards in each row are the Battle Cards that Matt and
+                  Andrew will use for their game.
+                </p>
+              </div>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#battlefield">Battlefield</a>
@@ -4402,7 +4525,6 @@
                 <a href="#deployment">Deployment</a>
                 <a href="#objective-cards">Objective Cards</a>
                 <a href="#objective-tokens">Objective Tokens</a>
-                <!-- See Setup on page 6 ADD THIS LATER -->
               </p>
             </div>
           </div>
@@ -4628,10 +4750,23 @@
               <img class="btn-back" src="img/legion-exhaust.png" />
               <h4>Detonate</h4>
               <p>
+                After a unit controlled by any player attacks, moves, or
+                performs an action, each unit that has a weapon with the
+                Detonate X keyword may detonate up to X friendly charge tokens
+                of the specified type. If a token would detonate, that token
+                detonates before any other abilities or effects that occur after
+                a unit moves or performs an action, with the exception of
+                spending a standby token which can be spent by a unit before the
+                token detonates. If both players have units that could detonate
+                charge tokens, the player that does not control the unit that
+                just performed the attack, move, or action may use their unit’s
+                Detonate X keyword first.
+              </p>
+              <p>
                 When a token detonates, perform a separate attack against each
-                unit, friendly and enemy, that the token has LOS and range to
-                using the area weapon, surge conversion chart, and weapon
-                keywords on the card for the token being detonated. The
+                unit, friendly and enemy, that has LOS to the token and is in
+                range of the area weapon, using the surge conversion chart and
+                weapon keywords on the card for the token being detonated. The
                 detonating token is considered the attacking unit when making
                 attacks, meaning that it cannot spend aim tokens or modify
                 attack dice, regardless of any abilities on the unit that placed
@@ -5050,43 +5185,47 @@
                   activation, even if it is displaced multiple times.
                 </li>
               </ol>
-              <h5>Example: Displacement</h5>
-              <img
-                src="img/displacement-1.jpg"
-                loading="lazy"
-                class="example-photo"
-              />
-              <img
-                src="img/displacement-2.jpg"
-                loading="lazy"
-                class="example-photo"
-              />
-              <img
-                src="img/displacement-3.jpg"
-                loading="lazy"
-                class="example-photo"
-              />
-              <img
-                src="img/displacement-4.jpg"
-                loading="lazy"
-                class="example-photo"
-              />
-              <p class="example-text">
-                Josh’s AT-RT is performing a standard move and he determines
-                that the AT-RT would displace Dallas’ Battle Droid unit. Josh
-                determines that four out of the six Battle Droids are displaced,
-                including the Battle Droid’s unit leader. Josh picks up the
-                displaced Battle Droids and places them to the side temporarily,
-                marking the unit leader’s position. Then Josh’s AT-RT continues
-                its movement as normal. Dallas then takes the displaced unit
-                leader and places it on the battlefield within a speed-1 move of
-                its original position. Dallas then places the rest of the
-                displaced Battle Droids in cohesion. Since some of the Battle
-                Droids are no longer in cohesion with the unit leader (due to
-                them being displaced), Dallas places those miniatures in
-                cohesion. Finally, the Battle Droids receive a suppression
-                token.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Displacement</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/displacement-1.jpg"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <img
+                  src="img/displacement-2.jpg"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <img
+                  src="img/displacement-3.jpg"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <img
+                  src="img/displacement-4.jpg"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <p class="example-text">
+                  Josh’s AT-RT is performing a standard move and he determines
+                  that the AT-RT would displace Dallas’ Battle Droid unit. Josh
+                  determines that four out of the six Battle Droids are
+                  displaced, including the Battle Droid’s unit leader. Josh
+                  picks up the displaced Battle Droids and places them to the
+                  side temporarily, marking the unit leader’s position. Then
+                  Josh’s AT-RT continues its movement as normal. Dallas then
+                  takes the displaced unit leader and places it on the
+                  battlefield within a speed-1 move of its original position.
+                  Dallas then places the rest of the displaced Battle Droids in
+                  cohesion. Since some of the Battle Droids are no longer in
+                  cohesion with the unit leader (due to them being displaced),
+                  Dallas places those miniatures in cohesion. Finally, the
+                  Battle Droids receive a suppression token.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -5094,10 +5233,8 @@
                 <a href="#compulsory-move">Compulsory Move</a>
                 <a href="#engaged">Engaged</a>
                 <a href="#movement">Movement</a>
-
                 <a href="#suppression">Suppression</a>
                 <a href="#troopers">Troopers</a>
-
                 <a href="#unit-leader">Unit Leader</a>
                 <a href="#vehicles">Vehicles</a>
               </p>
@@ -5251,7 +5388,10 @@
               <h4>Dodge</h4>
               <figure class="aside">
                 <img src="img/legion-dodge.png" alt="Dodge Token" />
-                <p>Dodge Token</p>
+                <p>
+                  Used when defending to cancel incoming hit results. Dodge
+                  tokens are green tokens.
+                </p>
               </figure>
               <p>
                 A unit that performs a dodge action gains a dodge token. Units
@@ -5266,10 +5406,25 @@
               </p>
               <h5>Apply Dodge and Cover</h5>
               <p>
-                If the defending unit has one or more dodge tokens, the
-                defending player may spend any number of them to cancel one 󲉠
+                <strong>Apply Dodge:</strong> If the defending unit has one or
+                more dodge tokens, the defending player may spend any number of
+                them. For each token spent, cancel one
+                <img
+                  class="game-icon"
+                  src="img/legion-hit.png"
+                  alt="hit symbol"
+                  loading="lazy"
+                />
                 result in the attack pool for each token spent, removing that
-                die from the pool.
+                die from the pool. Units may spend dodge tokens even if there
+                are no
+                <img
+                  class="game-icon"
+                  src="img/legion-hit.png"
+                  alt="hit symbol"
+                  loading="lazy"
+                />
+                results in the attack pool.
               </p>
               <p>
                 See
@@ -5647,48 +5802,52 @@
                 />
                 unit and cannot play Command Cards.
               </p>
-              <h5>Example: Promote</h5>
-              <p class="example-text">
-                Earlier in the round, the last
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                unit in Josh’s army was defeated. At the Update Order Pool and
-                Promote step of the End Phase, he must choose a unit leader from
-                one of his trooper units to become a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />. The unit’s original order token is discarded, and he
-                replaces it with a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                order token. The promoted unit counts as a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                for all rules purposes. If Josh doesn’t have any trooper units
-                with unit leaders left to promote, then he no longer has a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                and cannot play Command Cards for the rest of the game.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Promote</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Earlier in the round, the last
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  unit in Josh’s army was defeated. At the Update Order Pool and
+                  Promote step of the End Phase, he must choose a unit leader
+                  from one of his trooper units to become a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />. The unit’s original order token is discarded, and he
+                  replaces it with a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  order token. The promoted unit counts as a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  for all rules purposes. If Josh doesn’t have any trooper units
+                  with unit leaders left to promote, then he no longer has a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  and cannot play Command Cards for the rest of the game.
+                </p>
+              </div>
               <h5>Advance Round Counter</h5>
               <p>
                 Set the round counter to the next highest number. The current
@@ -5820,7 +5979,6 @@
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#command-phase">Command Phase</a>
                 <a href="#issuing-orders">Issuing Orders</a>
-                <!-- See Army Building on page 5 ADD THIS LATER -->
               </p>
             </div>
           </div>
@@ -5912,18 +6070,22 @@
                 When a card is readied, turn it 90° to the left so it is in its
                 original orientation. The card is no longer exhausted.
               </p>
-              <h5>Example: Exhaust</h5>
-              <img
-                class="example-photo"
-                src="img/exhaust-example.jpg"
-                alt="example of card with exhaust icon"
-                loading="lazy"
-              />
-              <p class="example-text">
-                The Stormtooper unit adds the HH-12 Stormtrooper’s weapon to an
-                attack pool, exhausting the card once the dice are added. It
-                cannot be added to another attack pool until it is readied.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Exhaust</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="img/exhaust-example.jpg"
+                  alt="example of card with exhaust icon"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  The Stormtooper unit adds the HH-12 Stormtrooper’s weapon to
+                  an attack pool, exhausting the card once the dice are added.
+                  It cannot be added to another attack pool until it is readied.
+                </p>
+              </div>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#attack">Attack</a>
@@ -5974,17 +6136,22 @@
                 upgrade that exhausts or expends, then any number of miniatures
                 in the unit may add the weapon to the attack pool.
               </p>
-              <h5>Example: Expend</h5>
-              <img
-                class="example-photo"
-                src="img/expend-example.jpg"
-                alt="example of card with expend icon"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Luke Skywalker expends Burst of Speed to increase his speed. The
-                card is expended and cannot be used for the rest of the game.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Expend</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="img/expend-example.jpg"
+                  alt="example of card with expend icon"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Luke Skywalker expends Burst of Speed to increase his speed.
+                  The card is expended and cannot be used for the rest of the
+                  game.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -6052,8 +6219,8 @@
                 Occasionally a rule references the Light Side or the Dark Side.
                 The Rebel Alliance and the Galactic Republic are the Light Side,
                 and the Galactic Empire and the Separatist Alliance are the Dark
-                Side. Armies not built using these factions state what upgrades
-                units may choose in their rules text.
+                Side. Armies not built using these factions state whether they
+                are part of the Light Side or the Dark Side in their rules text.
               </p>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -6505,7 +6672,8 @@
                 <li>
                   During the Determine Number of Obscured Miniatures step, a
                   ground vehicle miniature’s silhouette must be at least 50%
-                  obscured to count as obscured.
+                  obscured from any point of the attacker's silhouette to count
+                  as obscured. Ground vehicles do not give cover to themselves.
                 </li>
               </ul>
 
@@ -6655,9 +6823,9 @@
               <p>
                 When a unit with the Gunslinger keyword reaches the Declare
                 Additional Defender step, it may declare an additional defender
-                and create an attack pool consisting solely of a weapon that has
-                already been contributed to another attack pool. The Gunslinger
-                keyword can only be used once per attack sequence.
+                and create an attack pool consisting solely of a ranged weapon
+                that has already been contributed to another attack pool. The
+                Gunslinger keyword can only be used once per attack sequence.
               </p>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -6732,31 +6900,36 @@
                 of the terrain the miniatures are moving or climbing to,
                 subtracting the height of any terrain the miniatures may be on.
               </p>
-              <h5>Example: Measuring Height</h5>
-              <img
-                src="img/terrain-height.jpg"
-                class="example-photo"
-                alt="terrain height example"
-                loading="lazy"
-              />
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Measuring Height</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/terrain-height.jpg"
+                  class="example-photo"
+                  alt="terrain height example"
+                  loading="lazy"
+                />
 
-              <p class="example-text">
-                Sarah wants to measure the height of this building to determine
-                how it will impede the movement of her Clone Troopers. To do so,
-                she takes the range tool and places one end on the battlefield,
-                holding the range tool upright. Because the roof of the building
-                is entirely inside the first segment of the range tool, the
-                building is considered height 1.
-              </p>
-              <p class="example-text">
-                Later in the game, Sarah measures the height of another
-                building. Because this building has multiple levels, it consists
-                of different heights. One roof is completely inside the first
-                segment of the range tool, so that part of the building is
-                height 1. However, the second roof of the building is inside the
-                second segment of the range tool, so that part of the building
-                is height 2.
-              </p>
+                <p class="example-text">
+                  Sarah wants to measure the height of this building to
+                  determine how it will impede the movement of her Clone
+                  Troopers. To do so, she takes the range tool and places one
+                  end on the battlefield, holding the range tool upright.
+                  Because the roof of the building is entirely inside the first
+                  segment of the range tool, the building is considered height
+                  1.
+                </p>
+                <p class="example-text">
+                  Later in the game, Sarah measures the height of another
+                  building. Because this building has multiple levels, it
+                  consists of different heights. One roof is completely inside
+                  the first segment of the range tool, so that part of the
+                  building is height 1. However, the second roof of the building
+                  is inside the second segment of the range tool, so that part
+                  of the building is height 2.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -6849,15 +7022,14 @@
               <h4>Hover: Ground/Air X (Unit Keyword)</h4>
               <p>
                 A unit with the Hover: Ground or Hover: Air X keyword may
-                perform standby actions during the Perform Actions step and may
-                perform reverse moves.
+                perform standby actions during the Perform Actions step, even if
+                not nrmally allowed to, and may perform reverse moves.
               </p>
               <p>
                 A unit with the Hover: Ground keyword is treated as a ground
-                vehicle by other units for some rules purposes, such as
-                obscuring miniatures and determining cover, moving through other
-                units, and displacement. For all other game effects, the unit is
-                still treated as a repulsor vehicle.
+                vehicle by other units for all LOS purposes, moving through
+                other units, and displacement. For all other game effects, the
+                unit is still treated as a repulsor vehicle.
               </p>
               <p>
                 A unit with the Hover: Air X keyword ignores terrain of height X
@@ -7067,10 +7239,10 @@
               <img class="btn-back" src="img/legion-exhaust.png" />
               <h4>Immune: Deflect (Unit Keyword)</h4>
               <p>
-                During an attack, if the only weapons in the attack pool are
-                weapons with the Immune: Deflect keyword, the attacking unit
-                cannot suffer wounds due to the defending unit using the Ataru
-                Mastery, Deflect, Djem So Mastery, or Soresu Mastery abilities.
+                During an attack, if the attack pool contains weapons with the
+                Immune: Deflect keyword, the attacking unit cannot suffer wounds
+                due to the defending unit using the Ataru Mastery, Deflect, Djem
+                So Mastery, or Soresu Mastery abilities.
               </p>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -7618,8 +7790,11 @@
                 movement on top of terrain that is height X or lower. While
                 performing a move with the Jump X action, a unit ignores the
                 effects of difficult terrain and other miniatures with a height
-                equal to or lower than X. When a unit performs the Jump X
-                action, measure height from that unit’s starting position.
+                equal to or lower than X. When making a move with the Jump X
+                action, a unit may place the movement template overlapping
+                impassable terrain but may not end its move overlapping it. When
+                a unit performs the Jump X action, measure height from that
+                unit’s starting position.
               </p>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -7936,28 +8111,35 @@
                 like this should be identified by the players before the game
                 begins.
               </p>
-              <h5>Example: Drawing Line of Sight and Blocking LOS</h5>
-              <img
-                src="img/drawing-LOS.jpg"
-                alt="drawing los example"
-                loading="lazy"
-                class="example-photo"
-              />
-              <p class="example-text">
-                The Battle Droids can draw LOS to the Clone Troopers because
-                they can draw an imaginary straight line from their unit
-                leader’s silhouette to at least one of the Clone Trooper’s
-                silhouettes.
-              </p>
-              <p class="example-text">
-                The Battle Droids can draw LOS to Clone Commander Cody because
-                the silhouette of the Clone Troopers does not block LOS.
-              </p>
-              <p class="example-text">
-                The Battle Droids do not have LOS to Obi-Wan Kenobi, because the
-                building blocks an unobstructed straight imaginary line from
-                their unit leader’s silhouette to any part of his silhouette.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">
+                Example: Drawing Line of Sight and Blocking LOS
+              </h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/drawing-LOS.jpg"
+                  alt="drawing los example"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <p class="example-text">
+                  The Battle Droids can draw LOS to the Clone Troopers because
+                  they can draw an imaginary straight line from their unit
+                  leader’s silhouette to at least one of the Clone Trooper’s
+                  silhouettes.
+                </p>
+                <p class="example-text">
+                  The Battle Droids can draw LOS to Clone Commander Cody because
+                  the silhouette of the Clone Troopers does not block LOS.
+                </p>
+                <p class="example-text">
+                  The Battle Droids do not have LOS to Obi-Wan Kenobi, because
+                  the building blocks an unobstructed straight imaginary line
+                  from their unit leader’s silhouette to any part of his
+                  silhouette.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -8052,7 +8234,14 @@
               <p>
                 While defending against a ranged attack, if a unit with the Low
                 Profile keyword has cover and cancels hit results during the
-                Apply Cover step, it cancels one additional result.
+                Apply Cover step, it cancels one additional
+                <img
+                  class="game-icon"
+                  src="img/legion-hit.png"
+                  alt="hit Symbol"
+                  loading="lazy"
+                />
+                result.
               </p>
               <p>
                 When determining cover, if the value of the Sharpshooter X
@@ -8310,21 +8499,25 @@
                 miniatures are in melee range with one another if they are in
                 base contact.
               </p>
-              <h5>Example: Measuring</h5>
-              <p>
-                When measuring range between two objects, only take the
-                horizontal distance into account—never the vertical distance. A
-                measurement tool should always be flat on the battlefield; if
-                this isn’t possible (due to terrain, for example), hold the
-                measuring tool above the battlefield and check positions based
-                on the measurement tool.
-              </p>
-              <img
-                src="img/measuring.jpg"
-                alt="measuring example"
-                loading="lazy"
-                class="example-photo"
-              />
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Measuring</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  When measuring range between two objects, only take the
+                  horizontal distance into account—never the vertical distance.
+                  A measurement tool should always be flat on the battlefield;
+                  if this isn’t possible (due to terrain, for example), hold the
+                  measuring tool above the battlefield and check positions based
+                  on the measurement tool.
+                </p>
+                <img
+                  src="img/measuring.jpg"
+                  alt="measuring example"
+                  loading="lazy"
+                  class="example-photo"
+                />
+              </div>
               <h5>At, Within, and Beyond</h5>
               <p>
                 Some abilities require two objects to be at, within, or beyond a
@@ -8359,24 +8552,27 @@
                   from the unit's unit leader.
                 </p>
               </div>
-
-              <h5>Example: At, Within, and Beyond</h5>
-              <img
-                src="img/at-within-beyond.jpg"
-                alt="measuring example"
-                loading="lazy"
-                class="example-photo"
-              />
-              <p class="example-text">
-                The Clone Trooper unit is at range 1 of Obi-Wan Kenobi because
-                it has at least one miniature whose base is at least partially
-                inside the first segment of the range tool. The AT-RT is within
-                range 1 of Obi-Wan Kenobi because its base is entirely inside
-                the first segment of the range tool. The B1 Battle Droids are
-                beyond range 1 of Obi-Wan Kenobi because all of their
-                miniatures' bases are entirely outside the first segment of the
-                range tool.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: At, Within, and Beyond</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/at-within-beyond.jpg"
+                  alt="measuring example"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <p class="example-text">
+                  The Clone Trooper unit is at range 1 of Obi-Wan Kenobi because
+                  it has at least one miniature whose base is at least partially
+                  inside the first segment of the range tool. The AT-RT is
+                  within range 1 of Obi-Wan Kenobi because its base is entirely
+                  inside the first segment of the range tool. The B1 Battle
+                  Droids are beyond range 1 of Obi-Wan Kenobi because all of
+                  their miniatures' bases are entirely outside the first segment
+                  of the range tool.
+                </p>
+              </div>
               <h5>Terrain Height</h5>
               <p>
                 Each piece of terrain has a height characteristic. To measure
@@ -8393,31 +8589,36 @@
                 of the terrain the miniatures are moving or climbing to,
                 subtracting the height of any terrain the miniatures may be on.
               </p>
-              <h5>Example: Measuring Height</h5>
-              <img
-                src="img/terrain-height.jpg"
-                class="example-photo"
-                alt="terrain height example"
-                loading="lazy"
-              />
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Measuring Height</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/terrain-height.jpg"
+                  class="example-photo"
+                  alt="terrain height example"
+                  loading="lazy"
+                />
 
-              <p class="example-text">
-                Sarah wants to measure the height of this building to determine
-                how it will impede the movement of her Clone Troopers. To do so,
-                she takes the range tool and places one end on the battlefield,
-                holding the range tool upright. Because the roof of the building
-                is entirely inside the first segment of the range tool, the
-                building is considered height 1.
-              </p>
-              <p class="example-text">
-                Later in the game, Sarah measures the height of another
-                building. Because this building has multiple levels, it consists
-                of different heights. One roof is completely inside the first
-                segment of the range tool, so that part of the building is
-                height 1. However, the second roof of the building is inside the
-                second segment of the range tool, so that part of the building
-                is height 2.
-              </p>
+                <p class="example-text">
+                  Sarah wants to measure the height of this building to
+                  determine how it will impede the movement of her Clone
+                  Troopers. To do so, she takes the range tool and places one
+                  end on the battlefield, holding the range tool upright.
+                  Because the roof of the building is entirely inside the first
+                  segment of the range tool, the building is considered height
+                  1.
+                </p>
+                <p class="example-text">
+                  Later in the game, Sarah measures the height of another
+                  building. Because this building has multiple levels, it
+                  consists of different heights. One roof is completely inside
+                  the first segment of the range tool, so that part of the
+                  building is height 1. However, the second roof of the building
+                  is inside the second segment of the range tool, so that part
+                  of the building is height 2.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -8469,40 +8670,44 @@
                 contact with an enemy miniature in the same melee, that
                 miniature must still be placed in cohesion.
               </p>
-              <h5>Example: Moving into Melee</h5>
-              <img
-                src="img/melee-1.jpg"
-                alt="moving into melee example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <img
-                src="img/melee-2.jpg"
-                alt="moving into melee example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <img
-                src="img/melee-3.jpg"
-                alt="moving into melee example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Will decides that he wants to move his Clone Trooper unit into
-                melee with Tony’s Battle Droids. Because they have a melee
-                weapon, the Clone Troopers may move into base contact with the
-                Battle Droids. To do this, Will performs a move with the Clone
-                Troopers’ unit leader that ends with the Clone Troopers’ unit
-                leader in base contact with one of the Battle Droids. Then,
-                ensuring that all of the Clone Troopers remain in cohesion, Will
-                places the rest of the Clone Troopers so that they are also in
-                base contact with the Battle Droids. Because the Battle Droids
-                have a melee weapon, Tony places the Battle Droids that are not
-                in base contact into base contact with Will’s Clone Troopers
-                while maintaining cohesion. The Clone Troopers and Battle Droids
-                are engaged and in melee.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Moving into Melee</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/melee-1.jpg"
+                  alt="moving into melee example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <img
+                  src="img/melee-2.jpg"
+                  alt="moving into melee example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <img
+                  src="img/melee-3.jpg"
+                  alt="moving into melee example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Will decides that he wants to move his Clone Trooper unit into
+                  melee with Tony’s Battle Droids. Because they have a melee
+                  weapon, the Clone Troopers may move into base contact with the
+                  Battle Droids. To do this, Will performs a move with the Clone
+                  Troopers’ unit leader that ends with the Clone Troopers’ unit
+                  leader in base contact with one of the Battle Droids. Then,
+                  ensuring that all of the Clone Troopers remain in cohesion,
+                  Will places the rest of the Clone Troopers so that they are
+                  also in base contact with the Battle Droids. Because the
+                  Battle Droids have a melee weapon, Tony places the Battle
+                  Droids that are not in base contact into base contact with
+                  Will’s Clone Troopers while maintaining cohesion. The Clone
+                  Troopers and Battle Droids are engaged and in melee.
+                </p>
+              </div>
               <h5>Engaged</h5>
               <p>
                 When two or more trooper units are in melee with one another,
@@ -8612,26 +8817,32 @@
                 />
                 rank and only one Mercenary unit of each other rank.
               </p>
-              <h5>Example: Mercenaries and Rank Requirements</h5>
-              <p class="example-text">
-                For example, a standard Galactic Empire army that includes one
-                or more Black Sun Enforcers units must field at least three non-
-                Mercenary
-                <img
-                  src="img/legion-corps-icon.png"
-                  class="game-icon"
-                  alt="corps rank icon"
-                  loading="lazy"
-                />
-                units and cannot field a combined number of
-                <img
-                  src="img/legion-corps-icon.png"
-                  class="game-icon"
-                  alt="corps rank icon"
-                  loading="lazy"
-                />
-                units greater than six.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">
+                Example: Mercenaries and Rank Requirements
+              </h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  For example, a standard Galactic Empire army that includes one
+                  or more Black Sun Enforcers units must field at least three
+                  non- Mercenary
+                  <img
+                    src="img/legion-corps-icon.png"
+                    class="game-icon"
+                    alt="corps rank icon"
+                    loading="lazy"
+                  />
+                  units and cannot field a combined number of
+                  <img
+                    src="img/legion-corps-icon.png"
+                    class="game-icon"
+                    alt="corps rank icon"
+                    loading="lazy"
+                  />
+                  units greater than six.
+                </p>
+              </div>
               <p>
                 A player cannot normally field an army that contains only
                 Mercenary units, but some Battle Forces allow a player to do
@@ -8648,13 +8859,17 @@
                 that includes only Mercenary units use the Mercenary order
                 tokens.
               </p>
-              <h5>Example: Mercenaries and Factions</h5>
-              <p class="example-text">
-                For example, Black Sun Enforcers in a Galactic Empire army are
-                friendly to other units in the army but are not part of the
-                Galactic Empire faction. Black Sun Enforcers in a Galactic
-                Empire army would use Galactic Empire order tokens.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Mercenaries and Factions</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  For example, Black Sun Enforcers in a Galactic Empire army are
+                  friendly to other units in the army but are not part of the
+                  Galactic Empire faction. Black Sun Enforcers in a Galactic
+                  Empire army would use Galactic Empire order tokens.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -8716,34 +8931,40 @@
                 reason a miniature cannot be placed in cohesion at the end of a
                 move, place it as close as possible to the unit leader.
               </p>
-              <h5>Example: Performing a Standard Move</h5>
-              <img
-                src="img/standard-move-1.jpg"
-                alt="movement example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <img
-                src="img/standard-move-2.jpg"
-                alt="movement example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Marco declares a move action with his Battle Droid unit and
-                chooses to perform a standard move with them. As the Battle
-                Droids are speed-2, he may choose either the speed-1 or speed-2
-                movement tool. Marco chooses the speed-2 movement tool and
-                places it flat on the battlefield so that one end touches the
-                unit leader's base. Then, he may adjust the movement tool at its
-                joint as he wishes. After he is content with the placement and
-                position of the movement tool, Marco picks up the Battle Droid’s
-                unit leader and places it back down on the battlefield so that
-                its base wholly touches the end of the movement tool. Then, he
-                picks up the rest of the miniatures in the Battle Droid unit and
-                places them so that they are all at a speed-1 move away from
-                their unit leader.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Performing a Standard Move</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/standard-move-1.jpg"
+                  alt="movement example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <img
+                  src="img/standard-move-2.jpg"
+                  alt="movement example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Marco declares a move action with his Battle Droid unit and
+                  chooses to perform a standard move with them. As the Battle
+                  Droids are speed-2, he may choose either the speed-1 or
+                  speed-2 movement tool. Marco chooses the speed-2 movement tool
+                  and places it flat on the battlefield so that one end touches
+                  the unit leader's base. Then, he may adjust the movement tool
+                  at its joint as he wishes. After he is content with the
+                  placement and position of the movement tool, Marco picks up
+                  the Battle Droid’s unit leader and places it back down on the
+                  battlefield so that its base wholly touches the end of the
+                  movement tool. Then, he picks up the rest of the miniatures in
+                  the Battle Droid unit and places them so that they are all at
+                  a speed-1 move away from their unit leader.
+                </p>
+              </div>
+
+              <h4>Moving with Notched Bases</h4>
               <p>
                 Units on notched bases follow all the above rules for movement,
                 with the following exceptions:
@@ -8802,59 +9023,62 @@
                   of a move, place it as close to the unit leader as possible.
                 </li>
               </ul>
-              <h5>Example: Moving with Notched Bases</h5>
-              <img
-                src="img/notch-move-1.jpg"
-                alt="movement with a notched base example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Simone wants to perform a standard move with her Swoop Bike
-                Riders. She chooses to use the speed-3 movement tool since the
-                Swoop Bike Riders are speed-3. She places the movement tool in
-                the front notch of the Swoop Bike Riders unit leader's base.
-                Next, she adjusts the movement tool as she wishes, then decides
-                if she wants to perform a full or partial move. She decides to
-                perform a full move and picks up the miniature and moves it
-                along the movement tool, making sure to keep the tool lined up
-                with the front and rear notches on the miniature’s base. She
-                then places the miniature so that the rear notch is on the
-                opposite end of the movement tool.
-              </p>
-              <img
-                src="img/notch-move-2.jpg"
-                alt="movement with a notched base example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <img
-                src="img/notch-move-3.jpg"
-                alt="movement with a notched base example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                If Simone wishes to perform a partial move instead, she simply
-                stops the miniature’s movement along the movement tool at the
-                desired point and places it on the battlefield in such a way so
-                that the front and rear notches on its base are parallel to the
-                section of the movement tool the miniature reached at the
-                farthest part of its move.
-              </p>
-              <img
-                src="img/notch-move-4.jpg"
-                alt="movement with a notched base example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                If terrain impedes a full or partial movement, the miniature
-                must stop prematurely. Because the tower is stopping the Swoop
-                Bike Riders movement, it ends its movement even though it has
-                not traveled the full distance of the movement tool.
-              </p>
-              <h4>Moving with Notched Bases</h4>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Moving with Notched Bases</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/notch-move-1.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Simone wants to perform a standard move with her Swoop Bike
+                  Riders. She chooses to use the speed-3 movement tool since the
+                  Swoop Bike Riders are speed-3. She places the movement tool in
+                  the front notch of the Swoop Bike Riders unit leader's base.
+                  Next, she adjusts the movement tool as she wishes, then
+                  decides if she wants to perform a full or partial move. She
+                  decides to perform a full move and picks up the miniature and
+                  moves it along the movement tool, making sure to keep the tool
+                  lined up with the front and rear notches on the miniature’s
+                  base. She then places the miniature so that the rear notch is
+                  on the opposite end of the movement tool.
+                </p>
+                <img
+                  src="img/notch-move-2.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <img
+                  src="img/notch-move-3.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  If Simone wishes to perform a partial move instead, she simply
+                  stops the miniature’s movement along the movement tool at the
+                  desired point and places it on the battlefield in such a way
+                  so that the front and rear notches on its base are parallel to
+                  the section of the movement tool the miniature reached at the
+                  farthest part of its move.
+                </p>
+                <img
+                  src="img/notch-move-4.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  If terrain impedes a full or partial movement, the miniature
+                  must stop prematurely. Because the tower is stopping the Swoop
+                  Bike Riders movement, it ends its movement even though it has
+                  not traveled the full distance of the movement tool.
+                </p>
+              </div>
               <p>
                 Miniatures with notched bases have a number of additional
                 movement options available to them:
@@ -8867,7 +9091,7 @@
               <p>
                 When a unit that can pivot performs a move action, it may choose
                 to pivot instead of performing another movement. To pivot,
-                rotate the unit leader’s base to 90° to the left or right,
+                rotate the unit leader’s base up to 90° to the left or right,
                 keeping the center of the base in the same place. If a unit
                 contains multiple miniatures, each miniature in the unit must
                 pivot so that the directional orientation of its base is the
@@ -8936,7 +9160,8 @@
                 <h5>Movement and Objective Tokens</h5>
                 <p>
                   Miniatures can move through but cannot be placed overlapping
-                  objective tokens.
+                  objective tokens, unless they were placed with the Key
+                  Positions or Payload battle card.
                 </p>
               </div>
               <h5>Moving Through Terrain</h5>
@@ -8970,63 +9195,75 @@
                 cannot move or climb onto or through impassable terrain unless
                 they have a special rule which allows them to do so.
               </p>
-              <h5>Example: Performing a Standard Move Through Terrain</h5>
-              <img
-                src="img/move-throug-terrain.jpg"
-                alt="example of moving through terrain"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Evan declares a move action with his Clone Trooper unit and
-                chooses to perform a standard move with them. As the clones are
-                speed-2, he may choose either the speed-1 or speed-2 movement
-                tool. However, because the Clone Troopers are starting their
-                move on difficult terrain, their speed is reduced by 1 to a
-                minimum of 1, meaning they cannot use the speed-2 movement tool.
-                Because their speed is reduced to a minimum of 1, moving over
-                the barricade will not reduce their speed further.
-              </p>
-              <p class="example-text">
-                If Obi-Wan Kenobi wishes to move into the same piece of
-                difficult terrain as the Clone Troopers, he will reduce his
-                speed by 1 to a minimum of 1 and must use the speed-1 movement
-                tool because the movement template will overlap the difficult
-                terrain.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">
+                Example: Performing a Standard Move Through Terrain
+              </h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/move-throug-terrain.jpg"
+                  alt="example of moving through terrain"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Evan declares a move action with his Clone Trooper unit and
+                  chooses to perform a standard move with them. As the clones
+                  are speed-2, he may choose either the speed-1 or speed-2
+                  movement tool. However, because the Clone Troopers are
+                  starting their move on difficult terrain, their speed is
+                  reduced by 1 to a minimum of 1, meaning they cannot use the
+                  speed-2 movement tool. Because their speed is reduced to a
+                  minimum of 1, moving over the barricade will not reduce their
+                  speed further.
+                </p>
+                <p class="example-text">
+                  If Obi-Wan Kenobi wishes to move into the same piece of
+                  difficult terrain as the Clone Troopers, he will reduce his
+                  speed by 1 to a minimum of 1 and must use the speed-1 movement
+                  tool because the movement template will overlap the difficult
+                  terrain.
+                </p>
+              </div>
               <h5>Climbing</h5>
               <p>
-                Sometimes units maneuver onto tall pieces of obstacle terrain.
-                This is accomplished by performing a climb. Miniatures on
-                notched bases may not climb.
+                Sometimes units maneuver onto or through tall pieces of obstacle
+                terrain. This is accomplished by performing a climb. Miniatures
+                on notched bases may not climb.
               </p>
               <p>
                 To perform a climb, a unit performs a move as normal, except
                 that it must use the speed-1 tool. A miniature may move a
                 vertical distance up to height 1 when making a climb and may
-                place the movement tool overlapping obstacle terrain that is
-                taller than the height of the moving unit’s silhouette.
+                place the movement tool overlapping obstacle terrain that is up
+                to height 1 taller than the height of the moving unit’s
+                silhouette and any terrain the unit may be on.
               </p>
-              <h5>Example: Performing a Climb</h5>
-              <img
-                class="example-photo"
-                src="/img/climb-example.jpg"
-                alt="example of a climb"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Sarah wishes to move her Clone Trooper unit on top of the
-                building. She measures the height of the building and determines
-                that it is taller than the Clone Trooper's silhouette, meaning
-                that the Clone Troopers cannot reach the top by performing a
-                standard move. Instead, Sarah performs a climb with the Clone
-                Troopers.
-              </p>
-              <p class="example-text">
-                The Clone Troopers move as normal, except they must use the
-                speed-1 movement tool when climbing, and they may move up to a
-                vertical distance of height 1 when making a climb.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Performing a Climb</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  class="example-photo"
+                  src="/img/climb-example.jpg"
+                  alt="example of a climb"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Sarah wishes to move her Clone Trooper unit on top of the
+                  building. She measures the height of the building and
+                  determines that it is taller than the Clone Trooper's
+                  silhouette, meaning that the Clone Troopers cannot reach the
+                  top by performing a standard move. Instead, Sarah performs a
+                  climb with the Clone Troopers.
+                </p>
+                <p class="example-text">
+                  The Clone Troopers move as normal, except they must use the
+                  speed-1 movement tool when climbing, and they may move up to a
+                  vertical distance of height 1 when making a climb.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -9134,7 +9371,121 @@
                 of the battlefield within that deployment zone and at least half
                 of the base is inside the boundary of the deployment zone.
               </p>
-              <h5>Moving with Notched Bases</h5>
+              <h4>Moving with Notched Bases</h4>
+              <p>
+                Units on notched bases follow all the above rules for movement,
+                with the following exceptions:
+              </p>
+              <ul>
+                <li>
+                  To perform a standard move with a notched base, a unit takes a
+                  movement tool less than or equal to its speed characteristic
+                  and places it flat on the battlefield so that one end is
+                  wholly inside the front notch of the unit leader’s base.
+                </li>
+                <li>
+                  Then, the player may adjust the movement tool at its joint as
+                  they wish. After the movement tool has been adjusted, the
+                  player decides to make either a full or partial move.
+                </li>
+                <li>
+                  Unlike normal bases, notched bases cannot be placed anywhere
+                  along the tool and instead move along the tool, as detailed
+                  below.
+                </li>
+                <li>
+                  To execute a partial move, pick up the unit leader miniature
+                  and move it along the movement tool, taking care to keep the
+                  movement tool lined up with the front and rear notches on the
+                  base. The player may choose to stop this movement anywhere
+                  along the path created by the movement tool, moving the
+                  movement tool out of the way and placing the miniature on the
+                  battlefield. The miniature must be placed in such a way so
+                  that the line of the front and back notches on its base are
+                  parallel to the section of the movement tool the miniature
+                  reached at the farthest part of its move.
+                </li>
+                <li>
+                  To execute a full move, pick up the unit leader miniature and
+                  move it along the movement tool, taking care to keep the
+                  movement tool lined up with the front and rear notches on the
+                  base. The player places the miniature so that the other end of
+                  the movement tool is inserted in the back notch of the
+                  miniature’s base.
+                </li>
+                <li>
+                  When a miniature performs a full or partial move, if the base
+                  of the miniature is impeded by an object while moving along
+                  the movement tool, it must stop its movement prematurely
+                  unless it can legally move through, over, or on top of the
+                  obstructing object. Move the movement tool out of the way and
+                  place the miniature on the battlefield accordingly.
+                </li>
+                <li>
+                  After placing the unit leader miniature, pick up any other
+                  miniatures in the unit and place them in cohesion. Miniatures
+                  with notched bases must be placed in the exact same
+                  directional orientation as their unit leader’s base. If for
+                  any reason a miniature cannot be placed in cohesion at the end
+                  of a move, place it as close to the unit leader as possible.
+                </li>
+              </ul>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Moving with Notched Bases</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/notch-move-1.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Simone wants to perform a standard move with her Swoop Bike
+                  Riders. She chooses to use the speed-3 movement tool since the
+                  Swoop Bike Riders are speed-3. She places the movement tool in
+                  the front notch of the Swoop Bike Riders unit leader's base.
+                  Next, she adjusts the movement tool as she wishes, then
+                  decides if she wants to perform a full or partial move. She
+                  decides to perform a full move and picks up the miniature and
+                  moves it along the movement tool, making sure to keep the tool
+                  lined up with the front and rear notches on the miniature’s
+                  base. She then places the miniature so that the rear notch is
+                  on the opposite end of the movement tool.
+                </p>
+                <img
+                  src="img/notch-move-2.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <img
+                  src="img/notch-move-3.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  If Simone wishes to perform a partial move instead, she simply
+                  stops the miniature’s movement along the movement tool at the
+                  desired point and places it on the battlefield in such a way
+                  so that the front and rear notches on its base are parallel to
+                  the section of the movement tool the miniature reached at the
+                  farthest part of its move.
+                </p>
+                <img
+                  src="img/notch-move-4.jpg"
+                  alt="movement with a notched base example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  If terrain impedes a full or partial movement, the miniature
+                  must stop prematurely. Because the tower is stopping the Swoop
+                  Bike Riders movement, it ends its movement even though it has
+                  not traveled the full distance of the movement tool.
+                </p>
+              </div>
               <p>
                 Miniatures with notched bases have a number of additional
                 movement options available to them:
@@ -9147,7 +9498,7 @@
               <p>
                 When a unit that can pivot performs a move action, it may choose
                 to pivot instead of performing another movement. To pivot,
-                rotate the unit leader’s base to 90° to the left or right,
+                rotate the unit leader’s base up to 90° to the left or right,
                 keeping the center of the base in the same place. If a unit
                 contains multiple miniatures, each miniature in the unit must
                 pivot so that the directional orientation of its base is the
@@ -9221,6 +9572,8 @@
 
                 <a href="#base">Base</a>
                 <a href="#cohesion">Cohesion</a>
+                <a href="#deployment">Deploy Units</a>
+
                 <a href="#displacement">Displacement</a>
                 <a href="#firing-arcs">Firing Arcs</a>
 
@@ -9307,8 +9660,8 @@
                 claimed by that unit.
               </p>
               <p>
-                A unit may not begin the first round of the game in base contact
-                with an unclaimed objective token.
+                A unit may not be in base contact with an unclaimed objective
+                token at the end of setup.
               </p>
 
               <p>
@@ -9323,7 +9676,8 @@
                 <h5>Movement and Objective Tokens</h5>
                 <p>
                   Miniatures can move through but cannot be placed overlapping
-                  objective tokens.
+                  objective tokens, unless they were placed with the Key
+                  Positions or Payload battle card.
                 </p>
               </div>
 
@@ -9863,14 +10217,33 @@
                   alt="defense Surge Symbol"
                   loading="lazy"
                 />
-                results, the unit using Guardian has rolled two block 󲉣 results.
-                The attacking unit uses Pierce to cancel the two block 󲉣 results
-                and the unit using Guardian suffers two wounds.
+                results, the unit using Guardian has rolled two block
+                <img
+                  class="game-icon"
+                  src="img/legion-block.png"
+                  alt="block Symbol"
+                  loading="lazy"
+                />
+                results. The attacking unit uses Pierce to cancel the two block
+                <img
+                  class="game-icon"
+                  src="img/legion-block.png"
+                  alt="block Symbol"
+                  loading="lazy"
+                />
+                results and the unit using Guardian suffers two wounds.
               </p>
               <p class="example-text">
                 Now the defending unit rolls defense dice and the attacking unit
-                may cancel one more block 󲉣 result rolled by the defending unit
-                since only two of its original Pierce 3 have been used so far.
+                may cancel one more block
+                <img
+                  class="game-icon"
+                  src="img/legion-block.png"
+                  alt="block Symbol"
+                  loading="lazy"
+                />
+                result rolled by the defending unit since only two of its
+                original Pierce 3 have been used so far.
               </p>
 
               <p class="related-topics">
@@ -9899,7 +10272,7 @@
               <p>
                 When a unit that can pivot performs a move action, it may choose
                 to pivot instead of performing another movement. To pivot,
-                rotate the unit leader’s base to 90° to the left or right,
+                rotate the unit leader’s base up to 90° to the left or right,
                 keeping the center of the base in the same place. If a unit
                 contains multiple miniatures, each miniature in the unit must
                 pivot so that the directional orientation of its base is the
@@ -10154,48 +10527,52 @@
                 />
                 unit and cannot play Command Cards.
               </p>
-              <h5>Example: Promote</h5>
-              <p class="example-text">
-                Earlier in the round, the last
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                unit in Josh’s army was defeated. At the Update Order Pool and
-                Promote step of the End Phase, he must choose a unit leader from
-                one of his trooper units to become a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />. The unit’s original order token is discarded, and he
-                replaces it with a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                order token. The promoted unit counts as a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                for all rules purposes. If Josh doesn’t have any trooper units
-                with unit leaders left to promote, then he no longer has a
-                <img
-                  src="img/legion-commander-icon.png"
-                  alt="Commander Icon"
-                  loading="lazy"
-                  class="game-icon"
-                />
-                and cannot play Command Cards for the rest of the game.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Promote</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Earlier in the round, the last
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  unit in Josh’s army was defeated. At the Update Order Pool and
+                  Promote step of the End Phase, he must choose a unit leader
+                  from one of his trooper units to become a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />. The unit’s original order token is discarded, and he
+                  replaces it with a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  order token. The promoted unit counts as a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  for all rules purposes. If Josh doesn’t have any trooper units
+                  with unit leaders left to promote, then he no longer has a
+                  <img
+                    src="img/legion-commander-icon.png"
+                    alt="Commander Icon"
+                    loading="lazy"
+                    class="game-icon"
+                  />
+                  and cannot play Command Cards for the rest of the game.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -10324,27 +10701,32 @@
                 unit’s activation, it removes suppression tokens equal to its
                 courage value.
               </p>
-              <h5>EXAMPLE: SUPPRESSED AND PANICKED</h5>
-              <p class="example-text">
-                On Ryan’s turn, he chooses to activate a Clone Trooper unit with
-                two suppression tokens. After resolving any effects at the start
-                of the Clone Trooper unit’s activation, he performs the unit’s
-                Rally step and rolls two white defense dice, one for each
-                suppression token. Unfortunately, he rolls two blanks and does
-                not remove any suppression tokens from the unit. Because the
-                Clone Troopers have a courage value of 1 and have a number of
-                suppression tokens equal to or greater than their courage value,
-                they are still suppressed and must perform one fewer action
-                during the Perform Actions step of their activation.
-              </p>
-              <p class="example-text">
-                Additionally, because the Clone Troopers have suppression equal
-                to or greater than double their courage value, they are still
-                panicked as well as suppressed. Therefore, they drop any claimed
-                objective tokens, perform no actions or free actions, and at the
-                end of their activation, they remove suppression tokens equal to
-                their courage value.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">EXAMPLE: SUPPRESSED AND PANICKED</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  On Ryan’s turn, he chooses to activate a Clone Trooper unit
+                  with two suppression tokens. After resolving any effects at
+                  the start of the Clone Trooper unit’s activation, he performs
+                  the unit’s Rally step and rolls two white defense dice, one
+                  for each suppression token. Unfortunately, he rolls two blanks
+                  and does not remove any suppression tokens from the unit.
+                  Because the Clone Troopers have a courage value of 1 and have
+                  a number of suppression tokens equal to or greater than their
+                  courage value, they are still suppressed and must perform one
+                  fewer action during the Perform Actions step of their
+                  activation.
+                </p>
+                <p class="example-text">
+                  Additionally, because the Clone Troopers have suppression
+                  equal to or greater than double their courage value, they are
+                  still panicked as well as suppressed. Therefore, they drop any
+                  claimed objective tokens, perform no actions or free actions,
+                  and at the end of their activation, they remove suppression
+                  tokens equal to their courage value.
+                </p>
+              </div>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#activating-units">Activating Units</a>
@@ -10930,19 +11312,24 @@
                 tokens. A vehicle can only roll to determine a vehicle damage
                 token once per game.
               </p>
-              <h5>Example: Vehicle Damage</h5>
-              <p class="example-text">
-                Nicholas’ AAT Tank has already suffered three wounds and suffers
-                three more from an attack. After the attack is resolved,
-                Nicholas rolls a red defense die and rolls a blank. Nicholas’
-                AAT Tank is now disabled and is assigned a disabled token.
-              </p>
-              <p class="example-text">
-                Because a vehicle can only ever roll for vehicle damage once per
-                game, if Nicholas removes the disabled token from his AAT Tank
-                and it suffers further wounds, he does not roll again to
-                determine vehicle damage.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Vehicle Damage</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  Nicholas’ AAT Tank has already suffered three wounds and
+                  suffers three more from an attack. After the attack is
+                  resolved, Nicholas rolls a red defense die and rolls a blank.
+                  Nicholas’ AAT Tank is now disabled and is assigned a disabled
+                  token.
+                </p>
+                <p class="example-text">
+                  Because a vehicle can only ever roll for vehicle damage once
+                  per game, if Nicholas removes the disabled token from his AAT
+                  Tank and it suffers further wounds, he does not roll again to
+                  determine vehicle damage.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -11287,9 +11674,9 @@
                 a vertical distance up to height 2.
               </p>
               <p>
-                When a unit that has the Scale keyword performs a move, it does
-                not reduce its maximum speed if the movement tool overlaps
-                difficult terrain.
+                When a unit that has the Scale keyword performs a move, a move,
+                it does not reduce its maximum speed for moving out of, into, or
+                through difficult terrain.
               </p>
 
               <p class="related-topics">
@@ -12064,34 +12451,38 @@
                 reason a miniature cannot be placed in cohesion at the end of a
                 move, place it as close as possible to the unit leader.
               </p>
-              <h5>Example: Performing a Standard Move</h5>
-              <img
-                src="img/standard-move-1.jpg"
-                alt="movement example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <img
-                src="img/standard-move-2.jpg"
-                alt="movement example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                Marco declares a move action with his Battle Droid unit and
-                chooses to perform a standard move with them. As the Battle
-                Droids are speed-2, he may choose either the speed-1 or speed-2
-                movement tool. Marco chooses the speed-2 movement tool and
-                places it flat on the battlefield so that one end touches the
-                unit leader's base. Then, he may adjust the movement tool at its
-                joint as he wishes. After he is content with the placement and
-                position of the movement tool, Marco picks up the Battle Droid’s
-                unit leader and places it back down on the battlefield so that
-                its base wholly touches the end of the movement tool. Then, he
-                picks up the rest of the miniatures in the Battle Droid unit and
-                places them so that they are all at a speed-1 move away from
-                their unit leader.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Performing a Standard Move</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/standard-move-1.jpg"
+                  alt="movement example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <img
+                  src="img/standard-move-2.jpg"
+                  alt="movement example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  Marco declares a move action with his Battle Droid unit and
+                  chooses to perform a standard move with them. As the Battle
+                  Droids are speed-2, he may choose either the speed-1 or
+                  speed-2 movement tool. Marco chooses the speed-2 movement tool
+                  and places it flat on the battlefield so that one end touches
+                  the unit leader's base. Then, he may adjust the movement tool
+                  at its joint as he wishes. After he is content with the
+                  placement and position of the movement tool, Marco picks up
+                  the Battle Droid’s unit leader and places it back down on the
+                  battlefield so that its base wholly touches the end of the
+                  movement tool. Then, he picks up the rest of the miniatures in
+                  the Battle Droid unit and places them so that they are all at
+                  a speed-1 move away from their unit leader.
+                </p>
+              </div>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
 
@@ -12110,7 +12501,7 @@
               <h4>Standby</h4>
               <figure class="aside">
                 <img src="img/legion-standby.png" alt="Standby Token" />
-                <p>Standby Token</p>
+                <p>Used to move or attack after an enemy performs an action.</p>
               </figure>
               <p>
                 A trooper or ground vehicle unit can perform the standby action
@@ -12138,28 +12529,32 @@
                 cannot spend a standby token until all of an attacking unit’s
                 attack pools have been resolved.
               </p>
-              <h5>Example: Standby</h5>
-              <img
-                src="img/standby1.jpg"
-                alt="standby example"
-                loading="lazy"
-                class="example-photo"
-              />
-              <img
-                src="img/standby2.jpg"
-                alt="standby example"
-                loading="lazy"
-                class="example-photo"
-              />
-              <p class="example-text">
-                Melissa’s Battle Droid unit performs the standby action and
-                gains a standby token. Later in the round, the enemy Clone
-                Trooper unit activates and performs an action. Because the Clone
-                Trooper unit is at range 1–2 of the Battle Droids and in LOS,
-                after the action is complete the Battle Droids may spend their
-                standby token to perform a free move or attack action after the
-                Clone Trooper’s action is resolved.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Standby</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/standby1.jpg"
+                  alt="standby example"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <img
+                  src="img/standby2.jpg"
+                  alt="standby example"
+                  loading="lazy"
+                  class="example-photo"
+                />
+                <p class="example-text">
+                  Melissa’s Battle Droid unit performs the standby action and
+                  gains a standby token. Later in the round, the enemy Clone
+                  Trooper unit activates and performs an action. Because the
+                  Clone Trooper unit is at range 1–2 of the Battle Droids and in
+                  LOS, after the action is complete the Battle Droids may spend
+                  their standby token to perform a free move or attack action
+                  after the Clone Trooper’s action is resolved.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -12402,27 +12797,32 @@
                 unit’s activation, it removes suppression tokens equal to its
                 courage value.
               </p>
-              <h5>EXAMPLE: SUPPRESSED AND PANICKED</h5>
-              <p class="example-text">
-                On Ryan’s turn, he chooses to activate a Clone Trooper unit with
-                two suppression tokens. After resolving any effects at the start
-                of the Clone Trooper unit’s activation, he performs the unit’s
-                Rally step and rolls two white defense dice, one for each
-                suppression token. Unfortunately, he rolls two blanks and does
-                not remove any suppression tokens from the unit. Because the
-                Clone Troopers have a courage value of 1 and have a number of
-                suppression tokens equal to or greater than their courage value,
-                they are still suppressed and must perform one fewer action
-                during the Perform Actions step of their activation.
-              </p>
-              <p class="example-text">
-                Additionally, because the Clone Troopers have suppression equal
-                to or greater than double their courage value, they are still
-                panicked as well as suppressed. Therefore, they drop any claimed
-                objective tokens, perform no actions or free actions, and at the
-                end of their activation, they remove suppression tokens equal to
-                their courage value.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">EXAMPLE: SUPPRESSED AND PANICKED</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  On Ryan’s turn, he chooses to activate a Clone Trooper unit
+                  with two suppression tokens. After resolving any effects at
+                  the start of the Clone Trooper unit’s activation, he performs
+                  the unit’s Rally step and rolls two white defense dice, one
+                  for each suppression token. Unfortunately, he rolls two blanks
+                  and does not remove any suppression tokens from the unit.
+                  Because the Clone Troopers have a courage value of 1 and have
+                  a number of suppression tokens equal to or greater than their
+                  courage value, they are still suppressed and must perform one
+                  fewer action during the Perform Actions step of their
+                  activation.
+                </p>
+                <p class="example-text">
+                  Additionally, because the Clone Troopers have suppression
+                  equal to or greater than double their courage value, they are
+                  still panicked as well as suppressed. Therefore, they drop any
+                  claimed objective tokens, perform no actions or free actions,
+                  and at the end of their activation, they remove suppression
+                  tokens equal to their courage value.
+                </p>
+              </div>
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
                 <a href="#actions">Actions</a>
@@ -12481,6 +12881,10 @@
               <h4>Surge Tokens</h4>
               <figure class="aside">
                 <img src="img/legion-surge-token.png" alt="surge token" />
+                <p>
+                  Used when attacking or defending to convert surges to hits or
+                  blocks. Surge tokens are green tokens.
+                </p>
               </figure>
               <p>
                 <strong>Convert Attack Surges:</strong> The attacking player
@@ -12798,9 +13202,10 @@
               <div class="callout">
                 <p>
                   Barricades are a specific type of scatter terrain found in
-                  some Star Wars: Legion Core Sets and in their own expansion
-                  pack. Barricades are difficult terrain for trooper units and
-                  provide non-creature trooper units with heavy cover.
+                  some <em>Star Wars:</em> Legion Core Sets and in their own
+                  expansion pack. Barricades are difficult terrain for trooper
+                  units and provide non-creature trooper trooper units with
+                  heavy cover.
                 </p>
                 <img
                   class="example-photo"
@@ -12878,22 +13283,26 @@
                 of terrain and agree on how they are to be played before the
                 game begins.
               </p>
-              <h5>Example: Different Types of Terrain</h5>
-              <img
-                src="img/different-terrain.jpg"
-                alt="different terrain example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                The Clone Trooper unit is preparing to move. The battlefield is
-                open terrain and does not restrict the Clone Trooper unit’s
-                movement. The barricades are difficult terrain and will slow
-                down the Clone Troopers should they choose to move over them.
-                The building is impassable terrain, and the Clone Troopers may
-                not move through it unless they have a special rule that allows
-                them to do so.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Different Types of Terrain</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/different-terrain.jpg"
+                  alt="different terrain example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  The Clone Trooper unit is preparing to move. The battlefield
+                  is open terrain and does not restrict the Clone Trooper unit’s
+                  movement. The barricades are difficult terrain and will slow
+                  down the Clone Troopers should they choose to move over them.
+                  The building is impassable terrain, and the Clone Troopers may
+                  not move through it unless they have a special rule that
+                  allows them to do so.
+                </p>
+              </div>
               <div class="callout">
                 <h5>Fitting on Terrain</h5>
                 <p>
@@ -12907,22 +13316,26 @@
                   partially overlapping a piece of obstacle terrain.
                 </p>
               </div>
-              <h5>Example: Fitting on Terrain</h5>
-              <img
-                src="img/fitting-on-terrain.jpg"
-                alt="fitting on terrain example"
-                class="example-photo"
-                loading="lazy"
-              />
-              <p class="example-text">
-                When placing miniatures on obstacle terrain, a miniature's base
-                must completely overlap the terrain. Because the two Clone
-                Troopers are hanging off the balcony and only partially
-                overlapping the piece of obstacle terrain, they cannot be placed
-                there and must be placed in such a way that their bases
-                completely overlap the obstacle terrain like the other two Clone
-                Troopers.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Fitting on Terrain</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/fitting-on-terrain.jpg"
+                  alt="fitting on terrain example"
+                  class="example-photo"
+                  loading="lazy"
+                />
+                <p class="example-text">
+                  When placing miniatures on obstacle terrain, a miniature's
+                  base must completely overlap the terrain. Because the two
+                  Clone Troopers are hanging off the balcony and only partially
+                  overlapping the piece of obstacle terrain, they cannot be
+                  placed there and must be placed in such a way that their bases
+                  completely overlap the obstacle terrain like the other two
+                  Clone Troopers.
+                </p>
+              </div>
               <h5>Terrain Providing Cover</h5>
               <p>
                 The main purpose of terrain is to block line of sight between
@@ -12948,31 +13361,36 @@
                 of the terrain the miniatures are moving or climbing to,
                 subtracting the height of any terrain the miniatures may be on.
               </p>
-              <h5>Example: Measuring Height</h5>
-              <img
-                src="img/terrain-height.jpg"
-                class="example-photo"
-                alt="terrain height example"
-                loading="lazy"
-              />
+              <!--Button to click to expand the example section-->
+              <h5 class="example">Example: Measuring Height</h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <img
+                  src="img/terrain-height.jpg"
+                  class="example-photo"
+                  alt="terrain height example"
+                  loading="lazy"
+                />
 
-              <p class="example-text">
-                Sarah wants to measure the height of this building to determine
-                how it will impede the movement of her Clone Troopers. To do so,
-                she takes the range tool and places one end on the battlefield,
-                holding the range tool upright. Because the roof of the building
-                is entirely inside the first segment of the range tool, the
-                building is considered height 1.
-              </p>
-              <p class="example-text">
-                Later in the game, Sarah measures the height of another
-                building. Because this building has multiple levels, it consists
-                of different heights. One roof is completely inside the first
-                segment of the range tool, so that part of the building is
-                height 1. However, the second roof of the building is inside the
-                second segment of the range tool, so that part of the building
-                is height 2.
-              </p>
+                <p class="example-text">
+                  Sarah wants to measure the height of this building to
+                  determine how it will impede the movement of her Clone
+                  Troopers. To do so, she takes the range tool and places one
+                  end on the battlefield, holding the range tool upright.
+                  Because the roof of the building is entirely inside the first
+                  segment of the range tool, the building is considered height
+                  1.
+                </p>
+                <p class="example-text">
+                  Later in the game, Sarah measures the height of another
+                  building. Because this building has multiple levels, it
+                  consists of different heights. One roof is completely inside
+                  the first segment of the range tool, so that part of the
+                  building is height 1. However, the second roof of the building
+                  is inside the second segment of the range tool, so that part
+                  of the building is height 2.
+                </p>
+              </div>
               <div class="callout">
                 <h4>The Golden Rule of Terrain</h4>
                 <p>
@@ -14208,10 +14626,10 @@
               <h4>Weak Point X: Rear/Sides (Unit Keyword)</h4>
               <p>
                 While a unit with the Weak Point X: Front/Rear/Sides keyword is
-                defending, if the attacking unit’s unit leader is partially
-                inside the specified firing arc of the defending unit, the
-                attack pool gains the Impact X keyword where X is equal to the
-                value of Weak Point X.
+                defending, if the attacking unit’s unit leader is at least
+                partially inside the specified firing arc of the defending unit,
+                the attack pool gains the Impact X keyword where X is equal to
+                the value of Weak Point X.
               </p>
               <p>
                 While a unit with the Weak Point X keyword is defending against
@@ -14596,38 +15014,45 @@
                   the normal rules for assigning wounds.
                 </p>
               </div>
-              <h5>Example: Assigning Wounds and Defeating Miniatures</h5>
-              <p class="example-text">
-                After comparing results, Dallas’ unit of five Clone Troopers has
-                suffered three wounds from an attack. He then assigns one of the
-                wounds to a miniature in the unit. Since all the miniatures in
-                the Clone Trooper unit have a wound threshold of 1, the
-                miniature that Dallas assigned a wound to is defeated. Since
-                there are two unassigned wounds remaining, Dallas chooses
-                another miniature from the same unit and repeats the process
-                until either all wounds have been suffered or all miniatures in
-                the unit have been defeated. Since each Clone Trooper only has a
-                wound threshold of 1 and the unit suffered three wounds, this
-                means that three Clone Troopers are defeated, leaving two Clone
-                Troopers remaining.
-              </p>
-              <p class="example-text">
-                After comparing results, Chris’ unit of three unwounded Wookiees
-                has suffered four wounds. He then assigns one of the wounds to a
-                miniature in the unit. Because Wookiees have a wound threshold
-                of 3, the Wookiee is not defeated when it is assigned the wound,
-                and Chris has three more wounds left to assign. However, because
-                the Wookiee has at least one wound token assigned to it, it is
-                wounded, and Chris MUST choose to assign it any additional wound
-                tokens since it has more wound tokens assigned to it than any
-                other miniature in the unit. Chris is forced to assign the next
-                two wounds to the Wookiee until it reaches its wound threshold
-                of 3 and is defeated, leaving one wound left to be assigned.
-                Chris must choose a non-unit leader Wookiee to assign the wound
-                to. In the future, because the wounded Wookiee has more wound
-                tokens than the other, Chris must assign wounds to it first, and
-                must continue to do so until it is defeated.
-              </p>
+              <!--Button to click to expand the example section-->
+              <h5 class="example">
+                Example: Assigning Wounds and Defeating Miniatures
+              </h5>
+              <!--example section to expand-->
+              <div class="panel">
+                <p class="example-text">
+                  After comparing results, Dallas’ unit of five Clone Troopers
+                  has suffered three wounds from an attack. He then assigns one
+                  of the wounds to a miniature in the unit. Since all the
+                  miniatures in the Clone Trooper unit have a wound threshold of
+                  1, the miniature that Dallas assigned a wound to is defeated.
+                  Since there are two unassigned wounds remaining, Dallas
+                  chooses another miniature from the same unit and repeats the
+                  process until either all wounds have been suffered or all
+                  miniatures in the unit have been defeated. Since each Clone
+                  Trooper only has a wound threshold of 1 and the unit suffered
+                  three wounds, this means that three Clone Troopers are
+                  defeated, leaving two Clone Troopers remaining.
+                </p>
+                <p class="example-text">
+                  After comparing results, Chris’ unit of three unwounded
+                  Wookiees has suffered four wounds. He then assigns one of the
+                  wounds to a miniature in the unit. Because Wookiees have a
+                  wound threshold of 3, the Wookiee is not defeated when it is
+                  assigned the wound, and Chris has three more wounds left to
+                  assign. However, because the Wookiee has at least one wound
+                  token assigned to it, it is wounded, and Chris MUST choose to
+                  assign it any additional wound tokens since it has more wound
+                  tokens assigned to it than any other miniature in the unit.
+                  Chris is forced to assign the next two wounds to the Wookiee
+                  until it reaches its wound threshold of 3 and is defeated,
+                  leaving one wound left to be assigned. Chris must choose a
+                  non-unit leader Wookiee to assign the wound to. In the future,
+                  because the wounded Wookiee has more wound tokens than the
+                  other, Chris must assign wounds to it first, and must continue
+                  to do so until it is defeated.
+                </p>
+              </div>
 
               <p class="related-topics">
                 <strong class="keyword-reference">Related Topics:</strong>
@@ -14716,15 +15141,15 @@
  -->
 
       <footer>
-        <p>
+        <!-- <p>
           If you appreciate this tool, why not fuel my energy drink habit or
           help me afford more minis?
-        </p>
+        </p> -->
         <div class="footer-buttons">
           <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
           <script>
             kofiwidget2.init(
-              "Buy me a an energy drink?",
+              "Support Legion Quick Guide",
               "#26416d",
               "K3K35ZL25"
             );
